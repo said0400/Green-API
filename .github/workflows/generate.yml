@@ -1,1 +1,86 @@
+name: Generate Viral Short
 
+on:
+  workflow_dispatch:
+    inputs:
+      topic_hint:
+        description: "اختياري: تلميح للموضوع"
+        required: false
+        default: ""
+      duration_min:
+        description: "أقل مدة للفيديو"
+        required: false
+        default: "11"
+      duration_max:
+        description: "أقصى مدة للفيديو"
+        required: false
+        default: "15"
+      read_desc_start:
+        description: "الثانية التي تظهر فيها اقرأ الوصف"
+        required: false
+        default: "3.5"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run generator
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: ${{ secrets.GROQ_MODEL }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          GREEN_API_BASE_URL: ${{ secrets.GREEN_API_BASE_URL }}
+          GREEN_API_INSTANCE_ID: ${{ secrets.GREEN_API_INSTANCE_ID }}
+          GREEN_API_TOKEN: ${{ secrets.GREEN_API_TOKEN }}
+          WHATSAPP_CHAT_ID: ${{ secrets.WHATSAPP_CHAT_ID }}
+          TOPIC_HINT: ${{ github.event.inputs.topic_hint }}
+          VIDEO_DURATION_MIN: ${{ github.event.inputs.duration_min }}
+          VIDEO_DURATION_MAX: ${{ github.event.inputs.duration_max }}
+          READ_DESC_START: ${{ github.event.inputs.read_desc_start }}
+        run: python main.py
+
+      - name: Upload output artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-short
+          path: out/
+          if-no-files-found: ignore
+
+      - name: Commit history
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain data/history.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/history.json
+            git commit -m "Update content history"
+            git push
+          else
+            echo "No history changes"
+          fi
