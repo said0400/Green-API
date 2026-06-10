@@ -1,12 +1,11 @@
 """
-Viral Short Generator v4
-- JSON output من Groq (لا regex)
-- FFmpeg concat (تقليل RAM 70%)
+Viral Short Generator v4.1
+- JSON output من Groq
+- FFmpeg pipeline كامل
 - Cache لـ Pexels (24h)
 - Cache لـ shape_arabic
 - Logging احترافي
-- معالجة memory leak صحيحة
-- Ken Burns عبر ffmpeg zoompan
+- الخط مرفوع يدويًا في assets/fonts/Cairo-Bold.ttf
 """
 import atexit
 import hashlib
@@ -61,10 +60,6 @@ PEXELS_CACHE_PATH = DATA_DIR / "pexels_cache.json"
 FONT_PATH = FONT_DIR / "Cairo-Bold.ttf"
 MUSIC_PATH = MUSIC_DIR / "background.mp3"
 
-FONT_URLS = [
-    "https://github.com/google/fonts/raw/main/ofl/cairo/static/Cairo-Bold.ttf",
-    "https://github.com/googlefonts/cairo/raw/main/fonts/ttf/Cairo-Bold.ttf",
-]
 DEFAULT_MUSIC_URL = "https://cdn.pixabay.com/audio/2023/01/12/audio_d0c6ff1bdd.mp3"
 
 # الفيديو
@@ -76,7 +71,7 @@ VIDEO_DURATION_MIN = 11
 VIDEO_DURATION_MAX = 15
 READ_DESC_START = 3.5
 
-# الفلتر
+# الفلتر الأزرق
 BLUE_FILTER_R = 8
 BLUE_FILTER_G = 27
 BLUE_FILTER_B = 74
@@ -98,7 +93,7 @@ MIN_VIDEO_HEIGHT = 1280
 NETWORK_RETRIES = 3
 NETWORK_RETRY_BACKOFF = 2.0
 GROQ_TIMEOUT = 90
-GROQ_MAX_ATTEMPTS = 4  # تقليل من 6 لتوفير tokens
+GROQ_MAX_ATTEMPTS = 4
 
 TOPIC_HINT = os.getenv("TOPIC_HINT", "").strip()
 GROQ_MODEL = os.getenv("GROQ_MODEL") or "llama-3.3-70b-versatile"
@@ -112,7 +107,7 @@ HTTP = httpx.Client(
     timeout=httpx.Timeout(120.0, connect=20.0),
     follow_redirects=True,
     http2=True,
-    headers={"User-Agent": "viral-short-generator/4.0"},
+    headers={"User-Agent": "viral-short-generator/4.1"},
 )
 
 
@@ -172,12 +167,11 @@ def secure_uniform(a: float, b: float) -> float:
 
 
 def run_ffmpeg(args, label="ffmpeg"):
-    """تشغيل ffmpeg مع التقاط الأخطاء."""
     cmd = ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error"] + args
-    log.info(f"[{label}] ffmpeg {' '.join(args[:6])}...")
+    log.info(f"[{label}] running...")
     result = subprocess.run(cmd, capture_output=True, text=True)
     if result.returncode != 0:
-        log.error(f"ffmpeg stderr: {result.stderr[:500]}")
+        log.error(f"ffmpeg stderr: {result.stderr[:1000]}")
         raise RuntimeError(f"ffmpeg {label} failed")
     return result
 
@@ -200,27 +194,22 @@ def download_file(url: str, path: Path, label="file"):
 
 
 def ensure_cairo_font():
-    if FONT_PATH.exists() and FONT_PATH.stat().st_size > 50000:
-        log.info(f"Font cached")
-        return
-    if FONT_PATH.exists():
-        FONT_PATH.unlink(missing_ok=True)
-
-    last_err = None
-    for url in FONT_URLS:
-        try:
-            with_retry(f"font {url}", download_file, url, FONT_PATH, "cairo-font")
-            if FONT_PATH.stat().st_size > 50000:
-                log.info(f"Font downloaded ({FONT_PATH.stat().st_size} bytes)")
-                return
-        except Exception as e:
-            last_err = e
-            FONT_PATH.unlink(missing_ok=True)
-    raise RuntimeError(f"Font download failed: {last_err}")
+    """الخط مرفوع يدويًا في الريبو، فقط نتأكد من وجوده."""
+    if not FONT_PATH.exists():
+        raise RuntimeError(
+            f"Font file not found at {FONT_PATH}\n"
+            f"Please upload Cairo-Bold.ttf to assets/fonts/"
+        )
+    if FONT_PATH.stat().st_size < 10000:
+        raise RuntimeError(
+            f"Font file at {FONT_PATH} seems corrupt (size: {FONT_PATH.stat().st_size} bytes)"
+        )
+    log.info(f"✓ Font loaded: {FONT_PATH.name} ({FONT_PATH.stat().st_size} bytes)")
 
 
 def ensure_background_music():
     if MUSIC_PATH.exists() and MUSIC_PATH.stat().st_size > 10000:
+        log.info(f"Music cached")
         return MUSIC_PATH
     if MUSIC_PATH.exists():
         MUSIC_PATH.unlink(missing_ok=True)
@@ -266,9 +255,8 @@ def word_count(text: str) -> int:
 
 
 def normalize_hashtags(items) -> str:
-    """يقبل list أو string."""
     if isinstance(items, list):
-        raw = " ".join(items)
+        raw = " ".join(str(i) for i in items)
     else:
         raw = str(items or "")
 
@@ -295,7 +283,6 @@ def load_pexels_cache():
 
 
 def save_pexels_cache(cache):
-    # تنظيف الإدخالات منتهية الصلاحية
     now = time.time()
     cache = {k: v for k, v in cache.items() if (now - v.get("ts", 0)) < PEXELS_CACHE_TTL}
     PEXELS_CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
@@ -306,7 +293,7 @@ def cache_key(query: str) -> str:
 
 
 # =========================
-# Groq Prompts (JSON output)
+# Groq Prompts (JSON)
 # =========================
 def build_content_prompt(previous_titles, topic_hint: str) -> str:
     previous_block = (
@@ -407,7 +394,6 @@ def _call_groq_once(prompt: str, temperature: float, max_tokens: int) -> str:
 
 def call_groq_json(prompt: str, temperature=1.1, max_tokens=1500) -> dict:
     raw = with_retry("groq", _call_groq_once, prompt, temperature, max_tokens)
-    # تنظيف أي markdown محتمل
     raw = raw.strip()
     if raw.startswith("```"):
         raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw, flags=re.M).strip()
@@ -558,7 +544,6 @@ def search_pexels(query: str, cache: dict):
     log.info(f"[pexels] {query}")
     try:
         videos = with_retry(f"pexels:{query}", _pexels_request, query)
-        # نخزن فقط البيانات المهمة لتقليل حجم الكاش
         slim = []
         for v in videos:
             slim.append({
@@ -649,7 +634,6 @@ def fetch_backgrounds(search_terms, count_needed, cache):
 # FFmpeg Rendering
 # =========================
 def get_video_duration(path: Path) -> float:
-    """مدة الفيديو عبر ffprobe."""
     try:
         result = subprocess.run(
             ["ffprobe", "-v", "error", "-show_entries", "format=duration",
@@ -662,13 +646,6 @@ def get_video_duration(path: Path) -> float:
 
 
 def render_scene(input_path: Path, output_path: Path, duration: float, scene_index: int):
-    """
-    رندر مشهد واحد:
-    - قص + ملاءمة 1080x1920
-    - Ken Burns zoom (1.0 → 1.06)
-    - فلتر أزرق
-    - fade in/out
-    """
     src_duration = get_video_duration(input_path)
     if src_duration <= 0:
         raise RuntimeError(f"Invalid source: {input_path}")
@@ -679,23 +656,15 @@ def render_scene(input_path: Path, output_path: Path, duration: float, scene_ind
     else:
         start = 0
 
-    # zoompan لـ Ken Burns
     total_frames = int(duration * FPS)
     zoom_max = 1.06
-    # z=min(zoom + step, max)
     zoom_step = (zoom_max - 1.0) / max(total_frames, 1)
 
-    # filter graph:
-    # 1) input → trim/loop
-    # 2) scale to cover + crop to 1080x1920
-    # 3) zoompan (Ken Burns)
-    # 4) blue overlay
-    # 5) fade in/out
     blue_hex = f"0x{BLUE_FILTER_R:02x}{BLUE_FILTER_G:02x}{BLUE_FILTER_B:02x}"
     blue_alpha = BLUE_FILTER_OPACITY
 
     vf = (
-        f"scale={WIDTH * 1.2}:{HEIGHT * 1.2}:force_original_aspect_ratio=increase,"
+        f"scale={int(WIDTH * 1.2)}:{int(HEIGHT * 1.2)}:force_original_aspect_ratio=increase,"
         f"crop={WIDTH}:{HEIGHT},"
         f"zoompan=z='min(zoom+{zoom_step:.6f},{zoom_max})':"
         f"d={total_frames}:s={WIDTH}x{HEIGHT}:fps={FPS},"
@@ -704,7 +673,6 @@ def render_scene(input_path: Path, output_path: Path, duration: float, scene_ind
         f"fade=t=out:st={duration - 0.15:.3f}:d=0.15"
     )
 
-    # نستخدم filter_complex لإضافة overlay أزرق
     fc = (
         f"[0:v]{vf}[bg];"
         f"color=c={blue_hex}@{blue_alpha}:s={WIDTH}x{HEIGHT}:d={duration}:r={FPS}[blue];"
@@ -754,7 +722,6 @@ def render_fallback_scene(output_path: Path, duration: float, scene_index: int, 
 
 
 def concat_scenes(scene_paths, output_path: Path):
-    """دمج المشاهد عبر ffmpeg concat demuxer (لا يعيد encoding)."""
     list_file = TEMP_DIR / "concat_list.txt"
     list_file.write_text(
         "\n".join(f"file '{p.resolve()}'" for p in scene_paths),
@@ -771,7 +738,7 @@ def concat_scenes(scene_paths, output_path: Path):
 
 
 # =========================
-# النصوص العربية (مع cache)
+# النصوص العربية
 # =========================
 @lru_cache(maxsize=512)
 def shape_arabic(text: str) -> str:
@@ -862,17 +829,6 @@ def overlay_texts_and_audio(video_in: Path, video_out: Path,
                             title_y: int, read_y: int,
                             duration: float, read_start: float,
                             audio_path: Path = None):
-    """
-    تركيب صور العناوين عبر ffmpeg overlay + موسيقى.
-    - title يظهر من 0 إلى النهاية
-    - read_desc يظهر من read_start مع scale pop (animated zoom)
-    """
-    # pop-in animation: scale من 0.6 → 1.18 → 0.96 → 1.0 خلال 0.36s
-    # في ffmpeg نستعمل scale مع expression
-    read_dur = duration - read_start
-
-    # حركة scale لـ read_desc (تقريب pop-in)
-    # نستخدم between() لخلق scale ديناميكي
     scale_expr = (
         f"if(lt(t,{read_start}),1,"
         f"if(lt(t-{read_start},0.12),0.60+(1.18-0.60)*((t-{read_start})/0.12),"
@@ -891,9 +847,7 @@ def overlay_texts_and_audio(video_in: Path, video_out: Path,
     if has_audio:
         inputs += ["-stream_loop", "-1", "-i", str(audio_path)]
 
-    # filter graph
-    # [0]=video, [1]=title, [2]=read
-    fc = (
+    fc_video = (
         f"[1:v]format=rgba[ttl];"
         f"[2:v]format=rgba,scale=iw*{scale_expr}:-1:eval=frame[rd];"
         f"[0:v][ttl]overlay=x=(W-w)/2:y={title_y}:format=auto[t1];"
@@ -901,18 +855,14 @@ def overlay_texts_and_audio(video_in: Path, video_out: Path,
         f"enable='gte(t,{read_start})'[v]"
     )
 
-    args = inputs + ["-filter_complex", fc, "-map", "[v]"]
-
     if has_audio:
-        # mix audio: fade in/out + volume
-        afc = (
+        fc_audio = (
             f"[3:a]volume={MUSIC_VOLUME},"
             f"afade=t=in:st=0:d=0.8,"
             f"afade=t=out:st={duration - 1.2:.3f}:d=1.2,"
             f"atrim=0:{duration}[a]"
         )
-        # نضيف audio filter لـ filter_complex
-        fc_full = fc + ";" + afc
+        fc_full = fc_video + ";" + fc_audio
         args = inputs + [
             "-filter_complex", fc_full,
             "-map", "[v]", "-map", "[a]",
@@ -924,7 +874,9 @@ def overlay_texts_and_audio(video_in: Path, video_out: Path,
             str(video_out),
         ]
     else:
-        args += [
+        args = inputs + [
+            "-filter_complex", fc_video,
+            "-map", "[v]",
             "-c:v", "libx264", "-preset", "fast", "-pix_fmt", "yuv420p",
             "-r", str(FPS), "-b:v", "3500k",
             "-an",
@@ -946,7 +898,6 @@ def create_video(title: str, search_terms, cache):
 
     clip_paths = fetch_backgrounds(search_terms, needed, cache)
 
-    # 1) رندر كل مشهد منفصل
     durations = []
     remaining = total_duration
     while remaining > 0.01:
@@ -970,11 +921,9 @@ def create_video(title: str, search_terms, cache):
 
         scene_paths.append(scene_out)
 
-    # 2) دمج المشاهد
     concat_path = TEMP_DIR / "concat.mp4"
     concat_scenes(scene_paths, concat_path)
 
-    # 3) تجهيز صور النصوص
     title_img = render_title_image(title)
     read_img = render_read_desc_image()
 
@@ -987,7 +936,6 @@ def create_video(title: str, search_terms, cache):
     read_y = min(HEIGHT - 230, title_y + title_img.height + 36)
     read_start = min(READ_DESC_START, max(0.8, total_duration - 1.2))
 
-    # 4) إضافة النصوص والصوت
     music = ensure_background_music()
     final_path = OUT_DIR / "final_video.mp4"
 
@@ -1077,7 +1025,7 @@ def send_to_whatsapp(video_path: Path, description: str, hashtags: str):
 # =========================
 def main():
     log.info("=" * 50)
-    log.info("🚀 Viral Short Generator v4")
+    log.info("🚀 Viral Short Generator v4.1")
     log.info("=" * 50)
 
     ensure_dirs()
