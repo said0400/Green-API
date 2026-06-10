@@ -19,9 +19,8 @@
 
     html, body {
       background: transparent !important;
-      font-family: 'NotoNaskhArabic', 'Noto Naskh Arabic', 'Arial', sans-serif;
+      font-family: 'NotoNaskhArabic', 'Arial', sans-serif;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
     }
 
@@ -33,36 +32,61 @@
       min-height: 100vh;
     }
 
-    .title-box {
-      background: #FF5F5F;
-      color: #FFFFFF;
-      font-family: 'NotoNaskhArabic', 'Noto Naskh Arabic', 'Arial', sans-serif;
-      padding: {{ pad_y }}px {{ pad_x }}px;
-      border-radius: {{ radius }}px;
-      font-size: {{ font_size }}px;
-      font-weight: 900;
-      text-align: center;
-      line-height: 1.6;
+    /* الحاوية الرئيسية */
+    .title-wrapper {
       width: {{ max_width }}px;
       max-width: {{ max_width }}px;
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-      white-space: normal;
-      word-break: normal;
+      text-align: center;
+      direction: rtl;
+      line-height: 1.8;
+    }
+
+    /* النص نفسه: خلفية حمراء ملتفّة + حدود سوداء + ظل */
+    .title-text {
+      font-family: 'NotoNaskhArabic', 'Arial', sans-serif;
+      font-size: {{ font_size }}px;
+      font-weight: 900;
+      color: #FFFFFF;
+      background-color: #FF2D2D;
+      
+      /* الـ box-decoration-break هو السر: يخلي الخلفية تلتف حول كل سطر */
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      
+      /* padding داخلي حول النص */
+      padding: 8px 18px;
+      
+      /* زوايا دائرية */
+      border-radius: 12px;
+      
+      /* حدود سوداء حول النص نفسه (stroke) */
+      -webkit-text-stroke: 2px #000000;
+      
+      /* ظل خفيف للصندوق الأحمر */
       box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.35),
-        0 4px 12px rgba(255, 95, 95, 0.4),
-        inset 0 -3px 0 rgba(0, 0, 0, 0.08);
+        0 4px 12px rgba(0, 0, 0, 0.4),
+        0 2px 4px rgba(0, 0, 0, 0.3);
+      
+      /* ظل النص */
       text-shadow:
-        0 2px 4px rgba(0, 0, 0, 0.25),
-        0 1px 2px rgba(0, 0, 0, 0.15);
-      letter-spacing: -0.3px;
+        0 2px 0 #000000,
+        0 -1px 0 #000000,
+        1px 0 0 #000000,
+        -1px 0 0 #000000,
+        2px 3px 6px rgba(0, 0, 0, 0.5);
+      
+      /* مسافة بين الأسطر */
+      line-height: 2;
+      letter-spacing: 0px;
+      
       direction: rtl;
       unicode-bidi: plaintext;
     }
   </style>
 </head>
 <body>
-  <div class="title-box" id="content">{{ text }}</div>
+  <div class="title-wrapper" id="content">
+    <span class="title-text">{{ text }}</span>
+  </div>
 </body>
 </html>
