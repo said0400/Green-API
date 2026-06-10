@@ -11,15 +11,12 @@ Pillow==11.3.0
 imageio==2.37.0
 imageio-ffmpeg==0.6.0
 
-# ── Arabic Text (يمكن حذفها لاحقًا) ───────
-# arabic-reshaper==3.0.0   ← لم نعد نحتاجها
-# python-bidi==0.6.6       ← لم نعد نحتاجها
-
 # ── Text Matching ─────────────────────────
 rapidfuzz==3.14.0
 
-# ── Browser Automation ────────────────────
+# ── Browser Automation (HTML → Image) ─────
 playwright==1.49.1
 
 # ── Utilities ─────────────────────────────
 tqdm==4.67.1
+jinja2==3.1.4
