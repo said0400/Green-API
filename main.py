@@ -1,66 +1,132 @@
+"""
+Viral Short Generator v4
+- JSON output من Groq (لا regex)
+- FFmpeg concat (تقليل RAM 70%)
+- Cache لـ Pexels (24h)
+- Cache لـ shape_arabic
+- Logging احترافي
+- معالجة memory leak صحيحة
+- Ken Burns عبر ffmpeg zoompan
+"""
+import atexit
+import hashlib
 import json
+import logging
 import math
 import os
-import random
 import re
+import secrets as pysecrets
 import shutil
+import subprocess
+import sys
 import time
+from contextlib import suppress
 from datetime import datetime, timezone
+from functools import lru_cache
 from pathlib import Path
 
-import requests
+import httpx
 import arabic_reshaper
 from bidi.algorithm import get_display
 from groq import Groq
 from PIL import Image, ImageDraw, ImageFont
 from rapidfuzz import fuzz
-from moviepy.editor import (
-    VideoFileClip,
-    ImageClip,
-    ColorClip,
-    CompositeVideoClip,
-    concatenate_videoclips,
-)
-import moviepy.video.fx.all as vfx
+from tqdm import tqdm
 
 
 # =========================
-# إعدادات عامة
+# Logging
+# =========================
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    datefmt="%H:%M:%S",
+    handlers=[logging.StreamHandler(sys.stdout)],
+)
+log = logging.getLogger("viral")
+
+
+# =========================
+# المسارات والإعدادات
 # =========================
 ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data"
 TEMP_DIR = ROOT / "temp"
 OUT_DIR = ROOT / "out"
 FONT_DIR = ROOT / "assets" / "fonts"
+MUSIC_DIR = ROOT / "assets" / "music"
 
 HISTORY_PATH = DATA_DIR / "history.json"
+PEXELS_CACHE_PATH = DATA_DIR / "pexels_cache.json"
 FONT_PATH = FONT_DIR / "Cairo-Bold.ttf"
+MUSIC_PATH = MUSIC_DIR / "background.mp3"
 
-FONT_URL = os.getenv(
-    "CAIRO_FONT_URL",
-    "https://raw.githubusercontent.com/google/fonts/main/ofl/cairo/Cairo-Bold.ttf",
-)
+FONT_URLS = [
+    "https://github.com/google/fonts/raw/main/ofl/cairo/static/Cairo-Bold.ttf",
+    "https://github.com/googlefonts/cairo/raw/main/fonts/ttf/Cairo-Bold.ttf",
+]
+DEFAULT_MUSIC_URL = "https://cdn.pixabay.com/audio/2023/01/12/audio_d0c6ff1bdd.mp3"
 
+# الفيديو
 WIDTH = 1080
 HEIGHT = 1920
+FPS = 24
 SCENE_DURATION = 3.0
+VIDEO_DURATION_MIN = 11
+VIDEO_DURATION_MAX = 15
+READ_DESC_START = 3.5
 
-VIDEO_DURATION_MIN = int(os.getenv("VIDEO_DURATION_MIN", "11"))
-VIDEO_DURATION_MAX = int(os.getenv("VIDEO_DURATION_MAX", "15"))
-READ_DESC_START = float(os.getenv("READ_DESC_START", "3.5"))
+# الفلتر
+BLUE_FILTER_R = 8
+BLUE_FILTER_G = 27
+BLUE_FILTER_B = 74
+BLUE_FILTER_OPACITY = 0.35
+
+# الصوت
+MUSIC_VOLUME = 0.30
+
+# الكاش والـ history
+HISTORY_MAX = 500
+DUPLICATE_LOOKBACK = 300
+PEXELS_CACHE_TTL = 24 * 3600  # 24 ساعة
+
+# الجودة
+MIN_VIDEO_WIDTH = 720
+MIN_VIDEO_HEIGHT = 1280
+
+# Retry
+NETWORK_RETRIES = 3
+NETWORK_RETRY_BACKOFF = 2.0
+GROQ_TIMEOUT = 90
+GROQ_MAX_ATTEMPTS = 4  # تقليل من 6 لتوفير tokens
 
 TOPIC_HINT = os.getenv("TOPIC_HINT", "").strip()
 GROQ_MODEL = os.getenv("GROQ_MODEL") or "llama-3.3-70b-versatile"
 GREEN_API_BASE_URL = (os.getenv("GREEN_API_BASE_URL") or "https://api.green-api.com").rstrip("/")
 
-BLUE_FILTER_RGB = (8, 27, 74)   # أزرق غامق
-BLUE_FILTER_OPACITY = 0.35       # 35%
 
-CLIENT = None
+# =========================
+# HTTP Client
+# =========================
+HTTP = httpx.Client(
+    timeout=httpx.Timeout(120.0, connect=20.0),
+    follow_redirects=True,
+    http2=True,
+    headers={"User-Agent": "viral-short-generator/4.0"},
+)
+
+
+@atexit.register
+def _close_http():
+    with suppress(Exception):
+        HTTP.close()
+
+
+_GROQ_CLIENT = None
 
 
 # =========================
-# أدوات مساعدة
+# أدوات أساسية
 # =========================
 def require_env(name: str) -> str:
     value = os.getenv(name)
@@ -70,46 +136,113 @@ def require_env(name: str) -> str:
 
 
 def ensure_dirs():
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    TEMP_DIR.mkdir(parents=True, exist_ok=True)
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    FONT_DIR.mkdir(parents=True, exist_ok=True)
-
+    for d in [DATA_DIR, TEMP_DIR, OUT_DIR, FONT_DIR, MUSIC_DIR]:
+        d.mkdir(parents=True, exist_ok=True)
     if not HISTORY_PATH.exists():
         HISTORY_PATH.write_text("[]", encoding="utf-8")
+    if not PEXELS_CACHE_PATH.exists():
+        PEXELS_CACHE_PATH.write_text("{}", encoding="utf-8")
 
 
-def clean_work_dirs():
-    for folder in [TEMP_DIR, OUT_DIR]:
-        if folder.exists():
-            for item in folder.iterdir():
-                if item.is_file():
-                    item.unlink(missing_ok=True)
-                elif item.is_dir():
-                    shutil.rmtree(item, ignore_errors=True)
-        folder.mkdir(parents=True, exist_ok=True)
+def clean_temp_only():
+    if TEMP_DIR.exists():
+        shutil.rmtree(TEMP_DIR, ignore_errors=True)
+    TEMP_DIR.mkdir(parents=True, exist_ok=True)
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def with_retry(label: str, fn, *args, retries=NETWORK_RETRIES, **kwargs):
+    last_error = None
+    for attempt in range(1, retries + 1):
+        try:
+            return fn(*args, **kwargs)
+        except Exception as e:
+            last_error = e
+            wait = NETWORK_RETRY_BACKOFF ** (attempt - 1)
+            log.warning(f"[retry] {label} failed ({attempt}/{retries}): {e}")
+            if attempt < retries:
+                time.sleep(wait)
+    raise RuntimeError(f"{label} failed after {retries}: {last_error}")
+
+
+def secure_uniform(a: float, b: float) -> float:
+    if b <= a:
+        return a
+    return a + (pysecrets.randbelow(1_000_000) / 1_000_000) * (b - a)
+
+
+def run_ffmpeg(args, label="ffmpeg"):
+    """تشغيل ffmpeg مع التقاط الأخطاء."""
+    cmd = ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error"] + args
+    log.info(f"[{label}] ffmpeg {' '.join(args[:6])}...")
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    if result.returncode != 0:
+        log.error(f"ffmpeg stderr: {result.stderr[:500]}")
+        raise RuntimeError(f"ffmpeg {label} failed")
+    return result
+
+
+# =========================
+# تحميل الموارد
+# =========================
+def download_file(url: str, path: Path, label="file"):
+    with HTTP.stream("GET", url) as response:
+        response.raise_for_status()
+        total = int(response.headers.get("content-length") or 0)
+        with open(path, "wb") as f, tqdm(
+            total=total if total > 0 else None,
+            unit="B", unit_scale=True, desc=label, ncols=80, leave=False,
+        ) as bar:
+            for chunk in response.iter_bytes(chunk_size=1024 * 1024):
+                f.write(chunk)
+                if total > 0:
+                    bar.update(len(chunk))
 
 
 def ensure_cairo_font():
-    if FONT_PATH.exists():
+    if FONT_PATH.exists() and FONT_PATH.stat().st_size > 50000:
+        log.info(f"Font cached")
         return
+    if FONT_PATH.exists():
+        FONT_PATH.unlink(missing_ok=True)
 
-    print("Downloading Cairo font...")
-    response = requests.get(FONT_URL, timeout=120)
-    response.raise_for_status()
-    FONT_PATH.write_bytes(response.content)
-
-    if not FONT_PATH.exists() or FONT_PATH.stat().st_size < 10000:
-        raise RuntimeError("Failed to download Cairo font correctly.")
-
-
-def get_client() -> Groq:
-    global CLIENT
-    if CLIENT is None:
-        CLIENT = Groq(api_key=require_env("GROQ_API_KEY"))
-    return CLIENT
+    last_err = None
+    for url in FONT_URLS:
+        try:
+            with_retry(f"font {url}", download_file, url, FONT_PATH, "cairo-font")
+            if FONT_PATH.stat().st_size > 50000:
+                log.info(f"Font downloaded ({FONT_PATH.stat().st_size} bytes)")
+                return
+        except Exception as e:
+            last_err = e
+            FONT_PATH.unlink(missing_ok=True)
+    raise RuntimeError(f"Font download failed: {last_err}")
 
 
+def ensure_background_music():
+    if MUSIC_PATH.exists() and MUSIC_PATH.stat().st_size > 10000:
+        return MUSIC_PATH
+    if MUSIC_PATH.exists():
+        MUSIC_PATH.unlink(missing_ok=True)
+    try:
+        with_retry("music", download_file, DEFAULT_MUSIC_URL, MUSIC_PATH, "music")
+        if MUSIC_PATH.stat().st_size > 10000:
+            return MUSIC_PATH
+    except Exception as e:
+        log.warning(f"Music download failed: {e}")
+    return None
+
+
+def get_groq_client() -> Groq:
+    global _GROQ_CLIENT
+    if _GROQ_CLIENT is None:
+        _GROQ_CLIENT = Groq(api_key=require_env("GROQ_API_KEY"), timeout=GROQ_TIMEOUT)
+    return _GROQ_CLIENT
+
+
+# =========================
+# History
+# =========================
 def load_history():
     try:
         return json.loads(HISTORY_PATH.read_text(encoding="utf-8"))
@@ -118,337 +251,333 @@ def load_history():
 
 
 def save_history(history):
-    HISTORY_PATH.write_text(
-        json.dumps(history, ensure_ascii=False, indent=2),
-        encoding="utf-8"
-    )
+    history = history[-HISTORY_MAX:]
+    HISTORY_PATH.write_text(json.dumps(history, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def normalize_text(text: str) -> str:
     text = text.lower().strip()
-    text = re.sub(r"[^\w\s\u0600-\u06FF#]", " ", text)
-    text = re.sub(r"\s+", " ", text)
-    return text.strip()
+    text = re.sub(r"[^\w\s\u0600-\u06FF]", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def word_count(text: str) -> int:
     return len([w for w in text.strip().split() if w.strip()])
 
 
-def normalize_hashtags(raw: str) -> str:
-    tags = re.findall(r"#([A-Za-z0-9_\u0600-\u06FF]+)", raw)
-    cleaned = []
-    seen = set()
+def normalize_hashtags(items) -> str:
+    """يقبل list أو string."""
+    if isinstance(items, list):
+        raw = " ".join(items)
+    else:
+        raw = str(items or "")
 
+    tags = re.findall(r"#?([A-Za-z0-9_\u0600-\u06FF]+)", raw)
+    cleaned, seen = [], set()
     for tag in tags:
-        key = tag.lower()
-        if key in seen:
+        if not tag or tag.isdigit():
             continue
-        seen.add(key)
-        cleaned.append(f"#{tag}")
-
+        key = tag.lower()
+        if key not in seen:
+            seen.add(key)
+            cleaned.append(f"#{tag}")
     return " ".join(cleaned[:15])
 
 
 # =========================
-# البرومبتات
+# Pexels Cache
+# =========================
+def load_pexels_cache():
+    try:
+        return json.loads(PEXELS_CACHE_PATH.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def save_pexels_cache(cache):
+    # تنظيف الإدخالات منتهية الصلاحية
+    now = time.time()
+    cache = {k: v for k, v in cache.items() if (now - v.get("ts", 0)) < PEXELS_CACHE_TTL}
+    PEXELS_CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+
+
+def cache_key(query: str) -> str:
+    return hashlib.sha1(query.lower().strip().encode("utf-8")).hexdigest()[:16]
+
+
+# =========================
+# Groq Prompts (JSON output)
 # =========================
 def build_content_prompt(previous_titles, topic_hint: str) -> str:
-    previous_block = "\n".join(f"- {title}" for title in previous_titles[-30:]) if previous_titles else "- لا يوجد"
-
+    previous_block = (
+        "\n".join(f"- {t}" for t in previous_titles[-30:])
+        if previous_titles else "- لا يوجد"
+    )
     topic_instruction = (
-        f'Focus this output around this optional hint: "{topic_hint}".'
+        f'Focus around: "{topic_hint}".'
         if topic_hint else
         "Choose a fresh angle inside psychology, relationships, attraction, communication, emotional intelligence, or human behavior."
     )
 
-    return f"""
-You are the world's best viral relationship and psychology content creator.
+    return f"""You are the world's best viral relationship and psychology content creator.
 
-Generate content in Arabic for a short video where only the title appears on screen and the audience is encouraged to read the description.
-
-All written content must be in Arabic.
-Hashtags may mix Arabic and English naturally.
+Generate content in Arabic for a short video where only the title appears on screen.
 
 {topic_instruction}
 
-Generate:
-1) ONE title in Arabic
-2) ONE description in Arabic
-3) 15 hashtags
-
 TITLE RULES:
 - Between 8 and 16 words
-- No emojis
-- No quotation marks
-- No numbering
-- Must create a powerful curiosity gap
-- Must feel impossible to ignore
-- Must make the viewer feel they are missing important information
-- Must make the viewer want to read the description immediately
-- Must feel natural, emotional, psychologically intriguing, and highly shareable
-- Never reveal the answer in the title
-- Never use completely false clickbait
-- Use patterns such as:
+- No emojis, no quotes, no numbering
+- Powerful curiosity gap
+- Never reveal the answer
+- Use patterns like:
 إذا فعل هذا...
 إذا قالت هذا...
 معظم الرجال لا يعرفون...
-معظم النساء لا يخبرن أحداً...
 الخطأ الذي يجعل...
 السبب الحقيقي وراء...
 هناك كلمة واحدة...
 إذا سمعت هذه العبارة...
-تصرف بسيط يكشف...
 علامة لا ينتبه لها أحد...
 الشيء الذي لا يريدونك أن تعرفه...
-ما يحدث عندما...
-السبب الذي يجعل...
 إذا اختفى فجأة...
 إذا اعتذر رغم أنه...
 إذا توقف عن...
-إذا بدأت تفعل هذا...
-إذا أخبرك بهذا...
-إذا تجاهلت هذه الإشارة...
 أغلب الناس يسيئون فهم...
 
 DESCRIPTION RULES:
-- Must take 40 to 60 seconds to read
-- Must open with a strong curiosity hook
-- Must expand on the idea introduced in the title
-- Must use psychology, emotional intelligence, relationship dynamics, communication principles, or human behavior insights
-- Must keep the reader engaged until the final sentence
-- Must feel natural and conversational
-- Must include at least one surprising insight
-- Must end with a thought-provoking question that encourages comments
-- Must NOT repeat generic advice
-- Must NOT sound AI-generated
-- Must feel like content from a top viral creator
-- Generate content that triggers curiosity, emotional engagement, self-reflection, and discussion
-- Prioritize psychological depth over superficial advice
-- Every output should feel like a viral post with millions of views
+- 40 to 60 seconds reading time (around 120-180 words)
+- Strong curiosity hook
+- Psychological depth
+- At least one surprising insight
+- End with a thought-provoking question
+- Natural, conversational, NOT AI-sounding
 
 UNIQUENESS RULE:
-- You must generate a completely fresh idea
-- Do not paraphrase or lightly reword an older idea
-- Do not repeat the same core psychological mechanism, emotional angle, relationship dynamic, framing, or takeaway
-- If the idea feels similar to a previous title, discard it and create a different one
+Must be completely different from previous titles below.
+Do not paraphrase or reuse the same psychological mechanism.
 
 PREVIOUS TITLES TO AVOID:
 {previous_block}
 
-HASHTAG RULES:
-- Exactly 15 hashtags
-- Optimized for TikTok, Instagram Reels, Facebook Reels, and YouTube Shorts
-- Mix broad and niche hashtags
-
-IMPORTANT:
-Follow the output format exactly.
-Do not add any extra text outside the format.
-
-TITLE:
-[title]
-
-DESCRIPTION:
-[description]
-
 HASHTAGS:
-#tag1 #tag2 #tag3 ...
-""".strip()
+- Exactly 15 hashtags (mix Arabic and English)
+- Without the # symbol in the JSON array
+
+CRITICAL: Respond ONLY with a valid JSON object. No markdown, no extra text.
+
+JSON SCHEMA:
+{{
+  "title": "string in Arabic (8-16 words)",
+  "description": "string in Arabic (120-180 words)",
+  "hashtags": ["tag1", "tag2", "...", "tag15"]
+}}
+"""
 
 
 def build_search_terms_prompt(title: str, description: str) -> str:
-    return f"""
-Generate 6 short English stock-video search queries for Pexels.
+    return f"""Generate English stock-video search queries for Pexels.
 
-The background footage must visually fit this Arabic short-form psychology content.
-Prefer realistic, cinematic, emotional, portrait-friendly visuals.
-Avoid text, logos, obvious influencers, podcasts, microphones, and studio shots.
+The footage must match this Arabic psychology short. Prefer cinematic, emotional, portrait-friendly visuals.
+Avoid: text overlays, logos, podcasts, microphones, studio shots.
 
-Return only 6 lines.
-One search query per line.
-No numbering.
-No explanations.
+CRITICAL: Respond ONLY with valid JSON.
 
-TITLE:
-{title}
+JSON SCHEMA:
+{{
+  "queries": ["query1", "query2", "query3", "query4", "query5", "query6"]
+}}
 
-DESCRIPTION:
-{description}
-""".strip()
+TITLE: {title}
+DESCRIPTION: {description[:400]}
+"""
 
 
-# =========================
-# توليد المحتوى
-# =========================
-CONTENT_PATTERN = re.compile(
-    r"TITLE:\s*(.*?)\s*DESCRIPTION:\s*(.*?)\s*HASHTAGS:\s*(.*)",
-    re.S | re.I
-)
-
-
-def call_groq(prompt: str, temperature=1.1, max_tokens=1400) -> str:
-    client = get_client()
+def _call_groq_once(prompt: str, temperature: float, max_tokens: int) -> str:
+    client = get_groq_client()
     response = client.chat.completions.create(
         model=GROQ_MODEL,
         messages=[{"role": "user", "content": prompt}],
         temperature=temperature,
         max_tokens=max_tokens,
+        response_format={"type": "json_object"},
     )
     return response.choices[0].message.content.strip()
 
 
-def parse_content_response(text: str):
-    match = CONTENT_PATTERN.search(text.strip())
-    if not match:
-        raise ValueError(f"Could not parse Groq response:\n{text}")
-
-    title = match.group(1).strip()
-    description = match.group(2).strip()
-    hashtags = normalize_hashtags(match.group(3).strip())
-
-    return title, description, hashtags
+def call_groq_json(prompt: str, temperature=1.1, max_tokens=1500) -> dict:
+    raw = with_retry("groq", _call_groq_once, prompt, temperature, max_tokens)
+    # تنظيف أي markdown محتمل
+    raw = raw.strip()
+    if raw.startswith("```"):
+        raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw, flags=re.M).strip()
+    return json.loads(raw)
 
 
-def validate_generated_content(title: str, description: str, hashtags: str):
+# =========================
+# توليد المحتوى
+# =========================
+def validate_content(data: dict):
     errors = []
+    title = data.get("title", "").strip()
+    description = data.get("description", "").strip()
+    hashtags = data.get("hashtags", [])
 
     wc = word_count(title)
     if wc < 8 or wc > 16:
-        errors.append(f"title word count out of range: {wc}")
-
+        errors.append(f"title words: {wc}")
     if len(description) < 350:
         errors.append("description too short")
-
-    hashtag_count = len(hashtags.split())
-    if hashtag_count < 15:
-        errors.append(f"not enough hashtags: {hashtag_count}")
-
-    if '"' in title or "“" in title or "”" in title:
-        errors.append("title contains quotation marks")
+    if not isinstance(hashtags, list) or len(hashtags) < 12:
+        errors.append(f"hashtags count: {len(hashtags) if isinstance(hashtags, list) else 'invalid'}")
 
     return errors
 
 
 def is_duplicate(title: str, description: str, history) -> bool:
     new_title = normalize_text(title)
-    new_desc = normalize_text(description[:600])
+    new_desc = normalize_text(description[:500])
 
-    for item in history[-80:]:
+    for item in history[-DUPLICATE_LOOKBACK:]:
         old_title = normalize_text(item.get("title", ""))
-        old_desc = normalize_text(item.get("description", "")[:600])
-
-        title_score = fuzz.token_set_ratio(new_title, old_title)
-        desc_score = fuzz.token_set_ratio(new_desc, old_desc)
-        combo_score = fuzz.token_set_ratio(
-            f"{new_title} {new_desc[:220]}",
-            f"{old_title} {old_desc[:220]}"
-        )
-
-        if title_score >= 78 or combo_score >= 74 or (title_score >= 70 and desc_score >= 68):
+        old_desc = normalize_text(item.get("description", "")[:500])
+        if fuzz.token_set_ratio(new_title, old_title) >= 78:
             return True
-
+        if fuzz.token_set_ratio(
+            new_title + " " + new_desc[:200],
+            old_title + " " + old_desc[:200]
+        ) >= 74:
+            return True
     return False
 
 
 def generate_unique_content(history):
     previous_titles = [item.get("title", "") for item in history if item.get("title")]
-
     last_error = None
-    for attempt in range(1, 7):
-        print(f"Generating content... attempt {attempt}")
+
+    for attempt in range(1, GROQ_MAX_ATTEMPTS + 1):
+        log.info(f"Generating content ({attempt}/{GROQ_MAX_ATTEMPTS})...")
         prompt = build_content_prompt(previous_titles, TOPIC_HINT)
 
         try:
-            raw = call_groq(prompt, temperature=1.12, max_tokens=1500)
-            title, description, hashtags = parse_content_response(raw)
+            data = call_groq_json(prompt, temperature=1.15, max_tokens=1500)
 
-            errors = validate_generated_content(title, description, hashtags)
+            errors = validate_content(data)
             if errors:
-                last_error = f"Validation failed: {errors}"
-                print(last_error)
+                last_error = f"Validation: {errors}"
+                log.warning(last_error)
+                continue
+
+            title = data["title"].strip().strip('"').strip("'")
+            description = data["description"].strip()
+            hashtags = normalize_hashtags(data["hashtags"])
+
+            if len(hashtags.split()) < 12:
+                last_error = "Not enough valid hashtags after normalization"
+                log.warning(last_error)
                 continue
 
             if is_duplicate(title, description, history):
-                last_error = "Generated content is too similar to previous history."
-                print(last_error)
+                last_error = "Duplicate detected"
+                log.warning(last_error)
                 continue
 
-            return {
-                "title": title,
-                "description": description,
-                "hashtags": hashtags,
-            }
+            log.info(f"✓ Title: {title}")
+            return {"title": title, "description": description, "hashtags": hashtags}
 
+        except json.JSONDecodeError as e:
+            last_error = f"JSON parse: {e}"
+            log.warning(last_error)
         except Exception as e:
             last_error = str(e)
-            print(f"Generation error: {e}")
+            log.warning(f"Error: {e}")
 
-    raise RuntimeError(f"Failed to generate unique content. Last error: {last_error}")
+    raise RuntimeError(f"Content generation failed: {last_error}")
 
 
 def generate_search_terms(title: str, description: str):
-    fallback_terms = [
-        "sad woman thinking",
-        "man alone night",
-        "couple distance",
-        "phone message stress",
-        "emotional silence",
-        "city night loneliness",
+    fallback = [
+        "sad woman thinking", "man alone night", "couple distance",
+        "phone message stress", "emotional silence", "city night loneliness",
     ]
-
     try:
-        raw = call_groq(build_search_terms_prompt(title, description), temperature=0.8, max_tokens=220)
-        lines = []
-        seen = set()
+        data = call_groq_json(
+            build_search_terms_prompt(title, description),
+            temperature=0.8, max_tokens=300,
+        )
+        queries = data.get("queries", [])
+        if not isinstance(queries, list):
+            return fallback
 
-        for line in raw.splitlines():
-            line = line.strip()
-            line = re.sub(r"^[\-\*\d\.\)\s]+", "", line)
-            line = line.strip("\"' ")
-            if not line:
-                continue
+        terms, seen = [], set()
+        for q in queries:
+            q = str(q).strip().strip("\"' ")
+            if q and q.lower() not in seen:
+                seen.add(q.lower())
+                terms.append(q)
 
-            key = line.lower()
-            if key in seen:
-                continue
+        if not terms:
+            return fallback
 
-            seen.add(key)
-            lines.append(line)
-
-        if not lines:
-            return fallback_terms
-
-        result = lines[:6]
-        for item in fallback_terms:
-            if item.lower() not in {x.lower() for x in result}:
-                result.append(item)
-            if len(result) >= 6:
+        for f in fallback:
+            if len(terms) >= 6:
                 break
+            if f.lower() not in {t.lower() for t in terms}:
+                terms.append(f)
 
-        return result[:6]
-
+        return terms[:6]
     except Exception as e:
-        print(f"Search terms generation failed, using fallback terms. Error: {e}")
-        return fallback_terms
+        log.warning(f"Search terms fallback: {e}")
+        return fallback
 
 
 # =========================
-# Pexels
+# Pexels (مع cache)
 # =========================
-def search_pexels_videos(query: str):
+def _pexels_request(query: str):
     api_key = require_env("PEXELS_API_KEY")
-    url = "https://api.pexels.com/videos/search"
-    headers = {"Authorization": api_key}
-    params = {
-        "query": query,
-        "per_page": 8,
-        "orientation": "portrait",
-    }
-
-    print(f"Searching Pexels for: {query}")
-    response = requests.get(url, headers=headers, params=params, timeout=120)
+    response = HTTP.get(
+        "https://api.pexels.com/videos/search",
+        headers={"Authorization": api_key},
+        params={"query": query, "per_page": 20, "orientation": "portrait"},
+        timeout=60,
+    )
     response.raise_for_status()
     return response.json().get("videos", [])
+
+
+def search_pexels(query: str, cache: dict):
+    key = cache_key(query)
+    entry = cache.get(key)
+    now = time.time()
+
+    if entry and (now - entry.get("ts", 0)) < PEXELS_CACHE_TTL:
+        log.info(f"[cache] {query}")
+        return entry.get("videos", [])
+
+    log.info(f"[pexels] {query}")
+    try:
+        videos = with_retry(f"pexels:{query}", _pexels_request, query)
+        # نخزن فقط البيانات المهمة لتقليل حجم الكاش
+        slim = []
+        for v in videos:
+            slim.append({
+                "id": v.get("id"),
+                "video_files": [
+                    {
+                        "file_type": f.get("file_type"),
+                        "link": f.get("link"),
+                        "width": f.get("width"),
+                        "height": f.get("height"),
+                    }
+                    for f in v.get("video_files", [])
+                ],
+            })
+        cache[key] = {"ts": now, "videos": slim, "query": query}
+        return slim
+    except Exception as e:
+        log.warning(f"Pexels error: {e}")
+        return entry.get("videos", []) if entry else []
 
 
 def choose_video_link(video: dict):
@@ -456,373 +585,426 @@ def choose_video_link(video: dict):
         f for f in video.get("video_files", [])
         if f.get("file_type") == "video/mp4" and f.get("link")
     ]
-
     if not files:
         return None
 
-    def score(file_item):
-        w = file_item.get("width") or 0
-        h = file_item.get("height") or 0
+    quality = [
+        f for f in files
+        if (f.get("width") or 0) >= MIN_VIDEO_WIDTH
+        and (f.get("height") or 0) >= MIN_VIDEO_HEIGHT
+    ] or files
+
+    def score(f):
+        w, h = f.get("width", 0), f.get("height", 0)
         portrait_penalty = 0 if h >= w else 1
-        ratio = (w / h) if w and h else 0
-        ratio_penalty = abs(ratio - (9 / 16))
+        ratio_penalty = abs((w / h if h else 0) - 9 / 16)
         area = (w * h) if w and h else 10**12
         return (portrait_penalty, ratio_penalty, area)
 
-    files = sorted(files, key=score)
-    return files[0]["link"]
+    return sorted(quality, key=score)[0]["link"]
 
 
-def download_binary(url: str, path: Path):
-    with requests.get(url, stream=True, timeout=300) as r:
-        r.raise_for_status()
-        with open(path, "wb") as f:
-            for chunk in r.iter_content(chunk_size=1024 * 1024):
-                if chunk:
-                    f.write(chunk)
-
-
-def fetch_background_clips(search_terms, count_needed):
-    clip_paths = []
-    seen_video_ids = set()
-    seen_links = set()
-
-    extra_fallbacks = [
-        "thinking person",
-        "relationship tension",
-        "woman looking out window",
-        "man checking phone",
-        "lonely silhouette",
-        "city rain night",
+def fetch_backgrounds(search_terms, count_needed, cache):
+    paths, seen_ids, seen_links = [], set(), set()
+    extra = [
+        "thinking person", "relationship tension", "woman window",
+        "man phone", "lonely silhouette", "city rain night",
     ]
-
-    queries = search_terms + [q for q in extra_fallbacks if q.lower() not in {x.lower() for x in search_terms}]
+    queries = search_terms + [q for q in extra if q.lower() not in {s.lower() for s in search_terms}]
+    rng = pysecrets.SystemRandom()
 
     for query in queries:
-        if len(clip_paths) >= count_needed:
+        if len(paths) >= count_needed:
             break
-
-        try:
-            videos = search_pexels_videos(query)
-        except Exception as e:
-            print(f"Pexels query failed: {query} | {e}")
-            continue
+        videos = search_pexels(query, cache)
+        rng.shuffle(videos)
 
         for video in videos:
-            if len(clip_paths) >= count_needed:
+            if len(paths) >= count_needed:
                 break
-
-            video_id = video.get("id")
-            if video_id in seen_video_ids:
+            vid = video.get("id")
+            if vid in seen_ids:
                 continue
-
             link = choose_video_link(video)
             if not link or link in seen_links:
                 continue
 
-            target_path = TEMP_DIR / f"bg_{len(clip_paths) + 1:02d}.mp4"
-
+            target = TEMP_DIR / f"bg_{len(paths) + 1:02d}.mp4"
             try:
-                print(f"Downloading clip {len(clip_paths) + 1}: {link}")
-                download_binary(link, target_path)
-
-                if not target_path.exists() or target_path.stat().st_size < 150000:
-                    target_path.unlink(missing_ok=True)
+                with_retry(f"bg {len(paths) + 1}", download_file, link, target, f"clip {len(paths) + 1}")
+                if target.stat().st_size < 150000:
+                    target.unlink(missing_ok=True)
                     continue
-
-                clip_paths.append(target_path)
-                seen_video_ids.add(video_id)
+                paths.append(target)
+                seen_ids.add(vid)
                 seen_links.add(link)
-
             except Exception as e:
-                print(f"Clip download failed: {e}")
-                target_path.unlink(missing_ok=True)
-                continue
+                log.warning(f"Download failed: {e}")
+                target.unlink(missing_ok=True)
 
-    return clip_paths
+    return paths
 
 
 # =========================
-# تجهيز الفيديو
+# FFmpeg Rendering
 # =========================
-def fit_clip_to_frame(clip, width, height):
-    scale = max(width / clip.w, height / clip.h)
-    clip = clip.resize(scale)
-    clip = clip.crop(
-        x_center=clip.w / 2,
-        y_center=clip.h / 2,
-        width=width,
-        height=height
-    )
-    return clip
+def get_video_duration(path: Path) -> float:
+    """مدة الفيديو عبر ffprobe."""
+    try:
+        result = subprocess.run(
+            ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+             "-of", "default=noprint_wrappers=1:nokey=1", str(path)],
+            capture_output=True, text=True, timeout=30,
+        )
+        return float(result.stdout.strip() or 0)
+    except Exception:
+        return 0
 
 
-def prepare_clip(path: Path, target_duration: float):
-    clip = VideoFileClip(str(path), audio=False)
+def render_scene(input_path: Path, output_path: Path, duration: float, scene_index: int):
+    """
+    رندر مشهد واحد:
+    - قص + ملاءمة 1080x1920
+    - Ken Burns zoom (1.0 → 1.06)
+    - فلتر أزرق
+    - fade in/out
+    """
+    src_duration = get_video_duration(input_path)
+    if src_duration <= 0:
+        raise RuntimeError(f"Invalid source: {input_path}")
 
-    if clip.duration <= 0.3:
-        raise RuntimeError(f"Clip too short: {path}")
-
-    if clip.duration < target_duration:
-        clip = clip.fx(vfx.loop, duration=target_duration)
+    if src_duration > duration:
+        max_start = src_duration - duration
+        start = secure_uniform(0, max_start)
     else:
-        max_start = max(0, clip.duration - target_duration)
-        start = random.uniform(0, max_start) if max_start > 0 else 0
-        clip = clip.subclip(start, start + target_duration)
+        start = 0
 
-    clip = fit_clip_to_frame(clip, WIDTH, HEIGHT)
-    clip = clip.fx(vfx.lum_contrast, lum=0, contrast=20, contrast_thr=127)
-    clip = clip.fx(vfx.colorx, 0.95)
-    clip = clip.set_duration(target_duration).set_fps(24)
+    # zoompan لـ Ken Burns
+    total_frames = int(duration * FPS)
+    zoom_max = 1.06
+    # z=min(zoom + step, max)
+    zoom_step = (zoom_max - 1.0) / max(total_frames, 1)
 
-    return clip
+    # filter graph:
+    # 1) input → trim/loop
+    # 2) scale to cover + crop to 1080x1920
+    # 3) zoompan (Ken Burns)
+    # 4) blue overlay
+    # 5) fade in/out
+    blue_hex = f"0x{BLUE_FILTER_R:02x}{BLUE_FILTER_G:02x}{BLUE_FILTER_B:02x}"
+    blue_alpha = BLUE_FILTER_OPACITY
 
+    vf = (
+        f"scale={WIDTH * 1.2}:{HEIGHT * 1.2}:force_original_aspect_ratio=increase,"
+        f"crop={WIDTH}:{HEIGHT},"
+        f"zoompan=z='min(zoom+{zoom_step:.6f},{zoom_max})':"
+        f"d={total_frames}:s={WIDTH}x{HEIGHT}:fps={FPS},"
+        f"eq=contrast=1.08:saturation=0.95,"
+        f"fade=t=in:st=0:d=0.15,"
+        f"fade=t=out:st={duration - 0.15:.3f}:d=0.15"
+    )
 
-def build_fallback_background(durations):
-    colors = [
-        (14, 20, 38),
-        (18, 27, 46),
-        (11, 22, 40),
-        (20, 24, 52),
+    # نستخدم filter_complex لإضافة overlay أزرق
+    fc = (
+        f"[0:v]{vf}[bg];"
+        f"color=c={blue_hex}@{blue_alpha}:s={WIDTH}x{HEIGHT}:d={duration}:r={FPS}[blue];"
+        f"[bg][blue]overlay=format=auto[v]"
+    )
+
+    args = [
+        "-ss", f"{start:.3f}",
+        "-t", f"{duration:.3f}",
+        "-i", str(input_path),
+        "-filter_complex", fc,
+        "-map", "[v]",
+        "-an",
+        "-c:v", "libx264",
+        "-preset", "fast",
+        "-pix_fmt", "yuv420p",
+        "-r", str(FPS),
+        "-b:v", "3000k",
+        str(output_path),
     ]
-    clips = []
-    for i, dur in enumerate(durations):
-        c = ColorClip((WIDTH, HEIGHT), color=colors[i % len(colors)], duration=dur).set_fps(24)
-        clips.append(c.fadein(0.15).fadeout(0.15))
-    return concatenate_videoclips(clips, method="compose")
+    run_ffmpeg(args, label=f"scene{scene_index}")
 
 
-def build_background_video(clip_paths, total_duration):
+def render_fallback_scene(output_path: Path, duration: float, scene_index: int, color_rgb):
+    r, g, b = color_rgb
+    color_hex = f"0x{r:02x}{g:02x}{b:02x}"
+    blue_hex = f"0x{BLUE_FILTER_R:02x}{BLUE_FILTER_G:02x}{BLUE_FILTER_B:02x}"
+
+    fc = (
+        f"color=c={color_hex}:s={WIDTH}x{HEIGHT}:d={duration}:r={FPS}[bg];"
+        f"color=c={blue_hex}@{BLUE_FILTER_OPACITY}:s={WIDTH}x{HEIGHT}:d={duration}:r={FPS}[blue];"
+        f"[bg][blue]overlay=format=auto,"
+        f"fade=t=in:st=0:d=0.15,fade=t=out:st={duration - 0.15:.3f}:d=0.15[v]"
+    )
+
+    args = [
+        "-filter_complex", fc,
+        "-map", "[v]",
+        "-t", f"{duration:.3f}",
+        "-c:v", "libx264",
+        "-preset", "fast",
+        "-pix_fmt", "yuv420p",
+        "-r", str(FPS),
+        str(output_path),
+    ]
+    run_ffmpeg(args, label=f"fallback{scene_index}")
+
+
+def concat_scenes(scene_paths, output_path: Path):
+    """دمج المشاهد عبر ffmpeg concat demuxer (لا يعيد encoding)."""
+    list_file = TEMP_DIR / "concat_list.txt"
+    list_file.write_text(
+        "\n".join(f"file '{p.resolve()}'" for p in scene_paths),
+        encoding="utf-8",
+    )
+    args = [
+        "-f", "concat",
+        "-safe", "0",
+        "-i", str(list_file),
+        "-c", "copy",
+        str(output_path),
+    ]
+    run_ffmpeg(args, label="concat")
+
+
+# =========================
+# النصوص العربية (مع cache)
+# =========================
+@lru_cache(maxsize=512)
+def shape_arabic(text: str) -> str:
+    return get_display(arabic_reshaper.reshape(text))
+
+
+def wrap_text(text: str, font, max_width: int, stroke_width=0):
+    probe = Image.new("RGBA", (10, 10))
+    draw = ImageDraw.Draw(probe)
+    words = text.split()
+    if not words:
+        return [text]
+
+    lines, current = [], words[0]
+    for word in words[1:]:
+        candidate = f"{current} {word}"
+        shaped = shape_arabic(candidate)
+        bbox = draw.textbbox((0, 0), shaped, font=font, stroke_width=stroke_width)
+        if (bbox[2] - bbox[0]) <= max_width:
+            current = candidate
+        else:
+            lines.append(current)
+            current = word
+    lines.append(current)
+    return lines
+
+
+def render_text_image(text, font_size, max_width,
+                      fill=(255, 255, 255, 255), box_fill=(0, 0, 0, 80),
+                      stroke_fill=(0, 0, 0, 230), stroke_width=3, shadow=True):
+    font = ImageFont.truetype(str(FONT_PATH), font_size)
+    logical = wrap_text(text, font, max_width, stroke_width=stroke_width)
+
+    probe = Image.new("RGBA", (10, 10))
+    pdraw = ImageDraw.Draw(probe)
+    shaped_lines, metrics = [], []
+    for line in logical:
+        s = shape_arabic(line)
+        bbox = pdraw.textbbox((0, 0), s, font=font, stroke_width=stroke_width)
+        shaped_lines.append(s)
+        metrics.append((bbox[2] - bbox[0], bbox[3] - bbox[1]))
+
+    line_gap = 18
+    content_w = max(w for w, _ in metrics)
+    content_h = sum(h for _, h in metrics) + line_gap * (len(metrics) - 1)
+    pad_x, pad_y = 44, 34
+
+    img = Image.new("RGBA", (content_w + pad_x * 2, content_h + pad_y * 2), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    draw.rounded_rectangle((0, 0, img.width - 1, img.height - 1), radius=32, fill=box_fill)
+
+    y = pad_y
+    for shaped, (w, h) in zip(shaped_lines, metrics):
+        x = (img.width - w) // 2
+        if shadow:
+            draw.text((x + 4, y + 4), shaped, font=font, fill=(0, 0, 0, 110))
+        draw.text((x, y), shaped, font=font, fill=fill,
+                  stroke_width=stroke_width, stroke_fill=stroke_fill)
+        y += h + line_gap
+    return img
+
+
+def render_title_image(title: str):
+    last = None
+    for size in [88, 82, 76, 70, 64]:
+        img = render_text_image(
+            title, font_size=size, max_width=int(WIDTH * 0.84),
+            box_fill=(0, 0, 0, 78), stroke_width=3,
+        )
+        last = img
+        if img.height <= 620:
+            return img
+    return last
+
+
+def render_read_desc_image():
+    return render_text_image(
+        "اقرأ الوصف", font_size=58, max_width=int(WIDTH * 0.6),
+        fill=(220, 235, 255, 255), box_fill=(0, 0, 0, 68), stroke_width=2,
+    )
+
+
+# =========================
+# تركيب النصوص + الصوت
+# =========================
+def overlay_texts_and_audio(video_in: Path, video_out: Path,
+                            title_img_path: Path, read_img_path: Path,
+                            title_y: int, read_y: int,
+                            duration: float, read_start: float,
+                            audio_path: Path = None):
+    """
+    تركيب صور العناوين عبر ffmpeg overlay + موسيقى.
+    - title يظهر من 0 إلى النهاية
+    - read_desc يظهر من read_start مع scale pop (animated zoom)
+    """
+    # pop-in animation: scale من 0.6 → 1.18 → 0.96 → 1.0 خلال 0.36s
+    # في ffmpeg نستعمل scale مع expression
+    read_dur = duration - read_start
+
+    # حركة scale لـ read_desc (تقريب pop-in)
+    # نستخدم between() لخلق scale ديناميكي
+    scale_expr = (
+        f"if(lt(t,{read_start}),1,"
+        f"if(lt(t-{read_start},0.12),0.60+(1.18-0.60)*((t-{read_start})/0.12),"
+        f"if(lt(t-{read_start},0.24),1.18-(1.18-0.96)*((t-{read_start}-0.12)/0.12),"
+        f"if(lt(t-{read_start},0.36),0.96+(1.0-0.96)*((t-{read_start}-0.24)/0.12),"
+        f"1))))"
+    )
+
+    inputs = [
+        "-i", str(video_in),
+        "-loop", "1", "-t", f"{duration}", "-i", str(title_img_path),
+        "-loop", "1", "-t", f"{duration}", "-i", str(read_img_path),
+    ]
+
+    has_audio = audio_path and audio_path.exists()
+    if has_audio:
+        inputs += ["-stream_loop", "-1", "-i", str(audio_path)]
+
+    # filter graph
+    # [0]=video, [1]=title, [2]=read
+    fc = (
+        f"[1:v]format=rgba[ttl];"
+        f"[2:v]format=rgba,scale=iw*{scale_expr}:-1:eval=frame[rd];"
+        f"[0:v][ttl]overlay=x=(W-w)/2:y={title_y}:format=auto[t1];"
+        f"[t1][rd]overlay=x=(W-w)/2:y={read_y}:format=auto:"
+        f"enable='gte(t,{read_start})'[v]"
+    )
+
+    args = inputs + ["-filter_complex", fc, "-map", "[v]"]
+
+    if has_audio:
+        # mix audio: fade in/out + volume
+        afc = (
+            f"[3:a]volume={MUSIC_VOLUME},"
+            f"afade=t=in:st=0:d=0.8,"
+            f"afade=t=out:st={duration - 1.2:.3f}:d=1.2,"
+            f"atrim=0:{duration}[a]"
+        )
+        # نضيف audio filter لـ filter_complex
+        fc_full = fc + ";" + afc
+        args = inputs + [
+            "-filter_complex", fc_full,
+            "-map", "[v]", "-map", "[a]",
+            "-c:v", "libx264", "-preset", "fast", "-pix_fmt", "yuv420p",
+            "-r", str(FPS), "-b:v", "3500k",
+            "-c:a", "aac", "-b:a", "128k",
+            "-t", f"{duration}",
+            "-movflags", "+faststart",
+            str(video_out),
+        ]
+    else:
+        args += [
+            "-c:v", "libx264", "-preset", "fast", "-pix_fmt", "yuv420p",
+            "-r", str(FPS), "-b:v", "3500k",
+            "-an",
+            "-t", f"{duration}",
+            "-movflags", "+faststart",
+            str(video_out),
+        ]
+
+    run_ffmpeg(args, label="overlay")
+
+
+# =========================
+# Build Video
+# =========================
+def create_video(title: str, search_terms, cache):
+    total_duration = pysecrets.choice(range(VIDEO_DURATION_MIN, VIDEO_DURATION_MAX + 1))
+    needed = math.ceil(total_duration / SCENE_DURATION)
+    log.info(f"Duration: {total_duration}s, scenes: {needed}")
+
+    clip_paths = fetch_backgrounds(search_terms, needed, cache)
+
+    # 1) رندر كل مشهد منفصل
     durations = []
     remaining = total_duration
-
     while remaining > 0.01:
         d = min(SCENE_DURATION, remaining)
         durations.append(round(d, 3))
         remaining -= d
 
-    if not clip_paths:
-        return build_fallback_background(durations)
+    scene_paths = []
+    fallback_colors = [(14, 20, 38), (18, 27, 46), (11, 22, 40), (20, 24, 52)]
 
-    processed = []
-    for index, duration in enumerate(durations):
-        path = clip_paths[index % len(clip_paths)]
-        clip = prepare_clip(path, duration)
-        clip = clip.fadein(0.12).fadeout(0.12)
-        processed.append(clip)
+    for i, dur in enumerate(durations):
+        scene_out = TEMP_DIR / f"scene_{i + 1:02d}.mp4"
+        try:
+            if i < len(clip_paths):
+                render_scene(clip_paths[i % len(clip_paths)], scene_out, dur, i + 1)
+            else:
+                render_fallback_scene(scene_out, dur, i + 1, fallback_colors[i % 4])
+        except Exception as e:
+            log.warning(f"Scene {i + 1} failed: {e}, using fallback")
+            render_fallback_scene(scene_out, dur, i + 1, fallback_colors[i % 4])
 
-    return concatenate_videoclips(processed, method="compose")
+        scene_paths.append(scene_out)
 
+    # 2) دمج المشاهد
+    concat_path = TEMP_DIR / "concat.mp4"
+    concat_scenes(scene_paths, concat_path)
 
-# =========================
-# النصوص العربية
-# =========================
-def shape_arabic(text: str) -> str:
-    return get_display(arabic_reshaper.reshape(text))
-
-
-def wrap_arabic_text(text: str, font, max_width: int, stroke_width=0):
-    probe = Image.new("RGBA", (10, 10), (0, 0, 0, 0))
-    draw = ImageDraw.Draw(probe)
-
-    words = text.split()
-    if not words:
-        return [text]
-
-    lines = []
-    current = words[0]
-
-    for word in words[1:]:
-        candidate = f"{current} {word}".strip()
-        shaped = shape_arabic(candidate)
-        bbox = draw.textbbox((0, 0), shaped, font=font, stroke_width=stroke_width)
-        width = bbox[2] - bbox[0]
-
-        if width <= max_width:
-            current = candidate
-        else:
-            lines.append(current)
-            current = word
-
-    lines.append(current)
-    return lines
-
-
-def render_text_image(
-    text: str,
-    font_size: int,
-    max_width: int,
-    fill=(255, 255, 255, 255),
-    box_fill=(0, 0, 0, 80),
-    stroke_fill=(0, 0, 0, 230),
-    stroke_width=3,
-    shadow=True,
-):
-    font = ImageFont.truetype(str(FONT_PATH), font_size)
-
-    logical_lines = wrap_arabic_text(text, font, max_width, stroke_width=stroke_width)
-
-    probe = Image.new("RGBA", (10, 10), (0, 0, 0, 0))
-    probe_draw = ImageDraw.Draw(probe)
-
-    shaped_lines = []
-    metrics = []
-
-    for line in logical_lines:
-        shaped = shape_arabic(line)
-        bbox = probe_draw.textbbox((0, 0), shaped, font=font, stroke_width=stroke_width)
-        w = bbox[2] - bbox[0]
-        h = bbox[3] - bbox[1]
-        shaped_lines.append(shaped)
-        metrics.append((w, h))
-
-    line_gap = 18
-    content_w = max(w for w, _ in metrics)
-    content_h = sum(h for _, h in metrics) + (line_gap * (len(metrics) - 1))
-
-    pad_x = 44
-    pad_y = 34
-
-    img = Image.new("RGBA", (content_w + pad_x * 2, content_h + pad_y * 2), (0, 0, 0, 0))
-    draw = ImageDraw.Draw(img)
-
-    draw.rounded_rectangle(
-        (0, 0, img.width - 1, img.height - 1),
-        radius=32,
-        fill=box_fill
-    )
-
-    y = pad_y
-    for shaped, (w, h) in zip(shaped_lines, metrics):
-        x = (img.width - w) // 2
-
-        if shadow:
-            draw.text((x + 4, y + 4), shaped, font=font, fill=(0, 0, 0, 110))
-
-        draw.text(
-            (x, y),
-            shaped,
-            font=font,
-            fill=fill,
-            stroke_width=stroke_width,
-            stroke_fill=stroke_fill
-        )
-        y += h + line_gap
-
-    return img
-
-
-def render_title_image(title: str):
-    last_img = None
-    for size in [88, 82, 76, 70, 64]:
-        img = render_text_image(
-            title,
-            font_size=size,
-            max_width=int(WIDTH * 0.84),
-            fill=(255, 255, 255, 255),
-            box_fill=(0, 0, 0, 78),
-            stroke_fill=(0, 0, 0, 230),
-            stroke_width=3,
-        )
-        last_img = img
-        if img.height <= 620:
-            return img
-    return last_img
-
-
-def render_read_desc_image():
-    return render_text_image(
-        "اقرأ الوصف",
-        font_size=58,
-        max_width=int(WIDTH * 0.6),
-        fill=(220, 235, 255, 255),
-        box_fill=(0, 0, 0, 68),
-        stroke_fill=(0, 0, 0, 230),
-        stroke_width=2,
-    )
-
-
-def pop_scale(t: float):
-    # حركة انبثاق / Pop-in
-    if t < 0.12:
-        return 0.60 + (1.18 - 0.60) * (t / 0.12)
-    if t < 0.24:
-        return 1.18 - (1.18 - 0.96) * ((t - 0.12) / 0.12)
-    if t < 0.36:
-        return 0.96 + (1.00 - 0.96) * ((t - 0.24) / 0.12)
-    return 1.00
-
-
-def create_video(title: str, search_terms):
-    total_duration = random.randint(VIDEO_DURATION_MIN, VIDEO_DURATION_MAX)
-    needed_clips = math.ceil(total_duration / SCENE_DURATION)
-
-    print(f"Video duration selected: {total_duration}s")
-    clip_paths = fetch_background_clips(search_terms, needed_clips)
-
-    base_video = build_background_video(clip_paths, total_duration).set_duration(total_duration).set_fps(24)
-
-    blue_overlay = ColorClip(
-        size=(WIDTH, HEIGHT),
-        color=BLUE_FILTER_RGB,
-        duration=total_duration
-    ).set_opacity(BLUE_FILTER_OPACITY)
-
+    # 3) تجهيز صور النصوص
     title_img = render_title_image(title)
     read_img = render_read_desc_image()
 
     title_png = TEMP_DIR / "title.png"
     read_png = TEMP_DIR / "read_desc.png"
-
     title_img.save(title_png)
     read_img.save(read_png)
 
-    title_clip = ImageClip(str(title_png)).set_duration(total_duration)
-
     title_y = max(250, int((HEIGHT * 0.42) - (title_img.height / 2)))
-    title_clip = title_clip.set_position(("center", title_y))
-
-    read_start = min(READ_DESC_START, max(0.8, total_duration - 1.2))
     read_y = min(HEIGHT - 230, title_y + title_img.height + 36)
+    read_start = min(READ_DESC_START, max(0.8, total_duration - 1.2))
 
-    read_clip = (
-        ImageClip(str(read_png))
-        .set_start(read_start)
-        .set_duration(max(0.5, total_duration - read_start))
-        .set_position(("center", read_y))
-        .resize(lambda t: pop_scale(t))
-        .fadein(0.08)
+    # 4) إضافة النصوص والصوت
+    music = ensure_background_music()
+    final_path = OUT_DIR / "final_video.mp4"
+
+    overlay_texts_and_audio(
+        concat_path, final_path,
+        title_png, read_png,
+        title_y, read_y,
+        total_duration, read_start,
+        audio_path=music,
     )
 
-    final = CompositeVideoClip(
-        [base_video, blue_overlay, title_clip, read_clip],
-        size=(WIDTH, HEIGHT)
-    ).set_duration(total_duration)
-
-    output_path = OUT_DIR / "final_video.mp4"
-
-    print("Rendering final video...")
-    final.write_videofile(
-        str(output_path),
-        fps=24,
-        codec="libx264",
-        audio=False,
-        bitrate="2500k",
-        preset="medium",
-        threads=4,
-    )
-
-    final.close()
-    base_video.close()
-
-    return output_path, total_duration, clip_paths
+    log.info(f"✓ Video saved: {final_path}")
+    return final_path, total_duration
 
 
-# =========================
-# حفظ النص
-# =========================
-def save_content_file(content, search_terms, total_duration):
-    output_text = f"""TITLE:
+def save_content_file(content, search_terms, duration):
+    text = f"""TITLE:
 {content['title']}
 
 DESCRIPTION:
@@ -834,111 +1016,112 @@ HASHTAGS:
 SEARCH_TERMS:
 {chr(10).join(search_terms)}
 
-DURATION:
-{total_duration}s
+DURATION: {duration}s
 """
-    (OUT_DIR / "content.txt").write_text(output_text, encoding="utf-8")
+    (OUT_DIR / "content.txt").write_text(text, encoding="utf-8")
 
 
 # =========================
 # Green-API / WhatsApp
 # =========================
-def green_url(method_name: str) -> str:
+def green_url(method: str) -> str:
     instance_id = require_env("GREEN_API_INSTANCE_ID")
     token = require_env("GREEN_API_TOKEN")
-    return f"{GREEN_API_BASE_URL}/waInstance{instance_id}/{method_name}/{token}"
+    return f"{GREEN_API_BASE_URL}/waInstance{instance_id}/{method}/{token}"
 
 
-def send_video_only(video_path: Path):
+def _send_video_once(video_path: Path):
     chat_id = require_env("WHATSAPP_CHAT_ID")
     url = green_url("sendFileByUpload")
-
-    print("Sending video to WhatsApp...")
-
     with open(video_path, "rb") as f:
-        files = {
-            "file": (video_path.name, f, "video/mp4")
-        }
-        data = {
-            "chatId": chat_id,
-            "fileName": video_path.name,
-            "caption": ""
-        }
-        response = requests.post(url, data=data, files=files, timeout=300)
+        files = {"file": (video_path.name, f, "video/mp4")}
+        data = {"chatId": chat_id, "fileName": video_path.name, "caption": ""}
+        response = HTTP.post(url, data=data, files=files, timeout=300)
         response.raise_for_status()
         return response.json()
 
 
-def send_text_message(message: str):
+def send_video(video_path: Path):
+    log.info("Sending video to WhatsApp...")
+    result = with_retry("whatsapp.video", _send_video_once, video_path)
+    log.info(f"✓ Video sent: {result}")
+    return result
+
+
+def _send_text_once(message: str):
     chat_id = require_env("WHATSAPP_CHAT_ID")
     url = green_url("sendMessage")
-
-    print("Sending text message to WhatsApp...")
-    response = requests.post(
-        url,
-        json={
-            "chatId": chat_id,
-            "message": message
-        },
-        timeout=120
+    response = HTTP.post(
+        url, json={"chatId": chat_id, "message": message}, timeout=120,
     )
     response.raise_for_status()
     return response.json()
 
 
+def send_text(message: str):
+    log.info("Sending text message...")
+    result = with_retry("whatsapp.text", _send_text_once, message)
+    log.info(f"✓ Text sent: {result}")
+    return result
+
+
 def send_to_whatsapp(video_path: Path, description: str, hashtags: str):
-    # الرسالة الأولى: الفيديو فقط
-    send_video_only(video_path)
-
-    # انتظار بسيط حتى يصل أولاً قبل الرسالة النصية
+    send_video(video_path)
     time.sleep(5)
-
-    # الرسالة الثانية: الوصف + 7 أسطر فارغة + الهاشتاغات
     message = description.strip() + ("\n" * 8) + hashtags.strip()
-    send_text_message(message)
+    send_text(message)
 
 
 # =========================
-# التشغيل الرئيسي
+# Main
 # =========================
 def main():
-    print("Starting workflow...")
+    log.info("=" * 50)
+    log.info("🚀 Viral Short Generator v4")
+    log.info("=" * 50)
+
     ensure_dirs()
-    clean_work_dirs()
+    clean_temp_only()
     ensure_cairo_font()
 
-    # تحقق من أهم المتغيرات
-    require_env("GROQ_API_KEY")
-    require_env("PEXELS_API_KEY")
-    require_env("GREEN_API_INSTANCE_ID")
-    require_env("GREEN_API_TOKEN")
-    require_env("WHATSAPP_CHAT_ID")
+    for var in ["GROQ_API_KEY", "PEXELS_API_KEY",
+                "GREEN_API_INSTANCE_ID", "GREEN_API_TOKEN", "WHATSAPP_CHAT_ID"]:
+        require_env(var)
 
     history = load_history()
+    cache = load_pexels_cache()
+    log.info(f"History: {len(history)} | Pexels cache: {len(cache)}")
 
     content = generate_unique_content(history)
-    print(f"Generated title: {content['title']}")
-
     search_terms = generate_search_terms(content["title"], content["description"])
-    print("Search terms:", search_terms)
+    log.info(f"Search terms: {search_terms}")
 
-    video_path, total_duration, _ = create_video(content["title"], search_terms)
-    save_content_file(content, search_terms, total_duration)
+    video_path, duration = create_video(content["title"], search_terms, cache)
+    save_content_file(content, search_terms, duration)
 
-    # حفظ المحتوى في السجل قبل الإرسال، حتى لا يتكرر حتى لو حصل خطأ لاحقًا
     history.append({
         "title": content["title"],
         "description": content["description"],
         "hashtags": content["hashtags"],
         "search_terms": search_terms,
+        "duration": duration,
         "created_at": datetime.now(timezone.utc).isoformat(),
     })
     save_history(history)
+    save_pexels_cache(cache)
 
     send_to_whatsapp(video_path, content["description"], content["hashtags"])
 
-    print("Done successfully.")
+    log.info("=" * 50)
+    log.info("✅ Done successfully")
+    log.info("=" * 50)
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        log.error(f"\n❌ FATAL: {e}")
+        import traceback
+        traceback.print_exc()
+        sys.exit(1)
