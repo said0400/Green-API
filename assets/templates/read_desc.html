@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @font-face {
+      font-family: 'NotoNaskh';
+      src: url('file://{{ font_path }}') format('truetype');
+      font-weight: bold;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      background: transparent !important;
+      font-family: 'NotoNaskh', 'Noto Naskh Arabic', 'Arial', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      min-height: 100vh;
+    }
+
+    .read-box {
+      background: #FF5F5F;
+      color: #FFFFFF;
+      padding: 28px 56px;
+      border-radius: 38px;
+      font-size: 58px;
+      font-weight: 900;
+      text-align: center;
+      line-height: 1.4;
+      box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.35),
+        0 3px 10px rgba(255, 95, 95, 0.4);
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+      direction: rtl;
+      unicode-bidi: plaintext;
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .arrow {
+      display: inline-block;
+      font-size: 52px;
+      animation: bounce 1.2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="read-box" id="content">
+    <span>{{ text }}</span>
+    <span class="arrow">👇</span>
+  </div>
+</body>
+</html>
