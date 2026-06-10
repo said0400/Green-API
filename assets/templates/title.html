@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @font-face {
+      font-family: 'NotoNaskh';
+      src: url('file://{{ font_path }}') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      background: transparent !important;
+      font-family: 'NotoNaskh', 'Noto Naskh Arabic', 'Arial', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      min-height: 100vh;
+    }
+
+    .title-box {
+      background: #FF5F5F;
+      color: #FFFFFF;
+      padding: {{ pad_y }}px {{ pad_x }}px;
+      border-radius: {{ radius }}px;
+      font-size: {{ font_size }}px;
+      font-weight: 900;
+      text-align: center;
+      line-height: 1.55;
+      max-width: {{ max_width }}px;
+      word-wrap: break-word;
+      box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35),
+        0 4px 12px rgba(255, 95, 95, 0.4),
+        inset 0 -3px 0 rgba(0, 0, 0, 0.08);
+      text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.25),
+        0 1px 2px rgba(0, 0, 0, 0.15);
+      letter-spacing: -0.5px;
+      direction: rtl;
+      unicode-bidi: plaintext;
+    }
+  </style>
+</head>
+<body>
+  <div class="title-box" id="content">{{ text }}</div>
+</body>
+</html>
