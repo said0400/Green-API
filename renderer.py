@@ -61,7 +61,7 @@ class HTMLRenderer:
 
             # انتظار تحميل الخط
             page.evaluate("document.fonts.ready")
-            page.wait_for_timeout(150)  # تأكيد إضافي
+            page.wait_for_timeout(200)  # تأكيد إضافي
 
             # التقاط العنصر فقط (مع خلفية شفافة)
             element = page.query_selector(selector)
@@ -92,11 +92,11 @@ def render_title_png(
     renderer: HTMLRenderer,
     title: str,
     output_path: Path,
-    font_size: int = 74,
+    font_size: int = 48,
     max_width: int = 880,
-    pad_x: int = 52,
-    pad_y: int = 36,
-    radius: int = 42,
+    pad_x: int = 44,
+    pad_y: int = 30,
+    radius: int = 36,
 ):
     """رسم عنوان رئيسي بصندوق أحمر مرجاني."""
     template = load_template("title.html")
@@ -116,12 +116,14 @@ def render_read_desc_png(
     renderer: HTMLRenderer,
     text: str,
     output_path: Path,
+    font_size: int = 38,
 ):
     """رسم نص 'اقرأ الوصف' مع سهم."""
     template = load_template("read_desc.html")
     html = template.render(
         text=text,
         font_path=str(FONT_PATH.resolve()).replace("\\", "/"),
+        font_size=font_size,
     )
     renderer.render(html, output_path, selector=".read-box")
 
@@ -131,19 +133,29 @@ def auto_fit_title(
     title: str,
     output_path: Path,
     max_height: int = 620,
+    preferred_size: int = 48,
 ):
     """
     رسم العنوان مع تجربة عدة أحجام للخط حتى يناسب الارتفاع.
-    يعيد ارتفاع الصورة النهائية.
+    يبدأ بـ preferred_size ثم يصغر إذا تجاوز max_height.
+    يعيد ارتفاع الصورة النهائية (بالحجم الحقيقي وليس Retina).
     """
     from PIL import Image
 
-    for size in [78, 72, 66, 60, 54, 48]:
+    # سلسلة الأحجام: تبدأ بالمفضّل ثم تتدرج للأصغر
+    sizes = [preferred_size, 44, 40, 36, 32, 28]
+
+    for size in sizes:
         render_title_png(renderer, title, output_path, font_size=size)
         with Image.open(output_path) as img:
-            if img.height <= max_height * 2:  # *2 بسبب device_scale_factor=2
-                log.info(f"✓ Title fitted at font_size={size}")
-                return img.height // 2
-    # آخر محاولة بأصغر حجم
+            # *2 بسبب device_scale_factor=2
+            actual_height = img.height // 2
+            if actual_height <= max_height:
+                log.info(f"✓ Title fitted at font_size={size} (height={actual_height}px)")
+                return actual_height
+
+    # آخر محاولة (أصغر حجم)
     with Image.open(output_path) as img:
-        return img.height // 2
+        actual_height = img.height // 2
+        log.warning(f"⚠️ Title used smallest size, height={actual_height}px")
+        return actual_height
