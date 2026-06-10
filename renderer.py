@@ -125,7 +125,7 @@ def render_title_png(
         pad_y=pad_y,
         radius=radius,
     )
-    renderer.render(html, output_path, selector=".title-box")
+    renderer.render(html, output_path, selector=".title-wrapper")
 
 
 def render_read_desc_png(
@@ -141,7 +141,7 @@ def render_read_desc_png(
         font_base64=get_font_base64(),
         font_size=font_size,
     )
-    renderer.render(html, output_path, selector=".read-box")
+    renderer.render(html, output_path, selector=".read-wrapper")
 
 
 def auto_fit_title(
