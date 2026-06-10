@@ -1,11 +1,13 @@
 """
-Viral Short Generator v4.2 (No Audio)
+Viral Short Generator v4.3
+- Font: Noto Naskh Arabic Bold
+- Style: Red coral box + white clean text (like reference image)
 - JSON output من Groq
 - FFmpeg pipeline كامل
 - Cache لـ Pexels (24h)
 - Cache لـ shape_arabic
 - Logging احترافي
-- بدون موسيقى — فيديوهات صامتة
+- بدون موسيقى
 """
 import atexit
 import hashlib
@@ -56,7 +58,7 @@ FONT_DIR = ROOT / "assets" / "fonts"
 
 HISTORY_PATH = DATA_DIR / "history.json"
 PEXELS_CACHE_PATH = DATA_DIR / "pexels_cache.json"
-FONT_PATH = FONT_DIR / "Cairo-Bold.ttf"
+FONT_PATH = FONT_DIR / "NotoNaskhArabic-Bold.ttf"
 
 # الفيديو
 WIDTH = 1080
@@ -73,10 +75,17 @@ BLUE_FILTER_G = 27
 BLUE_FILTER_B = 74
 BLUE_FILTER_OPACITY = 0.35
 
+# ستايل النص (أحمر مرجاني)
+TEXT_BOX_COLOR = (255, 95, 95, 235)        # أحمر مرجاني #FF5F5F
+TEXT_FILL_COLOR = (255, 255, 255, 255)     # أبيض
+TEXT_BOX_RADIUS = 42                       # زوايا دائرية ناعمة
+TEXT_PAD_X = 52
+TEXT_PAD_Y = 36
+
 # الكاش والـ history
 HISTORY_MAX = 500
 DUPLICATE_LOOKBACK = 300
-PEXELS_CACHE_TTL = 24 * 3600  # 24 ساعة
+PEXELS_CACHE_TTL = 24 * 3600
 
 # الجودة
 MIN_VIDEO_WIDTH = 720
@@ -100,7 +109,7 @@ HTTP = httpx.Client(
     timeout=httpx.Timeout(120.0, connect=20.0),
     follow_redirects=True,
     http2=True,
-    headers={"User-Agent": "viral-short-generator/4.2"},
+    headers={"User-Agent": "viral-short-generator/4.3"},
 )
 
 
@@ -186,12 +195,12 @@ def download_file(url: str, path: Path, label="file"):
                     bar.update(len(chunk))
 
 
-def ensure_cairo_font():
+def ensure_font():
     """الخط مرفوع يدويًا في الريبو."""
     if not FONT_PATH.exists():
         raise RuntimeError(
             f"Font file not found at {FONT_PATH}\n"
-            f"Please upload Cairo-Bold.ttf to assets/fonts/"
+            f"Please upload NotoNaskhArabic-Bold.ttf to assets/fonts/"
         )
     if FONT_PATH.stat().st_size < 10000:
         raise RuntimeError(
@@ -637,7 +646,6 @@ def render_scene(input_path: Path, output_path: Path, duration: float, scene_ind
 
     blue_hex = f"0x{BLUE_FILTER_R:02x}{BLUE_FILTER_G:02x}{BLUE_FILTER_B:02x}"
 
-    # Ken Burns خفيف عبر scale ثابت + crop ديناميكي (sin/cos)
     vf = (
         f"scale={int(WIDTH * 1.15)}:{int(HEIGHT * 1.15)}:force_original_aspect_ratio=increase,"
         f"crop={int(WIDTH * 1.08)}:{int(HEIGHT * 1.08)},"
@@ -673,7 +681,6 @@ def render_scene(input_path: Path, output_path: Path, duration: float, scene_ind
 
 
 def render_fallback_scene(output_path: Path, duration: float, scene_index: int, color_rgb):
-    """مشهد احتياطي بلون ثابت."""
     r, g, b = color_rgb
     color_hex = f"0x{r:02x}{g:02x}{b:02x}"
     blue_hex = f"0x{BLUE_FILTER_R:02x}{BLUE_FILTER_G:02x}{BLUE_FILTER_B:02x}"
@@ -699,7 +706,6 @@ def render_fallback_scene(output_path: Path, duration: float, scene_index: int, 
 
 
 def concat_scenes(scene_paths, output_path: Path):
-    """دمج المشاهد عبر ffmpeg concat demuxer."""
     list_file = TEMP_DIR / "concat_list.txt"
     list_file.write_text(
         "\n".join(f"file '{p.resolve()}'" for p in scene_paths),
@@ -745,46 +751,57 @@ def wrap_text(text: str, font, max_width: int, stroke_width=0):
 
 
 def render_text_image(text, font_size, max_width,
-                      fill=(255, 255, 255, 255), box_fill=(0, 0, 0, 80),
-                      stroke_fill=(0, 0, 0, 230), stroke_width=3, shadow=True):
+                      fill=TEXT_FILL_COLOR, box_fill=TEXT_BOX_COLOR,
+                      box_radius=TEXT_BOX_RADIUS,
+                      pad_x=TEXT_PAD_X, pad_y=TEXT_PAD_Y,
+                      shadow=True):
+    """رسم نص في صندوق ملوّن بزوايا دائرية."""
     font = ImageFont.truetype(str(FONT_PATH), font_size)
-    logical = wrap_text(text, font, max_width, stroke_width=stroke_width)
+    logical = wrap_text(text, font, max_width, stroke_width=0)
 
     probe = Image.new("RGBA", (10, 10))
     pdraw = ImageDraw.Draw(probe)
     shaped_lines, metrics = [], []
     for line in logical:
         s = shape_arabic(line)
-        bbox = pdraw.textbbox((0, 0), s, font=font, stroke_width=stroke_width)
+        bbox = pdraw.textbbox((0, 0), s, font=font, stroke_width=0)
         shaped_lines.append(s)
         metrics.append((bbox[2] - bbox[0], bbox[3] - bbox[1]))
 
     line_gap = 18
     content_w = max(w for w, _ in metrics)
     content_h = sum(h for _, h in metrics) + line_gap * (len(metrics) - 1)
-    pad_x, pad_y = 44, 34
 
     img = Image.new("RGBA", (content_w + pad_x * 2, content_h + pad_y * 2), (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
-    draw.rounded_rectangle((0, 0, img.width - 1, img.height - 1), radius=32, fill=box_fill)
 
+    # الصندوق الأحمر بزوايا دائرية
+    draw.rounded_rectangle(
+        (0, 0, img.width - 1, img.height - 1),
+        radius=box_radius,
+        fill=box_fill,
+    )
+
+    # النص أبيض نظيف بدون stroke + ظل خفيف
     y = pad_y
     for shaped, (w, h) in zip(shaped_lines, metrics):
         x = (img.width - w) // 2
         if shadow:
-            draw.text((x + 4, y + 4), shaped, font=font, fill=(0, 0, 0, 110))
-        draw.text((x, y), shaped, font=font, fill=fill,
-                  stroke_width=stroke_width, stroke_fill=stroke_fill)
+            draw.text((x + 2, y + 3), shaped, font=font, fill=(0, 0, 0, 90))
+        draw.text((x, y), shaped, font=font, fill=fill)
         y += h + line_gap
+
     return img
 
 
 def render_title_image(title: str):
+    """عنوان بصندوق أحمر مرجاني + نص أبيض."""
     last = None
-    for size in [88, 82, 76, 70, 64]:
+    for size in [74, 68, 62, 56, 50]:
         img = render_text_image(
-            title, font_size=size, max_width=int(WIDTH * 0.84),
-            box_fill=(0, 0, 0, 78), stroke_width=3,
+            title,
+            font_size=size,
+            max_width=int(WIDTH * 0.82),
         )
         last = img
         if img.height <= 620:
@@ -793,9 +810,11 @@ def render_title_image(title: str):
 
 
 def render_read_desc_image():
+    """اقرأ الوصف بنفس الستايل."""
     return render_text_image(
-        "اقرأ الوصف", font_size=58, max_width=int(WIDTH * 0.6),
-        fill=(220, 235, 255, 255), box_fill=(0, 0, 0, 68), stroke_width=2,
+        "اقرأ الوصف",
+        font_size=56,
+        max_width=int(WIDTH * 0.55),
     )
 
 
@@ -809,7 +828,7 @@ def overlay_texts(video_in: Path, video_out: Path,
     """
     تركيب نصوص بدون صوت:
     - title: ظاهر طوال الفيديو
-    - read_desc: يظهر بعد read_start مع fade-in animation
+    - read_desc: يظهر بعد read_start مع fade-in
     """
     inputs = [
         "-i", str(video_in),
@@ -975,12 +994,12 @@ def send_to_whatsapp(video_path: Path, description: str, hashtags: str):
 # =========================
 def main():
     log.info("=" * 50)
-    log.info("🚀 Viral Short Generator v4.2 (No Audio)")
+    log.info("🚀 Viral Short Generator v4.3 (Noto Naskh + Red Style)")
     log.info("=" * 50)
 
     ensure_dirs()
     clean_temp_only()
-    ensure_cairo_font()
+    ensure_font()
 
     for var in ["GROQ_API_KEY", "PEXELS_API_KEY",
                 "GREEN_API_INSTANCE_ID", "GREEN_API_TOKEN", "WHATSAPP_CHAT_ID"]:
