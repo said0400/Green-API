@@ -817,8 +817,11 @@ def create_video(title: str, search_terms, cache):
     with HTMLRenderer(viewport_width=WIDTH, viewport_height=HEIGHT) as renderer:
         # توليد العنوان مع auto-fit للحجم
         title_height = auto_fit_title(
-            renderer, title, title_png, max_height=620
+            renderer, title, title_png,
+            max_height=620,
+            preferred_size=48,  # ← الحجم المفضّل
         )
+         
         # توليد نص "اقرأ الوصف"
         render_read_desc_png(renderer, "اقرأ الوصف", read_png)
 
