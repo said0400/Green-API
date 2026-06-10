@@ -1,11 +1,11 @@
 """
-Viral Short Generator v4.1
+Viral Short Generator v4.2 (No Audio)
 - JSON output من Groq
 - FFmpeg pipeline كامل
 - Cache لـ Pexels (24h)
 - Cache لـ shape_arabic
 - Logging احترافي
-- الخط مرفوع يدويًا في assets/fonts/Cairo-Bold.ttf
+- بدون موسيقى — فيديوهات صامتة
 """
 import atexit
 import hashlib
@@ -53,14 +53,10 @@ DATA_DIR = ROOT / "data"
 TEMP_DIR = ROOT / "temp"
 OUT_DIR = ROOT / "out"
 FONT_DIR = ROOT / "assets" / "fonts"
-MUSIC_DIR = ROOT / "assets" / "music"
 
 HISTORY_PATH = DATA_DIR / "history.json"
 PEXELS_CACHE_PATH = DATA_DIR / "pexels_cache.json"
 FONT_PATH = FONT_DIR / "Cairo-Bold.ttf"
-MUSIC_PATH = MUSIC_DIR / "background.mp3"
-
-DEFAULT_MUSIC_URL = "https://cdn.pixabay.com/audio/2023/01/12/audio_d0c6ff1bdd.mp3"
 
 # الفيديو
 WIDTH = 1080
@@ -76,9 +72,6 @@ BLUE_FILTER_R = 8
 BLUE_FILTER_G = 27
 BLUE_FILTER_B = 74
 BLUE_FILTER_OPACITY = 0.35
-
-# الصوت
-MUSIC_VOLUME = 0.30
 
 # الكاش والـ history
 HISTORY_MAX = 500
@@ -107,7 +100,7 @@ HTTP = httpx.Client(
     timeout=httpx.Timeout(120.0, connect=20.0),
     follow_redirects=True,
     http2=True,
-    headers={"User-Agent": "viral-short-generator/4.1"},
+    headers={"User-Agent": "viral-short-generator/4.2"},
 )
 
 
@@ -131,7 +124,7 @@ def require_env(name: str) -> str:
 
 
 def ensure_dirs():
-    for d in [DATA_DIR, TEMP_DIR, OUT_DIR, FONT_DIR, MUSIC_DIR]:
+    for d in [DATA_DIR, TEMP_DIR, OUT_DIR, FONT_DIR]:
         d.mkdir(parents=True, exist_ok=True)
     if not HISTORY_PATH.exists():
         HISTORY_PATH.write_text("[]", encoding="utf-8")
@@ -177,7 +170,7 @@ def run_ffmpeg(args, label="ffmpeg"):
 
 
 # =========================
-# تحميل الموارد
+# تحميل الملفات
 # =========================
 def download_file(url: str, path: Path, label="file"):
     with HTTP.stream("GET", url) as response:
@@ -194,7 +187,7 @@ def download_file(url: str, path: Path, label="file"):
 
 
 def ensure_cairo_font():
-    """الخط مرفوع يدويًا في الريبو، فقط نتأكد من وجوده."""
+    """الخط مرفوع يدويًا في الريبو."""
     if not FONT_PATH.exists():
         raise RuntimeError(
             f"Font file not found at {FONT_PATH}\n"
@@ -205,21 +198,6 @@ def ensure_cairo_font():
             f"Font file at {FONT_PATH} seems corrupt (size: {FONT_PATH.stat().st_size} bytes)"
         )
     log.info(f"✓ Font loaded: {FONT_PATH.name} ({FONT_PATH.stat().st_size} bytes)")
-
-
-def ensure_background_music():
-    if MUSIC_PATH.exists() and MUSIC_PATH.stat().st_size > 10000:
-        log.info(f"Music cached")
-        return MUSIC_PATH
-    if MUSIC_PATH.exists():
-        MUSIC_PATH.unlink(missing_ok=True)
-    try:
-        with_retry("music", download_file, DEFAULT_MUSIC_URL, MUSIC_PATH, "music")
-        if MUSIC_PATH.stat().st_size > 10000:
-            return MUSIC_PATH
-    except Exception as e:
-        log.warning(f"Music download failed: {e}")
-    return None
 
 
 def get_groq_client() -> Groq:
@@ -646,6 +624,7 @@ def get_video_duration(path: Path) -> float:
 
 
 def render_scene(input_path: Path, output_path: Path, duration: float, scene_index: int):
+    """رندر مشهد واحد مع Ken Burns خفيف + فلتر أزرق."""
     src_duration = get_video_duration(input_path)
     if src_duration <= 0:
         raise RuntimeError(f"Invalid source: {input_path}")
@@ -656,18 +635,15 @@ def render_scene(input_path: Path, output_path: Path, duration: float, scene_ind
     else:
         start = 0
 
-    total_frames = int(duration * FPS)
-    zoom_max = 1.06
-    zoom_step = (zoom_max - 1.0) / max(total_frames, 1)
-
     blue_hex = f"0x{BLUE_FILTER_R:02x}{BLUE_FILTER_G:02x}{BLUE_FILTER_B:02x}"
-    blue_alpha = BLUE_FILTER_OPACITY
 
+    # Ken Burns خفيف عبر scale ثابت + crop ديناميكي (sin/cos)
     vf = (
-        f"scale={int(WIDTH * 1.2)}:{int(HEIGHT * 1.2)}:force_original_aspect_ratio=increase,"
-        f"crop={WIDTH}:{HEIGHT},"
-        f"zoompan=z='min(zoom+{zoom_step:.6f},{zoom_max})':"
-        f"d={total_frames}:s={WIDTH}x{HEIGHT}:fps={FPS},"
+        f"scale={int(WIDTH * 1.15)}:{int(HEIGHT * 1.15)}:force_original_aspect_ratio=increase,"
+        f"crop={int(WIDTH * 1.08)}:{int(HEIGHT * 1.08)},"
+        f"crop=w={WIDTH}:h={HEIGHT}:"
+        f"x='(in_w-out_w)/2 + sin(t/{duration}*PI)*20':"
+        f"y='(in_h-out_h)/2 + cos(t/{duration}*PI)*20',"
         f"eq=contrast=1.08:saturation=0.95,"
         f"fade=t=in:st=0:d=0.15,"
         f"fade=t=out:st={duration - 0.15:.3f}:d=0.15"
@@ -675,7 +651,7 @@ def render_scene(input_path: Path, output_path: Path, duration: float, scene_ind
 
     fc = (
         f"[0:v]{vf}[bg];"
-        f"color=c={blue_hex}@{blue_alpha}:s={WIDTH}x{HEIGHT}:d={duration}:r={FPS}[blue];"
+        f"color=c={blue_hex}@{BLUE_FILTER_OPACITY}:s={WIDTH}x{HEIGHT}:d={duration}:r={FPS}[blue];"
         f"[bg][blue]overlay=format=auto[v]"
     )
 
@@ -687,7 +663,7 @@ def render_scene(input_path: Path, output_path: Path, duration: float, scene_ind
         "-map", "[v]",
         "-an",
         "-c:v", "libx264",
-        "-preset", "fast",
+        "-preset", "veryfast",
         "-pix_fmt", "yuv420p",
         "-r", str(FPS),
         "-b:v", "3000k",
@@ -697,6 +673,7 @@ def render_scene(input_path: Path, output_path: Path, duration: float, scene_ind
 
 
 def render_fallback_scene(output_path: Path, duration: float, scene_index: int, color_rgb):
+    """مشهد احتياطي بلون ثابت."""
     r, g, b = color_rgb
     color_hex = f"0x{r:02x}{g:02x}{b:02x}"
     blue_hex = f"0x{BLUE_FILTER_R:02x}{BLUE_FILTER_G:02x}{BLUE_FILTER_B:02x}"
@@ -713,7 +690,7 @@ def render_fallback_scene(output_path: Path, duration: float, scene_index: int, 
         "-map", "[v]",
         "-t", f"{duration:.3f}",
         "-c:v", "libx264",
-        "-preset", "fast",
+        "-preset", "veryfast",
         "-pix_fmt", "yuv420p",
         "-r", str(FPS),
         str(output_path),
@@ -722,6 +699,7 @@ def render_fallback_scene(output_path: Path, duration: float, scene_index: int, 
 
 
 def concat_scenes(scene_paths, output_path: Path):
+    """دمج المشاهد عبر ffmpeg concat demuxer."""
     list_file = TEMP_DIR / "concat_list.txt"
     list_file.write_text(
         "\n".join(f"file '{p.resolve()}'" for p in scene_paths),
@@ -822,68 +800,42 @@ def render_read_desc_image():
 
 
 # =========================
-# تركيب النصوص + الصوت
+# تركيب النصوص (بدون صوت)
 # =========================
-def overlay_texts_and_audio(video_in: Path, video_out: Path,
-                            title_img_path: Path, read_img_path: Path,
-                            title_y: int, read_y: int,
-                            duration: float, read_start: float,
-                            audio_path: Path = None):
-    scale_expr = (
-        f"if(lt(t,{read_start}),1,"
-        f"if(lt(t-{read_start},0.12),0.60+(1.18-0.60)*((t-{read_start})/0.12),"
-        f"if(lt(t-{read_start},0.24),1.18-(1.18-0.96)*((t-{read_start}-0.12)/0.12),"
-        f"if(lt(t-{read_start},0.36),0.96+(1.0-0.96)*((t-{read_start}-0.24)/0.12),"
-        f"1))))"
-    )
-
+def overlay_texts(video_in: Path, video_out: Path,
+                  title_img_path: Path, read_img_path: Path,
+                  title_y: int, read_y: int,
+                  duration: float, read_start: float):
+    """
+    تركيب نصوص بدون صوت:
+    - title: ظاهر طوال الفيديو
+    - read_desc: يظهر بعد read_start مع fade-in animation
+    """
     inputs = [
         "-i", str(video_in),
         "-loop", "1", "-t", f"{duration}", "-i", str(title_img_path),
         "-loop", "1", "-t", f"{duration}", "-i", str(read_img_path),
     ]
 
-    has_audio = audio_path and audio_path.exists()
-    if has_audio:
-        inputs += ["-stream_loop", "-1", "-i", str(audio_path)]
-
-    fc_video = (
+    fade_dur = 0.35
+    fc = (
         f"[1:v]format=rgba[ttl];"
-        f"[2:v]format=rgba,scale=iw*{scale_expr}:-1:eval=frame[rd];"
+        f"[2:v]format=rgba,fade=t=in:st=0:d={fade_dur}:alpha=1[rd];"
         f"[0:v][ttl]overlay=x=(W-w)/2:y={title_y}:format=auto[t1];"
         f"[t1][rd]overlay=x=(W-w)/2:y={read_y}:format=auto:"
         f"enable='gte(t,{read_start})'[v]"
     )
 
-    if has_audio:
-        fc_audio = (
-            f"[3:a]volume={MUSIC_VOLUME},"
-            f"afade=t=in:st=0:d=0.8,"
-            f"afade=t=out:st={duration - 1.2:.3f}:d=1.2,"
-            f"atrim=0:{duration}[a]"
-        )
-        fc_full = fc_video + ";" + fc_audio
-        args = inputs + [
-            "-filter_complex", fc_full,
-            "-map", "[v]", "-map", "[a]",
-            "-c:v", "libx264", "-preset", "fast", "-pix_fmt", "yuv420p",
-            "-r", str(FPS), "-b:v", "3500k",
-            "-c:a", "aac", "-b:a", "128k",
-            "-t", f"{duration}",
-            "-movflags", "+faststart",
-            str(video_out),
-        ]
-    else:
-        args = inputs + [
-            "-filter_complex", fc_video,
-            "-map", "[v]",
-            "-c:v", "libx264", "-preset", "fast", "-pix_fmt", "yuv420p",
-            "-r", str(FPS), "-b:v", "3500k",
-            "-an",
-            "-t", f"{duration}",
-            "-movflags", "+faststart",
-            str(video_out),
-        ]
+    args = inputs + [
+        "-filter_complex", fc,
+        "-map", "[v]",
+        "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p",
+        "-r", str(FPS), "-b:v", "3500k",
+        "-an",
+        "-t", f"{duration}",
+        "-movflags", "+faststart",
+        str(video_out),
+    ]
 
     run_ffmpeg(args, label="overlay")
 
@@ -936,15 +888,13 @@ def create_video(title: str, search_terms, cache):
     read_y = min(HEIGHT - 230, title_y + title_img.height + 36)
     read_start = min(READ_DESC_START, max(0.8, total_duration - 1.2))
 
-    music = ensure_background_music()
     final_path = OUT_DIR / "final_video.mp4"
 
-    overlay_texts_and_audio(
+    overlay_texts(
         concat_path, final_path,
         title_png, read_png,
         title_y, read_y,
         total_duration, read_start,
-        audio_path=music,
     )
 
     log.info(f"✓ Video saved: {final_path}")
@@ -1025,7 +975,7 @@ def send_to_whatsapp(video_path: Path, description: str, hashtags: str):
 # =========================
 def main():
     log.info("=" * 50)
-    log.info("🚀 Viral Short Generator v4.1")
+    log.info("🚀 Viral Short Generator v4.2 (No Audio)")
     log.info("=" * 50)
 
     ensure_dirs()
