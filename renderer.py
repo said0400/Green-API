@@ -46,31 +46,26 @@ class HTMLRenderer:
 
     def render(self, html_content: str, output_path: Path, selector: str = "#content"):
         """
-        يحوّل HTML إلى صورة PNG شفافة.
-        يقص الصورة على حجم العنصر المحدد بـ selector فقط.
+        يحوّل HTML إلى صورة PNG شفافة بحجم 1:1 (بدون تكبير).
         """
         context = self._browser.new_context(
             viewport={"width": self.viewport_width, "height": self.viewport_height},
-            device_scale_factor=2,  # جودة Retina للنص الحاد
+            device_scale_factor=1,  # ← مهم: 1:1 بدون تضخيم
         )
         page = context.new_page()
 
         try:
-            # تحميل HTML
             page.set_content(html_content, wait_until="networkidle")
-
-            # انتظار تحميل الخط
             page.evaluate("document.fonts.ready")
-            page.wait_for_timeout(200)  # تأكيد إضافي
+            page.wait_for_timeout(300)
 
-            # التقاط العنصر فقط (مع خلفية شفافة)
             element = page.query_selector(selector)
             if not element:
                 raise RuntimeError(f"Selector '{selector}' not found in HTML")
 
             element.screenshot(
                 path=str(output_path),
-                omit_background=True,  # خلفية شفافة
+                omit_background=True,
                 type="png",
             )
             log.info(f"✓ Rendered: {output_path.name}")
@@ -132,30 +127,29 @@ def auto_fit_title(
     renderer: HTMLRenderer,
     title: str,
     output_path: Path,
-    max_height: int = 620,
+    max_height: int = 700,
+    max_width: int = 880,
     preferred_size: int = 48,
 ):
     """
     رسم العنوان مع تجربة عدة أحجام للخط حتى يناسب الارتفاع.
-    يبدأ بـ preferred_size ثم يصغر إذا تجاوز max_height.
-    يعيد ارتفاع الصورة النهائية (بالحجم الحقيقي وليس Retina).
+    يعيد ارتفاع الصورة النهائية.
     """
     from PIL import Image
 
-    # سلسلة الأحجام: تبدأ بالمفضّل ثم تتدرج للأصغر
     sizes = [preferred_size, 44, 40, 36, 32, 28]
 
     for size in sizes:
-        render_title_png(renderer, title, output_path, font_size=size)
+        render_title_png(
+            renderer, title, output_path,
+            font_size=size, max_width=max_width,
+        )
         with Image.open(output_path) as img:
-            # *2 بسبب device_scale_factor=2
-            actual_height = img.height // 2
+            actual_height = img.height
+            actual_width = img.width
             if actual_height <= max_height:
-                log.info(f"✓ Title fitted at font_size={size} (height={actual_height}px)")
+                log.info(f"✓ Title fitted: size={size}, w={actual_width}px, h={actual_height}px")
                 return actual_height
 
-    # آخر محاولة (أصغر حجم)
     with Image.open(output_path) as img:
-        actual_height = img.height // 2
-        log.warning(f"⚠️ Title used smallest size, height={actual_height}px")
-        return actual_height
+        return img.height
