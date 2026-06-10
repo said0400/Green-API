@@ -1,11 +1,12 @@
 """
-Viral Short Generator v4.3
+Viral Short Generator v5.0
+==========================
 - Font: Noto Naskh Arabic Bold
-- Style: Red coral box + white clean text (like reference image)
+- Rendering: HTML + Playwright (دعم عربي 100%)
+- Style: Red coral box + white clean text
 - JSON output من Groq
 - FFmpeg pipeline كامل
 - Cache لـ Pexels (24h)
-- Cache لـ shape_arabic
 - Logging احترافي
 - بدون موسيقى
 """
@@ -23,16 +24,20 @@ import sys
 import time
 from contextlib import suppress
 from datetime import datetime, timezone
-from functools import lru_cache
 from pathlib import Path
 
 import httpx
-import arabic_reshaper
-from bidi.algorithm import get_display
 from groq import Groq
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image
 from rapidfuzz import fuzz
 from tqdm import tqdm
+
+from renderer import (
+    HTMLRenderer,
+    render_title_png,
+    render_read_desc_png,
+    auto_fit_title,
+)
 
 
 # =========================
@@ -55,6 +60,7 @@ DATA_DIR = ROOT / "data"
 TEMP_DIR = ROOT / "temp"
 OUT_DIR = ROOT / "out"
 FONT_DIR = ROOT / "assets" / "fonts"
+TEMPLATES_DIR = ROOT / "assets" / "templates"
 
 HISTORY_PATH = DATA_DIR / "history.json"
 PEXELS_CACHE_PATH = DATA_DIR / "pexels_cache.json"
@@ -74,13 +80,6 @@ BLUE_FILTER_R = 8
 BLUE_FILTER_G = 27
 BLUE_FILTER_B = 74
 BLUE_FILTER_OPACITY = 0.35
-
-# ستايل النص (أحمر مرجاني)
-TEXT_BOX_COLOR = (255, 95, 95, 235)        # أحمر مرجاني #FF5F5F
-TEXT_FILL_COLOR = (255, 255, 255, 255)     # أبيض
-TEXT_BOX_RADIUS = 42                       # زوايا دائرية ناعمة
-TEXT_PAD_X = 52
-TEXT_PAD_Y = 36
 
 # الكاش والـ history
 HISTORY_MAX = 500
@@ -109,7 +108,7 @@ HTTP = httpx.Client(
     timeout=httpx.Timeout(120.0, connect=20.0),
     follow_redirects=True,
     http2=True,
-    headers={"User-Agent": "viral-short-generator/4.3"},
+    headers={"User-Agent": "viral-short-generator/5.0"},
 )
 
 
@@ -133,7 +132,7 @@ def require_env(name: str) -> str:
 
 
 def ensure_dirs():
-    for d in [DATA_DIR, TEMP_DIR, OUT_DIR, FONT_DIR]:
+    for d in [DATA_DIR, TEMP_DIR, OUT_DIR, FONT_DIR, TEMPLATES_DIR]:
         d.mkdir(parents=True, exist_ok=True)
     if not HISTORY_PATH.exists():
         HISTORY_PATH.write_text("[]", encoding="utf-8")
@@ -207,6 +206,18 @@ def ensure_font():
             f"Font file at {FONT_PATH} seems corrupt (size: {FONT_PATH.stat().st_size} bytes)"
         )
     log.info(f"✓ Font loaded: {FONT_PATH.name} ({FONT_PATH.stat().st_size} bytes)")
+
+
+def ensure_templates():
+    """التحقق من وجود قوالب HTML."""
+    required = ["title.html", "read_desc.html"]
+    missing = [t for t in required if not (TEMPLATES_DIR / t).exists()]
+    if missing:
+        raise RuntimeError(
+            f"Missing templates in {TEMPLATES_DIR}: {missing}\n"
+            f"Please create them as instructed."
+        )
+    log.info(f"✓ HTML templates loaded ({len(required)} files)")
 
 
 def get_groq_client() -> Groq:
@@ -722,103 +733,6 @@ def concat_scenes(scene_paths, output_path: Path):
 
 
 # =========================
-# النصوص العربية
-# =========================
-@lru_cache(maxsize=512)
-def shape_arabic(text: str) -> str:
-    return get_display(arabic_reshaper.reshape(text))
-
-
-def wrap_text(text: str, font, max_width: int, stroke_width=0):
-    probe = Image.new("RGBA", (10, 10))
-    draw = ImageDraw.Draw(probe)
-    words = text.split()
-    if not words:
-        return [text]
-
-    lines, current = [], words[0]
-    for word in words[1:]:
-        candidate = f"{current} {word}"
-        shaped = shape_arabic(candidate)
-        bbox = draw.textbbox((0, 0), shaped, font=font, stroke_width=stroke_width)
-        if (bbox[2] - bbox[0]) <= max_width:
-            current = candidate
-        else:
-            lines.append(current)
-            current = word
-    lines.append(current)
-    return lines
-
-
-def render_text_image(text, font_size, max_width,
-                      fill=TEXT_FILL_COLOR, box_fill=TEXT_BOX_COLOR,
-                      box_radius=TEXT_BOX_RADIUS,
-                      pad_x=TEXT_PAD_X, pad_y=TEXT_PAD_Y,
-                      shadow=True):
-    """رسم نص في صندوق ملوّن بزوايا دائرية."""
-    font = ImageFont.truetype(str(FONT_PATH), font_size)
-    logical = wrap_text(text, font, max_width, stroke_width=0)
-
-    probe = Image.new("RGBA", (10, 10))
-    pdraw = ImageDraw.Draw(probe)
-    shaped_lines, metrics = [], []
-    for line in logical:
-        s = shape_arabic(line)
-        bbox = pdraw.textbbox((0, 0), s, font=font, stroke_width=0)
-        shaped_lines.append(s)
-        metrics.append((bbox[2] - bbox[0], bbox[3] - bbox[1]))
-
-    line_gap = 18
-    content_w = max(w for w, _ in metrics)
-    content_h = sum(h for _, h in metrics) + line_gap * (len(metrics) - 1)
-
-    img = Image.new("RGBA", (content_w + pad_x * 2, content_h + pad_y * 2), (0, 0, 0, 0))
-    draw = ImageDraw.Draw(img)
-
-    # الصندوق الأحمر بزوايا دائرية
-    draw.rounded_rectangle(
-        (0, 0, img.width - 1, img.height - 1),
-        radius=box_radius,
-        fill=box_fill,
-    )
-
-    # النص أبيض نظيف بدون stroke + ظل خفيف
-    y = pad_y
-    for shaped, (w, h) in zip(shaped_lines, metrics):
-        x = (img.width - w) // 2
-        if shadow:
-            draw.text((x + 2, y + 3), shaped, font=font, fill=(0, 0, 0, 90))
-        draw.text((x, y), shaped, font=font, fill=fill)
-        y += h + line_gap
-
-    return img
-
-
-def render_title_image(title: str):
-    """عنوان بصندوق أحمر مرجاني + نص أبيض."""
-    last = None
-    for size in [74, 68, 62, 56, 50]:
-        img = render_text_image(
-            title,
-            font_size=size,
-            max_width=int(WIDTH * 0.82),
-        )
-        last = img
-        if img.height <= 620:
-            return img
-    return last
-
-
-def render_read_desc_image():
-    """اقرأ الوصف بنفس الستايل."""
-    return render_text_image(
-        "اقرأ الوصف",
-        font_size=56,
-        max_width=int(WIDTH * 0.55),
-    )
-
-
-# =========================
 # تركيب النصوص (بدون صوت)
 # =========================
 def overlay_texts(video_in: Path, video_out: Path,
@@ -895,16 +809,28 @@ def create_video(title: str, search_terms, cache):
     concat_path = TEMP_DIR / "concat.mp4"
     concat_scenes(scene_paths, concat_path)
 
-    title_img = render_title_image(title)
-    read_img = render_read_desc_image()
-
+    # ===== توليد النصوص باستخدام HTML + Playwright =====
     title_png = TEMP_DIR / "title.png"
     read_png = TEMP_DIR / "read_desc.png"
-    title_img.save(title_png)
-    read_img.save(read_png)
 
-    title_y = max(250, int((HEIGHT * 0.42) - (title_img.height / 2)))
-    read_y = min(HEIGHT - 230, title_y + title_img.height + 36)
+    log.info("🎨 Rendering text overlays with Playwright (HTML)...")
+    with HTMLRenderer(viewport_width=WIDTH, viewport_height=HEIGHT) as renderer:
+        # توليد العنوان مع auto-fit للحجم
+        title_height = auto_fit_title(
+            renderer, title, title_png, max_height=620
+        )
+        # توليد نص "اقرأ الوصف"
+        render_read_desc_png(renderer, "اقرأ الوصف", read_png)
+
+    # حساب أبعاد الصور
+    with Image.open(title_png) as ti:
+        # القسمة على 2 بسبب device_scale_factor
+        title_actual_h = ti.height // 2
+    with Image.open(read_png) as ri:
+        read_actual_h = ri.height // 2
+
+    title_y = max(250, int((HEIGHT * 0.42) - (title_actual_h / 2)))
+    read_y = min(HEIGHT - 230, title_y + title_actual_h + 36)
     read_start = min(READ_DESC_START, max(0.8, total_duration - 1.2))
 
     final_path = OUT_DIR / "final_video.mp4"
@@ -993,13 +919,14 @@ def send_to_whatsapp(video_path: Path, description: str, hashtags: str):
 # Main
 # =========================
 def main():
-    log.info("=" * 50)
-    log.info("🚀 Viral Short Generator v4.3 (Noto Naskh + Red Style)")
-    log.info("=" * 50)
+    log.info("=" * 60)
+    log.info("🚀 Viral Short Generator v5.0 (HTML + Playwright)")
+    log.info("=" * 60)
 
     ensure_dirs()
     clean_temp_only()
     ensure_font()
+    ensure_templates()
 
     for var in ["GROQ_API_KEY", "PEXELS_API_KEY",
                 "GREEN_API_INSTANCE_ID", "GREEN_API_TOKEN", "WHATSAPP_CHAT_ID"]:
@@ -1029,9 +956,9 @@ def main():
 
     send_to_whatsapp(video_path, content["description"], content["hashtags"])
 
-    log.info("=" * 50)
+    log.info("=" * 60)
     log.info("✅ Done successfully")
-    log.info("=" * 50)
+    log.info("=" * 60)
 
 
 if __name__ == "__main__":
