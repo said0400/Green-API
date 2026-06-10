@@ -18,75 +18,77 @@
     }
 
     html, body {
-      background: transparent !important;
+      /* تعديل: جعل الخلفية بيضاء نقية تماماً مثل الصورة بدلاً من الشفافة */
+      background: #FFFFFF !important;
       font-family: 'NotoNaskhArabic', 'Arial', sans-serif;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
+      height: 100vh;
+      width: 100vw;
     }
 
     body {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 40px;
-      min-height: 100vh;
+      padding: 20px;
     }
 
-    /* الحاوية الرئيسية */
+    /* الحاوية الرئيسية المحاكية لمقاس الصورة */
     .title-wrapper {
       width: {{ max_width }}px;
       max-width: {{ max_width }}px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
       direction: rtl;
-      line-height: 1.8;
     }
 
-    /* النص نفسه: خلفية حمراء ملتفّة + حدود سوداء + ظل */
+    /* تعديل جذري: تحويل الحاوية إلى كتلة مستطيلة متناسقة */
+    .title-box {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      
+      /* اللون الأحمر الفاقع الصافي بدون ظلال سوداء */
+      background-color: #FF0A0A; 
+      
+      /* زوايا دائرية ناعمة تطابق تماماً زوايا الصورة */
+      border-radius: 28px; 
+      
+      /* حواف داخلية متوازنة تمنح النص مساحة مريحة يميناً ويساراً وأعلى وأسفل */
+      padding: 25px 45px; 
+      
+      /* عرض أقصى متناسب لضمان نزول النص لسطرين بشكل جمالي */
+      max-width: 90%; 
+      box-shadow: none; /* إزالة الظلال الخارجية للصندوق */
+    }
+
+    /* تنسيق النص الداخلي */
     .title-text {
       font-family: 'NotoNaskhArabic', 'Arial', sans-serif;
       font-size: {{ font_size }}px;
-      font-weight: 900;
-      color: #FFFFFF;
-      background-color: #FF2D2D;
+      font-weight: bold;
+      color: #FFFFFF; /* لون النص أبيض ناصع */
       
-      /* الـ box-decoration-break هو السر: يخلي الخلفية تلتف حول كل سطر */
-      -webkit-box-decoration-break: clone;
-      box-decoration-break: clone;
-      
-      /* padding داخلي حول النص */
-      padding: 8px 18px;
-      
-      /* زوايا دائرية */
-      border-radius: 12px;
-      
-      /* حدود سوداء حول النص نفسه (stroke) */
-      -webkit-text-stroke: 2px #000000;
-      
-      /* ظل خفيف للصندوق الأحمر */
-      box-shadow:
-        0 4px 12px rgba(0, 0, 0, 0.4),
-        0 2px 4px rgba(0, 0, 0, 0.3);
-      
-      /* ظل النص */
-      text-shadow:
-        0 2px 0 #000000,
-        0 -1px 0 #000000,
-        1px 0 0 #000000,
-        -1px 0 0 #000000,
-        2px 3px 6px rgba(0, 0, 0, 0.5);
-      
-      /* مسافة بين الأسطر */
-      line-height: 2;
+      /* مسافة مريحة بين الأسطر لجعل النص يبدو متناسقاً وعميقاً داخل المستطيل */
+      line-height: 1.5; 
       letter-spacing: 0px;
-      
       direction: rtl;
       unicode-bidi: plaintext;
+      
+      /* إزالة كل الـ Stroke والظلال السوداء التي كانت تعيق مطابقة الصورة الأصلية */
+      -webkit-text-stroke: 0px transparent;
+      text-shadow: none;
     }
   </style>
 </head>
 <body>
   <div class="title-wrapper" id="content">
-    <span class="title-text">{{ text }}</span>
+    <div class="title-box">
+      <span class="title-text">{{ text }}</span>
+    </div>
   </div>
 </body>
 </html>
