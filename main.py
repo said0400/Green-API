@@ -1,5 +1,5 @@
 """
-Viral Short Generator v5.0
+Viral Short Generator v5.1
 ==========================
 - Font: Noto Naskh Arabic Bold
 - Rendering: HTML + Playwright (دعم عربي 100%)
@@ -81,6 +81,12 @@ BLUE_FILTER_G = 27
 BLUE_FILTER_B = 74
 BLUE_FILTER_OPACITY = 0.35
 
+# إعدادات النص
+TITLE_FONT_SIZE = 48
+TITLE_MAX_WIDTH = 900
+TITLE_MAX_HEIGHT = 700
+READ_DESC_FONT_SIZE = 38
+
 # الكاش والـ history
 HISTORY_MAX = 500
 DUPLICATE_LOOKBACK = 300
@@ -108,7 +114,7 @@ HTTP = httpx.Client(
     timeout=httpx.Timeout(120.0, connect=20.0),
     follow_redirects=True,
     http2=True,
-    headers={"User-Agent": "viral-short-generator/5.0"},
+    headers={"User-Agent": "viral-short-generator/5.1"},
 )
 
 
@@ -782,6 +788,7 @@ def create_video(title: str, search_terms, cache):
     log.info(f"Duration: {total_duration}s, scenes: {needed}")
 
     clip_paths = fetch_backgrounds(search_terms, needed, cache)
+    log.info(f"📹 Downloaded {len(clip_paths)} background clips (needed {needed})")
 
     durations = []
     remaining = total_duration
@@ -799,6 +806,7 @@ def create_video(title: str, search_terms, cache):
             if i < len(clip_paths):
                 render_scene(clip_paths[i % len(clip_paths)], scene_out, dur, i + 1)
             else:
+                log.warning(f"⚠️ Scene {i + 1}: no clip available, using fallback color")
                 render_fallback_scene(scene_out, dur, i + 1, fallback_colors[i % 4])
         except Exception as e:
             log.warning(f"Scene {i + 1} failed: {e}, using fallback")
@@ -815,22 +823,27 @@ def create_video(title: str, search_terms, cache):
 
     log.info("🎨 Rendering text overlays with Playwright (HTML)...")
     with HTMLRenderer(viewport_width=WIDTH, viewport_height=HEIGHT) as renderer:
-        # توليد العنوان مع auto-fit للحجم
         title_height = auto_fit_title(
             renderer, title, title_png,
-            max_height=620,
-            preferred_size=48,  # ← الحجم المفضّل
+            max_height=TITLE_MAX_HEIGHT,
+            max_width=TITLE_MAX_WIDTH,
+            preferred_size=TITLE_FONT_SIZE,
         )
-         
-        # توليد نص "اقرأ الوصف"
-        render_read_desc_png(renderer, "اقرأ الوصف", read_png)
+        render_read_desc_png(
+            renderer, "اقرأ الوصف", read_png,
+            font_size=READ_DESC_FONT_SIZE,
+        )
 
-    # حساب أبعاد الصور
+    # حساب أبعاد الصور (1:1، بدون قسمة)
     with Image.open(title_png) as ti:
-        # القسمة على 2 بسبب device_scale_factor
-        title_actual_h = ti.height // 2
+        title_actual_h = ti.height
+        title_actual_w = ti.width
     with Image.open(read_png) as ri:
-        read_actual_h = ri.height // 2
+        read_actual_h = ri.height
+        read_actual_w = ri.width
+
+    log.info(f"📐 Title: {title_actual_w}x{title_actual_h}px")
+    log.info(f"📐 Read:  {read_actual_w}x{read_actual_h}px")
 
     title_y = max(250, int((HEIGHT * 0.42) - (title_actual_h / 2)))
     read_y = min(HEIGHT - 230, title_y + title_actual_h + 36)
@@ -923,7 +936,7 @@ def send_to_whatsapp(video_path: Path, description: str, hashtags: str):
 # =========================
 def main():
     log.info("=" * 60)
-    log.info("🚀 Viral Short Generator v5.0 (HTML + Playwright)")
+    log.info("🚀 Viral Short Generator v5.1 (HTML + Playwright)")
     log.info("=" * 60)
 
     ensure_dirs()
