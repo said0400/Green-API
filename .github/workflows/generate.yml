@@ -7,49 +7,101 @@ on:
         description: "اختياري: تلميح للموضوع"
         required: false
         default: ""
-      duration_min:
-        description: "أقل مدة للفيديو"
-        required: false
-        default: "11"
-      duration_max:
-        description: "أقصى مدة للفيديو"
-        required: false
-        default: "15"
-      read_desc_start:
-        description: "الثانية التي تظهر فيها اقرأ الوصف"
-        required: false
-        default: "3.5"
 
 permissions:
   contents: write
 
+# يمنع تشغيل أكثر من workflow في نفس الوقت
+concurrency:
+  group: viral-short-generator
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    env:
+      LOG_FILE: run.log
 
     steps:
+      # ============================================
+      # 1) Checkout
+      # ============================================
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
+          persist-credentials: true
 
+      # ============================================
+      # 2) Validate secrets قبل أي شيء
+      # ============================================
+      - name: Validate required secrets
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          GREEN_API_BASE_URL: ${{ secrets.GREEN_API_BASE_URL }}
+          GREEN_API_INSTANCE_ID: ${{ secrets.GREEN_API_INSTANCE_ID }}
+          GREEN_API_TOKEN: ${{ secrets.GREEN_API_TOKEN }}
+          WHATSAPP_CHAT_ID: ${{ secrets.WHATSAPP_CHAT_ID }}
+        run: |
+          missing=()
+          for v in GROQ_API_KEY PEXELS_API_KEY GREEN_API_BASE_URL \
+                   GREEN_API_INSTANCE_ID GREEN_API_TOKEN WHATSAPP_CHAT_ID; do
+            if [ -z "${!v}" ]; then
+              missing+=("$v")
+            fi
+          done
+          if [ ${#missing[@]} -gt 0 ]; then
+            echo "❌ Missing secrets: ${missing[*]}"
+            exit 1
+          fi
+          echo "✅ All required secrets are present"
+
+      # ============================================
+      # 3) Python setup
+      # ============================================
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
           cache: "pip"
+          cache-dependency-path: requirements.txt
 
-      - name: Install FFmpeg
+      - name: Upgrade pip tools
         run: |
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg
+          python -m pip install --upgrade pip setuptools wheel
 
+      # ============================================
+      # 4) FFmpeg (نسخة حديثة)
+      # ============================================
+      - name: Setup FFmpeg
+        uses: FedericoCarboni/setup-ffmpeg@v3
+        id: setup-ffmpeg
+        with:
+          ffmpeg-version: release
+
+      - name: Verify FFmpeg
+        run: |
+          ffmpeg -version | head -n 1
+          ffprobe -version | head -n 1
+
+      # ============================================
+      # 5) تثبيت المكتبات
+      # ============================================
       - name: Install Python dependencies
         run: |
-          python -m pip install --upgrade pip
           pip install -r requirements.txt
+          pip list
 
+      # ============================================
+      # 6) تشغيل المشروع (لا نوقف الـ workflow عند الفشل
+      #    حتى نرفع الـ logs والـ artifacts)
+      # ============================================
       - name: Run generator
+        id: generator
+        continue-on-error: true
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_MODEL: ${{ secrets.GROQ_MODEL }}
@@ -59,28 +111,90 @@ jobs:
           GREEN_API_TOKEN: ${{ secrets.GREEN_API_TOKEN }}
           WHATSAPP_CHAT_ID: ${{ secrets.WHATSAPP_CHAT_ID }}
           TOPIC_HINT: ${{ github.event.inputs.topic_hint }}
-          VIDEO_DURATION_MIN: ${{ github.event.inputs.duration_min }}
-          VIDEO_DURATION_MAX: ${{ github.event.inputs.duration_max }}
-          READ_DESC_START: ${{ github.event.inputs.read_desc_start }}
-        run: python main.py
+          PYTHONUNBUFFERED: "1"
+        run: |
+          set -o pipefail
+          python main.py 2>&1 | tee "$LOG_FILE"
 
-      - name: Upload output artifact
+      # ============================================
+      # 7) رفع الفيديو والمحتوى الناتج
+      # ============================================
+      - name: Upload generated video
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: generated-short
           path: out/
           if-no-files-found: ignore
+          retention-days: 7
 
-      - name: Commit history
+      # ============================================
+      # 8) رفع الـ logs دائمًا
+      # ============================================
+      - name: Upload run logs
         if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: run-logs
+          path: |
+            ${{ env.LOG_FILE }}
+          if-no-files-found: ignore
+          retention-days: 14
+
+      # ============================================
+      # 9) Commit history & cache بأمان (مع pull/rebase/retry)
+      # ============================================
+      - name: Commit history and cache safely
+        if: steps.generator.outcome == 'success'
+        env:
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
         run: |
-          if [ -n "$(git status --porcelain data/history.json)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/history.json
-            git commit -m "Update content history"
-            git push
-          else
-            echo "No history changes"
+          set -e
+
+          # هل هناك تغييرات فعلاً؟
+          if [ -z "$(git status --porcelain data/history.json data/pexels_cache.json 2>/dev/null)" ]; then
+            echo "No changes to commit"
+            exit 0
           fi
+
+          git config user.name "$GIT_AUTHOR_NAME"
+          git config user.email "$GIT_AUTHOR_EMAIL"
+
+          git add data/history.json data/pexels_cache.json
+          git commit -m "chore: update history and cache [skip ci]"
+
+          # إعادة المحاولة 3 مرات مع pull --rebase لتجنب conflicts
+          for attempt in 1 2 3; do
+            echo "Push attempt $attempt..."
+
+            # حدث المرجع البعيد
+            git fetch origin "${GITHUB_REF_NAME}"
+
+            # rebase فوق آخر تغييرات
+            if git rebase "origin/${GITHUB_REF_NAME}"; then
+              if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+                echo "✅ Push successful"
+                exit 0
+              fi
+            else
+              echo "⚠️ Rebase failed, aborting rebase"
+              git rebase --abort || true
+            fi
+
+            sleep $((attempt * 3))
+          done
+
+          echo "❌ Failed to push after 3 attempts"
+          exit 1
+
+      # ============================================
+      # 10) إنهاء الـ job بحالة المولّد الحقيقية
+      # ============================================
+      - name: Fail job if generator failed
+        if: steps.generator.outcome != 'success'
+        run: |
+          echo "❌ Generator failed (outcome: ${{ steps.generator.outcome }})"
+          exit 1
