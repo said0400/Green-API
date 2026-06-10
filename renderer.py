@@ -3,7 +3,9 @@ renderer.py
 -----------
 وحدة تحويل HTML إلى صور PNG شفافة باستخدام Playwright.
 تدعم اللغة العربية بشكل كامل 100%.
+الخط يُحمَّل كـ Base64 لضمان عمله في جميع البيئات.
 """
+import base64
 import logging
 from pathlib import Path
 from jinja2 import Template
@@ -14,6 +16,24 @@ log = logging.getLogger("renderer")
 ROOT = Path(__file__).resolve().parent
 TEMPLATES_DIR = ROOT / "assets" / "templates"
 FONT_PATH = ROOT / "assets" / "fonts" / "NotoNaskhArabic-Bold.ttf"
+
+
+# =========================
+# تحميل الخط مرة واحدة كـ Base64
+# =========================
+_FONT_BASE64 = None
+
+
+def get_font_base64() -> str:
+    """تحميل الخط وتحويله إلى Base64 (cached)."""
+    global _FONT_BASE64
+    if _FONT_BASE64 is None:
+        if not FONT_PATH.exists():
+            raise FileNotFoundError(f"Font not found: {FONT_PATH}")
+        font_bytes = FONT_PATH.read_bytes()
+        _FONT_BASE64 = base64.b64encode(font_bytes).decode("ascii")
+        log.info(f"✓ Font encoded as Base64 ({len(_FONT_BASE64)} chars)")
+    return _FONT_BASE64
 
 
 class HTMLRenderer:
@@ -46,16 +66,17 @@ class HTMLRenderer:
 
     def render(self, html_content: str, output_path: Path, selector: str = "#content"):
         """
-        يحوّل HTML إلى صورة PNG شفافة بحجم 1:1 (بدون تكبير).
+        يحوّل HTML إلى صورة PNG شفافة بحجم 1:1.
         """
         context = self._browser.new_context(
             viewport={"width": self.viewport_width, "height": self.viewport_height},
-            device_scale_factor=1,  # ← مهم: 1:1 بدون تضخيم
+            device_scale_factor=1,
         )
         page = context.new_page()
 
         try:
             page.set_content(html_content, wait_until="networkidle")
+            # ضمان تحميل الخط قبل الالتقاط
             page.evaluate("document.fonts.ready")
             page.wait_for_timeout(300)
 
@@ -88,7 +109,7 @@ def render_title_png(
     title: str,
     output_path: Path,
     font_size: int = 48,
-    max_width: int = 880,
+    max_width: int = 900,
     pad_x: int = 44,
     pad_y: int = 30,
     radius: int = 36,
@@ -97,7 +118,7 @@ def render_title_png(
     template = load_template("title.html")
     html = template.render(
         text=title,
-        font_path=str(FONT_PATH.resolve()).replace("\\", "/"),
+        font_base64=get_font_base64(),
         font_size=font_size,
         max_width=max_width,
         pad_x=pad_x,
@@ -117,7 +138,7 @@ def render_read_desc_png(
     template = load_template("read_desc.html")
     html = template.render(
         text=text,
-        font_path=str(FONT_PATH.resolve()).replace("\\", "/"),
+        font_base64=get_font_base64(),
         font_size=font_size,
     )
     renderer.render(html, output_path, selector=".read-box")
@@ -128,7 +149,7 @@ def auto_fit_title(
     title: str,
     output_path: Path,
     max_height: int = 700,
-    max_width: int = 880,
+    max_width: int = 900,
     preferred_size: int = 48,
 ):
     """
