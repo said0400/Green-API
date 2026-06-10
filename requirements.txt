@@ -1,21 +1,25 @@
+# ── AI & Network ──────────────────────────
 groq==0.31.0
 httpx==0.28.1
 h2==4.1.0
 
-# فيديو
+# ── Video Processing ──────────────────────
 moviepy==2.2.1
 numpy==2.3.0
 Pillow==11.3.0
+
 imageio==2.37.0
 imageio-ffmpeg==0.6.0
 
-# رندر النصوص العربية
+# ── Arabic Text (يمكن حذفها لاحقًا) ───────
+# arabic-reshaper==3.0.0   ← لم نعد نحتاجها
+# python-bidi==0.6.6       ← لم نعد نحتاجها
+
+# ── Text Matching ─────────────────────────
+rapidfuzz==3.14.0
+
+# ── Browser Automation ────────────────────
 playwright==1.49.1
 
-# أدوات
-rapidfuzz==3.14.0
+# ── Utilities ─────────────────────────────
 tqdm==4.67.1
-
-# ─── احذف هذين ───
-# arabic-reshaper==3.0.0   ← لم نعد بحاجته
-# python-bidi==0.6.6        ← لم نعد بحاجته
