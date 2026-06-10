@@ -1,19 +1,13 @@
-# Temporary files
-temp/
-out/
-
-# Python
 __pycache__/
 *.py[cod]
 
-# System files
 .DS_Store
 
-# Environment variables
 .env
+.env.*
 
-# Generated videos
+temp/
+out/
 *.mp4
 
-# Keep source videos in assets
 !assets/**/*.mp4
