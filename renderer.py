@@ -36,6 +36,9 @@ def get_font_base64() -> str:
     return _FONT_BASE64
 
 
+# =========================
+# Playwright Browser Manager
+# =========================
 class HTMLRenderer:
     """مدير وحيد لمتصفح Playwright (يفتح مرة واحدة فقط)."""
 
@@ -66,7 +69,8 @@ class HTMLRenderer:
 
     def render(self, html_content: str, output_path: Path, selector: str = "#content"):
         """
-        يحوّل HTML إلى صورة PNG شفافة بحجم 1:1.
+        يحوّل HTML إلى صورة PNG شفافة بحجم 1:1 (بدون تكبير).
+        يقص الصورة على حجم العنصر المحدد بـ selector فقط.
         """
         context = self._browser.new_context(
             viewport={"width": self.viewport_width, "height": self.viewport_height},
@@ -75,11 +79,17 @@ class HTMLRenderer:
         page = context.new_page()
 
         try:
+            # تحميل HTML
             page.set_content(html_content, wait_until="networkidle")
-            # ضمان تحميل الخط قبل الالتقاط
+            
+            # انتظار تحميل الخط
             page.evaluate("document.fonts.ready")
             page.wait_for_timeout(300)
+            
+            # انتظار إضافي لتطبيق SVG filters
+            page.wait_for_timeout(200)
 
+            # التقاط العنصر فقط (مع خلفية شفافة)
             element = page.query_selector(selector)
             if not element:
                 raise RuntimeError(f"Selector '{selector}' not found in HTML")
@@ -96,6 +106,9 @@ class HTMLRenderer:
             context.close()
 
 
+# =========================
+# Template Loader
+# =========================
 def load_template(template_name: str) -> Template:
     """تحميل قالب Jinja2 من مجلد templates."""
     template_path = TEMPLATES_DIR / template_name
@@ -104,26 +117,26 @@ def load_template(template_name: str) -> Template:
     return Template(template_path.read_text(encoding="utf-8"))
 
 
+# =========================
+# Render Functions
+# =========================
 def render_title_png(
     renderer: HTMLRenderer,
     title: str,
     output_path: Path,
     font_size: int = 48,
     max_width: int = 900,
-    pad_x: int = 44,
-    pad_y: int = 30,
-    radius: int = 36,
 ):
-    """رسم عنوان رئيسي بصندوق أحمر مرجاني."""
+    """
+    رسم عنوان رئيسي بخلفية عضوية موحّدة تتبع شكل النص.
+    تستخدم SVG filter لدمج الأسطر في شكل واحد بحواف ناعمة.
+    """
     template = load_template("title.html")
     html = template.render(
         text=title,
         font_base64=get_font_base64(),
         font_size=font_size,
         max_width=max_width,
-        pad_x=pad_x,
-        pad_y=pad_y,
-        radius=radius,
     )
     renderer.render(html, output_path, selector=".title-wrapper")
 
@@ -134,7 +147,7 @@ def render_read_desc_png(
     output_path: Path,
     font_size: int = 38,
 ):
-    """رسم نص 'اقرأ الوصف' مع سهم."""
+    """رسم نص 'اقرأ الوصف' مع سهم متحرّك."""
     template = load_template("read_desc.html")
     html = template.render(
         text=text,
@@ -154,10 +167,12 @@ def auto_fit_title(
 ):
     """
     رسم العنوان مع تجربة عدة أحجام للخط حتى يناسب الارتفاع.
-    يعيد ارتفاع الصورة النهائية.
+    يبدأ بـ preferred_size ثم يصغر إذا تجاوز max_height.
+    يعيد ارتفاع الصورة النهائية بالبكسل.
     """
     from PIL import Image
 
+    # سلسلة الأحجام: من المفضّل تنازلياً
     sizes = [preferred_size, 44, 40, 36, 32, 28]
 
     for size in sizes:
@@ -169,8 +184,53 @@ def auto_fit_title(
             actual_height = img.height
             actual_width = img.width
             if actual_height <= max_height:
-                log.info(f"✓ Title fitted: size={size}, w={actual_width}px, h={actual_height}px")
+                log.info(
+                    f"✓ Title fitted: size={size}px, "
+                    f"dimensions={actual_width}x{actual_height}px"
+                )
                 return actual_height
 
+    # آخر محاولة بأصغر حجم
     with Image.open(output_path) as img:
+        log.warning(
+            f"⚠️ Title used smallest size ({sizes[-1]}px), "
+            f"height={img.height}px (max was {max_height}px)"
+        )
         return img.height
+
+
+# =========================
+# Test Function (Optional)
+# =========================
+if __name__ == "__main__":
+    """اختبار سريع للتأكد من عمل الـ renderer."""
+    import sys
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+        datefmt="%H:%M:%S",
+        handlers=[logging.StreamHandler(sys.stdout)],
+    )
+
+    test_titles = [
+        "إذا اعتقدت أنك تحب شخص ما فهل أنت متأكد من حقيقته",
+        "السبب الحقيقي وراء صمته المفاجئ",
+        "هناك كلمة واحدة تغير كل شيء في علاقتك",
+    ]
+
+    output_dir = ROOT / "test_output"
+    output_dir.mkdir(exist_ok=True)
+
+    with HTMLRenderer() as r:
+        for i, title in enumerate(test_titles, 1):
+            out_path = output_dir / f"test_title_{i}.png"
+            auto_fit_title(r, title, out_path, preferred_size=48)
+            print(f"✓ Saved: {out_path}")
+
+        # اختبار "اقرأ الوصف"
+        read_path = output_dir / "test_read_desc.png"
+        render_read_desc_png(r, "اقرأ الوصف", read_path)
+        print(f"✓ Saved: {read_path}")
+
+    print("\n✅ All tests done! Check test_output/ folder")
