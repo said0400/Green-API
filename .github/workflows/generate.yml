@@ -11,7 +11,6 @@ on:
 permissions:
   contents: write
 
-# يمنع تشغيل أكثر من workflow في نفس الوقت
 concurrency:
   group: viral-short-generator
   cancel-in-progress: false
@@ -35,7 +34,7 @@ jobs:
           persist-credentials: true
 
       # ============================================
-      # 2) Validate secrets قبل أي شيء
+      # 2) Validate secrets
       # ============================================
       - name: Validate required secrets
         env:
@@ -74,13 +73,12 @@ jobs:
           python -m pip install --upgrade pip setuptools wheel
 
       # ============================================
-      # 4) FFmpeg (نسخة حديثة)
+      # 4) FFmpeg (من apt - مستقر)
       # ============================================
-      - name: Setup FFmpeg
-        uses: FedericoCarboni/setup-ffmpeg@v3
-        id: setup-ffmpeg
-        with:
-          ffmpeg-version: release
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
 
       - name: Verify FFmpeg
         run: |
@@ -96,8 +94,7 @@ jobs:
           pip list
 
       # ============================================
-      # 6) تشغيل المشروع (لا نوقف الـ workflow عند الفشل
-      #    حتى نرفع الـ logs والـ artifacts)
+      # 6) تشغيل المشروع
       # ============================================
       - name: Run generator
         id: generator
@@ -117,7 +114,7 @@ jobs:
           python main.py 2>&1 | tee "$LOG_FILE"
 
       # ============================================
-      # 7) رفع الفيديو والمحتوى الناتج
+      # 7) رفع الفيديو والمحتوى
       # ============================================
       - name: Upload generated video
         if: always()
@@ -129,7 +126,7 @@ jobs:
           retention-days: 7
 
       # ============================================
-      # 8) رفع الـ logs دائمًا
+      # 8) رفع logs
       # ============================================
       - name: Upload run logs
         if: always()
@@ -142,7 +139,7 @@ jobs:
           retention-days: 14
 
       # ============================================
-      # 9) Commit history & cache بأمان (مع pull/rebase/retry)
+      # 9) Commit history & cache بأمان
       # ============================================
       - name: Commit history and cache safely
         if: steps.generator.outcome == 'success'
@@ -154,7 +151,6 @@ jobs:
         run: |
           set -e
 
-          # هل هناك تغييرات فعلاً؟
           if [ -z "$(git status --porcelain data/history.json data/pexels_cache.json 2>/dev/null)" ]; then
             echo "No changes to commit"
             exit 0
@@ -166,24 +162,18 @@ jobs:
           git add data/history.json data/pexels_cache.json
           git commit -m "chore: update history and cache [skip ci]"
 
-          # إعادة المحاولة 3 مرات مع pull --rebase لتجنب conflicts
           for attempt in 1 2 3; do
             echo "Push attempt $attempt..."
-
-            # حدث المرجع البعيد
             git fetch origin "${GITHUB_REF_NAME}"
-
-            # rebase فوق آخر تغييرات
             if git rebase "origin/${GITHUB_REF_NAME}"; then
               if git push origin "HEAD:${GITHUB_REF_NAME}"; then
                 echo "✅ Push successful"
                 exit 0
               fi
             else
-              echo "⚠️ Rebase failed, aborting rebase"
+              echo "⚠️ Rebase failed, aborting"
               git rebase --abort || true
             fi
-
             sleep $((attempt * 3))
           done
 
@@ -191,7 +181,7 @@ jobs:
           exit 1
 
       # ============================================
-      # 10) إنهاء الـ job بحالة المولّد الحقيقية
+      # 10) إفشال الـ job إذا فشل المولّد
       # ============================================
       - name: Fail job if generator failed
         if: steps.generator.outcome != 'success'
