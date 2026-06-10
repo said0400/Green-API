@@ -29,7 +29,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 60px 40px;
+      padding: 40px 30px;
       min-height: 100vh;
     }
 
@@ -40,35 +40,38 @@
       direction: rtl;
     }
 
-    /* الفقاعة الرئيسية */
+    /* الفقاعة الرئيسية - Flat Design */
     .title-box {
       position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #FF1A1A;
-      border-radius: 20px;
-      padding: 28px 50px;
+      
+      background: #FF1A1A;
+      border-radius: 14px;
+      padding: 12px 24px;
       max-width: {{ max_width }}px;
-      box-shadow:
-        0 8px 24px rgba(0, 0, 0, 0.35),
-        0 4px 8px rgba(0, 0, 0, 0.2);
+      
+      /* بدون ظلال - Flat Design */
+      box-shadow: none;
+      
       z-index: 2;
     }
 
-    /* الذيل/البروز السفلي (Bubble Tail) */
+    /* الذيل السفلي - مستطيل صغير بحواف دائرية */
     .title-box::after {
       content: '';
       position: absolute;
-      bottom: -18px;
+      bottom: -8px;
       left: 50%;
       transform: translateX(-50%);
-      width: 0;
-      height: 0;
-      border-left: 22px solid transparent;
-      border-right: 22px solid transparent;
-      border-top: 24px solid #FF1A1A;
-      filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+      
+      width: 40px;
+      height: 12px;
+      
+      background: #FF1A1A;
+      border-radius: 0 0 8px 8px;
+      
       z-index: 1;
     }
 
@@ -79,7 +82,7 @@
       font-weight: bold;
       color: #FFFFFF;
       text-align: center;
-      line-height: 1.55;
+      line-height: 1.5;
       letter-spacing: 0px;
       direction: rtl;
       unicode-bidi: plaintext;
