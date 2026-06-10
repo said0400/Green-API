@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <style>
     @font-face {
-      font-family: 'NotoNaskh';
-      src: url('file://{{ font_path }}') format('truetype');
+      font-family: 'NotoNaskhArabic';
+      src: url(data:font/truetype;charset=utf-8;base64,{{ font_base64 }}) format('truetype');
       font-weight: bold;
+      font-style: normal;
+      font-display: block;
     }
 
     * {
@@ -17,7 +19,7 @@
 
     html, body {
       background: transparent !important;
-      font-family: 'NotoNaskh', 'Noto Naskh Arabic', 'Arial', sans-serif;
+      font-family: 'NotoNaskhArabic', 'Noto Naskh Arabic', 'Arial', sans-serif;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
     }
@@ -33,6 +35,7 @@
     .read-box {
       background: #FF5F5F;
       color: #FFFFFF;
+      font-family: 'NotoNaskhArabic', 'Noto Naskh Arabic', 'Arial', sans-serif;
       padding: 22px 44px;
       border-radius: 32px;
       font-size: {{ font_size }}px;
