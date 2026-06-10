@@ -27,58 +27,85 @@
     body {
       display: flex;
       justify-content: center;
-      align-items: flex-start;
-      padding: 20px;
+      align-items: center;
+      padding: 60px 40px;
       min-height: 100vh;
     }
 
-    /* الحاوية - تتمدد فقط بقدر المحتوى */
-    .bubble-container {
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
+    /* الحاوية الخارجية */
+    .title-wrapper {
+      display: inline-block;
       direction: rtl;
+      /* تطبيق الـ SVG filter لدمج الأسطر في شكل واحد عضوي */
+      filter: url(#goo);
+      padding: 20px;
     }
 
-    /* الفقاعة */
-    .bubble {
-      background: #FF1A1A;
-      border-radius: 14px;
-      padding: 14px 26px;
-      max-width: {{ max_width }}px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    /* الذيل - مستطيل صغير مباشرة تحت الفقاعة */
-    .tail {
-      width: 42px;
-      height: 14px;
-      background: #FF1A1A;
-      border-radius: 0 0 8px 8px;
-      margin-top: -1px; /* لإلصاقه بالفقاعة */
-    }
-
-    /* النص */
-    .bubble-text {
+    /* النص الداخلي */
+    .title-text {
+      display: inline;
       font-family: 'NotoNaskhArabic', 'Arial', sans-serif;
       font-size: {{ font_size }}px;
       font-weight: bold;
       color: #FFFFFF;
-      text-align: center;
-      line-height: 1.5;
+      background-color: #FF1A1A;
+      
+      /* الخلفية تلتف حول كل سطر */
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      
+      /* مسافة داخلية كبيرة لإنشاء "اتصال" بين الأسطر */
+      padding: 15px 25px;
+      
+      /* بدون حواف هنا - الـ filter سيتولى التنعيم */
+      border-radius: 0;
+      
+      /* مسافة سطرية صغيرة لجعل الأسطر تتداخل قليلاً */
+      line-height: 1.6;
+      
       direction: rtl;
       unicode-bidi: plaintext;
+      text-shadow: none;
+      -webkit-text-stroke: 0;
+      
+      /* العرض الأقصى */
+      max-width: {{ max_width }}px;
+    }
+
+    /* محاذاة الكتل */
+    .title-content {
+      display: inline-block;
+      max-width: {{ max_width }}px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <div class="bubble-container" id="content">
-    <div class="bubble">
-      <span class="bubble-text">{{ text }}</span>
+  <!-- SVG Filter لدمج الأشكال في شكل عضوي واحد -->
+  <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true">
+    <defs>
+      <filter id="goo">
+        <!-- 1. تطبيق Blur على الأشكال -->
+        <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur" />
+        <!-- 2. زيادة التباين لتحويل الـ blur لشكل صلب بحواف ناعمة -->
+        <feColorMatrix
+          in="blur"
+          mode="matrix"
+          values="1 0 0 0 0
+                  0 1 0 0 0
+                  0 0 1 0 0
+                  0 0 0 22 -11"
+          result="goo" />
+        <!-- 3. دمج النتيجة مع النص الأصلي -->
+        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+      </filter>
+    </defs>
+  </svg>
+
+  <div class="title-wrapper" id="content">
+    <div class="title-content">
+      <span class="title-text">{{ text }}</span>
     </div>
-    <div class="tail"></div>
   </div>
 </body>
 </html>
