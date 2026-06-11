@@ -1,15 +1,15 @@
 """
-Viral Short Generator v5.5
+Viral Short Generator v5.6
 ==========================
 - Font: Noto Naskh Arabic Bold
 - Rendering: HTML + Playwright (دعم عربي 100%)
 - Titles: من ملف Excel (data/videos.xlsx)
-- Description + Hashtags: من Groq AI (برومبت فيروسي محسّن)
+- AI: Gemini (1.5-flash → 2.0-flash-exp) + Groq fallback
+- 8 API keys total (4 Gemini × 2 models) + 1 Groq fallback
 - Text Themes: 8 color themes (random)
 - Video Filters: 6 color filters (random, unified per video)
 - FFmpeg pipeline كامل
 - Cache لـ Pexels (24h)
-- Logging احترافي
 - بدون موسيقى
 """
 import atexit
@@ -29,7 +29,6 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import httpx
-from groq import Groq
 from PIL import Image
 from tqdm import tqdm
 
@@ -41,6 +40,7 @@ from renderer import (
 )
 from themes import pick_color_themes, pick_video_filter, VIDEO_FILTER_OPACITY
 from excel_reader import get_next_video
+from ai_client import smart_ai_call
 
 
 # =========================
@@ -93,13 +93,13 @@ PEXELS_CACHE_TTL = 24 * 3600
 MIN_VIDEO_WIDTH = 720
 MIN_VIDEO_HEIGHT = 1280
 
-# Retry
+# Retry للشبكة
 NETWORK_RETRIES = 3
 NETWORK_RETRY_BACKOFF = 2.0
-GROQ_TIMEOUT = 90
-GROQ_MAX_ATTEMPTS = 4
 
-GROQ_MODEL = os.getenv("GROQ_MODEL") or "llama-3.3-70b-versatile"
+# AI Validation Retries
+AI_MAX_ATTEMPTS = 3
+
 GREEN_API_BASE_URL = (os.getenv("GREEN_API_BASE_URL") or "https://api.green-api.com").rstrip("/")
 
 
@@ -110,7 +110,7 @@ HTTP = httpx.Client(
     timeout=httpx.Timeout(120.0, connect=20.0),
     follow_redirects=True,
     http2=True,
-    headers={"User-Agent": "viral-short-generator/5.5"},
+    headers={"User-Agent": "viral-short-generator/5.6"},
 )
 
 
@@ -118,9 +118,6 @@ HTTP = httpx.Client(
 def _close_http():
     with suppress(Exception):
         HTTP.close()
-
-
-_GROQ_CLIENT = None
 
 
 # =========================
@@ -197,49 +194,46 @@ def download_file(url: str, path: Path, label="file"):
 
 
 def ensure_font():
-    """الخط مرفوع يدويًا في الريبو."""
     if not FONT_PATH.exists():
-        raise RuntimeError(
-            f"Font file not found at {FONT_PATH}\n"
-            f"Please upload NotoNaskhArabic-Bold.ttf to assets/fonts/"
-        )
+        raise RuntimeError(f"Font file not found at {FONT_PATH}")
     if FONT_PATH.stat().st_size < 10000:
-        raise RuntimeError(
-            f"Font file at {FONT_PATH} seems corrupt (size: {FONT_PATH.stat().st_size} bytes)"
-        )
+        raise RuntimeError(f"Font file at {FONT_PATH} seems corrupt")
     log.info(f"✓ Font loaded: {FONT_PATH.name} ({FONT_PATH.stat().st_size} bytes)")
 
 
 def ensure_templates():
-    """التحقق من وجود قوالب HTML."""
     required = ["title.html", "read_desc.html"]
     missing = [t for t in required if not (TEMPLATES_DIR / t).exists()]
     if missing:
-        raise RuntimeError(
-            f"Missing templates in {TEMPLATES_DIR}: {missing}\n"
-            f"Please create them as instructed."
-        )
+        raise RuntimeError(f"Missing templates in {TEMPLATES_DIR}: {missing}")
     log.info(f"✓ HTML templates loaded ({len(required)} files)")
 
 
 def ensure_excel():
-    """التحقق من وجود ملف Excel."""
     if not EXCEL_PATH.exists():
-        raise RuntimeError(
-            f"❌ Excel file not found: {EXCEL_PATH}\n"
-            f"Please upload videos.xlsx to data/ folder with columns:\n"
-            f"  Column A: رقم (number)\n"
-            f"  Column B: العنوان (title)\n"
-            f"  Column C: جملة بديلة (read text)"
-        )
+        raise RuntimeError(f"❌ Excel file not found: {EXCEL_PATH}")
     log.info(f"✓ Excel file found: {EXCEL_PATH.name}")
 
 
-def get_groq_client() -> Groq:
-    global _GROQ_CLIENT
-    if _GROQ_CLIENT is None:
-        _GROQ_CLIENT = Groq(api_key=require_env("GROQ_API_KEY"), timeout=GROQ_TIMEOUT)
-    return _GROQ_CLIENT
+def check_ai_keys():
+    """التحقق من توفر مفتاح AI واحد على الأقل."""
+    gemini_keys = [k for k in [
+        "GEMINI_API_KEY_1", "GEMINI_API_KEY_2",
+        "GEMINI_API_KEY_3", "GEMINI_API_KEY_4"
+    ] if os.getenv(k, "").strip()]
+
+    groq_key = bool(os.getenv("GROQ_API_KEY", "").strip())
+
+    if not gemini_keys and not groq_key:
+        raise RuntimeError(
+            "❌ No AI keys configured!\n"
+            "Set at least one of: GEMINI_API_KEY_1-4 or GROQ_API_KEY"
+        )
+
+    log.info(
+        f"✓ AI configured: {len(gemini_keys)} Gemini key(s) + "
+        f"{'Groq fallback' if groq_key else 'no Groq fallback'}"
+    )
 
 
 # =========================
@@ -300,12 +294,10 @@ def cache_key(query: str) -> str:
 
 
 # =========================
-# Groq Prompts (JSON)
+# AI Prompts
 # =========================
 def build_description_prompt(title: str) -> str:
-    """
-    برومبت احترافي لتوليد وصف فيروسي + hashtags بناءً على عنوان الفيديو.
-    """
+    """برومبت احترافي لتوليد وصف فيروسي + hashtags."""
     return f"""أنت كاتب محتوى فيروسي متخصص في كتابة أوصاف فيديوهات قصيرة لمنصات TikTok وYouTube Shorts وFacebook Reels.
 
 مهمتك هي كتابة وصف فيديو واحد + 15 هاشتاج بناءً على العنوان الذي سأعطيك إياه.
@@ -385,33 +377,13 @@ DESCRIPTION: {description[:400]}
 """
 
 
-def _call_groq_once(prompt: str, temperature: float, max_tokens: int) -> str:
-    client = get_groq_client()
-    response = client.chat.completions.create(
-        model=GROQ_MODEL,
-        messages=[{"role": "user", "content": prompt}],
-        temperature=temperature,
-        max_tokens=max_tokens,
-        response_format={"type": "json_object"},
-    )
-    return response.choices[0].message.content.strip()
-
-
-def call_groq_json(prompt: str, temperature=1.1, max_tokens=1500) -> dict:
-    raw = with_retry("groq", _call_groq_once, prompt, temperature, max_tokens)
-    raw = raw.strip()
-    if raw.startswith("```"):
-        raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw, flags=re.M).strip()
-    return json.loads(raw)
-
-
 # =========================
-# توليد المحتوى (Excel + Groq)
+# توليد المحتوى (Excel + AI)
 # =========================
 def generate_unique_content():
     """
     تحصل على العنوان والـ read_text من Excel.
-    تولّد الوصف والـ hashtags من Groq باستخدام البرومبت الفيروسي.
+    تولّد الوصف والـ hashtags عبر smart_ai_call (Gemini → Groq).
     """
     # 1️⃣ جلب العنوان من Excel
     excel_data = get_next_video()
@@ -421,28 +393,28 @@ def generate_unique_content():
 
     log.info(f"📊 Excel video #{excel_number}: {title_from_excel}")
 
-    # 2️⃣ توليد الوصف والـ hashtags من Groq
+    # 2️⃣ توليد الوصف والـ hashtags
     last_error = None
 
-    for attempt in range(1, GROQ_MAX_ATTEMPTS + 1):
-        log.info(f"Generating viral description + hashtags ({attempt}/{GROQ_MAX_ATTEMPTS})...")
+    for attempt in range(1, AI_MAX_ATTEMPTS + 1):
+        log.info(f"🎯 Generating viral content ({attempt}/{AI_MAX_ATTEMPTS})...")
 
         prompt = build_description_prompt(title_from_excel)
 
         try:
-            data = call_groq_json(prompt, temperature=1.15, max_tokens=1500)
+            data = smart_ai_call(prompt, temperature=1.15, max_tokens=1500)
 
             description = data.get("description", "").strip()
             hashtags_raw = data.get("hashtags", [])
 
-            # التحقق من الوصف (80-150 كلمة)
+            # التحقق من الوصف
             wc = word_count(description)
             if wc < 70:
                 last_error = f"Description too short ({wc} words, need 80+)"
                 log.warning(last_error)
                 continue
-            if wc > 180:
-                last_error = f"Description too long ({wc} words, need <180)"
+            if wc > 200:
+                last_error = f"Description too long ({wc} words, need <150)"
                 log.warning(last_error)
                 continue
 
@@ -462,7 +434,7 @@ def generate_unique_content():
                 log.warning(last_error)
                 continue
 
-            log.info(f"✓ Viral description generated ({wc} words, {len(description)} chars)")
+            log.info(f"✅ Viral content generated ({wc} words, {len(description)} chars)")
 
             return {
                 "title": title_from_excel,
@@ -472,25 +444,23 @@ def generate_unique_content():
                 "excel_number": excel_number,
             }
 
-        except json.JSONDecodeError as e:
-            last_error = f"JSON parse: {e}"
-            log.warning(last_error)
         except Exception as e:
             last_error = str(e)
             log.warning(f"Error: {e}")
 
-    raise RuntimeError(f"Description generation failed: {last_error}")
+    raise RuntimeError(f"Content generation failed: {last_error}")
 
 
 def generate_search_terms(title: str, description: str):
+    """توليد كلمات البحث لـ Pexels عبر smart_ai_call."""
     fallback = [
         "sad woman thinking", "man alone night", "couple distance",
         "phone message stress", "emotional silence", "city night loneliness",
     ]
     try:
-        data = call_groq_json(
+        data = smart_ai_call(
             build_search_terms_prompt(title, description),
-            temperature=0.8, max_tokens=300,
+            temperature=0.8, max_tokens=400,
         )
         queries = data.get("queries", [])
         if not isinstance(queries, list):
@@ -853,7 +823,7 @@ def create_video(title: str, read_text: str, search_terms, cache):
             text_color=read_theme["text"],
         )
 
-    # حساب أبعاد الصور (1:1، بدون قسمة)
+    # حساب أبعاد الصور
     with Image.open(title_png) as ti:
         title_actual_h = ti.height
         title_actual_w = ti.width
@@ -965,7 +935,7 @@ def send_to_whatsapp(video_path: Path, description: str, hashtags: str):
 # =========================
 def main():
     log.info("=" * 60)
-    log.info("🚀 Viral Short Generator v5.5 (Excel + Viral Prompt)")
+    log.info("🚀 Viral Short Generator v5.6 (Gemini + Groq Fallback)")
     log.info("=" * 60)
 
     ensure_dirs()
@@ -973,19 +943,21 @@ def main():
     ensure_font()
     ensure_templates()
     ensure_excel()
+    check_ai_keys()
 
-    for var in ["GROQ_API_KEY", "PEXELS_API_KEY",
-                "GREEN_API_INSTANCE_ID", "GREEN_API_TOKEN", "WHATSAPP_CHAT_ID"]:
+    # تحقق من الـ secrets الإلزامية (غير AI)
+    for var in ["PEXELS_API_KEY", "GREEN_API_INSTANCE_ID",
+                "GREEN_API_TOKEN", "WHATSAPP_CHAT_ID"]:
         require_env(var)
 
     history = load_history()
     cache = load_pexels_cache()
     log.info(f"History: {len(history)} | Pexels cache: {len(cache)}")
 
-    # 1️⃣ جلب المحتوى (عنوان من Excel + وصف فيروسي من Groq)
+    # 1️⃣ جلب المحتوى (عنوان من Excel + وصف من AI)
     content = generate_unique_content()
 
-    # 2️⃣ توليد كلمات البحث من Groq (للفيديوهات)
+    # 2️⃣ توليد كلمات البحث من AI
     search_terms = generate_search_terms(content["title"], content["description"])
     log.info(f"Search terms: {search_terms}")
 
