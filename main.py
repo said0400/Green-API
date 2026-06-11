@@ -876,7 +876,7 @@ def create_video(title: str, read_text: str, search_terms, cache):
             text_color=read_theme["text"],
         )
 
-    # حساب أبعاد الصور
+        # حساب أبعاد الصور
     with Image.open(title_png) as ti:
         title_actual_h = ti.height
         title_actual_w = ti.width
@@ -887,7 +887,7 @@ def create_video(title: str, read_text: str, search_terms, cache):
     log.info(f"📐 Title: {title_actual_w}x{title_actual_h}px")
     log.info(f"📐 Read:  {read_actual_w}x{read_actual_h}px")
 
-        title_y = max(250, int((HEIGHT * 0.42) - (title_actual_h / 2)))
+    title_y = max(250, int((HEIGHT * 0.42) - (title_actual_h / 2)))
     read_y = min(HEIGHT - 230, title_y + title_actual_h + 36)
     read_start = min(READ_DESC_START, max(0.8, total_duration - 1.2))
 
