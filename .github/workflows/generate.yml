@@ -1,11 +1,28 @@
 name: Generate Viral Short
 
 on:
+  # تشغيل يدوي (للاختبار أو التشغيل الفوري)
   workflow_dispatch:
+  
+  # 🕐 تشغيل مجدول - 10 فيديوهات يومياً
+  # ملاحظة: GitHub Cron قد يتأخر 5-15 دقيقة عن الموعد
+  # لذلك نضبط الأوقات قبل الموعد بـ 5 دقائق لتعويض التأخير
+  schedule:
+    - cron: '55 9 * * *'   # 10:00 UTC (يبدأ 09:55)
+    - cron: '55 11 * * *'  # 12:00 UTC (يبدأ 11:55)
+    - cron: '55 13 * * *'  # 14:00 UTC (يبدأ 13:55)
+    - cron: '55 15 * * *'  # 16:00 UTC (يبدأ 15:55)
+    - cron: '55 17 * * *'  # 18:00 UTC (يبدأ 17:55)
+    - cron: '55 18 * * *'  # 19:00 UTC (يبدأ 18:55)
+    - cron: '55 19 * * *'  # 20:00 UTC (يبدأ 19:55)
+    - cron: '55 20 * * *'  # 21:00 UTC (يبدأ 20:55)
+    - cron: '55 21 * * *'  # 22:00 UTC (يبدأ 21:55)
+    - cron: '55 23 * * *'  # 00:00 UTC (يبدأ 23:55)
 
 permissions:
   contents: write
 
+# منع التشغيلات المتزامنة (إذا تأخر واحد، الثاني ينتظر)
 concurrency:
   group: viral-short-generator
   cancel-in-progress: false
@@ -24,6 +41,17 @@ jobs:
         with:
           fetch-depth: 1
           persist-credentials: true
+
+      - name: Show run trigger info
+        run: |
+          echo "🚀 Workflow triggered by: ${{ github.event_name }}"
+          echo "⏰ Current UTC time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "📅 Day of week: $(date -u '+%A')"
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            echo "🤖 Triggered by SCHEDULE"
+          else
+            echo "👤 Triggered by MANUAL run"
+          fi
 
       - name: Validate required secrets
         env:
@@ -125,12 +153,9 @@ jobs:
             exit 1
           fi
           
-          # حساب الحجم الإجمالي
           total_size=$(du -sh "$MUSIC_DIR" | cut -f1)
           
           echo "✅ Music library found: $mp3_count file(s), total size: $total_size"
-          echo "📁 First 5 files:"
-          ls "$MUSIC_DIR"/*.mp3 | head -n 5
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -190,7 +215,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: generated-short
+          name: generated-short-${{ github.run_number }}
           path: out/
           if-no-files-found: ignore
           retention-days: 7
@@ -199,7 +224,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: run-logs
+          name: run-logs-${{ github.run_number }}
           path: |
             ${{ env.LOG_FILE }}
           if-no-files-found: ignore
@@ -230,9 +255,10 @@ jobs:
           [ -f "data/excel_pointer.json" ] && git add data/excel_pointer.json
           [ -f "data/music_pointer.json" ] && git add data/music_pointer.json
 
-          git commit -m "chore: update history, cache, excel and music pointers [skip ci]"
+          git commit -m "chore: update data files [skip ci] - run #${{ github.run_number }}"
 
-          for attempt in 1 2 3; do
+          # إعادة المحاولة عند فشل الـ push (لمنع التضارب في التشغيلات المتعددة)
+          for attempt in 1 2 3 4 5; do
             echo "Push attempt $attempt..."
             git fetch origin "${GITHUB_REF_NAME}"
             if git rebase "origin/${GITHUB_REF_NAME}"; then
@@ -244,11 +270,27 @@ jobs:
               echo "⚠️ Rebase failed, aborting"
               git rebase --abort || true
             fi
-            sleep $((attempt * 3))
+            sleep $((attempt * 5))
           done
 
-          echo "❌ Failed to push after 3 attempts"
+          echo "❌ Failed to push after 5 attempts"
           exit 1
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## 📊 Run Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Trigger:** ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Run Number:** #${{ github.run_number }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Started:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "- **Generator Result:** ${{ steps.generator.outcome }}" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.generator.outcome }}" = "success" ]; then
+            echo "- **Status:** ✅ Success" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- **Status:** ❌ Failed" >> $GITHUB_STEP_SUMMARY
+          fi
 
       - name: Fail job if generator failed
         if: steps.generator.outcome != 'success'
