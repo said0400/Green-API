@@ -2,11 +2,6 @@ name: Generate Viral Short
 
 on:
   workflow_dispatch:
-    inputs:
-      topic_hint:
-        description: "اختياري: تلميح للموضوع"
-        required: false
-        default: ""
 
 permissions:
   contents: write
@@ -52,6 +47,41 @@ jobs:
           fi
           echo "✅ All required secrets are present"
 
+      - name: Verify Excel file exists
+        run: |
+          if [ ! -f "data/videos.xlsx" ]; then
+            echo "❌ Missing required file: data/videos.xlsx"
+            echo "Please upload the Excel file with video titles"
+            exit 1
+          fi
+          echo "✅ Excel file found: data/videos.xlsx"
+          ls -lh data/videos.xlsx
+
+      - name: Verify Font file exists
+        run: |
+          FONT_PATH="assets/fonts/NotoNaskhArabic-Bold.ttf"
+          if [ ! -f "$FONT_PATH" ]; then
+            echo "❌ Missing font file: $FONT_PATH"
+            exit 1
+          fi
+          echo "✅ Font file found: $FONT_PATH"
+          ls -lh "$FONT_PATH"
+
+      - name: Verify HTML templates exist
+        run: |
+          TEMPLATES=("assets/templates/title.html" "assets/templates/read_desc.html")
+          missing=()
+          for t in "${TEMPLATES[@]}"; do
+            if [ ! -f "$t" ]; then
+              missing+=("$t")
+            fi
+          done
+          if [ ${#missing[@]} -gt 0 ]; then
+            echo "❌ Missing templates: ${missing[*]}"
+            exit 1
+          fi
+          echo "✅ All HTML templates found"
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -93,7 +123,6 @@ jobs:
           GREEN_API_INSTANCE_ID: ${{ secrets.GREEN_API_INSTANCE_ID }}
           GREEN_API_TOKEN: ${{ secrets.GREEN_API_TOKEN }}
           WHATSAPP_CHAT_ID: ${{ secrets.WHATSAPP_CHAT_ID }}
-          TOPIC_HINT: ${{ github.event.inputs.topic_hint }}
           PYTHONUNBUFFERED: "1"
         run: |
           set -o pipefail
@@ -118,7 +147,7 @@ jobs:
           if-no-files-found: ignore
           retention-days: 14
 
-      - name: Commit history and cache safely
+      - name: Commit history, cache and Excel pointer
         if: steps.generator.outcome == 'success'
         env:
           GIT_AUTHOR_NAME: github-actions[bot]
@@ -128,7 +157,8 @@ jobs:
         run: |
           set -e
 
-          if [ -z "$(git status --porcelain data/history.json data/pexels_cache.json 2>/dev/null)" ]; then
+          # تحقّق من وجود تغييرات في الملفات المُتتبَّعة
+          if [ -z "$(git status --porcelain data/history.json data/pexels_cache.json data/excel_pointer.json 2>/dev/null)" ]; then
             echo "No changes to commit"
             exit 0
           fi
@@ -136,8 +166,12 @@ jobs:
           git config user.name "$GIT_AUTHOR_NAME"
           git config user.email "$GIT_AUTHOR_EMAIL"
 
-          git add data/history.json data/pexels_cache.json
-          git commit -m "chore: update history and cache [skip ci]"
+          # أضف الملفات إذا كانت موجودة
+          [ -f "data/history.json" ] && git add data/history.json
+          [ -f "data/pexels_cache.json" ] && git add data/pexels_cache.json
+          [ -f "data/excel_pointer.json" ] && git add data/excel_pointer.json
+
+          git commit -m "chore: update history, cache and excel pointer [skip ci]"
 
           for attempt in 1 2 3; do
             echo "Push attempt $attempt..."
