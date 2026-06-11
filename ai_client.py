@@ -4,11 +4,12 @@ ai_client.py
 نظام AI ذكي مع failover كامل:
 
 التسلسل:
-1. gemini-1.5-flash على 4 API keys
-2. gemini-2.0-flash-exp على 4 API keys
-3. Groq (fallback نهائي)
+1. gemini-2.5-flash على 4 API keys
+2. gemini-2.0-flash على 4 API keys
+3. gemini-flash-latest على 4 API keys
+4. Groq (fallback نهائي)
 
-المجموع: 8 محاولات Gemini + Groq = 9 فرص للنجاح
+المجموع: 12 محاولة Gemini + Groq = 13 فرصة للنجاح
 """
 import json
 import logging
@@ -26,8 +27,9 @@ log = logging.getLogger("ai_client")
 # إعدادات
 # =========================
 GEMINI_MODELS = [
-    "gemini-1.5-flash",       # ← يُجرَّب أولاً (الأكثر استقراراً)
-    "gemini-2.0-flash-exp",   # ← يُجرَّب ثانياً (الأحدث)
+    "gemini-2.5-flash",            # ← الأحدث والأقوى (مجاني)
+    "gemini-2.0-flash",            # ← مستقر وسريع (مجاني)
+    "gemini-flash-latest",         # ← احتياط (يُحدّث تلقائياً)
 ]
 
 GEMINI_API_KEY_VARS = [
@@ -158,9 +160,10 @@ def smart_ai_call(
     استدعاء AI ذكي مع failover كامل.
     
     التسلسل:
-    1. gemini-1.5-flash على 4 مفاتيح (4 محاولات)
-    2. gemini-2.0-flash-exp على 4 مفاتيح (4 محاولات)
-    3. Groq (محاولة واحدة كـ fallback)
+    1. gemini-2.5-flash على 4 مفاتيح (4 محاولات)
+    2. gemini-2.0-flash على 4 مفاتيح (4 محاولات)
+    3. gemini-flash-latest على 4 مفاتيح (4 محاولات)
+    4. Groq (محاولة واحدة كـ fallback)
     
     Args:
         prompt: النص المُرسَل للـ AI
@@ -250,6 +253,10 @@ if __name__ == "__main__":
     
     groq_available = bool(os.getenv("GROQ_API_KEY"))
     print(f"\n🤖 Groq fallback: {'✓ Available' if groq_available else '✗ Not configured'}")
+
+    print(f"\n📋 Gemini models to try:")
+    for i, m in enumerate(GEMINI_MODELS, 1):
+        print(f"   {i}. {m}")
 
     # اختبار بسيط
     test_prompt = """قم بإنشاء JSON يحتوي على وصف قصير لفيديو.
