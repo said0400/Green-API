@@ -109,6 +109,29 @@ jobs:
           fi
           echo "✅ All HTML templates found"
 
+      - name: Verify Music library exists
+        run: |
+          MUSIC_DIR="assets/music"
+          if [ ! -d "$MUSIC_DIR" ]; then
+            echo "❌ Missing music folder: $MUSIC_DIR"
+            echo "Please upload .mp3 files to assets/music/"
+            exit 1
+          fi
+          
+          mp3_count=$(find "$MUSIC_DIR" -maxdepth 1 -type f -name "*.mp3" | wc -l)
+          
+          if [ "$mp3_count" -eq 0 ]; then
+            echo "❌ No .mp3 files found in $MUSIC_DIR"
+            exit 1
+          fi
+          
+          # حساب الحجم الإجمالي
+          total_size=$(du -sh "$MUSIC_DIR" | cut -f1)
+          
+          echo "✅ Music library found: $mp3_count file(s), total size: $total_size"
+          echo "📁 First 5 files:"
+          ls "$MUSIC_DIR"/*.mp3 | head -n 5
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -182,7 +205,7 @@ jobs:
           if-no-files-found: ignore
           retention-days: 14
 
-      - name: Commit history, cache and Excel pointer
+      - name: Commit history, cache, Excel and Music pointers
         if: steps.generator.outcome == 'success'
         env:
           GIT_AUTHOR_NAME: github-actions[bot]
@@ -193,7 +216,7 @@ jobs:
           set -e
 
           # تحقّق من وجود تغييرات في الملفات المُتتبَّعة
-          if [ -z "$(git status --porcelain data/history.json data/pexels_cache.json data/excel_pointer.json 2>/dev/null)" ]; then
+          if [ -z "$(git status --porcelain data/history.json data/pexels_cache.json data/excel_pointer.json data/music_pointer.json 2>/dev/null)" ]; then
             echo "No changes to commit"
             exit 0
           fi
@@ -205,8 +228,9 @@ jobs:
           [ -f "data/history.json" ] && git add data/history.json
           [ -f "data/pexels_cache.json" ] && git add data/pexels_cache.json
           [ -f "data/excel_pointer.json" ] && git add data/excel_pointer.json
+          [ -f "data/music_pointer.json" ] && git add data/music_pointer.json
 
-          git commit -m "chore: update history, cache and excel pointer [skip ci]"
+          git commit -m "chore: update history, cache, excel and music pointers [skip ci]"
 
           for attempt in 1 2 3; do
             echo "Push attempt $attempt..."
