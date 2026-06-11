@@ -1,13 +1,54 @@
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
+*.egg-info/
 
+# System
 .DS_Store
+Thumbs.db
 
+# Environment Variables
 .env
 .env.*
 
+# Temporary & Output
 temp/
 out/
+
+# Video files (تجاهل MP4 العامة)
 *.mp4
 
+# لكن لا تتجاهل ملفات MP4 في assets
 !assets/**/*.mp4
+
+# Audio files (تجاهل MP3 العامة)
+*.mp3
+
+# لكن لا تتجاهل ملفات MP3 في assets/music
+!assets/music/*.mp3
+!assets/music/**/*.mp3
+
+# Cache files (تجاهلهم لأنهم يُولّدون تلقائياً ويتم commit لهم في workflow)
+# data/pexels_cache.json  ← اتركها مفتوحة لأن workflow يحفظها
+
+# Logs
+*.log
+run.log
+
+# Playwright
+.playwright/
+playwright-report/
+test-results/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.AppleDouble
+.LSOverride
+ehthumbs.db
