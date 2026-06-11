@@ -21,6 +21,7 @@
       background: transparent !important;
       font-family: 'NotoNaskhArabic', 'Arial', sans-serif;
       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
     }
 
@@ -32,35 +33,26 @@
       min-height: 100vh;
     }
 
-    /* الحاوية الخارجية */
     .title-wrapper {
       display: inline-block;
       direction: rtl;
-      /* تطبيق الـ SVG filter لدمج الأسطر في شكل واحد عضوي */
       filter: url(#goo);
       padding: 20px;
     }
 
-    /* النص الداخلي */
     .title-text {
       display: inline;
       font-family: 'NotoNaskhArabic', 'Arial', sans-serif;
       font-size: {{ font_size }}px;
       font-weight: bold;
-      color: #FFFFFF;
-      background-color: #FF1A1A;
+      color: {{ text_color }};
+      background-color: {{ bg_color }};
       
-      /* الخلفية تلتف حول كل سطر */
       -webkit-box-decoration-break: clone;
       box-decoration-break: clone;
       
-      /* مسافة داخلية كبيرة لإنشاء "اتصال" بين الأسطر */
       padding: 15px 25px;
-      
-      /* بدون حواف هنا - الـ filter سيتولى التنعيم */
       border-radius: 0;
-      
-      /* مسافة سطرية صغيرة لجعل الأسطر تتداخل قليلاً */
       line-height: 1.6;
       
       direction: rtl;
@@ -68,11 +60,9 @@
       text-shadow: none;
       -webkit-text-stroke: 0;
       
-      /* العرض الأقصى */
       max-width: {{ max_width }}px;
     }
 
-    /* محاذاة الكتل */
     .title-content {
       display: inline-block;
       max-width: {{ max_width }}px;
@@ -81,13 +71,10 @@
   </style>
 </head>
 <body>
-  <!-- SVG Filter لدمج الأشكال في شكل عضوي واحد -->
   <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true">
     <defs>
       <filter id="goo">
-        <!-- 1. تطبيق Blur على الأشكال -->
         <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur" />
-        <!-- 2. زيادة التباين لتحويل الـ blur لشكل صلب بحواف ناعمة -->
         <feColorMatrix
           in="blur"
           mode="matrix"
@@ -96,7 +83,6 @@
                   0 0 1 0 0
                   0 0 0 22 -11"
           result="goo" />
-        <!-- 3. دمج النتيجة مع النص الأصلي -->
         <feComposite in="SourceGraphic" in2="goo" operator="atop" />
       </filter>
     </defs>
