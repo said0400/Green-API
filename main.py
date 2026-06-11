@@ -1,9 +1,10 @@
 """
-Viral Short Generator v5.2
+Viral Short Generator v5.3
 ==========================
 - Font: Noto Naskh Arabic Bold
 - Rendering: HTML + Playwright (دعم عربي 100%)
-- Style: Multi-color themes + organic background
+- Text Themes: 8 color themes (random)
+- Video Filters: 6 color filters (random, unified per video)
 - JSON output من Groq
 - FFmpeg pipeline كامل
 - Cache لـ Pexels (24h)
@@ -38,7 +39,7 @@ from renderer import (
     render_read_desc_png,
     auto_fit_title,
 )
-from themes import pick_color_themes
+from themes import pick_color_themes, pick_video_filter, VIDEO_FILTER_OPACITY
 
 
 # =========================
@@ -76,12 +77,6 @@ VIDEO_DURATION_MIN = 11
 VIDEO_DURATION_MAX = 15
 READ_DESC_START = 3.5
 
-# الفلتر الأزرق
-BLUE_FILTER_R = 8
-BLUE_FILTER_G = 27
-BLUE_FILTER_B = 74
-BLUE_FILTER_OPACITY = 0.35
-
 # إعدادات النص
 TITLE_FONT_SIZE = 48
 TITLE_MAX_WIDTH = 780
@@ -115,7 +110,7 @@ HTTP = httpx.Client(
     timeout=httpx.Timeout(120.0, connect=20.0),
     follow_redirects=True,
     http2=True,
-    headers={"User-Agent": "viral-short-generator/5.2"},
+    headers={"User-Agent": "viral-short-generator/5.3"},
 )
 
 
@@ -650,8 +645,9 @@ def get_video_duration(path: Path) -> float:
         return 0
 
 
-def render_scene(input_path: Path, output_path: Path, duration: float, scene_index: int):
-    """رندر مشهد واحد مع Ken Burns خفيف + فلتر أزرق."""
+def render_scene(input_path: Path, output_path: Path, duration: float,
+                 scene_index: int, video_filter: dict):
+    """رندر مشهد واحد مع Ken Burns خفيف + فلتر ملوّن."""
     src_duration = get_video_duration(input_path)
     if src_duration <= 0:
         raise RuntimeError(f"Invalid source: {input_path}")
@@ -662,7 +658,8 @@ def render_scene(input_path: Path, output_path: Path, duration: float, scene_ind
     else:
         start = 0
 
-    blue_hex = f"0x{BLUE_FILTER_R:02x}{BLUE_FILTER_G:02x}{BLUE_FILTER_B:02x}"
+    # استخدام لون الفلتر المختار
+    filter_hex = f"0x{video_filter['r']:02x}{video_filter['g']:02x}{video_filter['b']:02x}"
 
     vf = (
         f"scale={int(WIDTH * 1.15)}:{int(HEIGHT * 1.15)}:force_original_aspect_ratio=increase,"
@@ -677,8 +674,8 @@ def render_scene(input_path: Path, output_path: Path, duration: float, scene_ind
 
     fc = (
         f"[0:v]{vf}[bg];"
-        f"color=c={blue_hex}@{BLUE_FILTER_OPACITY}:s={WIDTH}x{HEIGHT}:d={duration}:r={FPS}[blue];"
-        f"[bg][blue]overlay=format=auto[v]"
+        f"color=c={filter_hex}@{VIDEO_FILTER_OPACITY}:s={WIDTH}x{HEIGHT}:d={duration}:r={FPS}[overlay];"
+        f"[bg][overlay]overlay=format=auto[v]"
     )
 
     args = [
@@ -698,15 +695,17 @@ def render_scene(input_path: Path, output_path: Path, duration: float, scene_ind
     run_ffmpeg(args, label=f"scene{scene_index}")
 
 
-def render_fallback_scene(output_path: Path, duration: float, scene_index: int, color_rgb):
+def render_fallback_scene(output_path: Path, duration: float, scene_index: int,
+                          color_rgb, video_filter: dict):
+    """مشهد احتياطي بلون خلفية + فلتر ملوّن."""
     r, g, b = color_rgb
     color_hex = f"0x{r:02x}{g:02x}{b:02x}"
-    blue_hex = f"0x{BLUE_FILTER_R:02x}{BLUE_FILTER_G:02x}{BLUE_FILTER_B:02x}"
+    filter_hex = f"0x{video_filter['r']:02x}{video_filter['g']:02x}{video_filter['b']:02x}"
 
     fc = (
         f"color=c={color_hex}:s={WIDTH}x{HEIGHT}:d={duration}:r={FPS}[bg];"
-        f"color=c={blue_hex}@{BLUE_FILTER_OPACITY}:s={WIDTH}x{HEIGHT}:d={duration}:r={FPS}[blue];"
-        f"[bg][blue]overlay=format=auto,"
+        f"color=c={filter_hex}@{VIDEO_FILTER_OPACITY}:s={WIDTH}x{HEIGHT}:d={duration}:r={FPS}[overlay];"
+        f"[bg][overlay]overlay=format=auto,"
         f"fade=t=in:st=0:d=0.15,fade=t=out:st={duration - 0.15:.3f}:d=0.15[v]"
     )
 
@@ -798,6 +797,9 @@ def create_video(title: str, search_terms, cache):
         durations.append(round(d, 3))
         remaining -= d
 
+    # 🎬 اختيار فلتر فيديو عشوائي (لون موحّد لكل المشاهد)
+    video_filter = pick_video_filter()
+
     scene_paths = []
     fallback_colors = [(14, 20, 38), (18, 27, 46), (11, 22, 40), (20, 24, 52)]
 
@@ -805,13 +807,22 @@ def create_video(title: str, search_terms, cache):
         scene_out = TEMP_DIR / f"scene_{i + 1:02d}.mp4"
         try:
             if i < len(clip_paths):
-                render_scene(clip_paths[i % len(clip_paths)], scene_out, dur, i + 1)
+                render_scene(
+                    clip_paths[i % len(clip_paths)], scene_out, dur, i + 1,
+                    video_filter=video_filter,
+                )
             else:
                 log.warning(f"⚠️ Scene {i + 1}: no clip available, using fallback color")
-                render_fallback_scene(scene_out, dur, i + 1, fallback_colors[i % 4])
+                render_fallback_scene(
+                    scene_out, dur, i + 1, fallback_colors[i % 4],
+                    video_filter=video_filter,
+                )
         except Exception as e:
             log.warning(f"Scene {i + 1} failed: {e}, using fallback")
-            render_fallback_scene(scene_out, dur, i + 1, fallback_colors[i % 4])
+            render_fallback_scene(
+                scene_out, dur, i + 1, fallback_colors[i % 4],
+                video_filter=video_filter,
+            )
 
         scene_paths.append(scene_out)
 
@@ -822,7 +833,7 @@ def create_video(title: str, search_terms, cache):
     title_png = TEMP_DIR / "title.png"
     read_png = TEMP_DIR / "read_desc.png"
 
-    # 🎨 اختيار ثيمات لونية عشوائية
+    # 🎨 اختيار ثيمات لونية عشوائية للنصوص
     title_theme, read_theme = pick_color_themes()
 
     log.info("🎨 Rendering text overlays with Playwright (HTML)...")
@@ -867,10 +878,10 @@ def create_video(title: str, search_terms, cache):
     )
 
     log.info(f"✓ Video saved: {final_path}")
-    return final_path, total_duration, title_theme, read_theme
+    return final_path, total_duration, title_theme, read_theme, video_filter
 
 
-def save_content_file(content, search_terms, duration, title_theme, read_theme):
+def save_content_file(content, search_terms, duration, title_theme, read_theme, video_filter):
     text = f"""TITLE:
 {content['title']}
 
@@ -886,8 +897,9 @@ SEARCH_TERMS:
 DURATION: {duration}s
 
 THEMES:
-- Title: {title_theme['name']} (bg={title_theme['bg']}, text={title_theme['text']})
-- Read:  {read_theme['name']} (bg={read_theme['bg']}, text={read_theme['text']})
+- Title:        {title_theme['name']} (bg={title_theme['bg']}, text={title_theme['text']})
+- Read:         {read_theme['name']} (bg={read_theme['bg']}, text={read_theme['text']})
+- Video Filter: {video_filter['name']} (rgb={video_filter['r']},{video_filter['g']},{video_filter['b']}) @ {int(VIDEO_FILTER_OPACITY * 100)}%
 """
     (OUT_DIR / "content.txt").write_text(text, encoding="utf-8")
 
@@ -948,7 +960,7 @@ def send_to_whatsapp(video_path: Path, description: str, hashtags: str):
 # =========================
 def main():
     log.info("=" * 60)
-    log.info("🚀 Viral Short Generator v5.2 (Multi-Color Themes)")
+    log.info("🚀 Viral Short Generator v5.3 (Multi-Color + Filters)")
     log.info("=" * 60)
 
     ensure_dirs()
@@ -968,10 +980,10 @@ def main():
     search_terms = generate_search_terms(content["title"], content["description"])
     log.info(f"Search terms: {search_terms}")
 
-    video_path, duration, title_theme, read_theme = create_video(
+    video_path, duration, title_theme, read_theme, video_filter = create_video(
         content["title"], search_terms, cache
     )
-    save_content_file(content, search_terms, duration, title_theme, read_theme)
+    save_content_file(content, search_terms, duration, title_theme, read_theme, video_filter)
 
     history.append({
         "title": content["title"],
@@ -981,6 +993,7 @@ def main():
         "duration": duration,
         "title_theme": title_theme["name"],
         "read_theme": read_theme["name"],
+        "video_filter": video_filter["name"],
         "created_at": datetime.now(timezone.utc).isoformat(),
     })
     save_history(history)
