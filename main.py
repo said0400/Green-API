@@ -887,13 +887,12 @@ def create_video(title: str, read_text: str, search_terms, cache):
     log.info(f"📐 Title: {title_actual_w}x{title_actual_h}px")
     log.info(f"📐 Read:  {read_actual_w}x{read_actual_h}px")
 
-    title_y = max(250, int((HEIGHT * 0.42) - (title_actual_h / 2)))
+        title_y = max(250, int((HEIGHT * 0.42) - (title_actual_h / 2)))
     read_y = min(HEIGHT - 230, title_y + title_actual_h + 36)
-       read_start = min(READ_DESC_START, max(0.8, total_duration - 1.2))
+    read_start = min(READ_DESC_START, max(0.8, total_duration - 1.2))
 
     # 🎵 اختيار ملف الموسيقى التالي
     music_path = get_next_music()
-
 
     final_path = OUT_DIR / "final_video.mp4"
 
@@ -1020,16 +1019,15 @@ def main():
     search_terms = generate_search_terms(content["title"], content["description"])
     log.info(f"Search terms: {search_terms}")
 
-   
-     # 3️⃣ إنشاء الفيديو (مع موسيقى)
+    # 3️⃣ إنشاء الفيديو (مع موسيقى)
     video_path, duration, title_theme, read_theme, video_filter, music_path = create_video(
         content["title"], content["read_text"], search_terms, cache
     )
 
     # 4️⃣ حفظ المعلومات
-   save_content_file(content, search_terms, duration, title_theme, read_theme, video_filter, music_path)
+    save_content_file(content, search_terms, duration, title_theme, read_theme, video_filter, music_path)
 
-       history.append({
+    history.append({
         "excel_number": content["excel_number"],
         "title": content["title"],
         "read_text": content["read_text"],
@@ -1043,7 +1041,7 @@ def main():
         "music": music_path.name,
         "created_at": datetime.now(timezone.utc).isoformat(),
     })
-   
+
     save_history(history)
     save_pexels_cache(cache)
 
