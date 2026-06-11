@@ -41,6 +41,8 @@ from renderer import (
 from themes import pick_color_themes, pick_video_filter, VIDEO_FILTER_OPACITY
 from excel_reader import get_next_video
 from ai_client import smart_ai_call
+from music_manager import get_next_music
+
 
 
 # =========================
@@ -64,6 +66,8 @@ TEMP_DIR = ROOT / "temp"
 OUT_DIR = ROOT / "out"
 FONT_DIR = ROOT / "assets" / "fonts"
 TEMPLATES_DIR = ROOT / "assets" / "templates"
+MUSIC_DIR = ROOT / "assets" / "music"
+
 
 HISTORY_PATH = DATA_DIR / "history.json"
 PEXELS_CACHE_PATH = DATA_DIR / "pexels_cache.json"
@@ -78,6 +82,11 @@ SCENE_DURATION = 3.0
 VIDEO_DURATION_MIN = 11
 VIDEO_DURATION_MAX = 15
 READ_DESC_START = 3.5
+
+# إعدادات الموسيقى
+MUSIC_VOLUME = 1.0          # 1.0 = 100%
+MUSIC_FADE_IN = 0.5         # ثانية
+MUSIC_FADE_OUT = 1.0        # ثانية
 
 # إعدادات النص
 TITLE_FONT_SIZE = 48
@@ -131,7 +140,7 @@ def require_env(name: str) -> str:
 
 
 def ensure_dirs():
-    for d in [DATA_DIR, TEMP_DIR, OUT_DIR, FONT_DIR, TEMPLATES_DIR]:
+    for d in [DATA_DIR, TEMP_DIR, OUT_DIR, FONT_DIR, TEMPLATES_DIR, MUSIC_DIR]:
         d.mkdir(parents=True, exist_ok=True)
     if not HISTORY_PATH.exists():
         HISTORY_PATH.write_text("[]", encoding="utf-8")
@@ -213,6 +222,19 @@ def ensure_excel():
     if not EXCEL_PATH.exists():
         raise RuntimeError(f"❌ Excel file not found: {EXCEL_PATH}")
     log.info(f"✓ Excel file found: {EXCEL_PATH.name}")
+    
+
+def ensure_music():
+    """التحقق من وجود مجلد الموسيقى وملفاته."""
+    if not MUSIC_DIR.exists():
+        raise RuntimeError(
+            f"❌ Music folder not found: {MUSIC_DIR}\n"
+            f"Please upload .mp3 files to assets/music/"
+        )
+    music_files = list(MUSIC_DIR.glob("*.mp3"))
+    if not music_files:
+        raise RuntimeError(f"❌ No .mp3 files found in {MUSIC_DIR}")
+    log.info(f"✓ Music library: {len(music_files)} files found")
 
 
 def check_ai_keys():
@@ -714,19 +736,29 @@ def concat_scenes(scene_paths, output_path: Path):
 def overlay_texts(video_in: Path, video_out: Path,
                   title_img_path: Path, read_img_path: Path,
                   title_y: int, read_y: int,
-                  duration: float, read_start: float):
+                  duration: float, read_start: float,
+                  music_path: Path = None):
     """
-    تركيب نصوص بدون صوت:
+    تركيب نصوص + موسيقى خلفية:
     - title: ظاهر طوال الفيديو
     - read_desc: يظهر بعد read_start مع fade-in
+    - music: من بداية الملف + fade in/out
     """
     inputs = [
         "-i", str(video_in),
         "-loop", "1", "-t", f"{duration}", "-i", str(title_img_path),
         "-loop", "1", "-t", f"{duration}", "-i", str(read_img_path),
     ]
+    
+    # إضافة الموسيقى إذا كانت متوفرة
+    has_music = music_path is not None and music_path.exists()
+    if has_music:
+        inputs += ["-i", str(music_path)]
+        log.info(f"🎵 Adding music: {music_path.name}")
 
     fade_dur = 0.35
+    
+    # Video filter complex
     fc = (
         f"[1:v]format=rgba[ttl];"
         f"[2:v]format=rgba,fade=t=in:st=0:d={fade_dur}:alpha=1[rd];"
@@ -734,13 +766,34 @@ def overlay_texts(video_in: Path, video_out: Path,
         f"[t1][rd]overlay=x=(W-w)/2:y={read_y}:format=auto:"
         f"enable='gte(t,{read_start})'[v]"
     )
+    
+    # إذا كانت هناك موسيقى، أضف audio filter
+    if has_music:
+        fade_out_start = max(0, duration - MUSIC_FADE_OUT)
+        fc += (
+            f";[3:a]volume={MUSIC_VOLUME},"
+            f"afade=t=in:st=0:d={MUSIC_FADE_IN},"
+            f"afade=t=out:st={fade_out_start:.3f}:d={MUSIC_FADE_OUT}[a]"
+        )
 
     args = inputs + [
         "-filter_complex", fc,
         "-map", "[v]",
+    ]
+    
+    if has_music:
+        args += [
+            "-map", "[a]",
+            "-c:a", "aac",
+            "-b:a", "192k",
+            "-shortest",
+        ]
+    else:
+        args += ["-an"]
+    
+    args += [
         "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p",
         "-r", str(FPS), "-b:v", "3500k",
-        "-an",
         "-t", f"{duration}",
         "-movflags", "+faststart",
         str(video_out),
@@ -836,7 +889,11 @@ def create_video(title: str, read_text: str, search_terms, cache):
 
     title_y = max(250, int((HEIGHT * 0.42) - (title_actual_h / 2)))
     read_y = min(HEIGHT - 230, title_y + title_actual_h + 36)
-    read_start = min(READ_DESC_START, max(0.8, total_duration - 1.2))
+       read_start = min(READ_DESC_START, max(0.8, total_duration - 1.2))
+
+    # 🎵 اختيار ملف الموسيقى التالي
+    music_path = get_next_music()
+
 
     final_path = OUT_DIR / "final_video.mp4"
 
@@ -845,13 +902,14 @@ def create_video(title: str, read_text: str, search_terms, cache):
         title_png, read_png,
         title_y, read_y,
         total_duration, read_start,
+        music_path=music_path,
     )
 
     log.info(f"✓ Video saved: {final_path}")
-    return final_path, total_duration, title_theme, read_theme, video_filter
+    return final_path, total_duration, title_theme, read_theme, video_filter, music_path
 
 
-def save_content_file(content, search_terms, duration, title_theme, read_theme, video_filter):
+def save_content_file(content, search_terms, duration, title_theme, read_theme, video_filter, music_path):
     text = f"""EXCEL NUMBER: #{content['excel_number']}
 
 TITLE:
@@ -875,9 +933,9 @@ THEMES:
 - Title:        {title_theme['name']} (bg={title_theme['bg']}, text={title_theme['text']})
 - Read:         {read_theme['name']} (bg={read_theme['bg']}, text={read_theme['text']})
 - Video Filter: {video_filter['name']} (rgb={video_filter['r']},{video_filter['g']},{video_filter['b']}) @ {int(VIDEO_FILTER_OPACITY * 100)}%
+- Music:        {music_path.name}
 """
     (OUT_DIR / "content.txt").write_text(text, encoding="utf-8")
-
 
 # =========================
 # Green-API / WhatsApp
@@ -943,6 +1001,7 @@ def main():
     ensure_font()
     ensure_templates()
     ensure_excel()
+    ensure_music()
     check_ai_keys()
 
     # تحقق من الـ secrets الإلزامية (غير AI)
@@ -961,15 +1020,16 @@ def main():
     search_terms = generate_search_terms(content["title"], content["description"])
     log.info(f"Search terms: {search_terms}")
 
-    # 3️⃣ إنشاء الفيديو
-    video_path, duration, title_theme, read_theme, video_filter = create_video(
+   
+     # 3️⃣ إنشاء الفيديو (مع موسيقى)
+    video_path, duration, title_theme, read_theme, video_filter, music_path = create_video(
         content["title"], content["read_text"], search_terms, cache
     )
 
     # 4️⃣ حفظ المعلومات
-    save_content_file(content, search_terms, duration, title_theme, read_theme, video_filter)
+   save_content_file(content, search_terms, duration, title_theme, read_theme, video_filter, music_path)
 
-    history.append({
+       history.append({
         "excel_number": content["excel_number"],
         "title": content["title"],
         "read_text": content["read_text"],
@@ -980,8 +1040,10 @@ def main():
         "title_theme": title_theme["name"],
         "read_theme": read_theme["name"],
         "video_filter": video_filter["name"],
+        "music": music_path.name,
         "created_at": datetime.now(timezone.utc).isoformat(),
     })
+   
     save_history(history)
     save_pexels_cache(cache)
 
