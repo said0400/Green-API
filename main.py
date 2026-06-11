@@ -1,11 +1,12 @@
 """
-Viral Short Generator v5.3
+Viral Short Generator v5.4
 ==========================
 - Font: Noto Naskh Arabic Bold
 - Rendering: HTML + Playwright (دعم عربي 100%)
+- Titles: من ملف Excel (data/videos.xlsx)
+- Description + Hashtags: من Groq AI
 - Text Themes: 8 color themes (random)
 - Video Filters: 6 color filters (random, unified per video)
-- JSON output من Groq
 - FFmpeg pipeline كامل
 - Cache لـ Pexels (24h)
 - Logging احترافي
@@ -30,7 +31,6 @@ from pathlib import Path
 import httpx
 from groq import Groq
 from PIL import Image
-from rapidfuzz import fuzz
 from tqdm import tqdm
 
 from renderer import (
@@ -40,6 +40,7 @@ from renderer import (
     auto_fit_title,
 )
 from themes import pick_color_themes, pick_video_filter, VIDEO_FILTER_OPACITY
+from excel_reader import get_next_video
 
 
 # =========================
@@ -67,6 +68,7 @@ TEMPLATES_DIR = ROOT / "assets" / "templates"
 HISTORY_PATH = DATA_DIR / "history.json"
 PEXELS_CACHE_PATH = DATA_DIR / "pexels_cache.json"
 FONT_PATH = FONT_DIR / "NotoNaskhArabic-Bold.ttf"
+EXCEL_PATH = DATA_DIR / "videos.xlsx"
 
 # الفيديو
 WIDTH = 1080
@@ -85,7 +87,6 @@ READ_DESC_FONT_SIZE = 38
 
 # الكاش والـ history
 HISTORY_MAX = 500
-DUPLICATE_LOOKBACK = 300
 PEXELS_CACHE_TTL = 24 * 3600
 
 # الجودة
@@ -98,7 +99,6 @@ NETWORK_RETRY_BACKOFF = 2.0
 GROQ_TIMEOUT = 90
 GROQ_MAX_ATTEMPTS = 4
 
-TOPIC_HINT = os.getenv("TOPIC_HINT", "").strip()
 GROQ_MODEL = os.getenv("GROQ_MODEL") or "llama-3.3-70b-versatile"
 GREEN_API_BASE_URL = (os.getenv("GREEN_API_BASE_URL") or "https://api.green-api.com").rstrip("/")
 
@@ -110,7 +110,7 @@ HTTP = httpx.Client(
     timeout=httpx.Timeout(120.0, connect=20.0),
     follow_redirects=True,
     http2=True,
-    headers={"User-Agent": "viral-short-generator/5.3"},
+    headers={"User-Agent": "viral-short-generator/5.4"},
 )
 
 
@@ -222,6 +222,19 @@ def ensure_templates():
     log.info(f"✓ HTML templates loaded ({len(required)} files)")
 
 
+def ensure_excel():
+    """التحقق من وجود ملف Excel."""
+    if not EXCEL_PATH.exists():
+        raise RuntimeError(
+            f"❌ Excel file not found: {EXCEL_PATH}\n"
+            f"Please upload videos.xlsx to data/ folder with columns:\n"
+            f"  Column A: رقم (number)\n"
+            f"  Column B: العنوان (title)\n"
+            f"  Column C: جملة بديلة (read text)"
+        )
+    log.info(f"✓ Excel file found: {EXCEL_PATH.name}")
+
+
 def get_groq_client() -> Groq:
     global _GROQ_CLIENT
     if _GROQ_CLIENT is None:
@@ -242,16 +255,6 @@ def load_history():
 def save_history(history):
     history = history[-HISTORY_MAX:]
     HISTORY_PATH.write_text(json.dumps(history, ensure_ascii=False, indent=2), encoding="utf-8")
-
-
-def normalize_text(text: str) -> str:
-    text = text.lower().strip()
-    text = re.sub(r"[^\w\s\u0600-\u06FF]", " ", text)
-    return re.sub(r"\s+", " ", text).strip()
-
-
-def word_count(text: str) -> int:
-    return len([w for w in text.strip().split() if w.strip()])
 
 
 def normalize_hashtags(items) -> str:
@@ -295,67 +298,35 @@ def cache_key(query: str) -> str:
 # =========================
 # Groq Prompts (JSON)
 # =========================
-def build_content_prompt(previous_titles, topic_hint: str) -> str:
-    previous_block = (
-        "\n".join(f"- {t}" for t in previous_titles[-30:])
-        if previous_titles else "- لا يوجد"
-    )
-    topic_instruction = (
-        f'Focus around: "{topic_hint}".'
-        if topic_hint else
-        "Choose a fresh angle inside psychology, relationships, attraction, communication, emotional intelligence, or human behavior."
-    )
-
+def build_description_prompt(title: str) -> str:
+    """Prompt لتوليد الوصف والـ hashtags فقط (العنوان من Excel)."""
     return f"""You are the world's best viral relationship and psychology content creator.
 
-Generate content in Arabic for a short video where only the title appears on screen.
+I have an Arabic title for a short video. Generate ONLY the description and hashtags.
 
-{topic_instruction}
-
-TITLE RULES:
-- Between 8 and 16 words
-- No emojis, no quotes, no numbering
-- Powerful curiosity gap
-- Never reveal the answer
-- Use patterns like:
-إذا فعل هذا...
-إذا قالت هذا...
-معظم الرجال لا يعرفون...
-الخطأ الذي يجعل...
-السبب الحقيقي وراء...
-هناك كلمة واحدة...
-إذا سمعت هذه العبارة...
-علامة لا ينتبه لها أحد...
-الشيء الذي لا يريدونك أن تعرفه...
-إذا اختفى فجأة...
-إذا اعتذر رغم أنه...
-إذا توقف عن...
-أغلب الناس يسيئون فهم...
+TITLE (already chosen, DO NOT change it):
+{title}
 
 DESCRIPTION RULES:
+- Write in Arabic
 - 40 to 60 seconds reading time (around 120-180 words)
-- Strong curiosity hook
-- Psychological depth
-- At least one surprising insight
+- Strong curiosity hook in the first sentence
+- Psychological depth and emotional intelligence
+- At least one surprising insight or counter-intuitive point
 - End with a thought-provoking question
-- Natural, conversational, NOT AI-sounding
-
-UNIQUENESS RULE:
-Must be completely different from previous titles below.
-Do not paraphrase or reuse the same psychological mechanism.
-
-PREVIOUS TITLES TO AVOID:
-{previous_block}
+- Natural, conversational tone, NOT AI-sounding
+- Must perfectly match and expand the title above
+- DO NOT just repeat the title, build on it
 
 HASHTAGS:
 - Exactly 15 hashtags (mix Arabic and English)
+- Relevant to psychology, relationships, attraction, communication
 - Without the # symbol in the JSON array
 
 CRITICAL: Respond ONLY with a valid JSON object. No markdown, no extra text.
 
 JSON SCHEMA:
 {{
-  "title": "string in Arabic (8-16 words)",
   "description": "string in Arabic (120-180 words)",
   "hashtags": ["tag1", "tag2", "...", "tag15"]
 }}
@@ -401,75 +372,66 @@ def call_groq_json(prompt: str, temperature=1.1, max_tokens=1500) -> dict:
 
 
 # =========================
-# توليد المحتوى
+# توليد المحتوى (Excel + Groq)
 # =========================
-def validate_content(data: dict):
-    errors = []
-    title = data.get("title", "").strip()
-    description = data.get("description", "").strip()
-    hashtags = data.get("hashtags", [])
+def generate_unique_content():
+    """
+    تحصل على العنوان والـ read_text من Excel.
+    تولّد الوصف والـ hashtags من Groq.
+    """
+    # 1️⃣ جلب العنوان من Excel
+    excel_data = get_next_video()
+    title_from_excel = excel_data["title"]
+    read_text_from_excel = excel_data["read_text"]
+    excel_number = excel_data["number"]
 
-    wc = word_count(title)
-    if wc < 8 or wc > 16:
-        errors.append(f"title words: {wc}")
-    if len(description) < 350:
-        errors.append("description too short")
-    if not isinstance(hashtags, list) or len(hashtags) < 12:
-        errors.append(f"hashtags count: {len(hashtags) if isinstance(hashtags, list) else 'invalid'}")
+    log.info(f"📊 Excel video #{excel_number}: {title_from_excel}")
 
-    return errors
-
-
-def is_duplicate(title: str, description: str, history) -> bool:
-    new_title = normalize_text(title)
-    new_desc = normalize_text(description[:500])
-
-    for item in history[-DUPLICATE_LOOKBACK:]:
-        old_title = normalize_text(item.get("title", ""))
-        old_desc = normalize_text(item.get("description", "")[:500])
-        if fuzz.token_set_ratio(new_title, old_title) >= 78:
-            return True
-        if fuzz.token_set_ratio(
-            new_title + " " + new_desc[:200],
-            old_title + " " + old_desc[:200]
-        ) >= 74:
-            return True
-    return False
-
-
-def generate_unique_content(history):
-    previous_titles = [item.get("title", "") for item in history if item.get("title")]
+    # 2️⃣ توليد الوصف والـ hashtags من Groq
     last_error = None
 
     for attempt in range(1, GROQ_MAX_ATTEMPTS + 1):
-        log.info(f"Generating content ({attempt}/{GROQ_MAX_ATTEMPTS})...")
-        prompt = build_content_prompt(previous_titles, TOPIC_HINT)
+        log.info(f"Generating description + hashtags ({attempt}/{GROQ_MAX_ATTEMPTS})...")
+
+        prompt = build_description_prompt(title_from_excel)
 
         try:
-            data = call_groq_json(prompt, temperature=1.15, max_tokens=1500)
+            data = call_groq_json(prompt, temperature=1.1, max_tokens=1200)
 
-            errors = validate_content(data)
-            if errors:
-                last_error = f"Validation: {errors}"
+            description = data.get("description", "").strip()
+            hashtags_raw = data.get("hashtags", [])
+
+            # التحقق من الوصف
+            if len(description) < 350:
+                last_error = f"Description too short ({len(description)} chars)"
                 log.warning(last_error)
                 continue
 
-            title = data["title"].strip().strip('"').strip("'")
-            description = data["description"].strip()
-            hashtags = normalize_hashtags(data["hashtags"])
+            # التحقق من الـ hashtags
+            if not isinstance(hashtags_raw, list) or len(hashtags_raw) < 12:
+                last_error = (
+                    f"Hashtags count invalid: "
+                    f"{len(hashtags_raw) if isinstance(hashtags_raw, list) else 'not list'}"
+                )
+                log.warning(last_error)
+                continue
+
+            hashtags = normalize_hashtags(hashtags_raw)
 
             if len(hashtags.split()) < 12:
                 last_error = "Not enough valid hashtags after normalization"
                 log.warning(last_error)
                 continue
 
-            if is_duplicate(title, description, history):
-                last_error = "Duplicate detected"
-                log.warning(last_error)
-                continue
+            log.info(f"✓ Description generated ({len(description)} chars)")
 
-            log.info(f"✓ Title: {title}")
-            return {"title": title, "description": description, "hashtags": hashtags}
+            return {
+                "title": title_from_excel,
+                "description": description,
+                "hashtags": hashtags,
+                "read_text": read_text_from_excel,
+                "excel_number": excel_number,
+            }
 
         except json.JSONDecodeError as e:
             last_error = f"JSON parse: {e}"
@@ -478,7 +440,7 @@ def generate_unique_content(history):
             last_error = str(e)
             log.warning(f"Error: {e}")
 
-    raise RuntimeError(f"Content generation failed: {last_error}")
+    raise RuntimeError(f"Description generation failed: {last_error}")
 
 
 def generate_search_terms(title: str, description: str):
@@ -658,7 +620,6 @@ def render_scene(input_path: Path, output_path: Path, duration: float,
     else:
         start = 0
 
-    # استخدام لون الفلتر المختار
     filter_hex = f"0x{video_filter['r']:02x}{video_filter['g']:02x}{video_filter['b']:02x}"
 
     vf = (
@@ -782,7 +743,7 @@ def overlay_texts(video_in: Path, video_out: Path,
 # =========================
 # Build Video
 # =========================
-def create_video(title: str, search_terms, cache):
+def create_video(title: str, read_text: str, search_terms, cache):
     total_duration = pysecrets.choice(range(VIDEO_DURATION_MIN, VIDEO_DURATION_MAX + 1))
     needed = math.ceil(total_duration / SCENE_DURATION)
     log.info(f"Duration: {total_duration}s, scenes: {needed}")
@@ -847,7 +808,7 @@ def create_video(title: str, search_terms, cache):
             text_color=title_theme["text"],
         )
         render_read_desc_png(
-            renderer, "اقرأ الوصف", read_png,
+            renderer, read_text, read_png,
             font_size=READ_DESC_FONT_SIZE,
             bg_color=read_theme["bg"],
             text_color=read_theme["text"],
@@ -882,8 +843,13 @@ def create_video(title: str, search_terms, cache):
 
 
 def save_content_file(content, search_terms, duration, title_theme, read_theme, video_filter):
-    text = f"""TITLE:
+    text = f"""EXCEL NUMBER: #{content['excel_number']}
+
+TITLE:
 {content['title']}
+
+READ TEXT:
+{content['read_text']}
 
 DESCRIPTION:
 {content['description']}
@@ -960,13 +926,14 @@ def send_to_whatsapp(video_path: Path, description: str, hashtags: str):
 # =========================
 def main():
     log.info("=" * 60)
-    log.info("🚀 Viral Short Generator v5.3 (Multi-Color + Filters)")
+    log.info("🚀 Viral Short Generator v5.4 (Excel + Multi-Color)")
     log.info("=" * 60)
 
     ensure_dirs()
     clean_temp_only()
     ensure_font()
     ensure_templates()
+    ensure_excel()
 
     for var in ["GROQ_API_KEY", "PEXELS_API_KEY",
                 "GREEN_API_INSTANCE_ID", "GREEN_API_TOKEN", "WHATSAPP_CHAT_ID"]:
@@ -976,17 +943,25 @@ def main():
     cache = load_pexels_cache()
     log.info(f"History: {len(history)} | Pexels cache: {len(cache)}")
 
-    content = generate_unique_content(history)
+    # 1️⃣ جلب المحتوى (عنوان من Excel + وصف من Groq)
+    content = generate_unique_content()
+
+    # 2️⃣ توليد كلمات البحث من Groq
     search_terms = generate_search_terms(content["title"], content["description"])
     log.info(f"Search terms: {search_terms}")
 
+    # 3️⃣ إنشاء الفيديو
     video_path, duration, title_theme, read_theme, video_filter = create_video(
-        content["title"], search_terms, cache
+        content["title"], content["read_text"], search_terms, cache
     )
+
+    # 4️⃣ حفظ المعلومات
     save_content_file(content, search_terms, duration, title_theme, read_theme, video_filter)
 
     history.append({
+        "excel_number": content["excel_number"],
         "title": content["title"],
+        "read_text": content["read_text"],
         "description": content["description"],
         "hashtags": content["hashtags"],
         "search_terms": search_terms,
@@ -999,6 +974,7 @@ def main():
     save_history(history)
     save_pexels_cache(cache)
 
+    # 5️⃣ إرسال على واتساب
     send_to_whatsapp(video_path, content["description"], content["hashtags"])
 
     log.info("=" * 60)
