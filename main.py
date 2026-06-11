@@ -1,10 +1,10 @@
 """
-Viral Short Generator v5.4
+Viral Short Generator v5.5
 ==========================
 - Font: Noto Naskh Arabic Bold
 - Rendering: HTML + Playwright (دعم عربي 100%)
 - Titles: من ملف Excel (data/videos.xlsx)
-- Description + Hashtags: من Groq AI
+- Description + Hashtags: من Groq AI (برومبت فيروسي محسّن)
 - Text Themes: 8 color themes (random)
 - Video Filters: 6 color filters (random, unified per video)
 - FFmpeg pipeline كامل
@@ -110,7 +110,7 @@ HTTP = httpx.Client(
     timeout=httpx.Timeout(120.0, connect=20.0),
     follow_redirects=True,
     http2=True,
-    headers={"User-Agent": "viral-short-generator/5.4"},
+    headers={"User-Agent": "viral-short-generator/5.5"},
 )
 
 
@@ -275,6 +275,10 @@ def normalize_hashtags(items) -> str:
     return " ".join(cleaned[:15])
 
 
+def word_count(text: str) -> int:
+    return len([w for w in text.strip().split() if w.strip()])
+
+
 # =========================
 # Pexels Cache
 # =========================
@@ -299,36 +303,66 @@ def cache_key(query: str) -> str:
 # Groq Prompts (JSON)
 # =========================
 def build_description_prompt(title: str) -> str:
-    """Prompt لتوليد الوصف والـ hashtags فقط (العنوان من Excel)."""
-    return f"""You are the world's best viral relationship and psychology content creator.
+    """
+    برومبت احترافي لتوليد وصف فيروسي + hashtags بناءً على عنوان الفيديو.
+    """
+    return f"""أنت كاتب محتوى فيروسي متخصص في كتابة أوصاف فيديوهات قصيرة لمنصات TikTok وYouTube Shorts وFacebook Reels.
 
-I have an Arabic title for a short video. Generate ONLY the description and hashtags.
+مهمتك هي كتابة وصف فيديو واحد + 15 هاشتاج بناءً على العنوان الذي سأعطيك إياه.
 
-TITLE (already chosen, DO NOT change it):
+🚨 قواعد إلزامية صارمة للوصف (description):
+
+1. اللغة:
+- استخدم اللغة العربية الفصحى البسيطة فقط.
+- ممنوع استخدام أي لغة أخرى.
+- ممنوع الرموز التعبيرية أو الإيموجي أو أي رموز غير نصية.
+
+2. البنية:
+- يجب أن يبدأ الوصف بـ 3 جمل قوية جدًا (Hook قوي جدًا).
+- هذه الجمل الأولى يجب أن تكون خيالية، نفسية، مشوقة، وتخلق صدمة أو فضول عالي جدًا.
+- الهدف منها هو إجبار أي شخص على إكمال القراءة.
+
+3. بعد الـ 3 جمل الأولى:
+- اكمل شرح الفكرة بشكل تدريجي وغامض قليلًا.
+- حافظ على التشويق حتى النهاية.
+- لا تكشف كل شيء بسرعة.
+
+4. الأسلوب:
+- أسلوب نفسي + تحليلي + غامض + بسيط.
+- بدون تعقيد لغوي.
+- بدون مبالغة ركيكة أو تكرار.
+
+5. الطول:
+- بين 80 إلى 150 كلمة تقريبًا (ليس قصير جدًا ولا طويل جدًا).
+
+6. ممنوع:
+- لا تستخدم أي رموز أو إيموجي.
+- لا تستخدم أي لغات أجنبية.
+- لا تكتب عناوين أو علامات أو تنسيقات.
+- لا تشرح أنك ستقوم بالكتابة.
+
+7. الهدف:
+- جعل القارئ يكمل القراءة حتى النهاية.
+- خلق فضول نفسي قوي جدًا مرتبط بعنوان الفيديو.
+
+🚨 قواعد الهاشتاجات (hashtags):
+- اكتب بالضبط 15 هاشتاج.
+- مزيج بين العربية والإنجليزية.
+- مرتبطة بموضوع العنوان (علم نفس، علاقات، تحليل سلوك).
+- بدون رمز # في الـ JSON array.
+
+⚠️ تحقّق قبل الإرسال:
+- إذا لم تكن أول 3 جمل قوية جدًا ومثيرة للفضول، أعد كتابة الوصف من البداية حتى يصبح أكثر تأثيرًا نفسيًا.
+
+🎯 عنوان الفيديو:
 {title}
 
-DESCRIPTION RULES:
-- Write in Arabic
-- 40 to 60 seconds reading time (around 120-180 words)
-- Strong curiosity hook in the first sentence
-- Psychological depth and emotional intelligence
-- At least one surprising insight or counter-intuitive point
-- End with a thought-provoking question
-- Natural, conversational tone, NOT AI-sounding
-- Must perfectly match and expand the title above
-- DO NOT just repeat the title, build on it
+📤 الإخراج:
+أرجع فقط JSON صالح بالشكل التالي، بدون أي شرح أو نص إضافي:
 
-HASHTAGS:
-- Exactly 15 hashtags (mix Arabic and English)
-- Relevant to psychology, relationships, attraction, communication
-- Without the # symbol in the JSON array
-
-CRITICAL: Respond ONLY with a valid JSON object. No markdown, no extra text.
-
-JSON SCHEMA:
 {{
-  "description": "string in Arabic (120-180 words)",
-  "hashtags": ["tag1", "tag2", "...", "tag15"]
+  "description": "النص الكامل للوصف هنا (80-150 كلمة)",
+  "hashtags": ["هاشتاج1", "هاشتاج2", "tag3", "...", "tag15"]
 }}
 """
 
@@ -377,7 +411,7 @@ def call_groq_json(prompt: str, temperature=1.1, max_tokens=1500) -> dict:
 def generate_unique_content():
     """
     تحصل على العنوان والـ read_text من Excel.
-    تولّد الوصف والـ hashtags من Groq.
+    تولّد الوصف والـ hashtags من Groq باستخدام البرومبت الفيروسي.
     """
     # 1️⃣ جلب العنوان من Excel
     excel_data = get_next_video()
@@ -391,19 +425,24 @@ def generate_unique_content():
     last_error = None
 
     for attempt in range(1, GROQ_MAX_ATTEMPTS + 1):
-        log.info(f"Generating description + hashtags ({attempt}/{GROQ_MAX_ATTEMPTS})...")
+        log.info(f"Generating viral description + hashtags ({attempt}/{GROQ_MAX_ATTEMPTS})...")
 
         prompt = build_description_prompt(title_from_excel)
 
         try:
-            data = call_groq_json(prompt, temperature=1.1, max_tokens=1200)
+            data = call_groq_json(prompt, temperature=1.15, max_tokens=1500)
 
             description = data.get("description", "").strip()
             hashtags_raw = data.get("hashtags", [])
 
-            # التحقق من الوصف
-            if len(description) < 350:
-                last_error = f"Description too short ({len(description)} chars)"
+            # التحقق من الوصف (80-150 كلمة)
+            wc = word_count(description)
+            if wc < 70:
+                last_error = f"Description too short ({wc} words, need 80+)"
+                log.warning(last_error)
+                continue
+            if wc > 180:
+                last_error = f"Description too long ({wc} words, need <180)"
                 log.warning(last_error)
                 continue
 
@@ -423,7 +462,7 @@ def generate_unique_content():
                 log.warning(last_error)
                 continue
 
-            log.info(f"✓ Description generated ({len(description)} chars)")
+            log.info(f"✓ Viral description generated ({wc} words, {len(description)} chars)")
 
             return {
                 "title": title_from_excel,
@@ -926,7 +965,7 @@ def send_to_whatsapp(video_path: Path, description: str, hashtags: str):
 # =========================
 def main():
     log.info("=" * 60)
-    log.info("🚀 Viral Short Generator v5.4 (Excel + Multi-Color)")
+    log.info("🚀 Viral Short Generator v5.5 (Excel + Viral Prompt)")
     log.info("=" * 60)
 
     ensure_dirs()
@@ -943,10 +982,10 @@ def main():
     cache = load_pexels_cache()
     log.info(f"History: {len(history)} | Pexels cache: {len(cache)}")
 
-    # 1️⃣ جلب المحتوى (عنوان من Excel + وصف من Groq)
+    # 1️⃣ جلب المحتوى (عنوان من Excel + وصف فيروسي من Groq)
     content = generate_unique_content()
 
-    # 2️⃣ توليد كلمات البحث من Groq
+    # 2️⃣ توليد كلمات البحث من Groq (للفيديوهات)
     search_terms = generate_search_terms(content["title"], content["description"])
     log.info(f"Search terms: {search_terms}")
 
