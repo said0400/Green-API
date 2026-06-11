@@ -27,25 +27,52 @@ jobs:
 
       - name: Validate required secrets
         env:
+          # AI Keys (at least one required)
+          GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+          GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
+          GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          # Required APIs
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           GREEN_API_BASE_URL: ${{ secrets.GREEN_API_BASE_URL }}
           GREEN_API_INSTANCE_ID: ${{ secrets.GREEN_API_INSTANCE_ID }}
           GREEN_API_TOKEN: ${{ secrets.GREEN_API_TOKEN }}
           WHATSAPP_CHAT_ID: ${{ secrets.WHATSAPP_CHAT_ID }}
         run: |
+          # ===== التحقق من الـ Secrets الإلزامية =====
           missing=()
-          for v in GROQ_API_KEY PEXELS_API_KEY GREEN_API_BASE_URL \
+          for v in PEXELS_API_KEY GREEN_API_BASE_URL \
                    GREEN_API_INSTANCE_ID GREEN_API_TOKEN WHATSAPP_CHAT_ID; do
             if [ -z "${!v}" ]; then
               missing+=("$v")
             fi
           done
           if [ ${#missing[@]} -gt 0 ]; then
-            echo "❌ Missing secrets: ${missing[*]}"
+            echo "❌ Missing required secrets: ${missing[*]}"
             exit 1
           fi
-          echo "✅ All required secrets are present"
+
+          # ===== التحقق من توفّر مفتاح AI واحد على الأقل =====
+          ai_keys_count=0
+          for v in GEMINI_API_KEY_1 GEMINI_API_KEY_2 GEMINI_API_KEY_3 GEMINI_API_KEY_4 GROQ_API_KEY; do
+            if [ -n "${!v}" ]; then
+              ai_keys_count=$((ai_keys_count + 1))
+              echo "  ✓ $v is set"
+            else
+              echo "  ⚠️ $v is not set"
+            fi
+          done
+
+          if [ $ai_keys_count -eq 0 ]; then
+            echo "❌ No AI keys configured!"
+            echo "Please set at least one of:"
+            echo "  - GEMINI_API_KEY_1, GEMINI_API_KEY_2, GEMINI_API_KEY_3, GEMINI_API_KEY_4"
+            echo "  - GROQ_API_KEY"
+            exit 1
+          fi
+
+          echo "✅ All required secrets present + $ai_keys_count AI key(s) configured"
 
       - name: Verify Excel file exists
         run: |
@@ -116,13 +143,21 @@ jobs:
         id: generator
         continue-on-error: true
         env:
+          # ===== AI API Keys =====
+          GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+          GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
+          GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_MODEL: ${{ secrets.GROQ_MODEL }}
+          # ===== Pexels =====
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          # ===== WhatsApp (Green-API) =====
           GREEN_API_BASE_URL: ${{ secrets.GREEN_API_BASE_URL }}
           GREEN_API_INSTANCE_ID: ${{ secrets.GREEN_API_INSTANCE_ID }}
           GREEN_API_TOKEN: ${{ secrets.GREEN_API_TOKEN }}
           WHATSAPP_CHAT_ID: ${{ secrets.WHATSAPP_CHAT_ID }}
+          # ===== Python =====
           PYTHONUNBUFFERED: "1"
         run: |
           set -o pipefail
