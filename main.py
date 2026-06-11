@@ -107,7 +107,7 @@ NETWORK_RETRIES = 3
 NETWORK_RETRY_BACKOFF = 2.0
 
 # AI Validation Retries
-AI_MAX_ATTEMPTS = 3
+AI_MAX_ATTEMPTS = 5
 
 GREEN_API_BASE_URL = (os.getenv("GREEN_API_BASE_URL") or "https://api.green-api.com").rstrip("/")
 
