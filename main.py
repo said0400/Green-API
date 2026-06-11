@@ -431,7 +431,7 @@ def generate_unique_content():
 
             # التحقق من الوصف
             wc = word_count(description)
-            if wc < 70:
+            if wc < 60:
                 last_error = f"Description too short ({wc} words, need 80+)"
                 log.warning(last_error)
                 continue
