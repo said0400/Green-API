@@ -1,9 +1,9 @@
 """
-Viral Short Generator v5.1
+Viral Short Generator v5.2
 ==========================
 - Font: Noto Naskh Arabic Bold
 - Rendering: HTML + Playwright (دعم عربي 100%)
-- Style: Red coral box + white clean text
+- Style: Multi-color themes + organic background
 - JSON output من Groq
 - FFmpeg pipeline كامل
 - Cache لـ Pexels (24h)
@@ -38,6 +38,7 @@ from renderer import (
     render_read_desc_png,
     auto_fit_title,
 )
+from themes import pick_color_themes
 
 
 # =========================
@@ -114,7 +115,7 @@ HTTP = httpx.Client(
     timeout=httpx.Timeout(120.0, connect=20.0),
     follow_redirects=True,
     http2=True,
-    headers={"User-Agent": "viral-short-generator/5.1"},
+    headers={"User-Agent": "viral-short-generator/5.2"},
 )
 
 
@@ -821,6 +822,9 @@ def create_video(title: str, search_terms, cache):
     title_png = TEMP_DIR / "title.png"
     read_png = TEMP_DIR / "read_desc.png"
 
+    # 🎨 اختيار ثيمات لونية عشوائية
+    title_theme, read_theme = pick_color_themes()
+
     log.info("🎨 Rendering text overlays with Playwright (HTML)...")
     with HTMLRenderer(viewport_width=WIDTH, viewport_height=HEIGHT) as renderer:
         title_height = auto_fit_title(
@@ -828,10 +832,14 @@ def create_video(title: str, search_terms, cache):
             max_height=TITLE_MAX_HEIGHT,
             max_width=TITLE_MAX_WIDTH,
             preferred_size=TITLE_FONT_SIZE,
+            bg_color=title_theme["bg"],
+            text_color=title_theme["text"],
         )
         render_read_desc_png(
             renderer, "اقرأ الوصف", read_png,
             font_size=READ_DESC_FONT_SIZE,
+            bg_color=read_theme["bg"],
+            text_color=read_theme["text"],
         )
 
     # حساب أبعاد الصور (1:1، بدون قسمة)
@@ -859,10 +867,10 @@ def create_video(title: str, search_terms, cache):
     )
 
     log.info(f"✓ Video saved: {final_path}")
-    return final_path, total_duration
+    return final_path, total_duration, title_theme, read_theme
 
 
-def save_content_file(content, search_terms, duration):
+def save_content_file(content, search_terms, duration, title_theme, read_theme):
     text = f"""TITLE:
 {content['title']}
 
@@ -876,6 +884,10 @@ SEARCH_TERMS:
 {chr(10).join(search_terms)}
 
 DURATION: {duration}s
+
+THEMES:
+- Title: {title_theme['name']} (bg={title_theme['bg']}, text={title_theme['text']})
+- Read:  {read_theme['name']} (bg={read_theme['bg']}, text={read_theme['text']})
 """
     (OUT_DIR / "content.txt").write_text(text, encoding="utf-8")
 
@@ -936,7 +948,7 @@ def send_to_whatsapp(video_path: Path, description: str, hashtags: str):
 # =========================
 def main():
     log.info("=" * 60)
-    log.info("🚀 Viral Short Generator v5.1 (HTML + Playwright)")
+    log.info("🚀 Viral Short Generator v5.2 (Multi-Color Themes)")
     log.info("=" * 60)
 
     ensure_dirs()
@@ -956,8 +968,10 @@ def main():
     search_terms = generate_search_terms(content["title"], content["description"])
     log.info(f"Search terms: {search_terms}")
 
-    video_path, duration = create_video(content["title"], search_terms, cache)
-    save_content_file(content, search_terms, duration)
+    video_path, duration, title_theme, read_theme = create_video(
+        content["title"], search_terms, cache
+    )
+    save_content_file(content, search_terms, duration, title_theme, read_theme)
 
     history.append({
         "title": content["title"],
@@ -965,6 +979,8 @@ def main():
         "hashtags": content["hashtags"],
         "search_terms": search_terms,
         "duration": duration,
+        "title_theme": title_theme["name"],
+        "read_theme": read_theme["name"],
         "created_at": datetime.now(timezone.utc).isoformat(),
     })
     save_history(history)
