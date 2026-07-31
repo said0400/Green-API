@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 5,
-    "title": "ماذا يعني عندما يتجنب صديقك المقرب النظر في عينيك فجأة؟",
-    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
-    "description": "هل لاحظت когда يتجنب صديقك النظر في عينيك فجأة؟ قد يكون هذا علامة على خوفه منك أو خجله، nhưng ماذا يعني ذلك بشكل أعمق؟ ربما يخفي شيئًا، أو ربما يحاول تجنب المواجهة. عندما يحدث هذا، قد تشعر بالارتباك أو الضيق. قد تتساءل عن السبب وراء هذا السلوك، وتعتقد أن هناك شيئًا مخفيًا. ماذا يعني هذا التصرف؟ هل صديقك يحاول إخفاء الحقيقة أو هو مجرد خجول؟ ما الذي يخفيه عنك؟ هل يست تستطيعون مواجهة هذه الأمور بمفردك؟ ماذا يعني عندما يتجنب النظر في عينيك؟",
-    "hashtags": "#علاقة #الصداقة #تحليل #السلوك #علم #النفس #نظر #العين #psychology #friendship #relationships #behavioralAnalysis #eyeContact #socialPsychology #humanInteraction",
-    "search_terms": [
-      "looking away in conversation",
-      "avoiding eye contact with a friend",
-      "emotional close-up portraits of people",
-      "cinematic footage of people interacting",
-      "signs of nervousness or guilt in relationships",
-      "dramatic portrait shots of people hiding emotions"
-    ],
-    "duration": 15,
-    "title_theme": "yellow",
-    "read_theme": "purple",
-    "video_filter": "dark_green",
-    "music": "a2.mp3",
-    "created_at": "2026-06-11T04:25:29.230793+00:00"
-  },
-  {
     "excel_number": 6,
     "title": "السبب العلمي الصادم وراء رغبتك في البكاء عند الغضب الشديد",
     "read_text": "👇 السر وراء ذلك في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a1.mp3",
     "created_at": "2026-07-31T19:00:29.070412+00:00"
+  },
+  {
+    "excel_number": 505,
+    "title": "التفسير الصادم لشعورك بالنشوة عندما تنجح في الكذب دون أن تُكتشف",
+    "read_text": "👇 الجزء الأهم موجود في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تشعر بنشوة غامرة عند تفوقك في الكذب دون أن ينكشف أمرك؟ هذا الشعور المعقد يخفي وراءه آليات نفسية عميقة تتجاوز مجرد الخداع البسيط. يكمن السر في طبيعة الثقة بالنفس المفرطة والتحكم الوهمي الذي يمنحنا إياه النجاح في إخفاء حقيقتنا. إنه صراع بين الواجهة التي نبنيها والعالم الخارجي، حيث الانتصار في هذا الصراع يمنحنا إحساسًا زائفًا بالقوة والسيطرة. يتدرب دماغك على تجاهل الشعور بالذنب واستبداله بلذة الانتصار. أنت تختبر توازنًا دقيقًا بين المخاطرة والنجاح، وهذا التوازن بحد ذاته يثير مشاعر قوية. إنه أشبه بلعبة شطرنج نفسية، حيث كل حركة محسوبة تؤدي إلى شعور بالرضا عند تجاوز العقبات. في كل مرة تنجح فيها، تتعزز هذه الدائرة السلوكية. لكن هل يدوم هذا الشعور؟ وما هو الثمن الحقيقي الذي تدفعه لاستمرارية هذا النصر الزائف؟",
+    "hashtags": "#علم_نفس #سلوك #خداع #اكاذيب #ثقة_بالنفس #تحليل_سلوك #علم_النفس_الاجتماعي #الشعور_بالذنب #Psychology #Behavior #Deception #Lying #MindGames #SelfEsteem #Manipulation",
+    "search_terms": [
+      "cinematic portrait emotional thoughtful man looking away",
+      "intense close-up face contemplation",
+      "subtle smile deception hidden emotion",
+      "internal struggle inner conflict pensive gaze",
+      "guilt remorse regretful expression",
+      "overconfidence arrogance subtle smirk"
+    ],
+    "duration": 13,
+    "title_theme": "pink",
+    "read_theme": "cyan",
+    "video_filter": "purple",
+    "music": "a2.mp3",
+    "created_at": "2026-07-31T20:14:13.476999+00:00"
   }
 ]
