@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 16,
-    "title": "لماذا نثق في الغرباء أحيانًا أكثر من أصدقائنا المقربين؟",
-    "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
-    "description": "هل سبق لك أن اكتشفت أن أسرارك تبدو أكثر أمانًا في يد شخص بالكاد تعرفه؟ قد يبدو الأمر غريبًا، لكن هناك منطقًا نفسيًّا عميقًا وراء هذه الظاهرة المدهشة. يميل العقل البشري إلى بناء هياكل الثقة بطرق غير متوقعة، وتتأثر هذه الهياكل بالعوامل الخفية التي نغفل عنها في حياتنا اليومية. هل نحن نبحث عن نوع مختلف من الأمان النفسي؟ هل الألفة تخلق حاجزًا غير مرئي؟ السر يكمن في درجات الحماية والتوقعات المختلفة التي نضعها في علاقاتنا. قد يمنحنا الغريب شعورًا بالحياد، بينما قد يحمل الصديق عبء التاريخ والتوقعات. فهم هذه الديناميكية النفسية يكشف لنا الكثير عن دوافعنا الخفية. هل نحن نخشى الحكم من الأقربين أكثر من المجهول؟",
-    "hashtags": "#علم_نفس #الثقة #العلاقات_الإنسانية #التحليل_النفسي #علم_النفس_الاجتماعي #سلوك_البشر #علم_نفس_الظواهر #علم_نفس_الشخصية #Psychology #Trust #Human_Behavior #Social_Psychology #Relationship_Advice #Psychological_Facts #Self_Awareness",
-    "search_terms": [
-      "cinematic portrait introspection",
-      "emotional close-up thoughtful",
-      "vulnerability trust stranger",
-      "psychological reflection quiet moment",
-      "inner peace gentle expression",
-      "human connection subtle emotion"
-    ],
-    "duration": 13,
-    "title_theme": "purple",
-    "read_theme": "green",
-    "video_filter": "red",
-    "music": "a19.mp3",
-    "created_at": "2026-06-12T16:36:13.177387+00:00"
-  },
-  {
     "excel_number": 17,
     "title": "الحقيقة النفسية خلف هوسك بمتابعة أخبار الأشخاص الذين تكرههم",
     "read_text": "👇 التفسير في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a18.mp3",
     "created_at": "2026-08-01T20:03:11.224030+00:00"
+  },
+  {
+    "excel_number": 516,
+    "title": "لماذا نشعر بالوحدة أكثر عندما نكون محاطين بأشخاص لا يفهموننا؟",
+    "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا يصبح الصمت أعمق داخل زحام صاخب؟  الغريب أن الشعور بالعزلة يتجذر حين نجد أنفسنا بين بشر يشاركوننا المكان لكنهم يختلفون عن تفكيرنا بعمق؟  هذا الشعور ليس وهمًا، بل هو صدى لحاجتنا النفسية للإشباع والتواصل الحقيقي، حاجة تتشكل عبر مراحل تطورنا العميق.  تخيل أنك في قارب لا يبحر في اتجاه الريح، هكذا تبدو روحك عندما تكون محاطًا بفهم قاصر.  هذه الهوة بينك وبين الآخرين تزرع بذور الاغتراب، فتجد لسانك يعجز عن وصف ما يدور في أعماقك.  يصبح العالم من حولك لوحة باهتة، والصخب مجرد ضجيج لا معنى له، وتشتد وطأة الوحشة الداخلية.  أين يكمن سر هذا التناقض المؤلم بين الوجود الجسدي والغياب النفسي؟",
+    "hashtags": "#علم_نفس #وحدة #علاقات #تواصل #فهم #مشاعر #إنسانيات #اكتئاب #نصيحة #تحليل_سلوك #loneliness #psychology #understanding #connection #emotions",
+    "search_terms": [
+      "sad person alone in crowd cinematic",
+      "loneliness in a busy city emotional portrait",
+      "feeling misunderstood in a group cinematic",
+      "isolated individual amidst people thoughtful",
+      "melancholy mood in urban environment portrait",
+      "unseen person in a social setting cinematic"
+    ],
+    "duration": 15,
+    "title_theme": "green",
+    "read_theme": "pink",
+    "video_filter": "gray",
+    "music": "a19.mp3",
+    "created_at": "2026-08-01T20:40:17.483673+00:00"
   }
 ]
