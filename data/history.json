@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 43,
-    "title": "ماذا يعني لو كان أخوك يرفض طلب المساعدة منك؟",
-    "read_text": "👇 الحقيقة كاملة في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يرفض أقرب الناس إليك المساعدة، حتى لو كانت واضحة وبسيطة؟ قد يخفي هذا الرفض دوافع نفسية عميقة تفوق مجرد العناد الظاهر. إنه يشير إلى صراع داخلي قد لا يفصح عنه، ربما خوف من الظهور بمظهر الضعيف أو فقدان السيطرة.  ربما يشعر بعدم الاستحقاق أو يعاني من تجارب سابقة جعلته يحتاط من تلقي الدعم.  هذه المواقف تكشف عن آليات دفاعية معقدة وكيفية بناء الجدران لحماية الذات.  ربما يعتقد أن قبوله للمساعدة سيضع عبئًا عليك، أو يخاف من دين مستقبلي.  فهم هذه التناقضات يفتح الباب أمام علاقات أكثر صدقًا وتفاهمًا.  هل تفضل أنت تقديم المساعدة أم تلقيها، ولماذا؟",
-    "hashtags": "#علم_نفس #علم_النفس_الاجتماعي #علم_النفس_العميق #تطوير_الذات #علاقات #علاقات_أسرية #أخوة #دعم_نفسي #مشاكل_اجتماعية #تحليل_شخصيات #سلوك_بشري #Psychology #FamilyDynamics #BehavioralAnalysis #SelfImprovement",
-    "search_terms": [
-      "man looking thoughtful, close-up, cinematic",
-      "woman with concerned expression, portrait, emotional",
-      "person staring out window, pensive, moody lighting",
-      "hands clasped tightly, showing internal struggle, dramatic",
-      "face in shadow, contemplating, deep thought",
-      "alone in a room, feeling isolated, cinematic portrait"
-    ],
-    "duration": 14,
-    "title_theme": "orange",
-    "read_theme": "pink",
-    "video_filter": "gray",
-    "music": "a57.mp3",
-    "created_at": "2026-06-15T02:10:48.446374+00:00"
-  },
-  {
     "excel_number": 44,
     "title": "لماذا نكره صوتنا المسجل بينما يبدو عاديًا للآخرين؟",
     "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a54.mp3",
     "created_at": "2026-08-04T16:03:49.367897+00:00"
+  },
+  {
+    "excel_number": 543,
+    "title": "ماذا يحدث في دماغك عندما تقرر فجأة تغيير ديكور غرفتك بالكامل؟",
+    "read_text": "👇 التفسير الكامل في الوصف👇",
+    "description": "هل شعرت يومًا برغبة عارمة ومفاجئة في تغيير كل شيء حولك، كأن قوة خفية تسيطر على قراراتك؟ قد يكون وراء هذه الرغبة دوافع نفسية عميقة ومعقدة تستحق التأمل. إنها ليست مجرد نزوة عابرة، بل قد تشير إلى احتياجات غير ملباة أو مرحلة انتقالية هامة في حياتك. هذه الظاهرة تلخصها علم النفس كسعي لتحقيق التوازن الداخلي أو التعبير عن الذات. إن التحول المفاجئ في ديكور الغرفة يعكس رغبة في التحول على مستوى أعمق. قد يبدأ الأمر بملل بسيط، لكنه يتطور ليصبح حاجة ماسة لإعادة تعريف المساحة الشخصية. كل تغيير صغير تقوم به هو خطوة نحو إحداث تغيير أكبر في نظرتك لنفسك وللعالم. هل نحن حقًا المسؤولون عن دوافعنا أم أن هناك محفزات خفية توجهنا؟ 🧠✨",
+    "hashtags": "#علم_نفس #تغيير_الديكور #علم_النفس_الاجتماعي #تحفيز #دوافع_خفية #تطوير_الذات #سلوك_بشري #تغيير_الحياة #علم_النفس_الإيجابي #Motivation #Psychology #SelfImprovement #BehavioralScience #LifeHacks #Mindset",
+    "search_terms": [
+      "sad woman looking out window cinematic",
+      "person staring thoughtfully interior design",
+      "woman overwhelmed by emotions at home",
+      "person contemplating change bedroom",
+      "lonely person in apartment cinematic",
+      "woman transforming room interior cinematic portrait"
+    ],
+    "duration": 15,
+    "title_theme": "green",
+    "read_theme": "pink",
+    "video_filter": "red",
+    "music": "a57.mp3",
+    "created_at": "2026-08-04T17:29:57.204185+00:00"
   }
 ]
