@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 47,
-    "title": "ماذا يحدث لعقلك عندما تقرر مسامحة شخص دمرك؟",
-    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
-    "description": "هل فكرت يومًا في ثمن المسامحة الحقيقي؟ عندما تقرر أن تغفر لشخص ألحق بك أذى عميقًا، هل تعلم ما هي التحولات الدرامية التي تحدث في أعماق عقلك وجسدك؟ قد يبدو الأمر مجرد قرار عاطفي، لكنه في الواقع عملية بيولوجية ونفسية معقدة تفوق التوقعات. إن قرار الصفح ليس إضعافًا لك، بل هو تحرير رهيب للطاقة التي كانت تستنزفك. يتحرر دماغك من عبء الغضب المرير، وتبدأ مستويات هرمونات التوتر في الانخفاض بشكل ملحوظ. تشعر بقوة أكبر، ويتحسن تركيزك، وتستعيد سيطرتك على حياتك. تتغير نظرتك للأمور، وتكتشف جوانب جديدة من شخصيتك لم تكن تعرفها. لكن هل يمكن للمسامحة أن تغير حتى بنية دماغك وتجعلك أكثر مرونة أمام تحديات الحياة المستقبلية؟",
-    "hashtags": "#علم_النفس #المسامحة #التسامح #تحليل_الشخصية #الصحة_النفسية #العلاقات #علم_النفس_الاجتماعي #التطوير_الذاتي #التعافي #التحرر #الكوتشنج #TikTokPsychology #MentalHealth #Forgiveness #SelfHealing",
-    "search_terms": [
-      "emotional healing journey",
-      "person finding peace after trauma",
-      "woman looking reflective and thoughtful",
-      "man overcoming inner struggle cinematic",
-      "headshot of someone with a subtle smile of relief",
-      "person meditating in nature, calm and serene"
-    ],
-    "duration": 15,
-    "title_theme": "black",
-    "read_theme": "cyan",
-    "video_filter": "gray",
-    "music": "a64.mp3",
-    "created_at": "2026-06-15T19:39:23.117472+00:00"
-  },
-  {
     "excel_number": 48,
     "title": "السر وراء الشخص الذي يعتذر دائمًا حتى بدون خطأ",
     "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a62.mp3",
     "created_at": "2026-08-04T21:03:52.866628+00:00"
+  },
+  {
+    "excel_number": 547,
+    "title": "لماذا يتعمد والدك إعطاءك مهام صعبة عندما يراك مستريحاً؟",
+    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا يبدو والدك مستمتعًا بمنحك مهام شاقة بالذات عندما تكون في قمة استرخائك؟ قد يخفي هذا السلوك أسرارًا عميقة حول ديناميكيات العلاقات الأسرية وطرق التعبير عن الاهتمام، حتى لو بدا عكس ذلك. غالبًا ما تختبئ دوافع غير معلنة وراء هذه الأفعال، قد تكون محاولة لتعليمك تحمل المسؤولية أو ربما اختبار لقدرتك على التحمل. قد يكون الأمر يتعلق بإيجاد توازن بين الحاجة إلى الراحة والحاجة إلى الإنجاز، أو تعبيرًا غير مباشر عن توقعاته منك. ربما هي طريقة لتوجيه طاقتك نحو شيء منتج، أو حتى اختبار لقدرتك على مواجهة التحديات. كل هذه الاحتمالات تفتح نافذة على عالم معقد من المشاعر الأبوية. ولكن ما هو الدافع الحقيقي الذي يحركه؟ هل يعكس هذا السلوك قلقه عليك أم مجرد روتين اعتاد عليه؟",
+    "hashtags": "#علم_نفس #علاقات_أسرية #تحليل_سلوك #تربية_الأبناء #الوالدين #تحديات #مسؤولية #فضول #تحفيز #دوافع #Psychology #FamilyDynamics #BehaviorAnalysis #Parenting #Motivation",
+    "search_terms": [
+      "father giving son hard task cinematic",
+      "parent testing child's limits emotional",
+      "family relationship challenges portrait",
+      "parental expectations difficult chores",
+      "man struggling with responsibility cinematic",
+      "parental tough love expression"
+    ],
+    "duration": 13,
+    "title_theme": "red",
+    "read_theme": "cyan",
+    "video_filter": "red",
+    "music": "a64.mp3",
+    "created_at": "2026-08-04T22:01:26.232463+00:00"
   }
 ]
