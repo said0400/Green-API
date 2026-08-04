@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 41,
-    "title": "لماذا تشعر بالخوف عندما تسير الأمور في حياتك بمثالية؟",
-    "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا ينتابك شعور غريب بالخوف والتوتر عندما تسير أمورك في الحياة بوتيرة مثالية وسلسة؟ هذا التناقض النفسي العميق يكشف عن طبقات خفية في عقلنا الباطن، فما السر وراء هذا الشعور غير المريح حتى في أوج نجاحنا وسعادتنا؟ يبدو أن اللاشعور يمتلك آلية دفاعية معقدة، حيث يرى في الهدوء التام أحيانًا علامة على اقتراب العاصفة. ربما يعكس هذا الخوف تجارب سابقة مؤلمة، أو توقعات بأن الكمال المستمر لا يمكن أن يدوم، فيخلق قلقًا مبررًا يدفعنا للتأهب لأي مكروه قد يعكر صفو حياتنا. إن إدراك هذه الظاهرة النفسية هو الخطوة الأولى نحو فهم أعمق لذواتنا. هل هذه آلية وقائية أم مجرد وهم يفتعل المشاكل؟",
-    "hashtags": "#علم_نفس #خوف #كمال #تحليل_نفسي #قلق #سلوك_بشري #تطوير_الذات #الحياة_اليومية #مشاعر #mindfulness #psychologyfacts #selfimprovement #anxiety #behavioralanalysis #positivemindset",
-    "search_terms": [
-      "cinematic emotional portrait anxiety",
-      "person looking worried indoors soft light",
-      "woman contemplative thoughtful close up",
-      "man stressed pensive looking away",
-      "subtle fear expression subtle unease",
-      "overthinking mind introspection cinematic"
-    ],
-    "duration": 13,
-    "title_theme": "orange",
-    "read_theme": "purple",
-    "video_filter": "purple",
-    "music": "a53.mp3",
-    "created_at": "2026-06-14T22:01:43.731675+00:00"
-  },
-  {
     "excel_number": 42,
     "title": "السر النفسي وراء حبك للأشخاص الذين يتجاهلونك تمامًا",
     "read_text": "👇 التفسير النفسي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a52.mp3",
     "created_at": "2026-08-04T11:52:43.668138+00:00"
+  },
+  {
+    "excel_number": 541,
+    "title": "السر الذي يجعلك تحتفظ بعلب الهواتف الفارغة لسنوات طويلة",
+    "read_text": "👇 التفسير في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا نحتفظ ب علب الهواتف الفارغة لسنوات رغم عدم فائدتها الظاهرية؟ هل يمكن أن يكون هناك سر نفسي أعمق يتجاوز مجرد التخزين؟ في هذا الفيديو، سنكشف القناع عن الدوافع الخفية وراء هذا السلوك المنتشر، محاولين فهم الأبعاد النفسية للتملك والاحتفاظ. ربما يعكس الأمر تعلقنا بالذكريات، أو خوفًا لا واعٍ من فقدان القيمة، أو حتى استجابة لرغبة في التنظيم والسيطرة. قد تدفعنا هذه العلب الفارغة لاسترجاع لحظات معينة، أو الشعور بالأمان بوجود أشياء مادية، أو حتى لمجرد تأجيل اتخاذ قرار بالتخلص منها. إنها عملية تفاعل مع الماضي والحاضر والمستقبل دفعة واحدة. ما الذي تعتقده أنت السبب الحقيقي وراء إصرار البعض على الاحتفاظ بهذه العلب؟",
+    "hashtags": "#علم_نفس #سلوك_البشر #تخزين #تعلق #ذكريات #فضول #تحليل_نفسي #احتفاظ #ظواهر_نفسية #عقولنا #Psychology #BehavioralScience #Mindset #Curiosity #HiddenMotivations",
+    "search_terms": [
+      "man looking thoughtfully at phone box",
+      "woman holding empty phone packaging",
+      "close up of hands with old phone boxes",
+      "nostalgic person with discarded electronics",
+      "pensive moment with memory objects",
+      "overwhelmed person with clutter"
+    ],
+    "duration": 14,
+    "title_theme": "cyan",
+    "read_theme": "pink",
+    "video_filter": "dark_blue",
+    "music": "a53.mp3",
+    "created_at": "2026-08-04T13:29:21.557057+00:00"
   }
 ]
