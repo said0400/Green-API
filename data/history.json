@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 46,
-    "title": "لماذا تشعر بالوحدة وأنت وسط عائلتك في المنزل؟",
-    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
-    "description": "هل تساءلت يومًا كيف يمكن لبيتك أن يتحول إلى سجنٍ عاطفي رغم وجود الأحباء؟  أحياناً، يكون أقرب الناس إلينا هم مصدر غربتنا الأعمق، فكيف يحدث هذا التحول الصامت؟  سنغوص في أعماق النفس البشرية لنكشف خيوط هذا الشعور المؤلم.  قد يكون الأمر أبسط مما تتخيل، فالوحدة ليست دائمًا غيابًا جسديًا، بل قد تكون نتيجة لصدعٍ في التواصل العميق، أو عدم الشعور بالفهم والتقدير.  أنت تراهم، وتسمع أصواتهم، لكن روحك لا تجد من يستقبلها.  إنها تلك المسافة غير المرئية التي تفصل بين القلوب، حتى تحت سقف واحد.  قد يكون السبب فيك، وقد يكون فيهم، أو ربما هو نتاج لتفاعل معقد بين الجميع.  ما هو الجدار الأقوى الذي بنيته بينك وبين عائلتك دون أن تدري؟ 🤔",
-    "hashtags": "#وحدة #علاقات #أسرية #علم #نفس #تواصل #مشاعر #فضول #تحليل #سلوك #نفسي #حقيقة #تفكير #loneliness #family",
-    "search_terms": [
-      "sadness family home portrait",
-      "loneliness inside house cinematic",
-      "emotional disconnection in family",
-      "person feeling isolated at home",
-      "unseen unheard family member",
-      "melancholy indoor portrait cinematic"
-    ],
-    "duration": 13,
-    "title_theme": "pink",
-    "read_theme": "purple",
-    "video_filter": "dark_green",
-    "music": "a62.mp3",
-    "created_at": "2026-06-15T18:20:12.743074+00:00"
-  },
-  {
     "excel_number": 47,
     "title": "ماذا يحدث لعقلك عندما تقرر مسامحة شخص دمرك؟",
     "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a61.mp3",
     "created_at": "2026-08-04T20:16:15.758721+00:00"
+  },
+  {
+    "excel_number": 546,
+    "title": "الحقيقة النفسية وراء رغبتك في شم رائحة الأطفال الرضع",
+    "read_text": "👇 السر وراء ذلك في الوصف👇",
+    "description": "لماذا تشعر بانجذاب لا يقاوم لرائحة الأطفال حديثي الولادة، رغم أنها ليست مجرد عبير لطيف؟ هل تخفي هذه الرائحة سرًا عميقًا في دواخلنا البشرية، يمتد عبر الأجيال؟ يتجاوز الأمر مجرد الانبهار الأبوي، ليشمل غريزة بيولوجية قوية. هذه الرائحة ليست عشوائية، بل هي إشارة كيميائية معقدة، مصممة خصيصًا لتوليد استجابة عاطفية عميقة لدى البالغين. إنها آلية تطورية فريدة، تحفز الشعور بالحماية والرعاية، وتخلق رابطًا فوريًا وعميقًا. حتى لو لم تكن أبًا، قد تجد نفسك مسحورًا بها، وهذا طبيعي تمامًا. هذه الإشارات تساعد في بناء مجتمعات أكثر ترابطًا، وتعزيز بقاء النوع. إنها دعوة صامتة للتواصل، تتجاوز حدود الكلمات. فما هو السر الذي يجعل هذه الرائحة مؤثرة لهذه الدرجة؟",
+    "hashtags": "#علم_النفس #رائحة_الأطفال #علم_النفس_الاجتماعي #علم_نفس_الأمومة #baby_smell #psychology #parenting #infant_care #behavioral_science #evolutionary_psychology #child_development #neuroscience #human_behavior #mind_hacks #curiosity",
+    "search_terms": [
+      "newborn baby smelling close up cinematic",
+      "mother bonding with baby emotional portrait",
+      "parent holding infant tenderly cinematic",
+      "newborn baby sensory experience close up",
+      "childhood innocence emotional portrait slow motion",
+      "parental love protective embrace cinematic"
+    ],
+    "duration": 13,
+    "title_theme": "pink",
+    "read_theme": "cyan",
+    "video_filter": "dark_green",
+    "music": "a62.mp3",
+    "created_at": "2026-08-04T21:03:52.866628+00:00"
   }
 ]
