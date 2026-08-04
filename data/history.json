@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 45,
-    "title": "الحقيقة النفسية وراء الشخص الذي يتحدث بسرعة كبيرة جدًا",
-    "read_text": "👇 الجزء الأهم موجود في الوصف👇",
-    "description": "هل شعرت يومًا بالارتباك أمام شخص يتحدث بسرعة فائقة، وكأن كلماته تتسابق للخروج؟ قد تبدو هذه الظاهرة مجرد عادة بسيطة، لكنها تخفي وراءها أسرارًا نفسية عميقة تتكشف مع كل حرف ينطق. هناك عالم كامل من الدلالات الكامنة خلف هذا الإيقاع السريع للكلام، عالم يتشكل من تفاعلات معقدة بين العقل والجسد. هل يمثل هذا سرعة البديهة والتفكير العميق، أم هو هروب من الداخل، ربما خوف دفين أو قلق مستمر؟ كل كلمة إضافية تلقي بظلالها على دوافع أعمق، وتكشف عن صراعات داخلية ربما لم ننتبه لها. هذا الأسلوب في الحديث يمكن أن يكون قناعًا يخفي هشاشة، أو قد يكون دليلاً على تركيز استثنائي. ما الذي يدفعه حقًا للتعبير بهذه السرعة، وما الأثر الذي تتركه كلماته على المستمعين؟ هل هذا التسارع مجرد ميزة، أم أنه يعكس حالة نفسية أكثر تعقيدًا تتطلب فهمًا أعمق؟",
-    "hashtags": "#علم_النفس #علم_النفس_الاجتماعي #التحليل_النفسي #لغة_الجسد #التواصل #علم_النفس_اللاواعي #السلوك_البشري #نصائح_نفسية #Psychology #BehavioralAnalysis #Communication #Mindset #SelfImprovement #PsychologyFacts #HumanBehavior",
-    "search_terms": [
-      "man speaking fast cinematic",
-      "woman talking quickly emotional portrait",
-      "anxious person speaking fast close up",
-      "overwhelmed person talking quickly film look",
-      "intense conversation cinematic portrait",
-      "thoughtful person speaking slowly close up"
-    ],
-    "duration": 13,
-    "title_theme": "orange",
-    "read_theme": "cyan",
-    "video_filter": "gray",
-    "music": "a61.mp3",
-    "created_at": "2026-06-15T16:47:56.110862+00:00"
-  },
-  {
     "excel_number": 46,
     "title": "لماذا تشعر بالوحدة وأنت وسط عائلتك في المنزل؟",
     "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a60.mp3",
     "created_at": "2026-08-04T19:13:57.423405+00:00"
+  },
+  {
+    "excel_number": 545,
+    "title": "الإشارة الخفية التي تفضح خوف صديقك من فقدانك",
+    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
+    "description": "هل شعرت يومًا بأن هناك شيئًا ما يحدث خلف الكواليس في علاقاتك؟ غالبًا ما تكشف لغة الجسد عن أسرار أعماقنا دون أن ندرك ذلك، فماذا لو كانت الإشارات التي تراها هي المفتاح لفهم خوف أعمق لدى صديقك؟ قد تلاحظ تزايدًا في التشبث، أو تغيرًا مفاجئًا في طريقة التواصل، أو ربما ترددًا في البقاء بمفرده. هذه التفاصيل الدقيقة ليست مجرد سلوكيات عابرة، بل هي صدى لنداء صامت للقلق الداخلي. عندما يدرك الشخص قيمة ما يملكه، قد تبدأ أنماط سلوكية غير واعية بالظهور، تعكس سعيًا لا شعوريًا لتأمين ما يعتقد أنه قابل للضياع. هل سبق لك أن لاحظت إشارة مشابهة وفكرت في معناها الحقيقي؟",
+    "hashtags": "#علم_النفس #تحليل_سلوك #العلاقات #فهم_الأصدقاء #الإشارات_الخفية #لغة_الجسد #قلق_الفقدان #تطوير_الذات #نصائح_علاقات #صداقة_قوية #Psychology #BehavioralAnalysis #Friendship #EmotionalIntelligence #SubtleSigns",
+    "search_terms": [
+      "man looking worried, worried expression, close up",
+      "woman looking sad, emotional portrait, subtle fear",
+      "person expressing anxiety, nervous gesture, looking away",
+      "couple looking concerned, relationship doubt, unspoken tension",
+      "young adult feeling lonely, introspective mood, looking out window",
+      "person showing vulnerability, subtle distress, emotional connection"
+    ],
+    "duration": 14,
+    "title_theme": "black",
+    "read_theme": "orange",
+    "video_filter": "gray",
+    "music": "a61.mp3",
+    "created_at": "2026-08-04T20:16:15.758721+00:00"
   }
 ]
