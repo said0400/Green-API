@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 55,
-    "title": "الحقيقة المظلمة للأشخاص الذين ينشرون سعادتهم على السوشيال ميديا",
-    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
-    "description": "هل تعلم أن السعادة المفرطة التي تراها على وسائل التواصل الاجتماعي قد تكون قناعًا هشًا يخفي حزنًا عميقًا؟ يظن الكثيرون أن استعراض البهجة باستمرار هو دليل على الرضا، لكن العقل البشري أكثر تعقيدًا من ذلك بكثير. غالبًا ما يسعى هؤلاء الأشخاص إلى تعويض شعور بالنقص أو الفراغ الداخلي، محاولين إقناع أنفسهم والآخرين بأنهم بخير. كل صورة مبتسمة، وكل منشور احتفالي، قد يكون صرخة استغاثة مكتومة في عالم رقمي يفتقر إلى التعاطف الحقيقي. إنهم يبحثون عن تأكيد خارجي لأنفسهم، يرتدون أقنعة السعادة ليروا استجابة إيجابية من المتابعين، بينما يعانون بصمت في حياتهم الواقعية. هل ستبقى ترى هذه السعادة الظاهرية بنفس العين دائمًا؟",
-    "hashtags": "#علم_نفس #سوشيال_ميديا #حقيقة_مؤلمة #سعادة_وهمية #تحليل_سلوك #علم_النفس_الاجتماعي #مشاهير #إدمان_السوشيال_ميديا #صحة_نفسية #الظاهر_والباطن #عقل_البشر #اضطراب_الشخصية #psychology #socialmedia #manipulation",
-    "search_terms": [
-      "sadness behind a smile cinematic",
-      "lonely person looking out window emotional",
-      "person hiding tears portrait",
-      "feeling empty inside abstract",
-      "masking emotions close up",
-      "vulnerability human connection cinematic"
-    ],
-    "duration": 13,
-    "title_theme": "yellow",
-    "read_theme": "orange",
-    "video_filter": "dark_green",
-    "music": "a2.mp3",
-    "created_at": "2026-06-16T16:16:00.673630+00:00"
-  },
-  {
     "excel_number": 56,
     "title": "لماذا تشعر بالضيق عندما يلمسك شخص غريب بالخطأ؟",
     "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a1.mp3",
     "created_at": "2026-08-05T19:07:37.064610+00:00"
+  },
+  {
+    "excel_number": 555,
+    "title": "الإشارة التي تدل على أن أخاك يقلدك سراً لأنه يعتبرك قدوة",
+    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
+    "description": "هل لاحظت يومًا أن تصرفات شقيق الأصغر تبدو مألوفة جدًا، وكأنها انعكاس لبعض تصرفاتك؟ قد لا يكون الأمر مجرد صدفة، بل ربما يختبئ وراءه سر أعمق يتعلق بمدى تأثيرك عليه. كيف يمكنك أن تعرف أن أخاك يقلدك ليس من باب العبث، بل لأنه يراك قدوة حقيقية في عالمه الصغير؟ هناك إشارات دقيقة غالبًا ما نغفل عنها، تلك الهمسات الخفية في لغة الجسد، أو طريقة اختيار الكلمات، أو حتى محاكاة أسلوب تفكيرك في المواقف المختلفة. هذا التقليد ليس دليلاً على ضعف، بل هو اعتراف صريح بإعجاب وتقدير غير معلن. عندما يتبنى أخوك أفكارك أو يسعى لتقليد نجاحاتك، فهو في الواقع يبني مستقبله على أسس تدركها أنت جيدًا. إنه يرى فيك بوصلة توجهه نحو ما يعتبره صوابًا وتميزًا. فكيف تلتقط هذه الإشارات وتفهم معناها الحقيقي؟ هل هذه الظاهرة تثير لديك شعورًا بالفخر أم القلق؟",
+    "hashtags": "#تقليد_الأخوة #قدوة_العائلة #علم_نفس_الأطفال #تأثير_الأخ_الكبير #علاقات_عائلية #دوافع_خفية #تحليل_سلوك #إشارات_نفسية #علاقات_صحية #نمو_شخصي #brotherlylove #familydynamics #psychology #behavioranalysis #rolemodel",
+    "search_terms": [
+      "young boy looking up to older brother, emotional, cinematic portrait",
+      "sibling admiration, subtle imitation, thoughtful expression, close-up",
+      "child mirroring parent's actions, inspiration, quiet moment, cinematic",
+      "boy watching older sibling, learning by example, tender gaze, soft focus",
+      "older sibling as role model, younger brother's imitation, heartfelt look, shallow depth of field",
+      "childhood imitation, sibling bond, emotional connection, natural light portrait"
+    ],
+    "duration": 11,
+    "title_theme": "pink",
+    "read_theme": "cyan",
+    "video_filter": "red",
+    "music": "a2.mp3",
+    "created_at": "2026-08-05T20:19:27.517787+00:00"
   }
 ]
