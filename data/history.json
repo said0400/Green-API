@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 64,
-    "title": "لماذا تشعر أن الوقت يمر بسرعة عندما تستمتع؟",
-    "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا تبدو الأيام السعيدة وكأنها تمر كلمح البصر؟  ما السر الخفي وراء هذا الشعور المفارق للواقع بأن الزمن يتسارع عندما تكون في قمة استمتاعك؟  هذا الفيديو سيفتح لك أبواب الفهم ليكشف اللغز الذي يحير العقول حول سرعة مرور الوقت في لحظات البهجة.  تخيل أن دماغك يغير طريقة معالجته للإشارات الزمنية استجابةً للمشاعر الإيجابية.  كلما زاد تركيزك على التجربة الممتعة، قلّ وعيك بمرور الثانية، فتبدو الدقائق وكأنها لحظات.  هذا ليس وهمًا، بل آلية نفسية معقدة تفسر انطباعنا المتغير عن الزمن.  فهل تستحق المتعة أن نضحي بإحساسنا بالوقت، أم أن هناك ما هو أعمق من ذلك؟",
-    "hashtags": "#علم_نفس #وقت_سعيد #إدراك_الزمن #سعادة #تحفيز #عقل #مشاعر #تطوير_الذات #فهم_النفس #تساؤلات #لحظات_جميلة #psychology #timeperception #happiness #mindfulness",
-    "search_terms": [
-      "cinematic happy person enjoying moment",
-      "emotional portrait joyful experience",
-      "close-up smiling face deep focus",
-      "time lapse of beautiful nature",
-      "person lost in thought smiling",
-      "vivid memories joyful moments"
-    ],
-    "duration": 13,
-    "title_theme": "purple",
-    "read_theme": "yellow",
-    "video_filter": "gray",
-    "music": "a17.mp3",
-    "created_at": "2026-06-17T13:35:06.353558+00:00"
-  },
-  {
     "excel_number": 65,
     "title": "السر النفسي وراء ترتيبك لغرفتك فجأة قبل المذاكرة",
     "read_text": "👇 التفسير في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a16.mp3",
     "created_at": "2026-08-07T00:35:49.009884+00:00"
+  },
+  {
+    "excel_number": 564,
+    "title": "ماذا يحدث في دماغك عندما تقرر أخيرًا أن تسامح من آذاك بشدة؟",
+    "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
+    "description": "هل تعلم أن قرار التسامح ليس مجرد فعل إرادة، بل هو تغيير جذري يحدث في أعماق بنيتك العصبية؟ عندما تقرر أخيرًا مسامحة شخص آذاك بقسوة، تبدأ رحلة مدهشة داخل عقلك. هذه الرحلة تكشف أسرارًا لم تكن تتخيلها عن قدرة الدماغ على الشفاء وإعادة البرمجة. ما الذي يحدث بالضبط في مناطق معينة من دماغك لتفكيك أغلال الألم والغضب؟ اكتشف كيف يمكن لعملية التسامح أن تعيد تشكيل طريقة تفكيرك ومشاعرك، وربما حتى تغيير مسار حياتك بالكامل. إنها ليست مجرد مسامحة، بل هي ولادة جديدة للعقل والروح. هل أنت مستعد لفهم القوة الهائلة التي كامنة بداخلك لإطلاق سراح نفسك حقًا؟",
+    "hashtags": "#علم_النفس #تسامح #الشفاء_النفسي #علاقات #تطوير_الذات #تحليل_سلوك #قوة_العقل #الصحة_النفسية #مشاعر #تنمية_بشرية #positivevibes #mindfulness #selfhealing #psychology #forgiveness",
+    "search_terms": [
+      "cinematic emotional portrait healing",
+      "brain mind introspection calm",
+      "person letting go inner peace",
+      "woman thoughtful contemplation relief",
+      "man overcoming anger forgiveness",
+      "close up emotional release serene"
+    ],
+    "duration": 12,
+    "title_theme": "pink",
+    "read_theme": "orange",
+    "video_filter": "black",
+    "music": "a17.mp3",
+    "created_at": "2026-08-07T00:51:21.082951+00:00"
   }
 ]
