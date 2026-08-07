@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 67,
-    "title": "لماذا ننجذب للمجرمين في الأفلام والقصص الواقعية؟",
-    "read_text": "👇 التفسير الكامل في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يثير المجرمون في الأفلام والقصص الواقعية اهتمامنا بشكل غريب؟ هذا الانجذاب الخفي يبدو غير منطقي، أليس كذلك؟ ولكن هناك سر دفين يفسر هذه الظاهرة النفسية المعقدة، سر يكشف لنا دوافعنا الأعمق. يعتقد علماء النفس أن هذا الاهتمام ينبع من فضولنا الفطري لفهم الجوانب المظلمة للطبيعة البشرية، وهي جوانب نحاول قمعها في حياتنا اليومية. كما أنه قد يكون وسيلة آمنة لاستكشاف المحرمات والمشاعر المكبوتة دون عواقب حقيقية. غالبًا ما يمتلك هؤلاء الشخصيات صفات جذابة مثل الذكاء، الكاريزما، أو حتى تحدي السلطة، مما يمنحهم هالة من الغموض والإثارة. إن فهم هذا الانجذاب يمكن أن يلقي ضوءًا على فهم أعمق لأنفسنا وللمجتمع الذي نعيش فيه. هل هذه مجرد متعة آلية أم أن هناك رسالة أعمق نحاول فهمها؟",
-    "hashtags": "#علم_النفس #سلوك_بشري #انجذاب_غريب #مجرمون #شخصيات_سوداء #قصص_واقعية #افلام #تحليل_نفسي #فهم_الذات #علم_النفس_العميق #psychoanalysis #dark_side #criminalmind #psychologyfacts #humanbehavior",
-    "search_terms": [
-      "cinematic portrait close up",
-      "emotional thoughtful person looking away",
-      "introspective mood contemplative silence",
-      "darkness and light human struggle",
-      "mystery intrigue psychological tension",
-      "vulnerability raw emotion close up"
-    ],
-    "duration": 12,
-    "title_theme": "green",
-    "read_theme": "pink",
-    "video_filter": "dark_green",
-    "music": "a20.mp3",
-    "created_at": "2026-06-17T18:10:35.660460+00:00"
-  },
-  {
     "excel_number": 68,
     "title": "الحقيقة وراء شعورك بالبرد المفاجئ عندما تتوتر جدًا",
     "read_text": "👇 المعنى الحقيقي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a19.mp3",
     "created_at": "2026-08-07T01:29:11.145582+00:00"
+  },
+  {
+    "excel_number": 567,
+    "title": "ماذا يخبرك عقلك عندما تتخيل أنك تتشاجر مع مديرك وتطرده؟",
+    "read_text": "👇 الحقيقة كاملة في الوصف👇",
+    "description": "هل سبق لك أن تخيلت سيناريو مروعًا تصرخ فيه بوجه مديرك وتنهيه عمله؟ هذا التصور الذي يداهمنا في لحظات الغضب قد يحمل في طياته رسائل عميقة عن كبتنا الداخلي وطموحاتنا المكبوتة. ما الذي يكشفه عقلك الباطن عن مدى رضاك عن وضعك الحالي وعن طبيعة علاقتك بالسلطة؟ إنه ليس مجرد خيال عابر، بل هو مرآة تعكس بصدق مشاعرنا تجاه الضغوط المهنية والبحث عن التقدير. عندما تدور في ذهنك هذه المشاهد، فهي تدعوك للتساؤل عن حدود صبرك الحقيقية وعن ما تستحق أن تحصل عليه. هل هذه الأحلام هي مجرد تنفيس أم نداء للتغيير؟ إن فهم هذه الاستجابات اللاواعية يمكن أن يكون مفتاحًا لإطلاق العنان لقوتك الحقيقية وإعادة تشكيل مسارك المهني. ألا يدفعك هذا لمعرفة ما تخفيه عن نفسك؟",
+    "hashtags": "#علم_نفس_العمل #التفكير_السلبي #التحفيز_المهني #الغضب_المكبوت #psychologyfacts #counseling #behavioranalysis #mindfulness #leadership #workplace #selfimprovement #stressmanagement #emotionalintelligence #careergoals #innerthoughts",
+    "search_terms": [
+      "frustrated employee contemplating quitting",
+      "stressed person looking out window",
+      "woman feeling overwhelmed at work",
+      "man expressing anger and frustration",
+      "close up of worried face",
+      "person daydreaming about confrontation"
+    ],
+    "duration": 15,
+    "title_theme": "cyan",
+    "read_theme": "orange",
+    "video_filter": "red",
+    "music": "a20.mp3",
+    "created_at": "2026-08-07T01:54:43.015165+00:00"
   }
 ]
