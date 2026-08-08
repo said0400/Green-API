@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 77,
-    "title": "لماذا تتلعثم في الكلام عندما تتحدث مع شخص معجب به؟",
-    "read_text": "👇 الجزء الأهم موجود في الوصف👇",
-    "description": "هل سبق لك أن تساءلت لماذا تفقد كلماتك فجأة عندما تكون أمام شخص يثير إعجابك؟ يبدو الأمر وكأن عقلك يتجمد، وتصبح الأحرف غير قابلة للترتيب، مما يخلق موقفًا محرجًا يصعب نسيانه. هذا التلعثم المفاجئ ليس مجرد عَرَض عشوائي، بل هو نتيجة لتفاعل معقد يحدث داخل دماغك، مدفوعًا بشدة مشاعرك ورغبتك في ترك انطباع جيد. إنها حالة نفسية عميقة تكشف عن جانب من شخصيتك ربما لم تكن تدركه. ما الذي يحدث بالضبط في أعماق اللاوعي ليجعل حبالك الصوتية تخونك في هذه اللحظات المصيرية؟ هل هي الرغبة في الظهور بأفضل شكل، أم أن هناك شيئًا أعمق يتكشف؟ إن فهم هذه الظاهرة يمكن أن يحررك من قيود القلق الاجتماعي ويمنحك الثقة للتعبير عن نفسك بحرية. لماذا يصبح الكلام مهمة شاقة فقط عندما يتعلق الأمر بالقلب؟ 🤔",
-    "hashtags": "#علم_نفس #تطوير_الذات #علاقات #تحليل_شخصية #فضول #إثارة_التفكير #لغة_الجسد #تواصل #tiktok_علم_نفس #psychology #behavior #self_improvement #relationship_advice #communication #curiosity",
-    "search_terms": [
-      "emotional portrait nervous person speaking",
-      "anxious young woman looking away",
-      "man blushing and looking down",
-      "close up shy expression",
-      "person struggling to speak",
-      "overwhelmed by feelings introspection"
-    ],
-    "duration": 12,
-    "title_theme": "purple",
-    "read_theme": "black",
-    "video_filter": "gray",
-    "music": "a34.mp3",
-    "created_at": "2026-06-18T21:19:47.432170+00:00"
-  },
-  {
     "excel_number": 78,
     "title": "ماذا يعني لو كان والدك يتجنب الحديث عن مشاعره؟",
     "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a33.mp3",
     "created_at": "2026-08-07T22:28:14.886869+00:00"
+  },
+  {
+    "excel_number": 577,
+    "title": "الإشارة التي تدل على أن صديقك يستمد ثقته من إحباطك",
+    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
+    "description": "هل سبق لك أن شعرت بأن سعادة أحدهم تزدهر على حساب ألمك؟ قد لا يكون هذا مجرد شعور، بل قد تكون إشارة خفية إلى أن صديقك يجد قوته في إحباطاتك. كيف يمكن لشخص قريب أن يستمد طاقته من تعثراتك دون أن تدرك؟ إنه ليس ضعفًا في صداقتكما، بل آلية نفسية معقدة جدًا. يميل البعض دون وعي إلى الشعور بالرضا عن الذات كلما رأوا الآخرين في حالة يرثى لها، خاصة إذا كانوا يشعرون بالنقص. هذا لا يعني بالضرورة الخيانة، بل ربما انعكاس لعدم الأمان الداخلي لديهم. تكمن الحقيقة في أن هذا السلوك ينبع من فراغ داخلي يحاولون ملأه بمقارنة أنفسهم بالآخرين. إنه استنزاف لطاقتك النفسية بشكل غير مباشر، وخلق لواقع يبدو فيه النجاح أسهل لك لمن حولك. كيف يمكنك اكتشاف هذه الإشارة الصامتة في علاقاتك؟",
+    "hashtags": "#علم_نفس #ثقة_بالنفس #علاقات_سامة #تحليل_شخصية #صداقة #إحباط #طاقة_سلبية #وعي #سلوك_بشري #تنمية_ذاتية #psychology #self_esteem #toxic_relationships #human_behavior #friendship",
+    "search_terms": [
+      "sad person looking out window cinematic",
+      "lonely person deep in thought portrait",
+      "person feeling down emotional close up",
+      "contemplative mood cinematic slow motion",
+      "person reflecting on struggle emotional lighting",
+      "isolated individual pensive portrait cinematic"
+    ],
+    "duration": 12,
+    "title_theme": "black",
+    "read_theme": "cyan",
+    "video_filter": "dark_blue",
+    "music": "a34.mp3",
+    "created_at": "2026-08-08T00:36:53.113365+00:00"
   }
 ]
