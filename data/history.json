@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 79,
-    "title": "الحقيقة المظلمة وراء الشخص الذي يمزح في الجنازات",
-    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
-    "description": "لماذا يضحك البعض في الجنازات؟ هل هو ضعف أم قوة؟ قد يبدو هذا السلوك غريبًا ومؤلمًا، لكن هل فكرت يومًا في الدوافع النفسية الحقيقية وراءه؟ ما الذي يحدث في عقل شخص يحاول إضفاء جو من الدعابة في لحظة حزن عميق؟ الأمر أعمق مما تظن، فهذه ليست مجرد كلمات عابرة، بل قد تكون استراتيجية دفاعية معقدة للغاية. خلف القناع الخفيف، يختبئ صراع داخلي قد لا ندركه. قد تكون وسيلة للتعامل مع الحزن الشديد، أو حتى هروبًا من واقع مؤلم. ربما هي محاولة لا شعورية لتخفيف وطأة اللحظة، أو حتى طريقة للتعبير عن الارتباط بطريقة مختلفة. ما الذي تخبرنا به هذه المزحات عن طبيعة الإنسان وعلاقتنا بالموت؟",
-    "hashtags": "#علم_النفس #علم_نفس_اجتماعي #سلوك_بشري #تحليل_شخصيات #حزن #تعامل_مع_الفقد #مواقف_غريبة #ظواهر_اجتماعية #Psychology #HumanBehavior #Grief #CopingMechanisms #SocialPsychology #DarkHumor #MentalHealth",
-    "search_terms": [
-      "sad person looking away cinematic",
-      "grief abstract emotional portrait",
-      "person crying alone indoors dramatic lighting",
-      "melancholy expression close up soft focus",
-      "inner turmoil mental struggle portrait",
-      "solitude contemplation thoughtful expression"
-    ],
-    "duration": 14,
-    "title_theme": "yellow",
-    "read_theme": "green",
-    "video_filter": "dark_green",
-    "music": "a36.mp3",
-    "created_at": "2026-06-18T22:53:17.484702+00:00"
-  },
-  {
     "excel_number": 80,
     "title": "لماذا تشعر أنك \"محاصر\" في وظيفتك الحالية نفسيًا؟",
     "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a35.mp3",
     "created_at": "2026-08-08T10:17:34.935823+00:00"
+  },
+  {
+    "excel_number": 579,
+    "title": "لماذا نشعر بالارتباك عندما يوجه لنا طفل صغير سؤالاً فلسفياً؟",
+    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تبدو عقولنا وكأنها تتوقف للحظة عندما يباغتنا طفل بكلمات تبدو أعمق من سنواته؟ الأمر ليس مجرد دهشة عابرة، بل هو انعكاس عميق لكيفية بناء أدمغتنا للواقع. يبدو أن الأسئلة الفلسفية للأطفال تضرب على وتر حساس في منطقنا المعتاد، وتجبرنا على إعادة تقييم أبسط المسلمات التي نعيش وفقها. تكمن الإجابة في طريقة معالجة أدمغتنا للمعلومات، حيث يعتمد الكبار على هياكل معرفية راسخة، بينما يتعامل الصغار مع المفاهيم بخامتها الأولى. هذه المفارقة تكشف لنا عن آليات التفكير البشري المعقدة، وعن هشاشة بعض قناعاتنا التي لم نخبرها أبدًا. إنه اختبار لقدرتنا على التجريد، ومرآة صادقة لطبيعة فهمنا للعالم. عندما تتوقف عن البحث عن إجابة جاهزة، تبدأ في فهم اللعبة حقًا. فما الذي يخفيه براءة السؤال في جوهره؟",
+    "hashtags": "#علم_النفس #فلسفة_الأطفال #عقول_الأطفال #فضول #تفكير #psychology #child_philosophy #curiosity #mindfulness #behavioral_analysis #self_awareness #human_behavior #questions #deep_thoughts #viralvideo",
+    "search_terms": [
+      "thoughtful adult looking away",
+      "child asking question to parent",
+      "introspective person in natural light",
+      "moment of realization close up",
+      "elderly person reflecting",
+      "child looking curious"
+    ],
+    "duration": 15,
+    "title_theme": "pink",
+    "read_theme": "red",
+    "video_filter": "dark_green",
+    "music": "a36.mp3",
+    "created_at": "2026-08-08T12:17:20.267306+00:00"
   }
 ]
