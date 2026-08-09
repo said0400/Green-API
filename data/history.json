@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 87,
-    "title": "لماذا نشعر بالانزعاج من صوت مضغ الطعام للآخرين؟",
-    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
-    "description": "هل سبق وتساءلت لماذا يثير صوت مضغ الطعام لدى الآخرين في نفسك شعوراً طاغياً بالضيق يصل حد النفور؟ قد يبدو الأمر بسيطًا، لكنه يخفي وراءه طبقات معقدة من اللاوعي البشري. لماذا يتجاوز الأمر مجرد تفضيل شخصي ليصبح رد فعل جسدياً قوياً؟ هناك سر دفين في طريقة معالجتنا للمعلومات الحسية. هذا الفيديو سيكشف لك عن التفسير النفسي العميق لهذا الانزعاج الغريب. ستتعرف على كيف يمكن لصوت واحد أن يشعل في داخلك فتيل التوتر والغضب دون أن تدري. استكشف الجذور الخفية لما يجعلك تنفر من هذا الصوت تحديدًا. إنه ليس مجرد صوت، بل نافذة على كواليس عقلك. ما الذي يجعلك تفقد أعصابك أمام مضغ بسيط؟",
-    "hashtags": "#علم_النفس #علاقات_اجتماعية #تحليل_سلوك #علم_نفس_اجتماعي #فضول #صدمة_نفسية #غرائب_وعجائب #معلومات_مفيدة #تنمية_بشرية #نصائح #psychology #behavioral_economics #social_dynamics #mind_hacks #curiosity",
-    "search_terms": [
-      "close up stressed person reacting to sound",
-      "person feeling disturbed by noise",
-      "emotional portrait frustration sound",
-      "cinematic close up human emotion sound annoyance",
-      "subtle facial expression discomfort sound",
-      "man or woman reacting negatively to ambient noise"
-    ],
-    "duration": 13,
-    "title_theme": "green",
-    "read_theme": "pink",
-    "video_filter": "dark_blue",
-    "music": "a49.mp3",
-    "created_at": "2026-06-19T20:23:53.643798+00:00"
-  },
-  {
     "excel_number": 88,
     "title": "ماذا يعني لو كنت تتحدث مع نفسك بصوت عالٍ؟",
     "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a48.mp3",
     "created_at": "2026-08-08T22:20:49.024894+00:00"
+  },
+  {
+    "excel_number": 587,
+    "title": "لماذا تكره والدتك أن ترمي أي شيء حتى لو كان تالفاً تماماً؟",
+    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تتمسك والدتك بالأشياء القديمة التالفة حتى لو لم تعد ذات فائدة؟ إنها ليست مجرد عادة عابرة، بل غالبًا ما تحمل في طياتها أسرارًا دفينة ترتبط بجذور عميقة في النفس البشرية. هذه الظاهرة النفسية المعقدة، والمعروفة بحنين الماضي أو التشوش الذهني المتعلق بالممتلكات، تكشف عن أنماط سلوكية فريدة تؤثر في قراراتنا اليومية. غالبًا ما تكون هذه الأشياء بمثابة جسر يربطها بذكريات ثمينة أو بأشخاص فقدتهم، مما يجعل التخلي عنها أشبه بفقدان جزء من هويتها. إنها رحلة استكشاف لدوافع لا واعية، حيث يصبح كل غرض قديماً شاهداً على قصة لم تُروَ بعد. هل تشاطر والدتك هذا السلوك، ولماذا؟",
+    "hashtags": "#علم_نفس #علاقات_أسرية #سلوك_بشري #تحليل_نفسي #ذكريات #حنين #التشوش_الذهني #علم_النفس_الإيجابي #parenting #psychology #behavior #familydynamics #memories #hoarding #mindset",
+    "search_terms": [
+      "woman looking through old photos cinematic",
+      "nostalgic woman holding antique object portrait",
+      "emotional woman remembering past",
+      "sad woman looking out window cinematic",
+      "old woman with sentimental items portrait",
+      "woman reflecting on memories cinematic"
+    ],
+    "duration": 15,
+    "title_theme": "purple",
+    "read_theme": "cyan",
+    "video_filter": "gray",
+    "music": "a49.mp3",
+    "created_at": "2026-08-09T00:39:12.851078+00:00"
   }
 ]
