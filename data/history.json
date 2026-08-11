@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 111,
-    "title": "لماذا تشعر بالحنين لأيام كنت فيها حزينًا فعليًا؟",
-    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
-    "description": "هل سبق لك أن اشتقت بشدة لأيام كنت تعيش فيها الحزن دون أن تدرك ذلك؟ هذا الشعور المتناقض يدفعنا للتساؤل عن طبيعة الذاكرة العاطفية وعملها الغريب. أحياناً، نجد راحة غير مبررة في استعادة لحظات مررنا فيها بالكآبة، بينما نجاهد لتذكر السعادة. كيف يمكن لعقولنا أن تعيد صياغة الماضي بهذا الشكل، مخلّفةً لدينا هذا الحنين المربك؟ يكمن السر في آلية دفاعية عميقة، حيث تبني الذاكرة طبقات فوق التجربة الأصلية، لتخفف من وطأتها وتجعلها تبدو أقل إيلامًا مع مرور الوقت. إنها طريقة دماغنا في التعامل مع الصدمات، وتحويل الآلام إلى ذكريات أقل حدة، وأحيانًا، إلى مشاعر دافئة يصعب تفسيرها. لكن ما الذي يمنعنا من تذكر حقيقة مشاعرنا وقتها؟ هل نحن حقًا أسياد ذكرياتنا أم هي من تتلاعب بنا؟",
-    "hashtags": "#علم_النفس #الحنين #الذاكرة #العواطف #علم_نفس_الطفل #تحليل_سلوك #نصائح #تطوير_الذات #psycho_analysis #memory #nostalgia #emotions #psychology #mind_tricks #self_improvement",
-    "search_terms": [
-      "melancholy reflection cinematic",
-      "nostalgic memory emotional portrait",
-      "sadness past contemplation cinematic",
-      "dreamy looking back emotional close-up",
-      "wistful mood introspective portrait",
-      "yearning for past cinematic emotional"
-    ],
-    "duration": 14,
-    "title_theme": "red",
-    "read_theme": "yellow",
-    "video_filter": "purple",
-    "music": "a14.mp3",
-    "created_at": "2026-06-22T02:13:35.061848+00:00"
-  },
-  {
     "excel_number": 112,
     "title": "السر وراء رغبتك في تناول السكريات عند الحزن",
     "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a13.mp3",
     "created_at": "2026-08-11T14:47:49.914931+00:00"
+  },
+  {
+    "excel_number": 611,
+    "title": "التفسير الصادم لرغبتك في النوم فوراً بعد انتهاء شجار حاد",
+    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
+    "description": "هل لاحظت أن عقلك ينهار تماماً وتتوق للنوم فور انتهاء خلاف عائلي أو نقاش حاد؟ هذا ليس مجرد تعب عادي، بل هو آلية نفسية معقدة ترصدها الأدمغة بذكاء. إن الرغبة الملحة في النوم بعد الأزمات ليست ضعفاً، بل هي استراتيجية دفاعية خفية لحماية سلامتك العقلية. كيف يبني عقلك جداراً دفاعياً بالنوم ليحميك من التأثيرات العاطفية المدمرة؟ اكتشف الآن التفسير العلمي المذهل الذي يوضح كيف يستخدم جسدك النوم كدرع واقٍ. هذا السلوك الغريزي يحاول إعادة ضبط الأنظمة الداخلية وتجنب الانغماس في دوامة المشاعر السلبية. السر يكمن في كيفية معالجة الدماغ للمعلومات والمواقف العصيبة، وكيف يوفر لك النوم فرصة للشفاء وتجاوز الأثر النفسي. فهل تفهم حقاً لغة جسدك عند مواجهة الضغوط؟",
+    "hashtags": "#علم_نفس #علاقات #صدمة_نفسية #نوم #سلوك #تحليل_نفسي #ضغوط_الحياة #مشاعر #تنمية_بشرية #صحة_نفسية #psychology #sleep #behavior #relationships #mindset",
+    "search_terms": [
+      "cinematic emotional portrait stress relief",
+      "overwhelmed person resting after conflict",
+      "mental exhaustion calm after storm",
+      "vulnerable person seeking solace sleep",
+      "psychological defense mechanism recovery",
+      "healing emotional pain quiet reflection"
+    ],
+    "duration": 13,
+    "title_theme": "orange",
+    "read_theme": "yellow",
+    "video_filter": "purple",
+    "music": "a14.mp3",
+    "created_at": "2026-08-11T16:47:47.740679+00:00"
   }
 ]
