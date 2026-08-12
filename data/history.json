@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 126,
-    "title": "لماذا نشعر بالخجل من تصرفات أهلنا أمام أصدقائنا؟",
-    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
-    "description": "هل سبق وشعرت بغصة في حلقك وأنت تراقب سلوك أحدهم، شخص تربطك به صلة قوية، بينما عيون أصدقائك ترصد كل حركة؟ ما الذي يجعلنا ننقبض عندما نرى تصرفات يرتكبها والداي أو أقاربي أمام الأشخاص الذين نهتم برأيهم؟ إنه شعور معقد يتجاوز مجرد الإحراج العابر؛ إنه صراع داخلي بين الولاء العائلي والتقدير الاجتماعي. هذا الشعور المتناقض يثير تساؤلات عميقة حول الهوية والانتماء وكيف تشكل علاقاتنا المبكرة نظرتنا لأنفسنا وللآخرين. لماذا يتردد صدى أفعالهم في مساحتنا الاجتماعية بطرق تجعلنا نرغب في الاختفاء؟ وكيف نتعامل مع هذا التوتر المستمر بين الاعتزاز بمن نحب والحاجة الملحة للقبول؟ هل يمكننا فصل تقديرنا لهم عن صورتنا أمام العالم؟",
-    "hashtags": "#علم_النفس #علم_النفس_الاجتماعي #علم_النفس_الأسري #علاقات #علاقات_أسرية #علاقات_اجتماعية #نصائح #تطوير_الذات #تحفيز #فهم_المشاعر #الخجل #الشعور_بالإحراج #tiktok #psychology #social",
-    "search_terms": [
-      "person feeling embarrassed by family member",
-      "child embarrassed by parent's actions",
-      "teenager feeling awkward around friends and family",
-      "young adult conflict loyalty social perception",
-      "introspective person contemplating identity",
-      "emotional portrait of shame and social anxiety"
-    ],
-    "duration": 14,
-    "title_theme": "orange",
-    "read_theme": "pink",
-    "video_filter": "dark_green",
-    "music": "a33.mp3",
-    "created_at": "2026-06-23T19:34:50.473519+00:00"
-  },
-  {
     "excel_number": 127,
     "title": "السر وراء شعورك بالراحة عندما تشاهد شخصًا يفشل؟",
     "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a32.mp3",
     "created_at": "2026-08-12T21:32:16.216763+00:00"
+  },
+  {
+    "excel_number": 626,
+    "title": "الحقيقة المظلمة وراء الشخص الذي يتحدث بصوت منخفض جداً دائمًا",
+    "read_text": "👇 السر وراء ذلك في الوصف👇",
+    "description": "هل تساءلت يومًا عن السر الذي يخفيه من يتحدث دائمًا بصوت خافت؟ قد لا يكون الأمر مجرد خجل كما تعتقد، بل هو أعمق من ذلك بكثير. هذا الصوت المنخفض قد يكون قناعًا يرتديه البعض لإخفاء ما لا يمكن تصوره. سنغوص اليوم في أعماق النفس البشرية لنكشف الأسباب الحقيقية وراء هذه الظاهرة. ربما يخفي هؤلاء الأشخاص ضعفًا كبيرًا، أو ربما هو سلاح نفسي يستخدمونه ببراعة. إن الطريقة التي يتواصل بها الإنسان تكشف الكثير عن دواخله، والصوت المنخفض هو لغز يستحق التأمل. قد يتعلق الأمر بالسيطرة، أو بالخوف، أو حتى بنوع من التلاعب الخفي. إنه عالم من الإشارات غير اللفظية التي غالبًا ما نتجاهلها، لكنها تحمل مفاتيح لفهم أعمق. فماذا يعني حقًا أن تتحدث بصوت لا يكاد يُسمع؟ هل هو استسلام أم قوة خفية؟",
+    "hashtags": "#علم_نفس #سلوك #تحليل #أسرار #غموض #لغة_الجسد #psychology #behavior #dark_psychology #secrets #analysis #communication #low_voice #human_behavior #mind_games",
+    "search_terms": [
+      "cinematic portrait sad thoughtful man low voice",
+      "emotional close up woman introspective quiet",
+      "person speaking softly hidden emotions",
+      "psychology inward reflection solitary mood",
+      "subtle expression vulnerability hidden strength",
+      "hesitant communication deep thought contemplation"
+    ],
+    "duration": 14,
+    "title_theme": "green",
+    "read_theme": "orange",
+    "video_filter": "purple",
+    "music": "a33.mp3",
+    "created_at": "2026-08-12T22:33:27.252903+00:00"
   }
 ]
