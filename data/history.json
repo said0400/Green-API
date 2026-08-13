@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 127,
-    "title": "السر وراء شعورك بالراحة عندما تشاهد شخصًا يفشل؟",
-    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا تجد متعة غريبة في فشل الآخرين، وكأن هذا الفشل يمنحك شعورًا بالرضا؟ هذا الشعور الذي قد يخجل البعض من الاعتراف به، يكشف عن طبقات عميقة ومعقدة في النفس البشرية، يرتبط ارتباطًا وثيقًا بآليات المقارنة والدعم الذاتي. إنها ليست بالضرورة قسوة، بل قد تكون انعكاسًا لطريقتنا في تقييم أنفسنا وتجاربنا. يبدو الأمر وكأن رؤية شخص آخر يتعثر، تخفف من عبء أخطائنا الخاصة، وتمنحنا شعورًا مؤقتًا بالاستقرار. لكن ما هو الثمن النفسي الحقيقي لهذه المتعة الخفية؟ هل تعكس ضعفًا داخليًا أم قوة كامنة؟ عندما تشاهد فشلًا، ما هو أول ما يخطر ببالك عن نفسك؟",
-    "hashtags": "#علم_النفس #تحليل_سلوك #تطوير_الذات #علم_نفس_اجتماعي #علاقات_إنسانية #تفكير_إيجابي #فضول #غموض #فلسفة_الحياة #نصائح #psychology #behavioral_analysis #self_improvement #curiosity #mindset",
-    "search_terms": [
-      "sad person looking down cinematic",
-      "person looking out window thoughtful",
-      "woman crying alone emotional",
-      "man stressed at desk close up",
-      "person sitting alone in thought",
-      "disappointment face portrait"
-    ],
-    "duration": 12,
-    "title_theme": "black",
-    "read_theme": "green",
-    "video_filter": "purple",
-    "music": "a34.mp3",
-    "created_at": "2026-06-23T20:58:30.996258+00:00"
-  },
-  {
     "excel_number": 128,
     "title": "لماذا نتردد في طلب \"الحساب\" في المطاعم أحيانًا؟",
     "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a33.mp3",
     "created_at": "2026-08-12T22:33:27.252903+00:00"
+  },
+  {
+    "excel_number": 627,
+    "title": "لماذا يتجنب أخوك التحدث عن ماضيه معك وكأنه شخص آخر؟",
+    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
+    "description": "هل سألت نفسك يومًا لماذا يتصرف أخوك أحيانًا وكأنه غريب عنك، يخفي شيئًا ثقيلًا؟ لماذا تبدو نظراته شاردة عندما يتعلق الأمر بسرد قصص من الماضي، وكأن هناك بابًا مغلقًا بينكما؟ هذا التجاهل المتعمد ليس دائمًا عن قلة ثقة، بل قد يكون صدى لألم قديم لم يُشفَ بعد، أو خوف دفين من أن يراه أحد بماضيه الحقيقي. قد يخفي وراء ابتسامته دروبًا مظلمة وطرقًا شائكة سلكها، ولأسباب لا تبدو لك واضحة، يفضل أن يظل ذلك الجزء من حياته طي الكتمان. إنه ليس مجرد إخفاء، بل ربما صراع داخلي بين رغبته في التقرب منك وخوفه من الرفض أو الحكم عليه. فما الذي يمنعه حقًا من مشاركة أعمق أجزائه معك، وهل هناك سر أكبر مما تدرك؟",
+    "hashtags": "#علم_نفس #علم_نفس_اجتماعي #علاقات_أسرية #فضول #غموض #تحليل_شخصيات #سلوك_بشري #ماضي #أسرار #نفسية #علاقات #familydynamics #psychology #secrets #behavior",
+    "search_terms": [
+      "man looking away thoughtful cinematic",
+      "brother distant emotional portrait",
+      "person hiding sadness introspection",
+      "memory loss regret thoughtful gaze",
+      "family secret burden cinematic",
+      "inner conflict emotional turmoil close-up"
+    ],
+    "duration": 11,
+    "title_theme": "red",
+    "read_theme": "cyan",
+    "video_filter": "dark_green",
+    "music": "a34.mp3",
+    "created_at": "2026-08-13T00:48:14.480210+00:00"
   }
 ]
