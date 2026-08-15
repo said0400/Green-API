@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 148,
-    "title": "لماذا نشعر بالقلق عندما لا نجد هاتفنا لثوانٍ؟",
-    "read_text": "👇 المعنى الحقيقي في الوصف👇",
-    "description": "هل شعرت يوماً بأن العالم سينهار لو لم تجد هاتفك للحظات؟ هذه ليست مجرد مبالغة، بل هي قراءة عميقة لعقلك الباطن. ما الذي يجعل فقدان أداة رقمية يحدث هذا الارتباك العاطفي العميق؟ هناك سر دفين وراء هذا الارتباط النفسي القوي، شيء أعمق من مجرد الاعتياد على جهاز. هذا الفيديو يكشف النقاب عن الأسباب الحقيقية التي تجعل هذا الشعور بالقلق يتحكم فينا. قد يكون الأمر متعلقاً باحتياجاتنا الأساسية، ربما بخوف دفين من الانقطاع أو حتى بفقدان جزء من هويتنا. اكتشف لماذا يشعر دماغك بالهلع، وكيف يؤثر هذا الشعور على حياتك اليومية، ولماذا هذا الارتباط أعمق مما تتخيل. هل أصبح الهاتف حقاً امتداداً لنا؟",
-    "hashtags": "#علم_نفس #قلق #هاتف #إدمان_رقمي #تطوير_الذات #تحليل_سلوك #علوم_نفسية #فضول #نصائح #سيكولوجية #phoneaddiction #psychologyfacts #digitaldetox #mindfulness #selfimprovement",
-    "search_terms": [
-      "anxious person looking for phone cinematic",
-      "stressful moment searching phone emotional",
-      "man looking around frantically for phone portrait",
-      "woman feeling lost without phone close up",
-      "fear of losing connection phone anxiety",
-      "overwhelmed by digital dependence cinematic"
-    ],
-    "duration": 13,
-    "title_theme": "purple",
-    "read_theme": "red",
-    "video_filter": "purple",
-    "music": "a65.mp3",
-    "created_at": "2026-06-25T21:21:55.870048+00:00"
-  },
-  {
     "excel_number": 149,
     "title": "ماذا يحدث لعقلك عندما تتلقى رسالة من شخص مجهول؟",
     "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a64.mp3",
     "created_at": "2026-08-15T00:26:00.660959+00:00"
+  },
+  {
+    "excel_number": 648,
+    "title": "الإشارة الخفية التي تفضح خوف أخيك من أن تتفوق عليه مهنياً",
+    "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
+    "description": "هل لاحظت يومًا أن نجاحك المهني يثير قلق أخيك بطرق غير مباشرة؟ ربما تكون قد تجاهلت إشارات صغيرة، ظننت أنها مجرد تنافس عادي، لكن الحقيقة أعمق بكثير. هناك لغة صامتة تتحدث عن مخاوف دفينة، عن شعور خفي بالتهديد يتسلل إلى أعماق العلاقة الأخوية. هذه الإشارات، إن فهمتها، ستكشف لك حقائق مدهشة حول دوافعه وردود أفعاله. ستفهم لماذا يقلل من إنجازاتك أحيانًا، أو لماذا يبدو غير مرتاح عند سماع أخبار نجاحك. ربما يشعر بأن تفوقك يعني فشله، أو أن مكانته في الأسرة تتزعزع. هل سبق لك أن فكرت في احتمال أن يكون نجاحك هو السبب وراء سلوكه الغريب؟",
+    "hashtags": "#علم_النفس #علم_النفس_الاجتماعي #العلاقات_الأسرية #علم_النفس_التحليلي #تنمية_بشرية #السلوك_البشري #نصائح #علاقات_قوية #تطوير_الذات #تحفيز #نصائح_حياتية #familydynamics #psychologyfacts #siblingrivalry #selfimprovement",
+    "search_terms": [
+      "man looking thoughtful serious cinematic",
+      "brotherly conflict emotional portrait",
+      "subtle tension between siblings cinematic",
+      "man feeling insecure jealous cinematic",
+      "family disagreement thoughtful portrait",
+      "professional success anxiety brother cinematic"
+    ],
+    "duration": 11,
+    "title_theme": "green",
+    "read_theme": "black",
+    "video_filter": "black",
+    "music": "a65.mp3",
+    "created_at": "2026-08-15T10:07:48.576346+00:00"
   }
 ]
