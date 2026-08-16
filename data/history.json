@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 159,
-    "title": "ماذا يحدث في دماغك عندما تفكر في شخص يحبك؟",
-    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا تتغير كيمياء دماغك بالكامل عند مجرد التفكير في شخص تحبه؟ هل تشعر بتلك الرجفة الخفيفة أو السعادة المفاجئة دون سبب واضح؟ يبدو أن هناك عالمًا سريًا ينشط داخل جمجمتك، عالم يحمل مفتاح هذه المشاعر الجياشة. يكشف هذا الفيديو عن الآليات النفسية المذهلة التي تحدث في أعمق مناطق الدماغ، كيف تستجيب الخلايا العصبية، وكيف تتشكل الارتباطات العاطفية التي تجعلنا نشعر بهذا الدفء الغامض. ستتعرف على المواد الكيميائية التي تتدفق لتمنحك شعوراً بالبهجة والراحة، وكيف يعالج دماغك الذكريات المرتبطة بذلك الشخص. هل هذا الشعور مجرد وهم أم حقيقة بيولوجية عميقة؟",
-    "hashtags": "#علم_النفس #الحب #مشاعر #العلاقات #الدماغ #تحليل_سلوك #فضول #تفكير #سعادة #ارتباط #psychology #love #emotions #brain #behavior",
-    "search_terms": [
-      "emotional connection close up",
-      "thoughtful person looking away cinematic",
-      "brainwaves abstract colorful",
-      "person remembering loved one soft focus",
-      "inner peace serene expression",
-      "nostalgic memory portrait cinematic"
-    ],
-    "duration": 15,
-    "title_theme": "cyan",
-    "read_theme": "orange",
-    "video_filter": "dark_green",
-    "music": "a10.mp3",
-    "created_at": "2026-06-26T21:59:47.577596+00:00"
-  },
-  {
     "excel_number": 160,
     "title": "الحقيقة المظلمة وراء الأشخاص الذين لا يغضبون أبدًا",
     "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a5.mp3",
     "created_at": "2026-08-16T10:09:38.825686+00:00"
+  },
+  {
+    "excel_number": 659,
+    "title": "الإشارة التي تدل على أن صديقك يعتبرك منافساً وليس رفيقاً",
+    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
+    "description": "هل شعرت يومًا أن ابتسامة صديقك تخفي وراءها شيئًا آخر غير الدعم؟ قد تكون الإشارات الدقيقة التي تتجاهلها هي المفتاح لفهم حقيقة العلاقة، فمتى يتحول التعاون إلى تنافس مرير؟ يكمن السر في درجات الحرية التي تسمح بها لنفسك وللآخرين، وكيف تقارن إنجازاتك بإنجازاتهم. هذا الفيديو يكشف لك النقاب عن العلامات الخفية التي تدل على أن صديقك لا يراك كرفيق بل كمنافس شرس. ستتعلم كيف تفسر لغة الجسد المربكة، والكلمات المبطنة التي تبدو بريئة، والسلوكيات غير المباشرة التي تشير إلى الغيرة والحسد. إن فهم هذه الديناميكيات النفسية يمنحك القوة لاتخاذ قرارات واعية بشأن علاقاتك. عندما يبدأ شخص قريب منك بمراقبة خطواتك بعين الشك بدلًا من التشجيع، وتصبح نجاحاتك مصدر قلقه بدلًا من فرحه، فهل تدرك أنك تسير على أرض الملعب الخطأ؟",
+    "hashtags": "#علم_نفس #علاقات #منافسة #صداقة #تحليل_سلوك #علامات_خفية #تطوير_الذات #نصائح #فضول #علاقات_سامة #ikigai #psychology #friendship #competition #selfimprovement",
+    "search_terms": [
+      "man looking thoughtful outdoor cinematic",
+      "woman looking conflicted portrait emotional",
+      "tense conversation subtle expression close up",
+      "person feeling isolated outdoors looking away",
+      "subtle rivalry body language cinematic",
+      "doubtful expression close up natural light"
+    ],
+    "duration": 15,
+    "title_theme": "red",
+    "read_theme": "yellow",
+    "video_filter": "black",
+    "music": "a10.mp3",
+    "created_at": "2026-08-16T12:01:39.020324+00:00"
   }
 ]
