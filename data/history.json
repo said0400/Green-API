@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 171,
-    "title": "لماذا نشعر بالتوتر عندما يسود الصمت في المصعد؟",
-    "read_text": "👇 الحقيقة كاملة في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يخترق جسدك قلق غامض كلما صمت المصعد؟ ما الذي يثير هذه الهشاشة النفسية المفاجئة في مساحة مغلقة وصغيرة؟ يكمن السر في أعماق العقل البشري وكيفية معالجتنا للإشارات غير اللفظية. إن الصمت المطلق في المصعد، بعيدًا عن ضوضاء الحياة اليومية، يكشف عن هشاشتنا الداخلية تجاه الآخرين. نصبح أكثر وعيًا بأنفسنا، وكل همسة أو حركة يمكن أن تفسر بشكل مبالغ فيه. هذا الوعي المتزايد بالذات يولد شعورًا بأننا مراقبون، مما يؤدي إلى توتر غير مبرر. إنها حقًا ظاهرة نفسية عميقة تستحق التأمل. كيف تتفاعل أنت مع هذه اللحظات القصيرة؟",
-    "hashtags": "#علم_نفس #توتر_المصعد #صمت_المصعد #قلق_اجتماعي #علم_النفس_الاجتماعي #سلوك_بشري #تحليل_نفسي #عقل_البشر #Mindfulness #Anxiety #Psychology #SocialBehavior #HumanBehavior #SelfAwareness #MicroExpressions",
-    "search_terms": [
-      "cinematic portrait stress",
-      "emotional close up anxiety",
-      "person alone in elevator fear",
-      "psychological tension quiet space",
-      "vulnerable moment indoors",
-      "uncomfortable silence introspection"
-    ],
-    "duration": 14,
-    "title_theme": "yellow",
-    "read_theme": "cyan",
-    "video_filter": "dark_blue",
-    "music": "a28.mp3",
-    "created_at": "2026-06-28T01:59:32.320221+00:00"
-  },
-  {
     "excel_number": 172,
     "title": "السر النفسي وراء رغبتك في البكاء عند التقدير",
     "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a23.mp3",
     "created_at": "2026-08-17T14:13:27.974310+00:00"
+  },
+  {
+    "excel_number": 671,
+    "title": "التفسير الصادم لرغبتك في أن يتم طردك من العمل لترتاح",
+    "read_text": "👇 التفسير الكامل في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تشعر بالرغبة الملحة في أن تُطرد من وظيفتك، حتى لو كان ذلك يعني فقدان الأمان؟ هذا الشعور المربك ليس مجرد كسل، بل هو رسالة عميقة من عقلك الباطن تحمل سرًا مدهشًا. إنه يشير إلى اختلال توازن دقيق في حياتك المهنية والشخصية، حيث يصبح شبح الطرد أحيانًا هو المنقذ الوحيد لفرصة الهروب من ضغوط لا تطاق. ربما تبحث عن راحة افتراضية، أو ربما هي إشارة لإعادة تقييم جذرية لمسارك. تكمن الحقيقة في فهم هذه الرغبة الخفية، وكيف يمكن أن تكون حافزًا قويًا للتغيير الإيجابي بدلاً من مجرد استسلام سلبي. ما الذي تخفيه هذه الرغبة عنك حقًا، وكيف يمكنك استخدامها لصالحك؟",
+    "hashtags": "#علم_النفس #تحفيز #تطوير_الذات #العمل #تجاهل_الآخرين #السعادة #relatable #motivation #psychology #career #worklifebalance #selfimprovement #burnout #mentalhealth #advice",
+    "search_terms": [
+      "stressed employee looking out window cinematic",
+      "man overwhelmed at desk feeling trapped",
+      "woman contemplating career change thoughtful portrait",
+      "person looking for peace and quiet outdoors emotional",
+      "feeling of burnout in office setting cinematic lighting",
+      "worker questioning life choices close up portrait"
+    ],
+    "duration": 14,
+    "title_theme": "orange",
+    "read_theme": "red",
+    "video_filter": "black",
+    "music": "a28.mp3",
+    "created_at": "2026-08-17T16:16:44.003527+00:00"
   }
 ]
