@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 185,
-    "title": "الحقيقة وراء الشخص الذي يرفض الاعتراف بأنه مخطئ",
-    "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
-    "description": "لماذا يصر البعض على عنادهم رافضين الاعتراف بأي خطأ؟ هل هو ضعف أم قوة خفية؟ قد يبدو الأمر مجرد عناد، لكن خلف هذا السلوك تكمن دوافع نفسية عميقة تؤثر على حياتنا وعلاقاتنا بشكل مباشر. إنه صراع داخلي يخوضه الإنسان، ينتج عنه جدار يرفض أن ينكسر. نفهم الأسباب الحقيقية التي تدفع الشخص لارتداء قناع عدم الخطأ، وكيف يتجذر هذا السلوك ليصبح جزءًا من شخصيته. ما هي المخاوف التي يغذيها هذا الرفض المستمر؟ وكيف يؤثر ذلك على قدرته على النمو والتطور؟ قد تكون الحقيقة أبسط وأكثر تعقيدًا مما نتخيل. هل أنت مستعد لكشف الستار عن الأسباب الخفية وراء هذا التشبث بالرأي؟",
-    "hashtags": "#علم_نفس #تحليل_سلوك #علاقات #تطوير_الذات #علم_النفس_الاجتماعي #psychology #behavioranalysis #relationships #selfimprovement #mindset #الحقيقة #التفكير #الشخصية #قوة_الإرادة #selfawareness",
-    "search_terms": [
-      "man frustrated looking away",
-      "woman deep in thought cinematic",
-      "person staring intensely portrait",
-      "closed off expression close up",
-      "internal struggle visual metaphor",
-      "unwavering gaze defiant"
-    ],
-    "duration": 12,
-    "title_theme": "cyan",
-    "read_theme": "orange",
-    "video_filter": "gray",
-    "music": "a47.mp3",
-    "created_at": "2026-06-29T18:04:31.858309+00:00"
-  },
-  {
     "excel_number": 186,
     "title": "لماذا نشعر بالرغبة في القفز من الأماكن المرتفعة؟",
     "read_text": "👇 التفسير النفسي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a46.mp3",
     "created_at": "2026-08-19T10:34:14.055094+00:00"
+  },
+  {
+    "excel_number": 685,
+    "title": "التفسير النفسي لعدم قدرتك على التخلص من ملابس الطفولة القديمة",
+    "read_text": "👇 التفسير في الوصف👇",
+    "description": "لماذا نجد صعوبة بالغة في التخلي عن مقتنيات طفولتنا، تلك الأشياء البالية التي تحتفظ برائحة زمن مضى؟ هل يتعلق الأمر بقيمتها المادية أم أن الأمر أعمق من ذلك بكثير؟ إنها ليست مجرد قطع قماش قديمة، بل هي بصمات لذاكرتنا، أرشيف لوجودنا الأول. في أعماقنا، تتشابك هذه الأشياء مع هويتنا، تحمل قصصًا لا يمكن نسيانها، وتروي لحظات شعرنا فيها بالأمان المطلق. التخلي عنها يعني التخلي عن جزء من ذواتنا، عن تلك الطفولة التي تشكلت فيها أسس شخصيتنا الحالية. إنها صراعات نفسية خفية نخوضها يوميًا، بين الحاضر الذي نعيشه والماضي الذي يطاردنا. فما الذي يمنعنا حقًا من المضي قدمًا، وترك هذه الذكريات الثمينة خلفنا؟ هل نحن نحتفظ بها لأننا نخاف من فقدان أنفسنا؟",
+    "hashtags": "#علم_نفس #طفولة #ذكريات #تخزين #تحليل_سلوك #تعلق_بالماضي #هوية #نفسية #تطوير_الذات #مشاعر #ChildhoodMemories #Psychology #Nostalgia #BehaviorAnalysis #SelfDiscovery",
+    "search_terms": [
+      "childhood memories emotional portrait",
+      "nostalgic person holding old item",
+      "sadness letting go of past",
+      "interior lonely person thoughtful",
+      "woman looking at old photos cinematic",
+      "vintage objects close up emotional"
+    ],
+    "duration": 12,
+    "title_theme": "red",
+    "read_theme": "green",
+    "video_filter": "purple",
+    "music": "a47.mp3",
+    "created_at": "2026-08-19T12:15:10.894482+00:00"
   }
 ]
