@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 198,
-    "title": "لماذا يميل الناس لاتباع \"الترند\" حتى لو كان تافهًا؟",
-    "read_text": "👇 السر وراء ذلك في الوصف👇",
-    "description": "هل سبق وتساءلت لماذا ننجرف جميعًا خلف موجة الترندات، حتى تلك التي تبدو سخيفة وبلا معنى؟ هناك قوة خفية تسحبنا دون وعي منا، تدفعنا لتقليد الآخرين والسير في نفس المسار، وكأننا نفقد قدرتنا على التفكير المستقل. هذا الانجذاب الجماعي له جذور نفسية عميقة، تتجاوز مجرد الرغبة في الانتماء. سنكشف اليوم الستار عن الآلية النفسية المعقدة التي تجعل من السهل علينا اتباع القطيع، وكيف يؤثر هذا السلوك على قراراتنا اليومية. لماذا نشعر بالحاجة الملحة لنكون جزءًا من شيء أكبر، حتى لو كان مجرد فقاعة مؤقتة؟ هل هذا ضعف أم استراتيجية بقاء فطرية؟ اكتشف السر وراء هذه الظاهرة الاجتماعية التي تشكل عالمنا أكثر مما تتخيل. ما هو الثمن الحقيقي لاتباع الترند؟ 🤔",
-    "hashtags": "#علم_النفس #سلوك_بشري #ترند #تفكير_نقدى #التأثير_الاجتماعي #الانسياق #علم_نفس_اجتماعي #تطوير_الذات #تحفيز #اللاوعي #trend #psychology #social_influence #behavioral_economics #conformity",
-    "search_terms": [
-      "people following crowd cinematic emotional",
-      "peer pressure conformity portrait cinematic",
-      "social influence group behavior emotional portrait",
-      "mindless following trend cinematic close up",
-      "psychology of conformity emotional portrait cinematic",
-      "people losing individuality cinematic slow motion"
-    ],
-    "duration": 12,
-    "title_theme": "cyan",
-    "read_theme": "yellow",
-    "video_filter": "purple",
-    "music": "a65.mp3",
-    "created_at": "2026-06-30T21:23:29.488903+00:00"
-  },
-  {
     "excel_number": 199,
     "title": "ماذا يحدث في دماغك عندما تتناول الشوكولاتة؟",
     "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a64.mp3",
     "created_at": "2026-08-20T19:22:00.134696+00:00"
+  },
+  {
+    "excel_number": 698,
+    "title": "لماذا يصر والدك على أن تأكل من طعامه رغم أنك شبعت تماماً؟",
+    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
+    "description": "هل تساءلت يومًا عن الرسالة الخفية وراء إصرار والدك على إجبارك على تناول الطعام حتى بعد أن تشبع تمامًا؟  ما الذي يخفيه هذا السلوك البسيط ظاهريًا، والذي قد يبدو كنوع من أنواع العناد أو المحبة المفرطة؟  في هذا الفيديو، سنغوص في أعماق النفس البشرية لنكشف الستار عن الدوافع الحقيقية وراء هذه العادة المتجذرة.  قد لا يتعلق الأمر بالطعام نفسه، بل برغبة أعمق في الشعور بالانتماء والتواصل.  ربما هي محاولة منه لتأكيد سيطرته أو للتحقق من أنك بخير.  أو ربما هي طريقة للتعبير عن قلقه الذي يعجز عن إظهاره بكلمات صريحة.  إنها رحلة لاستكشاف لغة الحب غير المعلنة بين الآباء والأبناء.  فما هي القوة النفسية التي تجعله يتمسك بهذا التقليد، حتى لو كان يتعارض مع رغباتك؟",
+    "hashtags": "#علم_النفس #الوالدين #العلاقات_الأسرية #سلوك_البشر #التواصل_الأسري #الحب_غير_المشروط #فهم_الآخرين #تحليل_الشخصية #علم_الاجتماع #العادات_الاجتماعية #psychology #familydynamics #parenting #communication #behavioralscience",
+    "search_terms": [
+      "emotional father feeding adult child",
+      "parental love connection close-up",
+      "family meal meaningful look",
+      "nostalgic father daughter embrace",
+      "generational bond dinner table",
+      "warm gesture parent child"
+    ],
+    "duration": 14,
+    "title_theme": "cyan",
+    "read_theme": "yellow",
+    "video_filter": "red",
+    "music": "a65.mp3",
+    "created_at": "2026-08-20T20:16:59.589967+00:00"
   }
 ]
