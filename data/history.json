@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 200,
-    "title": "الحقيقة المظلمة وراء الشخص الذي يدعي المثالية دائمًا",
-    "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
-    "description": "هل تساءلت يومًا عن الثمن الحقيقي للمثالية المطلقة التي يظهر بها البعض؟ ما خفي عن أعيننا هو غالبًا ما يكون أكثر تعقيدًا مما نعتقد، فهذه الواجهة اللامعة قد تخفي ظلالاً عميقة من المعاناة أو الصراع الداخلي. اكتشف معنا الجانب الآخر من هذه الشخصيات التي تبدو دائمًا بلا عيوب، وكيف أن هذا السعي الدؤوب للكمال قد يكون قناعًا لمشاعر مكبوتة أو مخاوف عميقة. إن إتقان الظهور بمظهر مثالي يتطلب جهدًا نفسيًا هائلاً، وقد يكون هذا الجهد مستهلكًا لدرجة تفوق الخيال. خلف كل ابتسامة مصطنعة، قد تكمن قصة من القلق المتواصل والضغط المستمر للحفاظ على الصورة. هل هذه المثالية إنجاز أم استنزاف؟",
-    "hashtags": "#علم_نفس #تحليل_شخصية #العلاقات #علم_النفس_الاجتماعي #Psychology #HumanBehavior #SelfImprovement #Mindset #SocialDynamics #EmotionalIntelligence #Perfectionism #HiddenTruths #BehavioralAnalysis #InnerConflict #PsychologicalFacts",
-    "search_terms": [
-      "man looking sad in mirror",
-      "woman crying alone cinematic",
-      "person looking stressed",
-      "anxious thoughts close up",
-      "overwhelmed person indoors",
-      "hidden emotions portrait"
-    ],
-    "duration": 11,
-    "title_theme": "pink",
-    "read_theme": "black",
-    "video_filter": "dark_green",
-    "music": "a67.mp3",
-    "created_at": "2026-06-30T23:05:12.413683+00:00"
-  },
-  {
     "excel_number": 201,
     "title": "لماذا نشعر بالانجذاب للأشخاص الذين لديهم صوت عميق؟",
     "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a66.mp3",
     "created_at": "2026-08-20T21:15:44.949239+00:00"
+  },
+  {
+    "excel_number": 700,
+    "title": "الحقيقة النفسية للأشخاص الذين يكرهون التحدث في المصاعد المغلقة",
+    "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
+    "description": "هل تساءلت يومًا عن سر الرهبة الغامضة التي يشعر بها البعض في المصاعد المغلقة؟ ما الذي يكمن وراء هذا النفور غير المبرر من الأماكن الضيقة والمحدودة؟ الأمر أعمق بكثير من مجرد خوف بسيط من الأماكن المغلقة؛ إنه يتعلق بكيفية معالجة أدمغتنا للمواقف التي تشعرنا بالعجز. يكشف علم النفس عن طبقات خفية من المعاني وراء هذه الاستجابة، مرتبطة غالبًا بتجارب سابقة أو مخاوف أساسية تتعلق بالتحكم الشخصي وفقدانه. إن تفاعل الدماغ مع البيئة المغلقة يمكن أن يستدعي ذكريات بعيدة أو يثير قلقًا عميقًا حول السلامة والهروب. هذه الظاهرة تفسر لماذا بعض الأفراد يشعرون بضغط شديد وعدم ارتياح، بينما قد لا يتأثر آخرون بنفس الدرجة. هل سبق لك أن شعرت بهذا الضيق؟",
+    "hashtags": "#علم_نفس #علم_النفس #نفسية #مخاوف #رهاب #سلوك #تحليل_سلوك #مصاعد #اماكن_مغلقة #psychology #claustrophobia #behavioral_psychology #mind_hacks #mental_health #viral",
+    "search_terms": [
+      "man looking anxious in elevator",
+      "woman feeling claustrophobic indoors",
+      "person staring out window feeling trapped",
+      "close up anxious face portrait",
+      "man alone in crowded space looking stressed",
+      "woman feeling overwhelmed indoors"
+    ],
+    "duration": 14,
+    "title_theme": "cyan",
+    "read_theme": "black",
+    "video_filter": "red",
+    "music": "a67.mp3",
+    "created_at": "2026-08-20T22:19:18.823169+00:00"
   }
 ]
