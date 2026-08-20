@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 191,
-    "title": "لماذا نشعر بالخوف من الظلام رغم عدم وجود شيء؟",
-    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يسيطر علينا الرعب في غياب الضوء، رغم أن العقل يدرك عدم وجود خطر حقيقي؟ هذه الظاهرة النفسية العميقة تضرب بجذورها في أعماق تكويننا البشري. يبدأ الأمر كمجرد شعور بسيط بالقلق، لكنه يتضخم بسرعة ليصبح خوفًا جامحًا يهز أركان وجودنا. ما السر وراء هذه الاستجابة الفطرية التي تلازمنا منذ الطفولة؟ إنها آلية دفاع قديمة، تستدعي ذكريات ماضٍ سحيق، حيث كان الظلام ملجأ للمجهول والمفترسات. العقل يبدأ بإعادة بناء سيناريوهات افتراضية، فتتسلل إلينا الهواجس وتتجسد مخاوفنا اللاواعية. لكن هل حقًا الظلام هو ما نخاف منه، أم هو انعكاس لأفكارنا الداخلية وقلقنا العميق؟",
-    "hashtags": "#الخوف #علم_نفس #التفكير #الظلام #العقل #التنوير #التحليل_النفسي #fears #psychology #mind #darkness #anxiety #curiosity #unconscious #behavior",
-    "search_terms": [
-      "cinematic fear isolation dark",
-      "emotional man silhouette facing darkness",
-      "portrait scared person dim light",
-      "anxiety in shadows cinematic",
-      "psychological dread dimly lit room",
-      "primal fear abstract dark"
-    ],
-    "duration": 13,
-    "title_theme": "green",
-    "read_theme": "purple",
-    "video_filter": "dark_blue",
-    "music": "a53.mp3",
-    "created_at": "2026-06-30T01:55:40.343293+00:00"
-  },
-  {
     "excel_number": 192,
     "title": "السر النفسي وراء رغبتك في أن تكون \"الضحية\"",
     "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a52.mp3",
     "created_at": "2026-08-19T22:17:30.063119+00:00"
+  },
+  {
+    "excel_number": 691,
+    "title": "التفسير الصادم لرغبتك في أن تكون مريضاً لتتجنب مواجهة مسؤولياتك",
+    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
+    "description": "لماذا تتمنى الإصابة بالمرض لتتجنب مواجهة الحياة؟ هل تتساءل حقاً عن العمق النفسي وراء هذه الرغبة الغريبة؟ يكمن في داخلك صراع دفين بين الحاجة للأمان والهروب من الضغوط. هذا الميل للتظاهر بالمرض هو قناع قديم يخفي خوفاً عميقاً من الفشل أو رفض الذات. إنه استراتيجية نفسية لا واعية تعكس ضعفاً في آليات التأقلم. يعتقد العقل الباطن أن المرض يوفر ملاذاً آمناً، وأن الاهتمام والرعاية اللذين تحصل عليهما خلال المرض يعوضان النقص العاطفي. اكتشف الآن الخيوط الخفية التي تربط بين مرضك المتوهم وشعورك بالعجز. هل أنت مستعد لمواجهة الحقيقة التي يخفيها جسدك؟",
+    "hashtags": "#علم_نفس #رغبة_مريضة #تجنب_المسؤولية #عقدة_النقص #صحة_نفسية #تحليل_سلوك #تجنب #هروب_نفسي #nlp #psychologyfacts #selfimprovement #mindset #behavioranalysis #mentalhealth #avoidance",
+    "search_terms": [
+      "person struggling with anxiety, cinematic, emotional",
+      "overwhelmed person, facing challenges, portrait",
+      "woman feeling isolated, deep thought, cinematic",
+      "man looking stressed, avoiding responsibility, emotional portrait",
+      "person overwhelmed by life, cinematic, soft lighting",
+      "sadness and introspection, emotional portrait, cinematic feel"
+    ],
+    "duration": 14,
+    "title_theme": "cyan",
+    "read_theme": "green",
+    "video_filter": "red",
+    "music": "a53.mp3",
+    "created_at": "2026-08-20T00:25:44.296948+00:00"
   }
 ]
