@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 204,
-    "title": "ماذا يعني لو كانت أختك تغار من ملابسك؟",
-    "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
-    "description": "هل شعرت يومًا بأن أختك تمنّت لو كانت ملابسك لها؟ هذا الشعور قد يكون أقوى من مجرد إعجاب عابر. أحيانًا، ما يبدو غيرة بسيطة يخفي أبعادًا نفسية عميقة قد لا تلاحظها. إنها ليست مجرد منافسة على قطعة قماش، بل قد تكون انعكاسًا لرغبات مكبوتة أو شعور بالنقص. هل تفكّرت يومًا في الأسباب الحقيقية وراء هذه النظرات المتتبعة لخياراتك؟ هل يمكن أن تكون غيرة على نجاحك، أو على اهتمام والديك؟ هذه الظاهرة تحتاج لتحليل دقيق لفهم الديناميكيات الأسرية. إنها دعوة للنظر إلى ما وراء السطح، لاستكشاف مشاعر معقدة. ما الذي تحاول أختك إخباؤه عن نفسها وعنك من خلال هذه الغيرة؟",
-    "hashtags": "#علم_نفس #غيرة_الأخوات #علاقات_أسرية #تحليل_سلوك #علم_نفس_اجتماعي #مشاعر_مخفية #dinamikyatesra #psychologytips #familydynamics #sisterlylove #behavioranalysis #emotionalintelligence #hiddenfeelings #relationshipgoals #socialpsychology",
-    "search_terms": [
-      "young woman looking in mirror thoughtful",
-      "sister looking at clothes envious",
-      "woman feeling insecure indoors",
-      "sad emotional portrait woman",
-      "sibling rivalry concept close up",
-      "woman looking out window pensive"
-    ],
-    "duration": 12,
-    "title_theme": "cyan",
-    "read_theme": "black",
-    "video_filter": "gray",
-    "music": "a1.mp3",
-    "created_at": "2026-07-01T16:14:30.966715+00:00"
-  },
-  {
     "excel_number": 205,
     "title": "الحقيقة وراء الشخص الذي لا يستطيع الجلوس هادئًا",
     "read_text": "👇 الجزء الأهم موجود في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a70.mp3",
     "created_at": "2026-08-21T12:16:07.981378+00:00"
+  },
+  {
+    "excel_number": 704,
+    "title": "ماذا يحدث في دماغك عندما تقرر أخيرًا أن تتبنى حيواناً أليفاً؟",
+    "read_text": "👇 المعنى الحقيقي في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تشعر بسعادة غامرة وتغيير جذري في حياتك بمجرد التفكير في تبني حيوان أليف؟ إنها ليست مجرد مشاعر عابرة، بل هي معركة كيميائية ونفسية عميقة تحدث داخل عقلك. يبدأ الأمر بتنبيه مناطق المكافأة في الدماغ، مما يفرز الدوبامين المرتبط بالشعور بالمتعة والرضا، تمامًا مثل الأطعمة المفضلة أو النجاحات الكبيرة. ثم يتفاعل الأوكسيتوسين، هرمون الحب والارتباط، ليخلق رابطًا عاطفيًا قويًا وفوريًا، ليس فقط مع الحيوان، بل حتى مع فكرة وجوده. هذه الاستجابة العصبية المتكاملة تهيئك لتقديم الرعاية والاهتمام، وتعزز مشاعر الأمان والانتماء، وتمنح حياتك معنى جديدًا وهدفًا أسمى. إن قرار التبني هو في جوهره استثمار في السعادة والصحة النفسية، حيث يقلل التوتر والقلق ويمنحك شعورًا بالدعم غير المشروط. هل يفسر هذا سر العلاقة الفريدة بين الإنسان والحيوان؟",
+    "hashtags": "#علم_نفس_المشاعر #تبني_حيوان_أليف #دماغ_الإنسان #سعادة_غامرة #تأثير_الهرمونات #حب_غير_مشروط #علاقات_صحية #علم_النفس_السلوكي #تغيير_الحياة #فضول_علمي #life_changing_decision #pet_adoption #brain_chemistry #emotional_wellbeing #psychology_facts",
+    "search_terms": [
+      "emotional connection human animal",
+      "joyful moment adopting pet",
+      "brain activity happiness dopamine",
+      "oxytocin bonding human pet",
+      "serene portrait person pet love",
+      "thoughtful reflection adopting companion"
+    ],
+    "duration": 15,
+    "title_theme": "cyan",
+    "read_theme": "yellow",
+    "video_filter": "black",
+    "music": "a1.mp3",
+    "created_at": "2026-08-21T14:21:27.421916+00:00"
   }
 ]
