@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 228,
-    "title": "لماذا يكره البعض الاحتفال بأعياد ميلادهم؟",
-    "read_text": "👇 المعنى الحقيقي في الوصف👇",
-    "description": "هل تعلم أن البعض يشعر بالضيق والنفور عند ذكر كلمة عيد ميلاد؟ قد يبدو الأمر غريبًا، لكن وراء هذه الظاهرة شعور أعمق بالحقيقة. يبدو أن الاحتفال بالسنوات يثير مخاوف دفينة لدى البعض، مما يدفعهم لتجنب هذه المناسبات. ربما يتعلق الأمر بضغوط التقدم في العمر، أو الذكريات المؤلمة المرتبطة بمرور الزمن، أو حتى الشعور بعدم الرضا عن الحياة. إنها ليست مجرد كراهية بسيطة، بل رد فعل نفسي معقد يحمل في طياته الكثير. يبدو أن كل سنة تمر تمثل تذكيرًا بما لم يتم إنجازه، وما فُقد، وما تغير. قد تكون رغبة دفينة في التمسك بالماضي، أو خوف من المستقبل المجهول. هل تساءلت يومًا عن السبب الحقيقي وراء هذا الشعور؟",
-    "hashtags": "#علم_نفس #علم_النفس #تحليل_سلوك #سلوكيات #عيد_ميلاد #مشاعر #نفسي #فكر #الناس #حقيقة #Psychology #BehaviorAnalysis #SelfReflection #Emotions #Mindset",
-    "search_terms": [
-      "person looking stressed thoughtful",
-      "woman looking sad contemplative",
-      "man feeling anxious alone",
-      "overwhelmed person reflecting",
-      "sadness and reflection cinematic",
-      "loneliness and contemplation portrait"
-    ],
-    "duration": 14,
-    "title_theme": "purple",
-    "read_theme": "green",
-    "video_filter": "red",
-    "music": "a35.mp3",
-    "created_at": "2026-07-03T20:52:17.924188+00:00"
-  },
-  {
     "excel_number": 229,
     "title": "ماذا يحدث لعقلك عندما تتعرض للصراخ المفاجئ؟",
     "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a34.mp3",
     "created_at": "2026-08-23T19:12:16.453270+00:00"
+  },
+  {
+    "excel_number": 728,
+    "title": "الإشارة الخفية التي تفضح محاولة أخيك لتشويه صورتك أمام أقاربك",
+    "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
+    "description": "هل تعلم أن أهدأ الإخوة قد يحمل في طياته نوايا خفية لتدميرك؟ قد يبدو الأمر مستحيلًا، لكن هناك لغة صامتة بين الأقارب تكشف الأسرار الدفينة. إنها ليست مجرد كلمات، بل هي إشارات دقيقة تترجم إلى أفعال مؤثرة. عندما يبدأ أحدهم في نسج خيوط الغموض حول شخصيتك، كيف يمكنك التعرف على هذه اللعبة النفسية؟ هناك نمط سلوكي يتكرر، وتعبيرات وجه لا إرادية، وطريقة كلام معينة تحمل معنى أعمق بكثير مما تبدو عليه. اكتشف كيف يستغل البعض هذه الدقائق لاستهدافك. هل سبق لك أن شعرت أن هناك من يحاول الإيقاع بك دون أن تجد دليلًا ملموسًا؟",
+    "hashtags": "#علم_نفس_العلاقات #علم_النفس_الاجتماعي #تحليل_الشخصية #العلاقات_الأسرية #الخيانة_الصامتة #التلاعب_النفسي #علم_نفس_الأطفال #السلوك_البشري #فك_الشيفرة #قوة_الملاحظة #Psychology #Manipulation #FamilyDynamics #HiddenMessages #BehaviorAnalysis",
+    "search_terms": [
+      "subtle gesture betrayal family",
+      "hidden message conflict siblings",
+      "psychological manipulation portrait",
+      "tense family interaction cinematic",
+      "unspoken tension siblings portrait",
+      "passive aggressive communication close up"
+    ],
+    "duration": 15,
+    "title_theme": "pink",
+    "read_theme": "black",
+    "video_filter": "gray",
+    "music": "a35.mp3",
+    "created_at": "2026-08-23T20:11:17.346861+00:00"
   }
 ]
