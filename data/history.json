@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 239,
-    "title": "ماذا يحدث في دماغك عندما تتلقى \"لايك\" على صورتك؟",
-    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا نشعر بذلك الاندفاع السعيد عند تلقي 'لايك' على صورة؟  إنها ليست مجرد ضغطة زر، بل هي استجابة كيميائية معقدة تجتاح عقولنا.  اكتشف ما يكمن وراء هذا الشعور اللحظي وكيف يؤثر على تقديرنا لذاتنا.  عندما يصل هذا التفاعل الإيجابي، تفرز أدمغتنا مواد مثل الدوبامين، التي تعزز الشعور بالمكافأة والرضا.  هذا الارتباط القوي بين القبول الاجتماعي وتحفيز الدماغ يخلق حاجة ملحة للتواصل المستمر.  نحن نبحث عن المزيد من هذه الإشارات، لأنها تمنحنا شعورًا مؤقتًا بالانتماء والتقدير.  هذه الآلية المتجذرة فينا منذ القدم تهدف إلى تعزيز الروابط الاجتماعية، لكنها في العصر الرقمي قد تقودنا إلى إدمان البحث عن الاعتراف.  هل أصبحت الحاجة للتقدير الرقمي تحكم تصرفاتنا أكثر مما نعتقد؟",
-    "hashtags": "#علم_نفس #سلوك_بشري #تطوير_الذات #علم_النفس_الاجتماعي #دوبامين #تحفيز #تقدير_الذات #عقولنا #تفاعلات #رقمي #قبول #مكافأة #Psychology #SocialMedia #Dopamine",
-    "search_terms": [
-      "emotional portrait of a person smiling at phone screen",
-      "close up of happy face receiving notification",
-      "cinematic shot of person feeling validated",
-      "thoughtful individual looking contemplative",
-      "subtle joy, brain reward system visual",
-      "self-esteem boost, positive social interaction"
-    ],
-    "duration": 11,
-    "title_theme": "red",
-    "read_theme": "yellow",
-    "video_filter": "black",
-    "music": "a51.mp3",
-    "created_at": "2026-07-04T21:44:54.686104+00:00"
-  },
-  {
     "excel_number": 240,
     "title": "الحقيقة وراء الشخص الذي لا يستطيع قول \"أحبك\"",
     "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a50.mp3",
     "created_at": "2026-08-24T20:18:05.672785+00:00"
+  },
+  {
+    "excel_number": 739,
+    "title": "الإشارة التي تدل على أن صديقك يتمنى أن تفترق عن شريك حياتك الحالي",
+    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
+    "description": "هل لاحظت يومًا تلك النظرات الغامضة من صديقك المقرب عندما تتحدث عن شريك حياتك؟ قد تخفي هذه الإشارات الصغيرة سرًا عميقًا لم تتوقعه أبدًا. هناك علامات دقيقة، أقرب إلى همسات العقل الباطن، تكشف عن رغبة دفينة تتناقض مع ما يبدو عليه الموقف. إنها ليست مجرد مشاعر عابرة، بل تحليل عميق لديناميكيات خفية. فهم هذه الإشارات يتطلب وعيًا بصريًا نفسيًا وقدرة على قراءة ما بين السطور، فما هي تلك التلميحات التي قد تدل على أن صديقك يفضل رؤيتك وحيدًا؟ هل أنت مستعد لكشف اللغز الذي يخفيه أصدقاؤنا أحيانًا؟",
+    "hashtags": "#علم_نفس #صداقة #علاقات #تحليل_سلوك #علامات_خفية #نصائح #مشاعر #فضول #توكيد_الذات #psychology #friendship #relationships #behavioranalysis #hidden_signs #self_improvement",
+    "search_terms": [
+      "sad friend watching couple",
+      "friend jealousy relationship",
+      "concerned friend looking away",
+      "subtle disapproval friend",
+      "conflicted friend observing partner",
+      "longing friend watching happy couple"
+    ],
+    "duration": 12,
+    "title_theme": "orange",
+    "read_theme": "green",
+    "video_filter": "red",
+    "music": "a51.mp3",
+    "created_at": "2026-08-24T21:16:56.321253+00:00"
   }
 ]
