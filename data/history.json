@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 258,
-    "title": "لماذا يميل الناس لتصديق الخرافات في الأزمات؟",
-    "read_text": "👇 السبب الحقيقي في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يتشبث العقل البشري بالخرافات عندما يشتد الظلام؟ في لحظات الأزمات، يبحث الكثيرون عن تفسيرات سهلة، حتى لو كانت غير منطقية، لتخفيف وطأة المجهول. إنها آلية دفاعية نفسية معقدة، تبدو كمهرب مؤقت من واقع مؤلم. هل يمنحنا الإيمان بشيء غير مرئي شعورًا بالسيطرة؟ ربما. ربما يشعر الإنسان بأنه ليس وحده في مواجهة المصير. هذا الميل الغريب ليس ضعفًا بالضرورة، بل هو انعكاس عميق لحاجتنا للتفسير والمعنى. عندما تنهار الهياكل المنطقية، يبني العقل هياكل جديدة من الأمل أو الخوف، غالبًا عبر عدسة الخرافة. كيف يؤثر هذا الاعتماد على الخرافات على قراراتنا الواقعية؟",
-    "hashtags": "#علم_النفس #الخرافات #الأزمات #سلوك_بشري #تفكير #تفسير #معنى #psychology #superstitions #crisis #human_behavior #mindset #belief #coping_mechanisms #psychological_facts",
-    "search_terms": [
-      "emotional portrait crisis stress anxiety",
-      "person struggling in dark room cinematic",
-      "hopeful looking out window despair relief",
-      "thoughtful person deep in thought cinematic",
-      "vulnerable person seeking comfort emotional",
-      "abstract light breaking through darkness cinematic"
-    ],
-    "duration": 14,
-    "title_theme": "pink",
-    "read_theme": "black",
-    "video_filter": "purple",
-    "music": "a5.mp3",
-    "created_at": "2026-07-06T21:21:10.391286+00:00"
-  },
-  {
     "excel_number": 259,
     "title": "ماذا يحدث في دماغك عندما تسمع خبرًا صادمًا؟",
     "read_text": "👇 التفسير الكامل في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a4.mp3",
     "created_at": "2026-08-26T21:19:35.557701+00:00"
+  },
+  {
+    "excel_number": 758,
+    "title": "لماذا يصر والدك على أن تشاركه في مشاهدة الأخبار السياسية رغم كرهك الشديد لها؟",
+    "read_text": "👇 التفسير النفسي في الوصف👇",
+    "description": "هل سبق وتساءلت لماذا يصر البعض على مشاركتك اهتمامات لا تطيقها، خاصةً عندما يتعلق الأمر بالأخبار السياسية؟ هل تشعر بأن هذا الإصرار يتجاوز مجرد الرغبة في التواصل، ليصبح محاولة للسيطرة على أفكارك؟ هناك سر عميق يكمن وراء هذا السلوك، سر يكشف الكثير عن الديناميكيات النفسية والعاطفية في علاقاتنا الأسرية. قد يبدو الأمر مجرد عادة يومية، لكنه في الواقع انعكاس لحاجات قديمة ورغبات دفينة. يكمن المفتاح في فهم دوافعهم الخفية، وكيف يؤثر هذا على استقلاليتك الذهنية. أحيانًا، ما يبدو عنادًا بسيطًا، هو صدى لقصص لم تُحكى، ولمخاوف لم تُعالج. كيف يمكنك كسر هذه الحلقة المفرغة دون إشعال فتيل صراع أكبر، مع الحفاظ على سلامك الداخلي؟",
+    "hashtags": "#علم_نفس #علاقات_أسرية #تحليل_سلوك #ضغط_عائلي #تواصل_فعال #فهم_الدوافع #استقلالية #نصائح_نفسية #علاقات_صحية #الحياة_اليومية #Psychology #FamilyDynamics #BehaviorAnalysis #Communication #SelfImprovement",
+    "search_terms": [
+      "man watching news alone",
+      "father and son watching tv",
+      "family conflict tv news",
+      "frustrated person watching political news",
+      "elderly man watching news",
+      "generational differences news watching"
+    ],
+    "duration": 14,
+    "title_theme": "black",
+    "read_theme": "cyan",
+    "video_filter": "gray",
+    "music": "a5.mp3",
+    "created_at": "2026-08-26T22:35:16.820909+00:00"
   }
 ]
