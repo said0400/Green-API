@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 268,
-    "title": "لماذا يكره البعض \"الاجتماعات العائلية\" الكبيرة؟",
-    "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
-    "description": "هل سبق وتساءلت لماذا يشعر البعض بالضيق الشديد لمجرد ذكر كلمة 'اجتماع عائلي' كبير؟ ما الذي تخفيه هذه المناسبات البسيطة الظاهرية من دوافع نفسية عميقة؟ الحقيقة قد تكون مفاجئة، فالأمر يتجاوز مجرد التعب أو الملل. هناك صراعات غير مرئية، ذكريات دفينة، وضغوط اجتماعية تتكشف في هذه التجمعات. قد تكون رغبة في الهروب من أحكام الآخرين، أو خوف من مواجهة ديناميكيات معقدة، أو حتى مجرد الحاجة لاستعادة مساحتك الشخصية. كل شخص لديه قصته الخاصة خلف ابتسامته المتكلفة. اكتشف الأسباب الخفية التي تجعل هذه اللحظات عذاباً للبعض. لماذا نحتاج لهذه المسافة أحياناً؟",
-    "hashtags": "#علم_نفس_اجتماعي #علاقات_أسرية #تحليل_سلوك #ضغوط_اجتماعية #الأسباب_النفسية #فضول #تفكير_عميق #اجتماعات #familydynamics #psychology #socialanxiety #understandingpeople #behavioranalysis #relationships #mentalhealth",
-    "search_terms": [
-      "emotional portrait of a person looking away thoughtfully",
-      "cinematic shot of someone feeling overwhelmed or anxious",
-      "person feeling isolated in a crowd, bokeh background",
-      "close up of a face showing subtle sadness or introspection",
-      "person looking out a window, contemplative mood",
-      "abstract visual representing inner conflict or tension"
-    ],
-    "duration": 15,
-    "title_theme": "orange",
-    "read_theme": "cyan",
-    "video_filter": "gray",
-    "music": "a21.mp3",
-    "created_at": "2026-07-07T21:14:52.442105+00:00"
-  },
-  {
     "excel_number": 269,
     "title": "ماذا يحدث لعقلك عندما تتعرض للتجاهل المتعمد؟",
     "read_text": "👇 الجزء الأهم موجود في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a20.mp3",
     "created_at": "2026-08-28T02:23:45.351166+00:00"
+  },
+  {
+    "excel_number": 768,
+    "title": "الإشارة الخفية التي تفضح محاولة أخيك للسيطرة على قراراتك المالية بحجة الخوف على مصلحتك",
+    "read_text": "👇 المعنى الحقيقي في الوصف👇",
+    "description": "هل سبق لك أن شعرت بأن هناك من يتحكم بخياراتك المالية دون أن تلاحظ؟ هل تظن أن حرص أحدهم المبالغ فيه قد يخفي نوايا أخرى؟ غالبًا ما تتسلل محاولات السيطرة تحت قناع الخوف والرغبة في الحماية، لكن هناك إشارات خفية تكشف الحقيقة. قد تظهر هذه الإشارات في صيغة نصائح تبدو منطقية لكنها تقودك دائمًا إلى طريق محدد. قد تلاحظ تركيزًا مفرطًا على المخاطر وتجاهلًا متعمدًا للفرص الواعدة. ربما تراقب قراراتك باستمرار أو تعبر عن قلق مبالغ فيه تجاه كل خطوة مالية تتخذها. هذه الأساليب الدقيقة قد تكون محاولة لتقييد استقلاليتك المالية. هل تدرك بالفعل أن هذه الإشارات قد تكون دليلاً على محاولة سيطرة، أم أنك تراها مجرد اهتمام صادق؟",
+    "hashtags": "#علم_نفس #سيطرة_مالية #علاقات_أسرية #تحليل_سلوك #استقلال_مالي #نصائح_مالية #خداع_عاطفي #psychology #financial_control #family_dynamics #behavioral_analysis #manipulation #personal_finance #psychological_tips #self_awareness",
+    "search_terms": [
+      "emotional portrait anxiety",
+      "subtle manipulation fear",
+      "financial control subtle",
+      "concerned person looking away",
+      "hesitation decision making",
+      "overthinking worry isolation"
+    ],
+    "duration": 12,
+    "title_theme": "orange",
+    "read_theme": "purple",
+    "video_filter": "purple",
+    "music": "a21.mp3",
+    "created_at": "2026-08-28T03:55:03.221324+00:00"
   }
 ]
