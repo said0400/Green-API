@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 273,
-    "title": "لماذا تشعر بالضيق عندما يسخر أحد من شكلك؟",
-    "read_text": "👇 التفسير في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يهزنا السخرية من مظهرنا أكثر من أي شيء آخر؟ إنها ليست مجرد كلمات عابرة، بل لمسة على أعمق نقاط ضعفنا التي نخفيها.  هذا الشعور بالضيق الذي ينتابنا يكشف عن صراع داخلي عميق، يتعلق بصورتنا الذاتية وكيف نراها، وكيف نعتقد أن الآخرين يرونها.  هناك شيء أكثر خفاءً في هذه التجربة، يتعلق بالقبول الذاتي والثقة بالنفس.  قد تكون السخرية انعكاسًا لمخاوفنا الداخلية، ورغبتنا المكبوتة في أن نكون مقبولين ومحبوبين بغض النظر عن أي شيء.  إنها فرصة لنفهم أن قوتنا الحقيقية لا تكمن في كيف ننظر، بل في كيف نفكر ونشعر بداخلنا.  فهل تدرك الآن كيف تؤثر هذه اللحظات الصغيرة على نفسيتك بشكل كبير؟ 🤔",
-    "hashtags": "#علم_نفس #نصائح #تطوير_الذات #الثقة_بالنفس #تحفيز #علاقات #سلوك_بشري #مشاعر #قوة_داخلية #self_esteem #psychology #inner_strength #motivation #personal_growth #mental_health",
-    "search_terms": [
-      "emotional portrait introspection",
-      "sadness contemplation alone",
-      "vulnerability self doubt",
-      "inner conflict anxiety",
-      "self acceptance struggle",
-      "cinematic thoughtful moment"
-    ],
-    "duration": 11,
-    "title_theme": "red",
-    "read_theme": "orange",
-    "video_filter": "black",
-    "music": "a30.mp3",
-    "created_at": "2026-07-08T13:19:32.733446+00:00"
-  },
-  {
     "excel_number": 274,
     "title": "ماذا يعني لو كان أخوك الأصغر يتطاول عليك؟",
     "read_text": "👇 السبب الحقيقي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a29.mp3",
     "created_at": "2026-08-28T21:01:20.016643+00:00"
+  },
+  {
+    "excel_number": 773,
+    "title": "لماذا نشعر بالارتباك عندما نرى شخصاً يبتسم بشكل مبالغ فيه طوال الوقت دون سبب منطقي؟",
+    "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
+    "description": "هل لاحظت يومًا كيف أن الابتسامة المبالغ فيها دون سبب مقنع تثير في نفسك شعورًا غريبًا بالريبة؟ ما الذي يجعلنا نتوقف عن تصديق شخص دائم الابتسام، حتى لو بدا سعيدًا؟ غالبًا ما يخفي وراء هذا القناع الكثير مما لا نراه. إنها ليست مجرد ابتسامة، بل قد تكون جدارًا صامتًا يعكس صراعًا داخليًا عميقًا. تساؤلات تدور في أذهاننا: هل هي سعادة حقيقية أم مجرد تزييف للمشاعر؟ هل هذا الشخص يحاول إقناع نفسه قبل إقناع الآخرين؟ الابتسامة المستمرة قد تكون علامة على القلق الخفي أو محاولة للتكيف مع ضغوط هائلة. إنها طريقة للهروب من مشاعر أخرى قد تكون مؤلمة. ما السر وراء هذا التصرف الذي يبدو غريبًا لكنه شائع؟ متى تبدأ الابتسامة المفرطة في أن تعني العكس تمامًا؟",
+    "hashtags": "#علم_النفس #سلوك_بشري #تحليل_الشخصية #علاقات #الابتسامة #مشاعر #تطوير_الذات #فضول #غموض #إيجابية_زائفة #psychology #behavior #social_dynamics #human_behavior #emotions",
+    "search_terms": [
+      "cinematic portrait of a thoughtful person looking away",
+      "emotional close-up of a person with a subtle, ambiguous expression",
+      "person looking out a window with pensive mood",
+      "intimate portrait of someone experiencing inner conflict",
+      "man or woman contemplating deeply, cinematic lighting",
+      "subtle facial expressions, emotional connection, shallow depth of field"
+    ],
+    "duration": 12,
+    "title_theme": "green",
+    "read_theme": "cyan",
+    "video_filter": "dark_blue",
+    "music": "a30.mp3",
+    "created_at": "2026-08-28T21:32:57.968652+00:00"
   }
 ]
