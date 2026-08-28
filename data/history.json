@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 265,
-    "title": "الحقيقة المظلمة وراء الشخص الذي \"يُجامل\" الجميع",
-    "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
-    "description": "هل فكرت يومًا لماذا يبدو البعض وكأنهم يمتلكون القدرة على كسب ود الجميع بسهولة؟ هل تساءلت يومًا عن الثمن الحقيقي لهذه المجاملات المستمرة؟ غالبًا ما يكمن خلف الابتسامات اللامعة والكلمات الرنانة سر أعمق وأكثر تعقيدًا مما تراه العين المجردة، يتعلق بكيفية إدراك الآخرين لنا وتأثير ذلك على تقديرنا لذاتنا. هذا الفيديو سيكشف لك الستار عن الاستراتيجيات النفسية الدقيقة التي يستخدمها هؤلاء الأشخاص، وكيف أن هذا السلوك قد يكون قناعًا يخفي هشاشة داخلية أو حاجة ملحة للقبول. سنغوص في أبعاد علم النفس لفهم الدوافع الحقيقية وراء هذا التكسب العاطفي، موضحين كيف أن السعي الدائم لإرضاء الجميع قد يكون فخًا يوقع صاحبه في دائرة من عدم الرضا وعدم الأصالة. إنه ليس مجرد ذكاء اجتماعي، بل رحلة إلى أعماق النفس البشرية التي تبحث عن الاعتراف. فما الذي نخشاه حقًا عندما نتوقف عن لعب هذا الدور؟",
-    "hashtags": "#علم_النفس #العلاقات #تحليل_سلوك #علم_نفس_اجتماعي #التواصل_الفعال #الثقة_بالنفس #الشخصية #التطوير_الذاتي #selfhelp #psychologyfacts #behaviouralanalysis #socialdynamics #relationships #personalgrowth #mindfulness",
-    "search_terms": [
-      "man smiling introspective cinematic",
-      "woman thoughtful looking away portrait",
-      "person deep in thought natural light",
-      "subtle emotional expression close-up",
-      "lonely person contemplating window",
-      "vulnerable human emotion cinematic portrait"
-    ],
-    "duration": 13,
-    "title_theme": "orange",
-    "read_theme": "black",
-    "video_filter": "black",
-    "music": "a18.mp3",
-    "created_at": "2026-07-07T17:52:47.635863+00:00"
-  },
-  {
     "excel_number": 266,
     "title": "لماذا نشعر بالتوتر عند دخول مكان جديد لأول مرة؟",
     "read_text": "👇 التفسير النفسي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a17.mp3",
     "created_at": "2026-08-27T23:15:49.204218+00:00"
+  },
+  {
+    "excel_number": 765,
+    "title": "التفسير النفسي لعدم قدرتك على رمي الأجهزة الكهربائية المعطلة وتخزينها في المنزل لسنوات",
+    "read_text": "👇 التفسير في الوصف👇",
+    "description": "لماذا تحتفظ بأشياء لا تحتاجها، خاصة الأجهزة المعطلة، لسنوات؟ هل تساءلت يومًا عن السر النفسي وراء هذا التعلق الغريب؟ تكمن الإجابة في ماضيك وفي طريقة إدراكك للقيمة، حتى لو كانت رمزية. هذه الأجهزة ليست مجرد خردة، بل قد تمثل ذكريات، أو استثمارًا خفيًا في مستقبل وهمي، أو حتى خوفًا من فقدان شيء كان يومًا ذا قيمة. إنها تعكس رغبتك اللاواعية في التحكم، في عدم التفريط، وفي الحفاظ على ما هو ملموس في عالم متقلب. ربما تحمل كل قطعة ذكرى لشخص عزيز، أو لمحاولة إصلاح فاشلة، أو لأمل لم يتحقق بعد. العقل ينسج قصة حول كل غرض، يحول عديم الفائدة إلى جزء من هويتك. هل تعتقد حقًا أنك ستصلحها يومًا ما، أم أنك تخشى مواجهة نهاية الأشياء؟",
+    "hashtags": "#علم_نفس #سلوك_بشري #تخزين #تنظيم #التخلص_من_الفوضى #التعلق_بالأشياء #الحياة_البسيطة #حلول_نفسية #نصائح #psychology #behavior #declutter #minimalism #organization #mental_health",
+    "search_terms": [
+      "person holding old broken appliance emotional cinematic",
+      "nostalgic person with vintage electronics portrait",
+      "sad person looking at cluttered home with old items cinematic",
+      "anxiety about letting go of possessions portrait",
+      "memory of broken object emotional cinematic",
+      "hoarder feeling regret with old appliances portrait"
+    ],
+    "duration": 13,
+    "title_theme": "black",
+    "read_theme": "cyan",
+    "video_filter": "dark_blue",
+    "music": "a18.mp3",
+    "created_at": "2026-08-28T00:41:50.987702+00:00"
   }
 ]
