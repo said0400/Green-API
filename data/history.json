@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 287,
-    "title": "السر وراء رغبتك في العودة للدراسة بعد التخرج",
-    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا تشعر برغبة ملحة للعودة إلى مقاعد الدراسة حتى بعد حصولك على شهادتك الجامعية؟ هذا الشعور ليس مجرد حنين للماضي، بل هو إشارة أعمق بكثير إلى احتياجات نفسية لم تُلبَ. قد يعكس هذا التوق اللاواعي نقصًا في الشعور بالإنجاز أو الأمان، أو ربما هو سعي حثيث نحو المزيد من الفهم والاستكشاف لم تتيحه لك سنوات الدراسة التقليدية. قد تشعر بأن هناك فجوة معرفية ما زالت تشغل تفكيرك، أو ربما تبحث عن بيئة محفزة تنمي شغفك وتوفر لك الشعور بالانتماء والهوية. هذا الدافع الخفي غالبًا ما يرتبط بالرغبة في إعادة بناء الثقة بالنفس أو السعي نحو تحقيق مكانة اجتماعية مرغوبة. إنه دعوة لاكتشاف الذات من خلال التعلم المستمر. فما هو المعنى الحقيقي وراء هذه الرغبة الملحة بالعودة إلى التعلم؟",
-    "hashtags": "#علم_نفس_التعلم #التطور_الذاتي #التحفيز_الدراسي #ما_بعد_التخرج #الرغبات_الخفية #فهم_النفس #التعلم_المستمر #النجاح_الأكاديمي #علم_النفس_الاجتماعي #التحليل_السلوكي #psychology #selfimprovement #lifelonglearning #motivation #careergoals",
-    "search_terms": [
-      "thoughtful person looking away",
-      "person reflecting outdoors cinematic",
-      "introspective portrait natural light",
-      "student studying late at night emotional",
-      "woman reading book by window thoughtful",
-      "man contemplating nature serene"
-    ],
-    "duration": 15,
-    "title_theme": "black",
-    "read_theme": "cyan",
-    "video_filter": "red",
-    "music": "a49.mp3",
-    "created_at": "2026-07-09T21:12:35.180730+00:00"
-  },
-  {
     "excel_number": 288,
     "title": "لماذا يكره البعض \"المواجهة\" ويفضلون الهروب؟",
     "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a48.mp3",
     "created_at": "2026-08-29T20:01:26.513645+00:00"
+  },
+  {
+    "excel_number": 787,
+    "title": "لماذا تتجنب والدتك الحديث عن أصدقائك القدامى وكأنها تتمنى أن تقطع علاقتك بهم تماماً؟",
+    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
+    "description": "هل لاحظت يوماً كيف يتغير أسلوب والدتك عندما يأتي الحديث عن أصدقائك القدامى، وكأنها تحمل سراً يثقل قلبها؟ ما الذي يدفعها لتفضيل الصمت أو لتوجيه حديثها بعيداً، وكأنها تحاول رسم خط فاصل غير مرئي بينك وبين هذه الصداقات؟ إنها ليست مجرد تفضيلات شخصية، بل قد تكون انعكاساً لتجارب نفسية عميقة ورغبة خفية في حمايتك أو توجيه مسارك بطريقة غير مباشرة. الأمهات يمتلكن حساً سادساً قد يفوق تحليلنا، فهن يقرأن بين السطور ويرون ما لا نراه. ربما تخشى عليك من تأثيرات سلبية لم تدركها بعد، أو ربما تحمل ذكريات مؤلمة مرتبطة بنوع معين من العلاقات. هذه الديناميكية العائلية المعقدة تكشف الكثير عن آليات الحماية والرغبة في السيطرة، حتى لو كانت في ظاهرها محبة. فما هو الخوف الحقيقي الذي يسكن روحها؟",
+    "hashtags": "#علم_نفس_العائلة #العلاقات_الأسرية #علم_النفس_الاجتماعي #الوالدية #فضول #تحليل_الشخصية #مشاعر #FamilyPsychology #RelationshipGoals #ParentingTips #BehavioralAnalysis #PsychologicalFacts #Curiosity #EmotionalIntelligence #HiddenTruths",
+    "search_terms": [
+      "emotional mother daughter conversation cinematic",
+      "mother looking concerned at daughter portrait",
+      "woman reflecting on past friendships cinematic",
+      "parental concern over child's choices subtle",
+      "generations discussing relationships emotional",
+      "mother's gaze thoughtful portrait cinematic"
+    ],
+    "duration": 13,
+    "title_theme": "orange",
+    "read_theme": "black",
+    "video_filter": "dark_green",
+    "music": "a49.mp3",
+    "created_at": "2026-08-29T21:21:41.000419+00:00"
   }
 ]
