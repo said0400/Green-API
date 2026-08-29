@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 276,
-    "title": "لماذا نشعر بالراحة عند تناول القهوة في الصباح؟",
-    "read_text": "👇 المعنى الحقيقي في الوصف👇",
-    "description": "هل تعلم أن رائحة القهوة وحدها قد تخدع دماغك ليعتقد أنك استيقظت بالكامل؟ قد تبدو مجرد عادة صباحية، لكنها تحمل في طياتها ألغازًا نفسية أعمق مما نتخيل. هناك تفسيرات علمية وسلوكية مثيرة للاهتمام وراء هذا الشعور بالراحة والإنجاز الذي تمنحه القهوة مع أول خيوط الشمس. القهوة ليست مجرد مشروب، بل هي أداة طقسية تساعدنا على الانتقال بسلاسة من عالم النوم إلى عالم اليقظة النشطة. إنها تحفز مسارات كيميائية في الدماغ مرتبطة بالمكافأة والشعور بالرضا، مما يجعل صباحنا يبدو أكثر إنتاجية وتنظيمًا. هل تتوقف عند هذا الحد أم أن هناك أسبابًا أخرى جعلت القهوة رفيق الصباح الذي لا يُستغنى عنه؟",
-    "hashtags": "#قهوة #صباح #علم_نفس #عادات_صحية #طقوس_الصباح #تحفيز #استيقاظ #طاقة #صحة_نفسية #إدمان_القهوة #mood_boost #coffee_lover #morning_routine #psychology #wellbeing",
-    "search_terms": [
-      "cinematic morning coffee ritual",
-      "emotional portrait of someone enjoying coffee",
-      "calm morning light, person with coffee",
-      "mindful coffee brewing, slow motion",
-      "person waking up, gentle sunlight, coffee",
-      "cozy morning atmosphere, warm beverage"
-    ],
-    "duration": 11,
-    "title_theme": "cyan",
-    "read_theme": "purple",
-    "video_filter": "red",
-    "music": "a33.mp3",
-    "created_at": "2026-07-08T19:00:01.438550+00:00"
-  },
-  {
     "excel_number": 277,
     "title": "السر وراء رغبتك في البقاء في السرير يوم الإجازة",
     "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a32.mp3",
     "created_at": "2026-08-29T00:16:18.146085+00:00"
+  },
+  {
+    "excel_number": 776,
+    "title": "ماذا يحدث لعقلك عندما تكتشف أنك كنت تتحدث مع شخص ميت في حلم واقعي جداً؟",
+    "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
+    "description": "هل سبق لك أن شعرت بأن عقلك قد خُدع في لحظة يقيّن؟ ماذا لو اكتشفت أن الشخص الذي تحدثت معه بتفاصيل لم تلمسها في اليقظة، كان في الواقع مجرد طيف من الماضي؟ هذا الشعور بالواقعية الزائفة يمكن أن يزعزع ثقتك بما تدركه.  عندما ينسج العقل تفاصيل حية من اللاوعي، يخلق تجربة لا يمكن تمييزها عن الواقع.  هذه الظاهرة تثير أسئلة عميقة حول طبيعة الذاكرة والوعي.  هل هذه مجرد هلوسة معقدة، أم رسالة من عالم آخر؟  تخيل الارتباك الذي يصاحب هذه التجربة، حيث تتداخل خطوط بين عالم الأحياء والأموات.  قد تفسر هذه الظاهرة الأساطير القديمة عن التواصل مع الأرواح.  ما هي حدود عقولنا وقدرتها على خداعنا؟",
+    "hashtags": "#علم_نفس #أحلام_واقعية #تواصل_مع_الأموات #غموض_العقل #علم_النفس_العميق #تجارب_خارقة #Psychology #DreamAnalysis #SpiritualAwakening #MindBending #Paranormal #Consciousness #RealityCheck #Mystery #Dreams",
+    "search_terms": [
+      "emotional portrait thoughtful person looking away",
+      "cinematic contemplative face close up",
+      "psychological struggle internal conflict abstract",
+      "dreamlike atmosphere ethereal light soft focus",
+      "memory fading past reflection melancholic",
+      "mystery of the mind surreal subconscious"
+    ],
+    "duration": 14,
+    "title_theme": "cyan",
+    "read_theme": "orange",
+    "video_filter": "purple",
+    "music": "a33.mp3",
+    "created_at": "2026-08-29T01:13:22.245101+00:00"
   }
 ]
