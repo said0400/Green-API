@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 322,
-    "title": "السر النفسي خلف غضبك الشديد عندما يوقظك أحد من النوم",
-    "read_text": "👇 السر وراء ذلك في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يتحول غضبك إلى بركان هادر بمجرد أن يقطع أحدهم نومك العميق؟ هناك سر نفسي دفين يقف وراء هذه الاستجابة المبالغ فيها، يتعلق بكيفية معالجة دماغك للإزعاج المفاجئ أثناء فترة الراحة. إنها ليست مجرد عصبية عابرة، بل هي آلية معقدة تتكشف في لحظات ضعفنا. يستيقظ دماغك فجأة من حالة استرخاء عميق، ويعتبر هذا الانقطاع تهديدًا يستوجب رد فعل دفاعي قوي. يتأثر إنتاج هرمونات التوتر، مما يجعل شعور الغضب والانزعاج طاغيًا. طبيعة هذا الانزعاج البسيط قد تعكس أعمق مخاوفنا وقلقنا الذي نكتمه. كيف يؤثر هذا الانزعاج على بقية يومك؟",
-    "hashtags": "#علم_نفس #غضب #نوم #استيقاظ #علم_النفس_الاجتماعي #علاقات #تحليل_سلوك #مشاعر #انفعالات #صحة_نفسية #فضول #psychology #anger #sleep #behavioranalysis",
-    "search_terms": [
-      "man waking up angry cinematic",
-      "woman startled awake emotional close up",
-      "person groggy morning frustration",
-      "sleep disturbance anger portrait",
-      "sudden awakening distress",
-      "frustrated person in bed"
-    ],
-    "duration": 12,
-    "title_theme": "red",
-    "read_theme": "orange",
-    "video_filter": "black",
-    "music": "a29.mp3",
-    "created_at": "2026-07-13T13:52:22.857819+00:00"
-  },
-  {
     "excel_number": 323,
     "title": "لماذا نشعر بالإحراج نيابة عن شخص آخر يفعل شيئًا غبيًا؟",
     "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a28.mp3",
     "created_at": "2026-09-02T01:30:12.169630+00:00"
+  },
+  {
+    "excel_number": 822,
+    "title": "السر الذي يجعلك تحب رائحة الكتب المدرسية الجديدة في أول يوم من العام الدراسي الجديد",
+    "read_text": "👇 التفسير النفسي في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تستنشق بعمق عبير الكتب الجديدة في أول يوم دراسي وتجد فيه راحة غريبة؟ إنها ليست مجرد رائحة ورق وحبر، بل هي بوابة لعالم من الذكريات والانتماءات العميقة تتجسد في هذا العطر الفريد. هذا الشعور السحري الذي يعود بنا إلى أيام الطفولة والبراءة، حيث كانت الكتب تمثل مفاتيح لعوالم لا نهائية من المعرفة والمغامرات. إنها رائحة تعد ببداية جديدة، وبصفحات بيضاء تنتظر أن تُكتب عليها قصصنا المستقبلية. هذه الرائحة تحمل معها وعودًا بالتعلم، بالاكتشاف، وبالنمو، مما يربطنا بلحظات الماضي المشرقة ويمنحنا شعورًا بالأمان والتفاؤل. ما الذي يجعل مجرد رائحة بسيطة قادرة على إثارة هذا الكم من المشاعر الإيجابية والارتباط العميق؟",
+    "hashtags": "#رائحة_الكتب #علم_نفس #ذكريات_الطفولة #يوم_دراسي_جديد #ارتباط_عاطفي #الحواس #علم_نفس_الأطفال #psychologyfacts #nostalgia #booklover #schoolvibes #childhoodmemories #sensoryexperience #newbeginnings #readingculture",
+    "search_terms": [
+      "nostalgic childhood memories cinematic",
+      "reading books emotional portrait",
+      "new beginnings calm atmosphere",
+      "back to school feeling gentle",
+      "childhood innocence serene",
+      "smell of old books introspective"
+    ],
+    "duration": 13,
+    "title_theme": "black",
+    "read_theme": "orange",
+    "video_filter": "dark_green",
+    "music": "a29.mp3",
+    "created_at": "2026-09-02T13:55:16.942724+00:00"
   }
 ]
