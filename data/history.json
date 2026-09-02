@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 329,
-    "title": "لماذا نشعر أن الكلمات تفقد معناها إذا كررناها عدة مرات؟",
-    "read_text": "👇 الجزء الأهم موجود في الوصف👇",
-    "description": "هل سبق وتساءلت لماذا تفقد الكلمات بريقها وتصبح مجرد أصوات فارغة حين نرددها مراراً؟ هذا الإحساس الغريب ليس محض خيال، بل هو ظاهرة نفسية عميقة تكشف الكثير عن طريقة عمل أدمغتنا. إنها رحلة استكشاف لكيفية معالجة حواسنا للمعلومات وكيف يتكيف إدراكنا مع التكرار. اكتشف السر وراء هذا التحول المدهش في فهمنا للغة. عندما تتكرر الكلمات، قد تبدأ الخلايا العصبية المسؤولة عن معالجتها بالشعور بالإرهاق، مما يقلل من استجابتها. هذا التكيف هو آلية دفاعية لحماية أدمغتنا من الحمل الزائد. ومع ذلك، فإن فقدان المعنى الحقيقي يبدأ عندما يتوقف الربط الأصلي بين الكلمة وإحساسها أو مفهومها. هل يعكس هذا الفقدان مدى هشاشة علاقتنا باللغة ومعانيها العميقة؟ 🤔",
-    "hashtags": "#علم_النفس #علم_النفس_اللغوي #سيكولوجيا #الكلمات #اللغة #الإدراك #التحليل_النفسي #تكرار_الكلمات #فقدان_المعنى #psychology #language #semantics #cognitive_psychology #word_repetition #mind_hacks",
-    "search_terms": [
-      "close up thoughtful person looking away",
-      "cinematic portrait of woman in deep thought",
-      "emotional man looking out window",
-      "person contemplating nature",
-      "slow motion face of person experiencing realization",
-      "abstract representation of thoughts or memories"
-    ],
-    "duration": 11,
-    "title_theme": "black",
-    "read_theme": "orange",
-    "video_filter": "black",
-    "music": "a36.mp3",
-    "created_at": "2026-07-13T22:49:26.610453+00:00"
-  },
-  {
     "excel_number": 330,
     "title": "الحقيقة النفسية وراء الشخص الذي يعشق الجلوس في المقعد الأخير",
     "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a35.mp3",
     "created_at": "2026-09-02T22:07:11.640388+00:00"
+  },
+  {
+    "excel_number": 829,
+    "title": "السر النفسي خلف خوفك من الكلاب الكبيرة رغم أنها لم تهاجمك أو تعضك في حياتك أبداً",
+    "read_text": "👇 التفسير في الوصف👇",
+    "description": "لماذا تشعر بالهلع عند رؤية كلب كبير، حتى لو لم تتعرض لأي أذى منه مطلقًا؟ قد يكون هناك ما هو أعمق من مجرد تجنب خطر جسدي. تخيل أن عقلك يخزن ذكريات لم تختبرها بنفسك، أو أن هناك بصمة نفسية قديمة تتجاوب معها. هذا الفيديو يكشف عن الأسباب النفسية الخفية التي تجعل بعض الأشخاص يواجهون خوفًا شديدًا من الكلاب الكبيرة، وهي ظاهرة تتجاوز المنطق الواعي. قد تتعلق هذه المخاوف بتجارب الأجداد، أو بتصورات لا شعورية للقوة والهيمنة، أو ربما بتحذيرات صامتة ينقلها جسدك دون إدراك. فهم هذه الآلية يساعد في فك شفرة استجاباتنا الغريزية. هل يمكن أن يكون هذا الخوف مجرد صدى لتجارب جماعية لم نعيشها؟",
+    "hashtags": "#علم_النفس #الخوف_من_الكلاب #رهاب_الكلاب #صدمات_نفسية #تنمية_الذات #تحليل_سلوك #علم_النفس_الاجتماعي #أسباب_نفسية #عقل_الباطن #phobia #psychology #fear_of_dogs #behavior_analysis #anxiety #mental_health",
+    "search_terms": [
+      "cinematic emotional portrait of a person looking fearful",
+      "anxious individual facing a large dog from a distance, cinematic",
+      "subtle fear in eyes, close-up portrait",
+      "person with worried expression, soft natural light",
+      "overcoming phobia concept, emotional struggle",
+      "abstract representation of inner turmoil, cinematic"
+    ],
+    "duration": 14,
+    "title_theme": "orange",
+    "read_theme": "black",
+    "video_filter": "dark_green",
+    "music": "a36.mp3",
+    "created_at": "2026-09-02T22:53:37.914070+00:00"
   }
 ]
