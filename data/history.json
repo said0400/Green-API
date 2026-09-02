@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 325,
-    "title": "ماذا يخبرك عقلك عندما تنسى كلمة مألوفة وهي على طرف لسانك؟",
-    "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يعلق عقلك في متاهة نسيان كلمة بسيطة تعرفها جيدًا؟ هذه الظاهرة التي تسمى 'الت tip-of-the-tongue' تكشف عن آليات معقدة داخل دماغنا، وهي ليست مجرد عطل عابر، بل إشارة لخفايا استرجاع المعلومات. إنها ليست مجرد ذاكرة خانتك، بل عملية ديناميكية لاسترجاع البيانات تكشف أسرارًا حول كيفية تنظيم أفكارنا وتخزينها. في هذا الفيديو، نغوص في أعماق علم النفس لفهم كيف يعمل دماغك تحت الضغط، وماذا تعني هذه اللحظات المحيرة حقًا. هل هذه الأخطاء العقلية مؤشر على شيء أعمق، أم أنها مجرد ضوضاء في نظامنا المعرفي المعقد؟",
-    "hashtags": "#علم_النفس #الذاكرة #الدماغ #استرجاع_المعلومات #ظاهرة_عقلية #فضول #نفسي #تحليل_سلوك #سلوك_بشري #العقل #معرفة #Brain #Psychology #Memory #Curiosity",
-    "search_terms": [
-      "thoughtful person looking away cinematic",
-      "woman thinking deeply close up emotional",
-      "man looking out window pensive portrait",
-      "brain activity visualization abstract",
-      "person struggling to recall information cinematic",
-      "memory retrieval process close up emotional"
-    ],
-    "duration": 12,
-    "title_theme": "orange",
-    "read_theme": "yellow",
-    "video_filter": "gray",
-    "music": "a32.mp3",
-    "created_at": "2026-07-13T19:07:51.518027+00:00"
-  },
-  {
     "excel_number": 326,
     "title": "لماذا ترفض نصيحة زوجك حتى لو كنت تعلم أنه محق؟",
     "read_text": "👇 التفسير النفسي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a31.mp3",
     "created_at": "2026-09-02T17:26:12.521608+00:00"
+  },
+  {
+    "excel_number": 825,
+    "title": "التفسير النفسي لعدم قدرتك على رمي زجاجات العطور الفارغة والاحتفاظ بها في خزانتك لسنوات طويلة",
+    "read_text": "👇 الجزء الأهم موجود في الوصف👇",
+    "description": "هل سبق لك أن تساءلت لماذا لا تستطيع التخلص من زجاجات العطور الفارغة، رغم أنها لا تستخدم؟ ما السر الذي يجعل هذه الأشياء الصغيرة تحتل مساحة في خزانتك لسنوات؟ إنها ليست مجرد عادات عشوائية، بل هي انعكاسات عميقة لعالمك الداخلي، تحمل مفاتيح لفهم دوافعك الخفية. تخيل معي تلك الزجاجات، كل واحدة منها قصة، ذكرى، أو ربما خوف من فقدان شيء ثمين. يربط العقل البشري بين الأشياء المادية والمشاعر، فتصبح هذه الزجاجات رموزًا لا يمكن التفريط فيها بسهولة. نحن نتمسك بما يمثل لنا جزءًا من هويتنا، أو بتجارب مؤثرة شكلت شخصيتنا. هل هذه مجرد نفايات، أم أنها مخازن لذاكرة عاطفية نخشى فقدانها؟",
+    "hashtags": "#علم_النفس #الاحتفاظ_بالذكريات #السلوك_البشري #علم_النفس_الاجتماعي #التعلق_بالأشياء #TikTok #YouTubeShorts #Reels #psychology #memory #sentimentalvalue #declutter #minimalism #selfdiscovery #behavioralpsychology",
+    "search_terms": [
+      "woman looking thoughtfully out window",
+      "close up sad eyes",
+      "holding sentimental object",
+      "woman reminiscing memories",
+      "person feeling nostalgic",
+      "woman holding empty perfume bottle thoughtfully"
+    ],
+    "duration": 15,
+    "title_theme": "black",
+    "read_theme": "red",
+    "video_filter": "purple",
+    "music": "a32.mp3",
+    "created_at": "2026-09-02T19:06:31.981155+00:00"
   }
 ]
