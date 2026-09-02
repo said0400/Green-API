@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 321,
-    "title": "السبب الذي يجعلك تستمتع بالبقاء في سيارتك بعد وصولك للمنزل",
-    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا تجد راحة غريبة في البقاء داخل سيارتك لدقائق إضافية بعد العودة للمنزل؟ هذه اللحظات الهادئة تحمل سرًا أعمق مما تظن، فهي ليست مجرد وقفة عابرة بل نافذتك الخاصة للهروب المؤقت من ضغوط العالم الخارجي. في مساحتك الشخصية هذه، يمكنك استعادة هدوئك وتصفية ذهنك قبل الانغماس مجددًا في مسؤوليات الحياة اليومية. إنه ملاذك السري، استراحة مدتها دقائق تمنحك القوة لمواجهة كل ما هو قادم. إنها لحظات استعادة السيطرة، تأمل هادئ، أو حتى رقصة صامتة مع أفكارك. كيف تؤثر هذه الاستراحة القصيرة على طاقتك الإيجابية؟",
-    "hashtags": "#علم_نفس #تحليل_سلوك #هدوء #استرخاء #راحة_نفسية #حياة_يومية #الهروب_من_الواقع #تأمل #ضغوط_الحياة #استعادة_الطاقة #psychology #selfcare #mindfulness #dailyhabits #mentalhealth",
-    "search_terms": [
-      "person sitting in car reflection",
-      "calm driver in car interior",
-      "woman alone in car at dusk",
-      "man contemplating in parked car",
-      "cinematic car interior mood",
-      "peaceful moment inside vehicle"
-    ],
-    "duration": 15,
-    "title_theme": "purple",
-    "read_theme": "green",
-    "video_filter": "dark_green",
-    "music": "a28.mp3",
-    "created_at": "2026-07-13T12:24:40.549900+00:00"
-  },
-  {
     "excel_number": 322,
     "title": "السر النفسي خلف غضبك الشديد عندما يوقظك أحد من النوم",
     "read_text": "👇 السر وراء ذلك في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a23.mp3",
     "created_at": "2026-09-01T23:43:36.435380+00:00"
+  },
+  {
+    "excel_number": 821,
+    "title": "ماذا يعني أن أختك تتعمد إفساد مفاجآتك السعيدة دائماً بحجة أنها لا تحب المفاجآت المبالغ فيها",
+    "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
+    "description": "هل شعرت يومًا أن أقرب الناس إليك، أختك تحديدًا، تعمل سرًا على تحطيم لحظات سعادتك؟ لماذا ترغب أختك في إفساد مفاجآتك المبهجة دائمًا، حتى وهي تدعي أنها لا تحب الأشياء المبالغ فيها؟ قد يكون الأمر أعمق مما يبدو، وكلامها مجرد قناع يخفي شيئًا آخر. هناك طبقات نفسية معقدة تحكم تصرفاتها، تتجاوز مجرد كرهها المفترض للمفاجآت. ما الذي يدفعها إلى هذا السلوك بالضبط؟ هل هو شعور بالغيرة المبطنة، أم رغبة في لفت الانتباه، أم ربما خوف داخلي من أن تفقد هي مكانتها؟ الأسباب قد تكون مزيجًا من هذه الأمور أو شيئًا مختلفًا تمامًا، يتغلغل في علاقتكما بشكل أعمق مما تتخيل. هل فعلاً لا تحب المفاجآت، أم أن مشاعرها تجاهك تجعلها تتصرف بهذه الطريقة اللاواعية؟",
+    "hashtags": "#علم_نفس_الأسرة #علاقات_معقدة #سلوك_أخوي #تحليل_شخصية #مشاعر_مكبوتة #فضول_نفسي #تحديات_عائلية #Psychology #FamilyDynamics #SiblingRivalry #BehavioralAnalysis #EmotionalIntelligence #RelationshipGoals #MindGames #UnspokenTruths",
+    "search_terms": [
+      "woman feeling disappointed close up cinematic",
+      "sad woman portrait subtle emotional distress",
+      "frustrated woman looking away thoughtful",
+      "woman feeling betrayed quiet anger",
+      "overwhelmed woman looking down cinematic",
+      "woman holding back tears emotional portrait"
+    ],
+    "duration": 11,
+    "title_theme": "yellow",
+    "read_theme": "purple",
+    "video_filter": "red",
+    "music": "a28.mp3",
+    "created_at": "2026-09-02T01:30:12.169630+00:00"
   }
 ]
