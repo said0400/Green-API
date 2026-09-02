@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 324,
-    "title": "الحقيقة المظلمة للأشخاص الذين يجمعون أشياء قديمة لا قيمة لها",
-    "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
-    "description": "لماذا يشعر البعض بجاذبية لا تقاوم تجاه الأشياء القديمة المتربة التي يبدو أنها لا تملك أي قيمة؟ هل هي مجرد هواية بريئة أم إشارة خفية لنفسية معقدة؟ خلف هذه المقتنيات المتناثرة، يكمن سر عميق يتعلق بالماضي والهوية. هذا الفيديو يغوص في أعماق العقل البشري ليكشف لماذا يتشبث البعض بهذه الأغراض المنسية، وكيف تعكس هذه الممارسة جانبًا من دواخلهم المجهولة. قد تجد أن وراء كل قطعة قديمة قصة لم تكتشف بعد، أو حاجة ملحة للشعور بالاتصال بجذور بعيدة. اكتشف الدوافع النفسية غير المتوقعة وراء هذا السلوك اللافت للنظر. هل جمعك لهذه الأشياء يشير إلى بحثك عن معنى مفقود أم محاولة لإعادة بناء ذكريات متلاشية؟",
-    "hashtags": "#علم_النفس #علم_نفس #تحليل_سلوك #فضول #ذكريات #ماضي #مقتنيات #نفسية #عقل_البشر #غموض #psychology #behavioranalysis #curiosity #vintage #hiddenmeanings",
-    "search_terms": [
-      "vintage objects close up emotional cinematic",
-      "nostalgic items portrait cinematic mood",
-      "old treasures emotional storytelling cinematic",
-      "forgotten belongings soulful portrait cinematic",
-      "collectible items introspection cinematic mood",
-      "antique dust emotion cinematic portrait"
-    ],
-    "duration": 13,
-    "title_theme": "orange",
-    "read_theme": "purple",
-    "video_filter": "red",
-    "music": "a31.mp3",
-    "created_at": "2026-07-13T17:49:30.357377+00:00"
-  },
-  {
     "excel_number": 325,
     "title": "ماذا يخبرك عقلك عندما تنسى كلمة مألوفة وهي على طرف لسانك؟",
     "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a30.mp3",
     "created_at": "2026-09-02T15:22:25.233082+00:00"
+  },
+  {
+    "excel_number": 824,
+    "title": "ماذا يحدث في دماغك عندما تقرر أخيرًا أن تترك استخدام وسائل التواصل الاجتماعي نهائياً وبلا رجعة",
+    "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
+    "description": "هل تساءلت يومًا عن العاصفة الصامتة التي تعصف بدماغك لحظة اتخاذ قرار ترك وسائل التواصل الاجتماعي نهائيًا؟ يبدو الأمر بسيطًا، لكنه يخفي أسرارًا عميقة وكيف تتفاعل عقارب ساعتك الداخلية مع هذا القرار المفاجئ.  هذه اللحظة ليست مجرد قرار إرادي، بل هي معركة مع كيمياء الدماغ التي اعتادت على جرعات dopamine المستمرة.  كيف يتحول الإدمان إلى حرية، وما الثمن النفسي لهذا التحول الجذري؟  سنغوص في أعماق ما يحدث بالفعل عندما تضع حدًا لعالم افتراضي استهلك جزءًا كبيرًا من طاقتك الذهنية.  اكتشف كيف يعيد دماغك تنظيم نفسه، ويتكيف مع الصمت الرقمي، ويستعيد توازنه المفقود.  هل أنت مستعد لتعيش واقعًا أكثر ثراءً، أم أن إغراءات العالم الافتراضي ستظل تسكن داخلك؟",
+    "hashtags": "#علم_النفس #وسائل_التواصل_الاجتماعي #صحة_نفسية #إدمان_رقمي #تطوير_الذات #تحليل_سلوك #ترك_السوشيال_ميديا #عقل_بشرى #تغيير_حياة #واقع_افتراضي #psychology #socialmediaaddiction #digitaldetox #mindfulness #brainscience",
+    "search_terms": [
+      "mindfulness meditation calm",
+      "person thinking deep reflection",
+      "brain waves abstract calm",
+      "solitude peaceful nature",
+      "emotional struggle internal conflict",
+      "digital detox unplugged connection"
+    ],
+    "duration": 12,
+    "title_theme": "green",
+    "read_theme": "red",
+    "video_filter": "black",
+    "music": "a31.mp3",
+    "created_at": "2026-09-02T17:26:12.521608+00:00"
   }
 ]
