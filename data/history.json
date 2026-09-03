@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 331,
-    "title": "لماذا يتغير مزاجك فجأة بمجرد دخولك إلى غرفة والديك؟",
-    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يشعر المرء بتغير مفاجئ في مزاجه بمجرد دخوله إلى غرفة والديه؟ هذا الشعور ليس مجرد مصادفة، بل هو استجابة عميقة تتجاوز الإدراك الواعي، يحمل في طياته أسرارًا دفينة عن طفولتنا وارتباطاتنا العاطفية. هناك قوة غير مرئية تتشكل في تلك المساحة، تستدعي ذكريات مشوشة وأحاسيس قديمة. يبدو أن الجدران تحمل صدى تجارب لم نعد نتذكرها بوضوح، لكنها لا تزال تؤثر في حالتنا النفسية الحالية. إنها دعوة لاستكشاف تلك الطبقات المخفية من النفس البشرية، وفهم كيف يمكن لمكان بسيط أن يكون مفتاحًا لفهم أعمق لذواتنا. ما هي الحقيقة التي تخفيها تلك الغرفة عنا، ولماذا نبدو كأشخاص مختلفين فيها؟",
-    "hashtags": "#علم_نفس #العلاقات_الأسرية #تحليل_المزاج #علم_النفس_الإيجابي #الذاكرة_العاطفية #تطوير_الذات #سلوك_بشري #صحة_نفسية #Psychology #FamilyDynamics #MoodSwings #EmotionalIntelligence #ChildhoodMemories #SelfReflection #BehavioralAnalysis",
-    "search_terms": [
-      "emotional portrait introspection",
-      "nostalgic memory reflection",
-      "childhood feelings revisited",
-      "unseen emotional connection",
-      "subtle mood change atmosphere",
-      "family home subtle tension"
-    ],
-    "duration": 12,
-    "title_theme": "purple",
-    "read_theme": "black",
-    "video_filter": "red",
-    "music": "a39.mp3",
-    "created_at": "2026-07-14T11:14:50.369042+00:00"
-  },
-  {
     "excel_number": 332,
     "title": "السر وراء إحساسك بأنك تسقط في الفراغ لحظة غفوتك",
     "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a37.mp3",
     "created_at": "2026-09-02T23:44:36.304468+00:00"
+  },
+  {
+    "excel_number": 831,
+    "title": "التفسير الصادم لرغبتك في أن يتم طردك من شقتك لتعيش حياة التشرد والمغامرة في الشوارع",
+    "read_text": "👇 التفسير الكامل في الوصف👇",
+    "description": "هل تساءلت يومًا عن سر تلك الرغبة الغريبة في التخلي عن كل شيء، حتى عن سقف يأويك، والاندفاع نحو المجهول في الشوارع؟ ما الذي يدفع البعض إلى الشعور بالإغراء تجاه حياة التشرد والمغامرة، وكأنها ملاذ لا مهرب؟ هذا الفيديو يغوص في أعماق النفس البشرية ليكشف الجذور النفسية لهذه الرغبة المعقدة. اكتشف كيف يمكن أن تكون دعوة خفية للهروب من ضغوط الحياة، أو بحثًا عن معنى أعمق، أو حتى رغبة دفينة في اختبار حدود الذات. قد تجد أن وراء هذا السلوك الظاهري، تختبئ قصص أعمق عن البحث عن الحرية، أو التمرد على القيود، أو حتى محاولة لإعادة اكتشاف الذات بعيدًا عن صخب الحياة المدنية. هل تملك هذه الرغبة بداخلك، أم أنها مجرد خيال بعيد؟",
+    "hashtags": "#علم_نفس #سلوك_بشري #تحليل_نفسي #فضول #غموض #قصص_واقعية #حياة_التشرد #مغامرة #حرية #بحث_عن_الذات #psychology #mindset #selfdiscovery #adventure #socialexperiment",
+    "search_terms": [
+      "man looking out window emotional",
+      "woman walking alone city street",
+      "person contemplating nature",
+      "lonely person sitting on bench",
+      "cinematic portrait thoughtful expression",
+      "person staring at city lights"
+    ],
+    "duration": 15,
+    "title_theme": "cyan",
+    "read_theme": "orange",
+    "video_filter": "black",
+    "music": "a39.mp3",
+    "created_at": "2026-09-03T01:33:46.757519+00:00"
   }
 ]
