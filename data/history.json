@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 346,
-    "title": "ماذا يحدث لعقلك عندما تقرأ نفس السطر عدة مرات دون استيعاب؟",
-    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا تتلاشى الكلمات من أمام عينيك وكأنها سُحرت، رغم أنك تقرأ نفس السطر للمرة العاشرة؟ هذا الشعور الغريب ليس وهمًا، بل هو إشارة واضحة لما يحدث بالفعل داخل شبكاتك العصبية الدقيقة. إنها ليست مجرد لحظة سهو عابرة، بل هو عرض لميكانيكية معقدة في الدماغ تكشف عن أسرار عميقة في طريقة معالجتنا للمعلومات. سنغوص في طبقات هذا اللغز لنكتشف الآلية النفسية التي تجعل عقلك يرفض استيعاب ما هو ظاهر أمامه. إنها رحلة لاستكشاف حدود تركيزنا وقدرتنا على فهم العالم من حولنا. لماذا يصبح المألوف غريبًا فجأة؟ هل هذه ظاهرة طبيعية أم عرض نفسي مخفي؟",
-    "hashtags": "#علم_النفس #العقل #التركيز #الذاكرة #الاستيعاب #العلوم #الغموض #التفكير #الوعي #علم_النفس_الإيجابي #brainscience #psychology #mindfulness #focus #memory",
-    "search_terms": [
-      "brain processing information cinematic portrait",
-      "thoughtful person reading lost in thought emotional",
-      "mental fatigue reading close up cinematic",
-      "mind wandering focus challenge emotional portrait",
-      "neural network abstract visualization emotional",
-      "concentration difficulty reading cinematic close up"
-    ],
-    "duration": 14,
-    "title_theme": "red",
-    "read_theme": "black",
-    "video_filter": "black",
-    "music": "a62.mp3",
-    "created_at": "2026-07-15T19:59:12.262768+00:00"
-  },
-  {
     "excel_number": 347,
     "title": "الحقيقة النفسية للأشخاص الذين يعشقون رائحة البنزين والطلاء",
     "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a61.mp3",
     "created_at": "2026-09-04T21:59:01.402313+00:00"
+  },
+  {
+    "excel_number": 846,
+    "title": "الحقيقة المظلمة وراء الشخص الذي يرفض دائماً إظهار حزنه ويبتسم ابتسامة مزيفة وعريضة طوال الوقت",
+    "read_text": "👇 السبب الحقيقي في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا يصر البعض على إخفاء آلامهم خلف أقنعة زائفة؟ ما السر وراء تلك الابتسامة العريضة التي تبدو وكأنها تخفي عالمًا من الأحزان العميقة؟ اكتشف معي كيف يمكن لهذا السلوك أن يكشف عن جوانب مظلمة من الشخصية يصعب استيعابها. غالبًا ما يعكس هذا التظاهر القوي حاجة ماسة للسيطرة، خوفًا من الانكشاف أو الرفض. إنهم يبنون جدارًا سميكًا من السعادة المصطنعة لحماية هشاشتهم الداخلية، بينما ينهارون بصمت في الخفاء. هذا القناع الواقي يمكن أن يؤدي إلى عواقب نفسية وخيمة على المدى الطويل، مما يمنعهم من التواصل الحقيقي مع أنفسهم ومع الآخرين. قد تكون هذه الابتسامة البراقة هي صرخة استغاثة صامتة، فما هو الثمن الحقيقي لهذا الإنكار المستمر؟",
+    "hashtags": "#علم_النفس #علم_نفس #نفسية #سلوك #تحليل_شخصية #علاقات #مشاعر #حزن #ابتسامة_مزيفة #خداع_النفس #Psychology #BehaviorAnalysis #FakeSmile #EmotionalSuppression #HiddenPain",
+    "search_terms": [
+      "man hiding sadness behind smile cinematic",
+      "woman masking pain with fake smile emotional portrait",
+      "crying eyes behind forced smile close up",
+      "internal struggle masked by laughter dramatic",
+      "vulnerability hidden by cheerful facade thoughtful",
+      "loneliness behind a bright smile cinematic portrait"
+    ],
+    "duration": 13,
+    "title_theme": "black",
+    "read_theme": "pink",
+    "video_filter": "dark_blue",
+    "music": "a62.mp3",
+    "created_at": "2026-09-04T22:37:22.274052+00:00"
   }
 ]
