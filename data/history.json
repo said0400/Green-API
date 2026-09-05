@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 350,
-    "title": "ماذا يعني لو كان أخوك يتعمد إفشال خططك العائلية دائمًا؟",
-    "read_text": "👇 السبب الحقيقي في الوصف👇",
-    "description": "هل سبق وتساءلت لماذا يبدو أن أخاك يفسد متعمدًا كل خطط عائلتك السعيدة؟ قد يكون الأمر أعمق مما تظن، ويرتبط بصراعات خفية داخل النفس البشرية. هناك شعور دفين بالغيرة أو الحاجة للسيطرة قد يدفع شخصًا لتخريب اللحظات الهامة، حتى لو بدت النوايا سطحياً بريئة. ربما يشعر بالتهديد من وحدة العائلة أو يبحث عن اهتمام بطرق سلبية. هذه الأفعال المتكررة قد تكون إشارة لأزمة شخصية يعيشها، أو محاولة يائسة لجذب الانتباه بطريقة غير مباشرة. التفكيك النفسي لهذه الظاهرة يكشف الكثير عن ديناميكيات العلاقات الأسرية المعقدة. هل هذه مجرد تصرفات عابرة أم رموز لشيء أعمق يحتاج إلى فهم؟",
-    "hashtags": "#علم_نفس_العائلة #العلاقات_الأسرية #السلوك_البشري #تحليل_الشخصية #مشاكل_أسرية #الغيرة_الأسرية #تخريب_العلاقات #علم_النفس #FamilyPsychology #RelationshipDynamics #BehaviorAnalysis #PsychologicalTriggers #FamilyConflicts #SiblingRivalry #InnerTurmoil",
-    "search_terms": [
-      "emotional portrait, frustrated man",
-      "sad family conflict, man alone",
-      "brotherly dispute, tension",
-      "manipulative behavior, hidden motives",
-      "psychological struggle, inner turmoil",
-      "family disappointment, regretful look"
-    ],
-    "duration": 14,
-    "title_theme": "green",
-    "read_theme": "orange",
-    "video_filter": "gray",
-    "music": "a67.mp3",
-    "created_at": "2026-07-16T01:13:30.806677+00:00"
-  },
-  {
     "excel_number": 351,
     "title": "السبب الذي يجعلك تفقد الشغف فور حصولك على ما كنت تريده",
     "read_text": "👇 التفسير الكامل في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a66.mp3",
     "created_at": "2026-09-05T13:04:49.727436+00:00"
+  },
+  {
+    "excel_number": 850,
+    "title": "ماذا يخبرك عقلك عندما تشعر برغبة في القفز من شرفة منزلك العالية لترى كيف ستسقط",
+    "read_text": "👇 السر وراء ذلك في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا يراودك شعور مفاجئ برغبة قوية في القفز من مكان مرتفع؟ هل يخبرك عقلك شيئًا أكثر عمقًا مما تبدو عليه الفكرة؟ غالبًا ما تتجاوز هذه الخواطر الغريبة مجرد نزوة عابرة، إنها إشارات نفسية عميقة تحمل في طياتها أسرارًا لم تكتشفها بعد. يرى علم النفس في هذه الرغبة المفاجئة لحظة فارقة، نافذة على جوانب خفية من وعيك. هذا الشعور، الذي قد يبدو مرعبًا، هو في الحقيقة استكشاف لعالمك الداخلي، بحث عن إجابات لألغاز الوجود. هل عقلك يحاول تحذيرك من خطر قادم، أم أنه يستكشف حدود إدراكك للواقع؟ قد يكون الأمر يتعلق بإعادة تقييم الحياة، أو بفهم أعمق لطبيعة الخوف. إنها رحلة استكشاف نفسية فريدة، دعنا نغوص في أعماق هذه الظاهرة لنفهم ما وراء هذه الأفكار. ما الذي يحاول عقلك إيصاله إليك حقًا؟ 🤔",
+    "hashtags": "#علم_النفس #خواطر_غريبة #عقلك_يتكلم #فهم_الذات #قوة_العقل #تحفيز #سلوك_البشر #فضول #غموض #psychology #mindfulness #deepthoughts #selfawareness #curiosity #humanbehavior",
+    "search_terms": [
+      "man looking down from height cinematic",
+      "woman contemplating edge emotional",
+      "person looking out window deep thought",
+      "anxiety distress abstract visuals",
+      "loneliness introspection portrait",
+      "fear of heights close up thoughtful"
+    ],
+    "duration": 15,
+    "title_theme": "red",
+    "read_theme": "pink",
+    "video_filter": "black",
+    "music": "a67.mp3",
+    "created_at": "2026-09-05T14:02:14.506227+00:00"
   }
 ]
