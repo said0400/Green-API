@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 348,
-    "title": "لماذا تشعر أن صديقك يبتعد عنك عندما ينجح في حياته؟",
-    "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
-    "description": "هل شعرت يومًا بأن المسافة تتسع بينك وبين صديقك المقرب بمجرد أن يبدأ في تحقيق النجاح؟ قد تبدو هذه الظاهرة محيرة ومؤلمة، لكنها تخفي وراءها ديناميكيات نفسية معقدة غالبًا ما نتجاهلها. السر يكمن في اللاوعي الجماعي وكيف يعالج الفرد التغييرات في العلاقة عندما تتغير الأدوار أو تتسع الفجوات. لا يتعلق الأمر دائمًا بالغيرة، بل قد يكون خليطًا من مشاعر الحماية الذاتية والقلق من فقدان القرب. هذه الظاهرة تتجلى في مواقف مختلفة، من النجاح المهني إلى التغييرات الشخصية المفاجئة. كلما ازدادت نجاحات أحدهما، قد يشعر الآخر بالتهديد بطريقة غير مباشرة، مما يدفعه للتراجع لتجنب الشعور بالنقص أو عدم المساواة. هذه التفاعلات اللاواعية قد تؤدي إلى انسحاب تدريجي، يبدو للطرف الناجح كبعد غير مبرر. هل هذا يعني أن الصداقة لا تحتمل النجاح، أم أننا بحاجة إلى فهم أعمق لطبيعة العلاقات البشرية؟",
-    "hashtags": "#علم_نفس_النجاح #صداقة_أونلاين #علاقات_معقدة #تغييرات_شخصية #علم_النفس_الاجتماعي #دوافع_البشر #تحليل_سلوك #فضول_نفسي #SuccessMindset #FriendshipGoals #PsychologyFacts #BehavioralAnalysis #SocialDynamics #InnerConflict #LifeChanges",
-    "search_terms": [
-      "sadness man looking out window cinematic",
-      "lonely person sitting on bench park thoughtful",
-      "woman crying softly emotional portrait",
-      "friends drifting apart subtle visual metaphor",
-      "person overwhelmed by success cinematic",
-      "contemplative man in city street slow motion"
-    ],
-    "duration": 11,
-    "title_theme": "black",
-    "read_theme": "yellow",
-    "video_filter": "black",
-    "music": "a65.mp3",
-    "created_at": "2026-07-15T21:45:02.843719+00:00"
-  },
-  {
     "excel_number": 349,
     "title": "السر وراء حديثك مع الحيوانات الأليفة وكأنهم يفهمون كل كلماتك",
     "read_text": "👇 التفسير في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a64.mp3",
     "created_at": "2026-09-04T23:36:28.742856+00:00"
+  },
+  {
+    "excel_number": 848,
+    "title": "الإشارة الخفية التي تفضح محاولة أخيك للسيطرة على حساباتك في البنك بحجة الخوف من تبذيرك",
+    "read_text": "👇 المعنى الحقيقي في الوصف👇",
+    "description": "هل تشعر بأن شخصًا قريبًا منك يراقب قراراتك المالية سراً؟ يبدو الأمر مقلقًا، أليس كذلك؟ قد يكمن الخوف الحقيقي خلف كلمات قلق بسيطة.  لا تدع هذه الضغوط الخفية تعبث بسلامك.  هناك إشارات دقيقة في سلوكيات من حولنا تكشف نواياهم الحقيقية، حتى لو بدت دوافعهم نبيلة.  حجة الخوف من التبذير قد تكون قناعًا لأطماع أعمق، سعي للسيطرة وتوجيه مصيرك المالي.  انتبه جيدًا للغة الجسد، للتفاصيل غير الملحوظة، وللطريقة التي يتم بها تقديم النصائح.  هل هذه النصائح تحرير لك أم قيد يفرض عليك؟  التلاعب النفسي قد يتسلل إليك بخطوات هادئة، استراتيجية مكشوفة للعيان لمن يفتح عينيه.  توقف وفكر، هل هذا القلق حقيقي أم مجرد تمثيل متقن؟ 🤔",
+    "hashtags": "#علم_النفس #السيطرة_الخفية #تحليل_السلوك #العلاقات_الأسرية #التلاعب_النفسي #الأمان_المالي #خداع_الاقارب #الذكاء_العاطفي #حماية_الخصوصية #نصائح_مالية #psychoanalyst #manipulation #familydynamics #psychologicaltricks #securityawareness",
+    "search_terms": [
+      "man looking worried at bank statement cinematic",
+      "woman in thoughtful pose cinematic portrait",
+      "close up of hands holding money emotional",
+      "person stressed over bills portrait",
+      "father and son discussing finances subtly",
+      "subtle tension between family members cinematic"
+    ],
+    "duration": 11,
+    "title_theme": "purple",
+    "read_theme": "black",
+    "video_filter": "red",
+    "music": "a65.mp3",
+    "created_at": "2026-09-05T01:28:59.464286+00:00"
   }
 ]
