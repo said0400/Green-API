@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 358,
-    "title": "ماذا يعني أن صديقك يتذكر تفاصيل دقيقة عنك نسيانها أنت؟",
-    "read_text": "👇 التفسير النفسي في الوصف👇",
-    "description": "هل سبق لك أن شعرت بأن شخصًا ما يعرفك أفضل من نفسك؟ قد تبدو هذه فكرة مريحة، لكنها في جوهرها محيرة للغاية، أليس كذلك؟ لماذا يتذكر الآخرون تفاصيل تخص حياتك ونفسك أنت قد نسيتها تمامًا؟ هذا الأمر يحمل في طياته سرًا عميقًا حول كيفية عمل العلاقات البشرية وذاكرتنا. قد يشير ذلك إلى قوة الملاحظة لدى الآخرين، أو ربما يكشف عن جوانب في شخصيتك لم تكن مدركًا لوجودها. إنه يعكس كيف يرى الآخرون الأشياء التي قد نغفل عنها في خضم انشغالنا بحياتنا. فكيف يمكن لشخص آخر أن يحتفظ بذكريات تتعلق بك ربما لم تكن ذات أهمية بالنسبة لك وقتها؟ هل تذكر الآخرين لتفاصيلك هو علامة على الحب، أم شيء آخر تمامًا؟",
-    "hashtags": "#علم_نفس #علاقات #ذاكرة #تفاصيل #فضول #تحليل_شخصية #تفكير #psychology #relationships #memory #details #curiosity #self_awareness #human_behavior #mind_tricks",
-    "search_terms": [
-      "close up human connection thoughtful",
-      "intimate conversation emotional connection",
-      "memory recall thoughtful contemplation",
-      "deep thought human expression cinematic",
-      "nostalgic reflection portrait",
-      "understanding empathy connection"
-    ],
-    "duration": 14,
-    "title_theme": "green",
-    "read_theme": "red",
-    "video_filter": "black",
-    "music": "a5.mp3",
-    "created_at": "2026-07-16T21:52:12.765443+00:00"
-  },
-  {
     "excel_number": 359,
     "title": "الحقيقة وراء الأشخاص الذين يفضلون النوم بدون غطاء صيفًا وشتاءً",
     "read_text": "👇 الحقيقة كاملة في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a4.mp3",
     "created_at": "2026-09-05T23:29:34.245994+00:00"
+  },
+  {
+    "excel_number": 858,
+    "title": "لماذا يصر والدك على أن تشاركه في إصلاح الأجهزة الكهربائية المعطلة رغم خطورتها وعدم خبرتك بها",
+    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
+    "description": "هل شعرت يومًا بالضغط النفسي الشديد لمجرد الاقتراب من قطعة كهربائية معطلة؟ لماذا يجد والدك إصرارًا غريبًا على إدخالك في عالم إصلاح الأجهزة الخطرة، بالرغم من غياب خبرتك الواضحة؟ قد يكون الأمر أعمق مما تظن، فهو ليس مجرد حب للعبث بالأدوات، بل ربما هو صدى لرغبة دفينة في التواصل أو نقل إرث غير واعٍ. هل يبحث عن طريقة للتأثير فيك أو لشعورك بالمسؤولية تجاهه؟ ربما يرى فيك امتدادًا لقدراته التي يخشى فقدانها، أو محاولة يائسة لتعليمك دروسًا عن الحياة لا يمكن إيجادها في الكتب. هذا الإصرار قد يكشف الكثير عن علاقته بك، وعن مخاوفه الشخصية، وعن أسلوبه الفريد في التعبير عن الحب والقلق. إنها ليست مجرد مشكلة تقنية، بل قصة أعمق عن الروابط الأسرية. كيف يمكن تفسير هذا السلوك الغامض حقًا؟",
+    "hashtags": "#علم_نفس #علاقات_أسرية #سلوك_بشري #فضول #تحليل_الشخصية #Parenting #FamilyDynamics #PsychologyFacts #BehaviorAnalysis #HiddenMeaning #Communication #LifeLessons #EmotionalConnection #ParentalLove #Mystery",
+    "search_terms": [
+      "father teaching son diy repair",
+      "man struggling with broken appliance",
+      "emotional portrait adult child helping parent",
+      "anxiety over dangerous task",
+      "intergenerational connection repair workshop",
+      "parental pressure responsibility diy"
+    ],
+    "duration": 12,
+    "title_theme": "purple",
+    "read_theme": "pink",
+    "video_filter": "red",
+    "music": "a5.mp3",
+    "created_at": "2026-09-06T01:23:12.767221+00:00"
   }
 ]
