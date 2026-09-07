@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 368,
-    "title": "ماذا يعني لو كانت أختك ترفض التقاط أي صورة عائلية؟",
-    "read_text": "👇 المعنى الحقيقي في الوصف👇",
-    "description": "هل لاحظت أن أختك تتجنب صور العائلة دائمًا؟ هذا السلوك قد يخفي وراءه دوافع نفسية عميقة ومعقدة لا تدركها. لماذا قد تفضل هي الابتعاد عن توثيق لحظاتكم المشتركة، وما هي الرسالة التي تحاول إيصالها بهذا الرفض الصامت؟ قد يكون الأمر أبسط أو أكثر تعقيدًا مما تتخيل. ربما تشعر بعدم الانتماء، أو تخشى من الحكم عليها، أو لديها ذكريات مؤلمة مرتبطة بالماضي. قد يعكس هذا التصرف رغبة دفينة في الاستقلالية، أو خوفًا من فقدان هويتها داخل إطار الأسرة. ربما هي تحاول لفت انتباهك بطريقة غير مباشرة. إن فهم هذه الإشارات يتطلب نظرة تحليلية تتجاوز السطح. هل يمكن أن يكون رفضها للصورة هو طريقتها الوحيدة للتعبير عن نفسها؟",
-    "hashtags": "#علم_نفس #علم_نفس_الأسرة #علاقات_أسرية #سلوك_إنسان #تحليل_شخصية #فضول #غموض #نصائح_نفسية #مشاعر #التواصل_غير_اللفظي #psychology #familydynamics #behavioranalysis #secrets #understandingpeople",
-    "search_terms": [
-      "woman looking away from camera emotional portrait",
-      "person feeling isolated in a crowd cinematic",
-      "thoughtful woman in natural light close-up",
-      "family conflict abstract visual",
-      "sadness introspection cinematic portrait",
-      "woman avoiding group photo emotional distress"
-    ],
-    "duration": 11,
-    "title_theme": "red",
-    "read_theme": "orange",
-    "video_filter": "red",
-    "music": "a21.mp3",
-    "created_at": "2026-07-17T21:38:41.183376+00:00"
-  },
-  {
     "excel_number": 369,
     "title": "التفسير النفسي لشعورك بأنك مقيد عندما تجلس في الوسط",
     "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a20.mp3",
     "created_at": "2026-09-06T23:23:36.130454+00:00"
+  },
+  {
+    "excel_number": 868,
+    "title": "الإشارة الخفية التي تفضح محاولة أخيك للتقليل من شأن أصدقائك أمام عائلتك بحجة أنهم غير محترمين",
+    "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
+    "description": "هل شعرت يومًا بأن شخصًا قريبًا منك يزرع بذور الشك حول علاقاتك أمام عائلتك؟ قد لا تكون شكوكك في محلها، فبعض الإشارات الخفية تكشف ما وراء الكلمات. تلك النظرة السريعة، أو التعليق العابر، يمكن أن تحمل وزنًا أثقل مما يبدو. أحيانًا، تبدو النصيحة وكأنها اهتمام، لكنها في جوهرها محاولة لتقويض ثقتك. يمتلك البعض مهارة فائقة في التلاعب بالكلمات، يلوّنون الحقائق لتناسب صورتهم، ويحولون أصدقاءك إلى أشخاص غير جديرين بالثقة في نظر الآخرين، كل ذلك بحجة واهية. إن فهم هذه الإشارات يتطلب وعيًا عميقًا بالسلوكيات الدقيقة، وكيف يمكن أن تتسلل نواياهم الخفية إلى الأحاديث اليومية. هل أنت قادر على فك شفرة هذه الرسائل المبطنة قبل أن تؤثر على علاقاتك؟",
+    "hashtags": "#علم_النفس #علم_النفس_الاجتماعي #علاقات_أسرية #علاقات_صداقة #تحليل_سلوك #تلاعب_نفسي #نوايا_خفية #شخصيات #tiktok_psychology #social_dynamics #family_drama #friendship_goals #behavioral_analysis #mind_games #psychologyfacts",
+    "search_terms": [
+      "subtle manipulation emotional portrait",
+      "family conflict subtle disapproval cinematic",
+      "friend betrayal hidden motive emotional",
+      "passive aggressive behavior cinematic portrait",
+      "doubtful gaze subtle judgment emotional",
+      "unspoken tension family dynamics"
+    ],
+    "duration": 15,
+    "title_theme": "cyan",
+    "read_theme": "orange",
+    "video_filter": "gray",
+    "music": "a21.mp3",
+    "created_at": "2026-09-07T01:21:53.489054+00:00"
   }
 ]
