@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 396,
-    "title": "لماذا نشعر بالضيق عندما نرى رسالة محذوفة في المحادثة؟",
-    "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
-    "description": "لماذا يترك في دواخلنا فراغ مؤلم عند رؤية رسالة تم حذفها؟ ما السر الدفين وراء هذه الاستجابة العاطفية المفاجئة؟ إنها ليست مجرد فضول عابر، بل هي انعكاس عميق لطبيعتنا البشرية التي تتوق للمعرفة الكاملة. هذه الرسالة المحذوفة، حتى وإن لم نعرف محتواها، تثير تساؤلات حول ما قد تكون قالته، أو ما الذي تم إخفاؤه. هل كانت تحمل خبراً ساراً لم نره؟ أم كلمة جارحة تم التراجع عنها؟ هذا الغموض يخلق فراغاً ذهنياً، يدفعنا لمحاولة سد هذه الفجوة بأي تفسير ممكن، وغالباً ما يكون الأسوأ. إنها دعوة مفتوحة للتفكير في طبيعة التواصل وأهمية الشفافية، ومدى تأثير ما لا نعرفه على مشاعرنا. هل سبق لك أن شعرت بهذا الضيق الشديد لدرجة أنك أردت معرفة ما كان مكتوباً؟",
-    "hashtags": "#علم_نفس #رسائل_محذوفة #فضول #تحليل_سلوك #علاقات #تواصل #غموض #مشاعر #نفسية #Psychology #DeletedMessages #Curiosity #BehaviorAnalysis #Relationships",
-    "search_terms": [
-      "emotional portrait thinking contemplation",
-      "sadness anxiety looking away thoughtful",
-      "loneliness introspection pensive mood",
-      "mystery unknown hidden feeling",
-      "unanswered questions contemplation lost",
-      "subtle emotions subtle expression portrait"
-    ],
-    "duration": 11,
-    "title_theme": "cyan",
-    "read_theme": "pink",
-    "video_filter": "dark_blue",
-    "music": "a62.mp3",
-    "created_at": "2026-07-20T20:15:40.334408+00:00"
-  },
-  {
     "excel_number": 397,
     "title": "السر النفسي خلف محاولتك إخفاء بكائك أثناء مشاهدة فيلم مع عائلتك",
     "read_text": "👇 التفسير في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a61.mp3",
     "created_at": "2026-09-09T22:05:48.782854+00:00"
+  },
+  {
+    "excel_number": 896,
+    "title": "ماذا يحدث لعقلك عندما تكتشف أنك كنت تعيش في كوكب آخر غير الأرض وتم نقلك وأنت نائم",
+    "read_text": "👇 المعنى الحقيقي في الوصف👇",
+    "description": "هل سبق لك أن تساءلت عن مدى واقعية ذكرياتك؟ قد يكون ما تعتقد أنه حياتك مجرد قصة مُصطنعة، وأنك تحمل أسرارًا تتجاوز حدود الزمن والمكان. ماذا لو استيقظت يومًا لتجد أن كل شيء تعرفه عن نفسك وعن كوكبك مجرد وهم؟ أنت لست من هذا المكان، بل أنت زائر من عالم آخر، نُقلت هنا بينما كنت غائبًا عن الوعي. هذه التجربة تتجاوز الخيال، وتُحدث زلزالًا في هويتك. ستتساءل عن حقيقتك، عن أهدافك، وعن سبب وجودك هنا. عقلك سيحاول جاهدًا تفسير هذا الواقع الجديد، متشبثًا ببقايا ذاكرته القديمة، بينما يتقبل بصعوبة هذه الحقيقة الصادمة. كيف يمكن لشخص أن يتعامل مع اكتشاف جذوره في مكان مختلف تمامًا، بعد أن عاش حياة بأكملها في اعتقاد خاطئ؟",
+    "hashtags": "#علم_نفس #تساؤلات #واقع_افتراضي #هوية #صدمة #اكتشاف #روحانيات #تأمل #فلسفة #غموض #psychology #identity #reality #mindblown #conspiracy",
+    "search_terms": [
+      "psychological transformation cinematic",
+      "existential crisis emotional portrait",
+      "identity confusion thoughtful gaze",
+      "disoriented person cinematic slow motion",
+      "memory loss abstract visuals",
+      "awakening confusion cinematic lighting"
+    ],
+    "duration": 15,
+    "title_theme": "orange",
+    "read_theme": "red",
+    "video_filter": "dark_blue",
+    "music": "a62.mp3",
+    "created_at": "2026-09-09T22:49:19.846506+00:00"
   }
 ]
