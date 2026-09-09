@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 393,
-    "title": "السر وراء إغماضنا لأعيننا عندما نتذوق طعامًا لذيذًا جدًا",
-    "read_text": "👇 الجزء الأهم موجود في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا تغمض أعيننا لا إراديًا عند تذوق طبق يفوق التوقعات؟ هذا الفعل البسيط يحمل في طياته أسرارًا عميقة تكشف طبيعة استجابتنا الحسية المعقدة. إنه ليس مجرد رد فعل جسدي، بل هو مفتاح لفهم كيف يعالج دماغنا المعلومات الحسية المتدفقة. في الواقع، عندما يواجه الدماغ تجربة ممتعة تفوق المتوقع، يميل إلى حجب بعض المدخلات الحسية الأخرى لتركيز كامل على التجربة اللحظية. هذا التركيز يسمح بتعزيز الشعور باللذة والمتعة، مما يخلق تجربة حسية غامرة لا تُنسى. إنه استراتيجية طبيعية للبقاء، تركز مواردنا المعرفية على ما هو مهم حقًا في لحظة الذروة. فهل نحن حقًا نحتاج هذا الحجب لتقدير المتعة، أم أنه مجرد عادة قديمة؟",
-    "hashtags": "#علم_النفس #سلوك_بشري #فضول #حواس #ادراك #طعام_لذيذ #TikTok #YouTubeShorts #FacebookReels #psychologyfacts #behavior #curiosity #senses #foodlover #mindblown",
-    "search_terms": [
-      "person closing eyes enjoying food cinematic",
-      "woman savoring delicious meal portrait",
-      "man deeply experiencing taste emotional close-up",
-      "sensory overload focus brain abstract",
-      "mouthwatering food moment serene expression",
-      "satisfaction joy food tasting close up"
-    ],
-    "duration": 15,
-    "title_theme": "green",
-    "read_theme": "red",
-    "video_filter": "purple",
-    "music": "a57.mp3",
-    "created_at": "2026-07-20T15:42:32.106660+00:00"
-  },
-  {
     "excel_number": 394,
     "title": "ماذا يخبرك عقلك عندما تشعر أن شخصًا يمشى خلفك في الشارع؟",
     "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a54.mp3",
     "created_at": "2026-09-09T18:56:56.885096+00:00"
+  },
+  {
+    "excel_number": 893,
+    "title": "لماذا نشعر بالارتباك عندما نرى شخصاً يبكي بحرقة في حفل زفاف سعيد ومبهج جداً للجميع",
+    "read_text": "👇 التفسير في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا يتسلل شعور غريب بالارتباك إلى دواخلنا عندما نرى شخصًا يبكي بشدة في قلب احتفال زفاف يعمه الفرح والبهجة؟ هذا التناقض الصارخ بين مظاهر السعادة العارمة والبكاء الذي يمزق القلوب يثير تساؤلات عميقة حول طبيعة المشاعر الإنسانية المعقدة. هل هو تعبير عن حزن دفين، أم ربما صدمة تفوق قدرة التحمل، أم أن هناك أبعادًا نفسية أعمق تلعب دورها في هذا المشهد المؤثر؟ قد يبدو الأمر بسيطًا للوهلة الأولى، لكن النفس البشرية غالبًا ما تخبئ أسرارًا لا تكشفها الظواهر السطحية. سنغوص اليوم في أعماق هذا الشعور المتناقض، ونكشف الغموض الذي يلف ردود أفعالنا تجاه هذا الموقف الفريد. هذه اللحظة، رغم غرابتها، تحمل في طياتها مفتاحًا لفهم أعمق لتعقيداتنا النفسية. فهل تعتقد أن هذا البكاء يمثل انعكاسًا للفرح المكبوت أم لشيء آخر تمامًا؟",
+    "hashtags": "#علم_النفس #تحليل_السلوك #مشاعر_متناقضة #فضول #غموض #التواصل_غير_اللفظي #علم_المشاعر #psychoanalysis #behavioral_psychology #curiosity #emotional_intelligence #human_behavior #psychology_facts #social_dynamics #mystery",
+    "search_terms": [
+      "emotional portrait of person crying at wedding",
+      "conflicted emotions at happy event",
+      "sadness amidst joy wedding footage",
+      "overwhelmed person at celebration",
+      "human emotion contrast wedding",
+      "cinematic close-up crying alone"
+    ],
+    "duration": 15,
+    "title_theme": "red",
+    "read_theme": "purple",
+    "video_filter": "purple",
+    "music": "a57.mp3",
+    "created_at": "2026-09-09T20:04:28.989401+00:00"
   }
 ]
