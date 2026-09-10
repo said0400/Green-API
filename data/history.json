@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 398,
-    "title": "ماذا يعني لو كان صديقك يقاطعك دائمًا ليكمل جملتك؟",
-    "read_text": "👇 السبب الحقيقي في الوصف👇",
-    "description": "هل لاحظت يومًا أن صديقك يكمل جملك دائمًا قبل أن تنتهي منها؟ هل يبدو هذا علامة على التقارب الشديد أم شيئًا أعمق بكثير؟ هذا السلوك المتكرر قد يحمل إشارات نفسية معقدة تكشف الكثير عن طبيعة علاقتكما وعن دوافع أصدقائك الخفية. ما الذي يجعل شخصًا ما يشعر بالحاجة المُلحة لإنهاء كلامك؟ هل هي الثقة العالية، أم عدم احترام المساحة الشخصية، أم شعور بالسيطرة؟ قد يكون هذا الفعل ببساطة تعبيرًا عن مستوى عالٍ من التناغم والتفاهم الذي وصلتما إليه، لدرجة أن أفكاركما أصبحت متوافقة تمامًا. ولكن، هل يمكن أن يخفي هذا السلوك شعورًا بعدم الأمان لديك، أو محاولة لإثبات الذات من جانبه؟ عندما يبادر صديقك بإنهاء حديثك، فهل يعزز ذلك من ثقتك بنفسك، أم يجعلك تشعر بأن صوتك غير مسموع؟ إن فهم الدوافع الكامنة وراء هذه العادة قد يمنحك مفاتيح لفهم أعمق للعلاقات الإنسانية وتحدياتها الخفية.",
-    "hashtags": "#علم_النفس #علم_النفس_الاجتماعي #علاقات #صداقة #تحليل_سلوك #سلوك_اجتماعي #تواصل #ذكاء_عاطفي #علاقات_قوية #لغة_الجسد #Psychology #SocialPsychology #Relationships #Friendship #BehaviorAnalysis",
-    "search_terms": [
-      "emotional portrait talking friends",
-      "close friend finishing sentence empathy",
-      "intimate conversation understanding connection",
-      "psychological connection dialogue friends",
-      "subtle communication between friends",
-      "thoughtful portrait couple connecting"
-    ],
-    "duration": 13,
-    "title_theme": "black",
-    "read_theme": "yellow",
-    "video_filter": "gray",
-    "music": "a65.mp3",
-    "created_at": "2026-07-20T21:54:47.700832+00:00"
-  },
-  {
     "excel_number": 399,
     "title": "لماذا نفقد الإحساس بالوقت تمامًا عندما نغرق في أفكارنا؟",
     "read_text": "👇 التفسير الكامل في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a64.mp3",
     "created_at": "2026-09-09T23:43:49.515894+00:00"
+  },
+  {
+    "excel_number": 898,
+    "title": "لماذا يصر والدك على أن تشاركه في إصلاح سيارته المعطلة رغم خطورتها وعدم خبرتك بها إطلاقاً",
+    "read_text": "👇 السر وراء ذلك في الوصف👇",
+    "description": "هل تساءلت يومًا عن السبب الحقيقي وراء إصرار والدك على إشراكك في إصلاح سيارته القديمة، حتى وأنت تعلم مدى خطورة الوضع وقلة خبرتك؟ قد يبدو الأمر مجرد رغبة في قضاء وقت ممتع أو تعليمك بعض المهارات، لكن الحقيقة أعمق من ذلك بكثير، وتكمن في طبقات نفسية معقدة تركتها تجارب حياته.  إنه يسعى لزرع بذرة ثقته بنفسه بداخلك، أو ربما لاستعادة لحظات مضت يعتقد أنها فقدت.  تخيل أن كل حركة يقوم بها، وكل كلمة يقولها، تحمل رسالة مبطنة تتعلق بتاريخه الشخصي وارتباطه بك.  هل يبحث عن شريك أم عن مجرد يد مساعدة؟  وماذا عن خوفك من الفشل، وكيف يؤثر ذلك على قراراته؟  ربما هي محاولة منه لتجاوز وحدته، أو لتأكيد دوره الأبوي في حياتك.  في هذه اللحظة، هل يراك كابن أم كمحاولة لإعادة بناء شيء مفقود؟",
+    "hashtags": "#علم_النفس_الأبوي #العلاقات_الأسرية #التحليل_السلوكي #أسرار_الآباء #التربية_الإيجابية #التواصل_الأسري #مشاكل_الآباء #family_dynamics #psychology_facts #parenting_advice #behavioral_analysis #father_son_relationship #emotional_intelligence #relationship_goals #self_improvement",
+    "search_terms": [
+      "father son car repair emotional cinematic",
+      "man teaching younger man car fixing trust bonding",
+      "old man helping young man with car serious thoughtful",
+      "parent child working together on car close up dramatic",
+      "generational connection mechanical repair intimate portrait",
+      "father guiding son auto repair close up emotional"
+    ],
+    "duration": 14,
+    "title_theme": "purple",
+    "read_theme": "orange",
+    "video_filter": "gray",
+    "music": "a65.mp3",
+    "created_at": "2026-09-10T01:33:35.857075+00:00"
   }
 ]
