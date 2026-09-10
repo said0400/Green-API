@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 401,
-    "title": "ماذا يحدث لعقلك عندما ترفض والدتك هدية اشتريتها لها؟",
-    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
-    "description": "هل شعرت يومًا بأن رفض والدتك لهديتك يترك فراغًا نفسيًا غريبًا بداخلك؟ إنها لحظة تتجمد فيها المشاعر وتتساءل عن الرسالة الحقيقية خلف هذا الرفض البسيط ظاهريًا. ما الذي يحدث حقًا في دهاليز العقل البشري عندما تُقابل نوايا الحب الصادقة بالرفض، خصوصًا من أقرب الناس؟ قد لا يتعلق الأمر بالهدية نفسها، بل بمدى ما تحمله من معانٍ ودلالات أعمق بكثير. إنها رحلة لاستكشاف الذات، فهم ديناميكيات العلاقات الأسرية المعقدة، وكشف الستار عن الحقيقة الكامنة وراء ردود الأفعال غير المتوقعة. هل هذا الرفض مجرد تعبير عن ظروفها، أم أنه يعكس شيئًا متعلقًا بك أنت؟ وما هو الدرس الحقيقي الذي يجب أن نتعلمه من هذه التجربة المؤلمة؟ 🤔",
-    "hashtags": "#علم_النفس #العلاقات_الأسرية #علم_النفس_الاجتماعي #فهم_المشاعر #تطوير_الذات #التحليل_النفسي #نصائح_عائلية #علاقة_الأم_بابنها #علم_المشاعر #الرفض_العاطفي #psychology #familydynamics #parenting #emotionalintelligence #mindset",
-    "search_terms": [
-      "woman looking thoughtful, cinematic portrait",
-      "person feeling disappointed, emotional close-up",
-      "mother and adult child relationship, subtle tension",
-      "gift rejection, emotional reaction",
-      "psychological distress, introspective mood",
-      "family conflict, unspoken emotions"
-    ],
-    "duration": 15,
-    "title_theme": "green",
-    "read_theme": "red",
-    "video_filter": "purple",
-    "music": "a68.mp3",
-    "created_at": "2026-07-21T11:40:23.250907+00:00"
-  },
-  {
     "excel_number": 402,
     "title": "السر وراء رغبتك في تكسير الأشياء عندما تشعر بالعجز التام",
     "read_text": "👇 السر وراء ذلك في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a67.mp3",
     "created_at": "2026-09-10T15:14:54.063958+00:00"
+  },
+  {
+    "excel_number": 901,
+    "title": "لماذا تعيد قراءة محادثة انتهت منذ شهور؟",
+    "read_text": "👇 التفسير في الوصف👇",
+    "description": "هل سبق لك أن وجدت نفسك تعود إلى محادثات قديمة مضى عليها شهور؟ ما الذي يدفعنا غريزيًا إلى استعادة لحظات من الماضي، خاصة تلك التي تحمل بين طياتها مشاعر معقدة؟ هل هو مجرد فضول عابر أم أن هناك عمقًا نفسيًا أكبر يكمن وراء هذا السلوك؟ غالبًا ما يكمن السبب في رغبتنا اللاواعية في فهم ما لم نفهمه في حينها. ربما تبحث عن إجابات لم تكن واضحة، أو تحاول معالجة مشاعر لم تتجلى بشكل كامل. يعكس هذا الفعل تعلقنا بالذكريات ورغبتنا في استخلاص الدروس أو حتى إيجاد راحة وهمية في المألوف. في كل كلمة تقرأها، قد تسعى لإعادة بناء فهمك للماضي أو التأكد من أنك على المسار الصحيح. إنها رحلة لاستكشاف الذات عبر عدسة التجارب السابقة. لكن هل يخدم هذا الفعل هدفًا حقيقيًا أم أنه مجرد تشتيت عن الحاضر؟",
+    "hashtags": "#علم_نفس #تحليل_سلوك #علاقات_معقدة #ذكريات_الماضي #فضول_نفسي #مشاعر_مدفونة #TikTok #YouTubeShorts #FacebookReels #psychology #selfreflection #mindset #behavioralanalysis #pastmemories #humanbehavior",
+    "search_terms": [
+      "emotions reflection cinematic portrait",
+      "nostalgia memory cinematic close up",
+      "thoughtful pensive face cinematic",
+      "looking back cinematic portrait",
+      "inner thoughts emotional close up",
+      "past memories cinematic emotional portrait"
+    ],
+    "duration": 11,
+    "title_theme": "black",
+    "read_theme": "purple",
+    "video_filter": "dark_green",
+    "music": "a68.mp3",
+    "created_at": "2026-09-10T17:18:33.865607+00:00"
   }
 ]
