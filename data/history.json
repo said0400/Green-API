@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 430,
-    "title": "ماذا يحدث في دماغك عندما تلمس سطحًا ساخنًا وتسحب يدك ببطء؟",
-    "read_text": "👇 السبب الحقيقي في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يظل الألم يتردد في يدك حتى بعد إبعادها عن مصدر الحرارة؟  ما الذي يحدث حقًا في شبكتك العصبية الدقيقة في تلك اللحظات الفارقة؟  نحن على وشك الغوص في عالم خفي من الاستجابات الفسيولوجية المعقدة التي تتجاوز مجرد الشعور بالحرارة.  تخيل أن كل خلية عصبية ترسل إشارات تحذير، تتصارع لتحديد مدى الضرر.  الدماغ يعالج هذه المعلومات بسرعة فائقة، يفك شفرتها، ويستدعي ذكريات سابقة لتجنب تكرار التجربة.  لكن هل هو مجرد رد فعل غريزي أم أن هناك طبقات أعمق من الوعي والإدراك تلعب دورًا؟  كيف تؤثر سرعة سحب اليد على شدة الإحساس والتعلم اللاحق؟  هل ينجح عقلك في حمايتك تمامًا أم تترك لنا هذه التجارب أثرًا لا يُمحى؟",
-    "hashtags": "#علم_النفس #الدماغ #علم_الأعصاب #سلوك_بشري #ردود_الفعل #إدراك_حسي #استجابة_الألم #عقل_البشر #فهم_النفس #استكشاف_العقل #psyche #neuroscience #brain #behavior #psychology",
-    "search_terms": [
-      "close up human touch hot surface slow motion",
-      "abstract neural network brain activity synapse",
-      "emotional close up human face reflection pain",
-      "anxiety stress relief deep breath calm",
-      "slow motion hand pulling away from heat",
-      "nerve impulse signal pathway abstract visualization"
-    ],
-    "duration": 15,
-    "title_theme": "red",
-    "read_theme": "cyan",
-    "video_filter": "red",
-    "music": "a37.mp3",
-    "created_at": "2026-07-24T01:16:14.728464+00:00"
-  },
-  {
     "excel_number": 431,
     "title": "الحقيقة وراء الأشخاص الذين يفضلون الرسائل النصية على المكالمات الصوتية",
     "read_text": "👇 التفسير الكامل في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a36.mp3",
     "created_at": "2026-09-13T13:57:37.220648+00:00"
+  },
+  {
+    "excel_number": 930,
+    "title": "السر وراء انتظارك لرسالة تعرف أنها لن تأتي",
+    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
+    "description": "لماذا نتمسك بأمل رسالة لن تصل أبدًا، حتى عندما نعلم في قرارة أنفسنا أنها مستحيلة؟ هل هذا تعلق أم وهم؟ يكمن في أعماق النفس البشرية سر قديم يفسر هذا الانجذاب الغريب نحو الأشياء المفقودة. هذا الفيديو يكشف الستار عن الديناميكية النفسية العميقة التي تجعلنا ننتظر ما لا ينتظر، وكأن هناك قوة خفية تسحبنا نحو هذا الانتظار المؤلم. نغوص في علم النفس وراء التعلق غير الصحي، مستكشفين كيف يمكن للماضي أن يشكل حاضرنا بطرق لا نتوقعها. سنحلل سلوكياتنا ولماذا نميل إلى إعادة إنتاج أنماط العلاقات المؤذية. هل هو خوف من الوحدة، أم رغبة دفينة في إثبات الذات؟ اكتشف الأسباب الحقيقية خلف انتظارك لرسالة تعرف أنها لن تأتي أبدًا. لماذا تستمر في وضع طاقتك ومشاعرك في مكان فارغ؟",
+    "hashtags": "#علم_نفس #علاقات #انتظار_مؤلم #رسالة_مفقودة #تعلق_مرضي #تحليل_سلوك #نفسي #فراغ_عاطفي #psychoanalysis #hope_vs_reality #self_sabotage #relationships #letting_go #emotional_healing #waiting_game",
+    "search_terms": [
+      "sad person looking out window cinematic",
+      "lonely person waiting emotional portrait",
+      "thoughtful woman gazing distance",
+      "man staring into space pensive",
+      "waiting for a sign hope despair",
+      "lost in thought close up emotional"
+    ],
+    "duration": 14,
+    "title_theme": "yellow",
+    "read_theme": "black",
+    "video_filter": "dark_green",
+    "music": "a37.mp3",
+    "created_at": "2026-09-13T15:07:24.799411+00:00"
   }
 ]
