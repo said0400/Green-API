@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 434,
-    "title": "لماذا تتوقف عن التنفس للحظات عندما تركز بشدة في هاتفك؟",
-    "read_text": "👇 السر وراء ذلك في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يتوقف جسدك عن التنفس بشكل لا إرادي عندما تنغمس تمامًا في شاشة هاتفك؟ هذه الظاهرة النفسية الغامضة ترتبط بعمق بآلية التركيز الشديد وكيف يعيد دماغنا ترتيب أولوياته العصبية. إنها ليست مجرد عادة، بل هي استجابة فسيولوجية معقدة تكشف عن كيفية معالجة المعلومات والتحكم في وظائف الجسم الأساسية. يتأثر الجهاز العصبي اللاإرادي بشكل مباشر، مما يؤدي إلى هذا الانقطاع المؤقت في التنفس. اكتشف القوة الخفية لعقلك وكيف يمكن أن يؤثر على أبسط وظائفه الحيوية. هل نتحكم حقًا في أجسادنا أم أنها تتصرف بطرق تتجاوز وعينا؟ 🧠",
-    "hashtags": "#علم_نفس #تركيز #عادات #عقل #دماغ #تنفس #ظواهر_نفسية #سلوك #تحليل_نفسي #psychology #focus #behavior #mind #brain #tech",
-    "search_terms": [
-      "intense focus cinematic portrait",
-      "deep concentration thoughtful person",
-      "mindfulness calm reflection",
-      "person lost in thought close up",
-      "introspective moment emotional",
-      "overwhelmed by phone screen cinematic"
-    ],
-    "duration": 14,
-    "title_theme": "red",
-    "read_theme": "purple",
-    "video_filter": "red",
-    "music": "a46.mp3",
-    "created_at": "2026-07-24T17:21:34.958523+00:00"
-  },
-  {
     "excel_number": 435,
     "title": "الإشارة التي تفضح غيرة والدتك من استقلاليتك ونجاحك",
     "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a45.mp3",
     "created_at": "2026-09-13T19:54:24.567931+00:00"
+  },
+  {
+    "excel_number": 934,
+    "title": "ما الذي يجعلك تحفظ وجهًا واحدًا في الزحام؟",
+    "read_text": "👇 السبب الحقيقي في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا يظل وجه شخص معين عالقًا في ذاكرتك وسط مئات الوجوه الأخرى؟ السر ليس في جمال الوجه، بل في تلك الشرارة النفسية غير المرئية التي تربطنا به. هناك آلية دماغية خفية تلتقط تفاصيل معينة وتمنحها أهمية فائقة، مشكلةً رابطًا فريدًا قد لا ندركه بوعي. هل هي نظرة معينة، تعبير غامض، أم شعور داخلي عميق؟ ما يفعله العقل البشري في تلك اللحظة هو أشبه بسحر، يلتقط خيوطًا رفيعة من الطاقة البشرية ويحبكها في نسيج الذاكرة الدائم. هذا الانجذاب الأولي، هذه الكيمياء العاطفية، هي ما يمنح وجهًا واحدًا القدرة على اختراق ضجيج الحشود. كيف يتحول وجه غريب إلى علامة فارقة في رحلة حياتنا؟",
+    "hashtags": "#علم_نفس #ذاكرة #ادراك #سلوك_بشري #علاقات #تحليل_نفسي #فضول #اسرار_الدماغ #تواصل_بشري #psychology #memory #perception #humanbehavior #relationships #mind",
+    "search_terms": [
+      "emotional portrait connection",
+      "introspective gaze focus",
+      "subtle human connection cinematic",
+      "mindful reflection close-up",
+      "captivating human face detail",
+      "subconscious recognition memory"
+    ],
+    "duration": 12,
+    "title_theme": "green",
+    "read_theme": "cyan",
+    "video_filter": "purple",
+    "music": "a46.mp3",
+    "created_at": "2026-09-13T21:10:59.243092+00:00"
   }
 ]
