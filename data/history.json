@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 443,
-    "title": "السر الذي يجعلك تفتح الثلاجة عدة مرات دون أن تأخذ شيئًا",
-    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
-    "description": "لماذا نفتح الثلاجة مرات ومرات وكأننا نبحث عن شيء غامض، رغم أننا لا نأخذ شيئاً؟ هل هي مجرد عادة أم هناك سر نفسي عميق نستكشفه كل مرة؟ هذا السلوك اللاواعي قد يكشف لك الكثير عن عقلك ورغباتك المكبوتة، ويمنحك بصيرة غير متوقعة حول ما يدفعك فعلاً. سنغوص اليوم في أعماق اللاوعي لنكشف النقاب عن الدافع الحقيقي وراء هذه الظاهرة المدهشة. قد يكون الأمر يتعلق بالشعور بالسيطرة، أو البحث عن الراحة، أو حتى مجرد محاولة لتأجيل قرار مهم. اكتشف الأسباب النفسية الخفية وراء هذا الفعل المتكرر الذي تقوم به دون وعي. ما الذي تبحث عنه حقًا كلما فتحت باب الثلاجة؟ 🤔",
-    "hashtags": "#علم_نفس #سلوك_بشري #فضول #لا_وعي #عادات #تحليل #صحة_نفسية #تفكير #رغبات #psycho #behavior #curiosity #mind #psychology #self_improvement",
-    "search_terms": [
-      "thoughtful person looking into refrigerator",
-      "woman opening fridge searching for something",
-      "man alone in kitchen at night",
-      "close up of eyes looking thoughtful",
-      "person staring into space",
-      "empty refrigerator interior"
-    ],
-    "duration": 14,
-    "title_theme": "green",
-    "read_theme": "black",
-    "video_filter": "dark_blue",
-    "music": "a57.mp3",
-    "created_at": "2026-07-25T14:52:12.704652+00:00"
-  },
-  {
     "excel_number": 444,
     "title": "لماذا نكره الأشخاص الذين يجبروننا على التفاؤل عندما نكون محبطين؟",
     "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a54.mp3",
     "created_at": "2026-09-14T20:03:34.712125+00:00"
+  },
+  {
+    "excel_number": 943,
+    "title": "ماذا يحدث عندما يعاملك أحد كأنك مفهوم؟",
+    "read_text": "👇 الحقيقة كاملة في الوصف👇",
+    "description": "هل شعرت يومًا بأن أحدهم يتصرف معك وكأنك شيء مُسلّم به، لا يستحق أي تفكير أو تقدير؟ هذا الشعور قد يكون أعمق مما تتخيل، ويحمل في طياته رسائل خفية عن علاقتك بالآخرين وبنفسك. عندما يختفي الاهتمام والتقدير، تبدأ رحلة البحث عن معنى هذا التجاهل. هل هو نقص في الانتباه أم انعكاس لطريقة رؤية الآخرين لك؟ قد تكون هذه المعاملة انعكاسًا لمفاهيمنا الذاتية التي لم ندركها بعد. هذا الفيديو يكشف الستار عن الأسباب النفسية وراء هذا التصرف، ويقدم لك رؤية جديدة لفهم ديناميكيات العلاقات. اكتشف كيف يؤثر شعورك بأنك مجرد 'مفهوم' على سلوك الآخرين تجاهك، وكيف يمكنك تغيير هذا الواقع. ما هو أول شيء يخطر ببالك عندما تشعر بأنك غير مرئي؟",
+    "hashtags": "#علم_النفس #علاقات #تقدير_الذات #تجاهل #فهم_الآخرين #تحليل_سلوك #TikTok_trends #YouTubeShorts #Reels #psychology #relationships #selfworth #ignorance #socialdynamics #mindset",
+    "search_terms": [
+      "emotional portrait contemplation",
+      "person looking thoughtful alone",
+      "sadness reflection close up",
+      "person feeling ignored lonely",
+      "disappointment introspection cinematic",
+      "overlooked feeling sad portrait"
+    ],
+    "duration": 14,
+    "title_theme": "red",
+    "read_theme": "cyan",
+    "video_filter": "red",
+    "music": "a57.mp3",
+    "created_at": "2026-09-14T21:05:21.492939+00:00"
   }
 ]
