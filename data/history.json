@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 439,
-    "title": "لماذا نعتقد أن الأشخاص الجميلين شكليًا هم أكثر ذكاءً ولطفًا؟",
-    "read_text": "👇 الحقيقة كاملة في الوصف👇",
-    "description": "هل سبق لك أن افترضت أن وسامة الشخص دليل على ذكائه أو طيبته؟ هذا الاعتقاد الشائع يثير تساؤلات حول طريقة حكمنا على الآخرين. لماذا تمنحنا الملامح الجميلة ثقة فورية في الصفات الداخلية للشخص، وكأنها رمز سري يشير إلى الكمال؟ يبدو أن هناك آلية نفسية عميقة تتلاعب بإدراكنا، تربط الجمال الخارجي بجوهر داخلي مثالي دون دليل قاطع. هذا التأثير، المعروف بـ 'الهالة الجمالية'، يشكل توقعاتنا ويؤثر على قراراتنا اليومية. إنه يعكس كيف تتشابك الأوهام مع الواقع لتشكل فهمنا للعالم. ولكن هل هذا الافتراض مبرر حقًا، أم أنه مجرد وهم بصري يعمينا عن الحقيقة؟",
-    "hashtags": "#علم_النفس #سلوك_بشري #إدراك #الجمال #تحليل_شخصية #توقعات #تفكير #علاقات #علم_النفس_الاجتماعي #تأثير_الجمال #psychology #beautybias #perception #humanbehavior #socialpsychology",
-    "search_terms": [
-      "cinematic portrait thoughtful person",
-      "emotional close up face contemplation",
-      "elegant person looking thoughtful",
-      "beautiful person deep thinking cinematic",
-      "portrait of intelligence and kindness",
-      "psychology of perception beautiful people"
-    ],
-    "duration": 15,
-    "title_theme": "purple",
-    "read_theme": "orange",
-    "video_filter": "dark_green",
-    "music": "a51.mp3",
-    "created_at": "2026-07-24T22:56:13.395851+00:00"
-  },
-  {
     "excel_number": 440,
     "title": "الحقيقة النفسية وراء الشخص الذي يخفض صوت الراديو عندما يبحث عن عنوان",
     "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a50.mp3",
     "created_at": "2026-09-14T01:47:15.316411+00:00"
+  },
+  {
+    "excel_number": 939,
+    "title": "ما الذي يحدث لعقلك عندما يراك أحد تبكي؟",
+    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
+    "description": "هل تساءلت يومًا كيف يتفاعل عقلك لا إراديًا عندما يلاحظ شخص آخر دموعك؟  هناك آلية خفية ومعقدة تحدث داخلنا لا ندركها، تتعلق بالاستجابات العصبية والاجتماعية العميقة.  اكتشف العلم وراء هذه اللحظات الحساسة.  عندما نبكي أمام الآخرين، تنشط مناطق معينة في الدماغ مرتبطة بالعاطفة والتواصل، مما يؤثر على إدراكنا لكيفية رؤيتنا.  الأمر يتجاوز مجرد إظهار الضعف؛ إنه نظام تكيفي يهدف إلى تعزيز الارتباط الاجتماعي.  ما الذي يحدث بالضبط وكيف يغير هذا الموقف نظرتنا لأنفسنا وللآخرين؟  هل تجعلنا الدموع أكثر هشاشة أم أقوى في نظر المجتمع؟",
+    "hashtags": "#علم_النفس #الدموع #التواصل_العاطفي #علم_المشاعر #التفاعل_الاجتماعي #العقل_البشري #نفسية #تحليل_سلوك #مشاعر #الذكاء_العاطفي #psychology #emotions #crying #social_interaction #human_behavior",
+    "search_terms": [
+      "sad woman crying emotional portrait",
+      "person crying alone cinematic",
+      "empathetic gaze support comfort",
+      "vulnerable moment human connection",
+      "reflection tears thoughtful mood",
+      "overwhelmed emotion close up"
+    ],
+    "duration": 12,
+    "title_theme": "yellow",
+    "read_theme": "green",
+    "video_filter": "black",
+    "music": "a51.mp3",
+    "created_at": "2026-09-14T16:01:50.120260+00:00"
   }
 ]
