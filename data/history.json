@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 458,
-    "title": "لماذا نعشق رائحة الكتب الجديدة بمجرد فتحها؟",
-    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يمتلك عالم الكتب الجديدة سحرًا خاصًا يأسرنا فور فتح صفحاتها؟  إنها ليست مجرد رائحة ورق وحبر، بل هي بوابة لعالم آخر، استدعاء لذكريات قديمة، أو ربما انعكاس لاحتياجات عميقة داخلنا.  هل نبحث عن بداية جديدة، أم عن ملاذ من ضغوط الواقع؟  تكمن الإجابة في طبقات معقدة من علم النفس والذاكرة الحسية.  المركبات الكيميائية المنبعثة من الورق والأحبار تتفاعل مع تجاربنا الشخصية، فتخلق حالة من الارتباط العاطفي اللاواعي.  هذه الروائح، التي قد لا ندركها بوعي تام، تحفز مناطق في الدماغ مرتبطة بالسعادة والأمان.  إنها أشبه بتوقيع فريد لكل قصة، تعدنا باكتشافات وتجارب جديدة، وتغذي شغفنا المعرفي.  فما الذي يجعل هذه الرائحة تحديدًا تثير هذا الشعور بالبهجة والانجذاب لديك؟",
-    "hashtags": "#علم_النفس #رائحة_الكتب #عشق_القراءة #كتب_جديدة #سحر_الكتب #ذكريات #علم_نفس_السلوك #الذاكرة_الحسية #علم_نفس_القراءة #bookworm #newbooks #psychologyfacts #readinglove #booksmell #literary",
-    "search_terms": [
-      "cinematic portrait woman reading book",
-      "emotional close up person smelling book",
-      "nostalgic memory book opening",
-      "contemplative person with new book",
-      "psychological escape through literature",
-      "sensory experience reading new book"
-    ],
-    "duration": 15,
-    "title_theme": "orange",
-    "read_theme": "cyan",
-    "video_filter": "purple",
-    "music": "a5.mp3",
-    "created_at": "2026-07-26T21:46:02.698353+00:00"
-  },
-  {
     "excel_number": 459,
     "title": "الحقيقة النفسية للأشخاص الذين يكتبون بخط صغير جداً",
     "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a4.mp3",
     "created_at": "2026-09-15T23:53:22.287393+00:00"
+  },
+  {
+    "excel_number": 958,
+    "title": "السر النفسي وراء حفظك لعبارات دفاعية جاهزة",
+    "read_text": "👇 التفسير النفسي في الوصف👇",
+    "description": "لماذا نمتلك دائمًا ردودًا جاهزة لأي نقد؟ هل حقًا هذه الدفاعات تعكس قوتنا الداخلية أم ضعفًا دفينًا؟ قد نظن أنها درع يحمينا، لكنها في الغالب تشير إلى شعور عميق بعدم الأمان. عندما نرد فورًا بعبارات مكررة، كأننا نقرأ من نص محفوظ، فإن عقلنا اللاواعي يحاول جاهدًا سد ثغرة يشعر بها. هذه الردود السريعة ليست سوى قناع يخفي قلقًا من الرفض أو اللوم. إنها محاولة لإثبات قيمة قد لا نشعر بامتلاكها. لكن هل هذه الطريقة فعالة حقًا في بناء الثقة؟ أم أنها تزيد من شعورنا بالهشاشة؟ فكر في الأمر: هل هذه الدفاعات تحميك أم تحاصرك؟",
+    "hashtags": "#علم_النفس #التطوير_الذاتي #تحليل_الشخصية #علم_نفس_اجتماعي #سلوك_بشري #تنمية_بشرية #ثقافة_نفسية #تطوير_الذات #علاقات_صحية #الحماية_النفسية #دفاعات_نفسية #psychology #self_improvement #behavioral_analysis #inner_strength",
+    "search_terms": [
+      "cinematic portrait emotional thoughtful person looking away",
+      "introspective close-up face subtle emotion contemplation",
+      "person reflecting inner conflict anxiety discreetly",
+      "vulnerability quiet strength thoughtful gaze",
+      "psychological depth person pensive mood",
+      "solitude introspection cinematic lighting portrait"
+    ],
+    "duration": 12,
+    "title_theme": "red",
+    "read_theme": "orange",
+    "video_filter": "gray",
+    "music": "a5.mp3",
+    "created_at": "2026-09-16T01:47:37.937511+00:00"
   }
 ]
