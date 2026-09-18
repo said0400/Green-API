@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 480,
-    "title": "ماذا يعني أن أختك تتحدث عن مشاكلها فقط ولا تستمع لمشاكلك؟",
-    "read_text": "👇 المعنى الحقيقي في الوصف👇",
-    "description": "لماذا تبدو أختك وكأنها تفرغ سيلًا من المشاكل عليك دون إيلاء أي اهتمام لمشاكلك؟ هل شعرت يومًا بأن العلاقة أصبحت مجرد قناة لتفريغ همومها دون تبادل حقيقي؟ هذا الصمت في الاستماع قد يخفي أسبابًا نفسية عميقة لم تكن تتوقعها أبدًا. ربما هي آلية دفاعية غير واعية، أو سعي لا شعوري للسيطرة، أو حتى انعكاس لاضطراب في فهم العلاقات. هل تتحدث فقط لأنها تشعر بالأمان، أم أنها تستغل هذا الشعور بالثقة؟ قد يكون الأمر مرتبطًا بكيفية إدراكها للدعم، أو ربما هي غارقة في دائرة مفرغة من التركيز على الذات. فهم هذه الديناميكية يتطلب نظرة أعمق لما يحدث داخل عقلها. ما الذي يعنيه هذا السلوك بالنسبة لطبيعة علاقتكما حقًا؟",
-    "hashtags": "#علم_نفس_العائلة #ديناميكيات_الأخوة #تواصل_فعال #صحة_نفسية #علاقات_أسرية #فهم_الآخرين #سلوك_اجتماعي #تحليل_نفسي #مشاكل_عائلية #دعم_عاطفي #FamilyDynamics #SiblingRivalry #PsychologyFacts #EmotionalSupport #RelationshipAdvice",
-    "search_terms": [
-      "woman listening intently, thoughtful expression, soft lighting",
-      "sibling conflict, emotional distress, looking away",
-      "woman crying, overwhelmed, cinematic portrait",
-      "frustrated woman, looking out window, pensive mood",
-      "supportive conversation, one person listening, empathy",
-      "woman feeling unheard, sad expression, shallow depth of field"
-    ],
-    "duration": 14,
-    "title_theme": "green",
-    "read_theme": "red",
-    "video_filter": "red",
-    "music": "a37.mp3",
-    "created_at": "2026-07-29T11:52:08.494449+00:00"
-  },
-  {
     "excel_number": 481,
     "title": "السر الذي يجعلك تتجنب الدوس على الخطوط الفاصلة في الشارع",
     "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a36.mp3",
     "created_at": "2026-09-18T13:55:40.032238+00:00"
+  },
+  {
+    "excel_number": 980,
+    "title": "السر وراء انزعاجك من كلمة \"بمزح\" بعد الإساءة",
+    "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
+    "description": "لماذا تثير كلمة 'بمزح' غضبك بعد الإساءة، حتى لو كنت تعلم أنها دعابة؟ هل سبق لك أن شعرت بانقباض في صدرك أو تفاعل غاضب غير مبرر لمجرد سماع تلك الكلمة بعد تعليق جارح؟ هذا الانزعاج العميق ليس عشوائيًا، بل يكشف عن آليات نفسية معقدة تعمل في أعماق وعيك.  تكمن الحقيقة في أن الدماغ البشري يفسر النوايا والكلمات بطرق تتجاوز المعنى الحرفي.  عندما تتعرض لإساءة، حتى لو كانت مغلفة بكلمة 'بمزح'، فإن مشاعرك الأولية تسجل الألم أو عدم الاحترام.  محاولة تبرير الإساءة بالدعابة تهدف إلى تقليل حدة الموقف، لكنها قد تشعرك بأن مشاعرك يتم تجاهلها أو التقليل من شأنها.  هذا التناقض بين ما قيل وما تشعر به يخلق توترًا داخليًا.  هل وجدت نفسك تتساءل عما إذا كانت مشاعرك مبالغًا فيها، أم أن هناك ما هو أعمق مما تدركه؟",
+    "hashtags": "#علم_نفس #علاقات #تحليل_سلوك #nlp #psychology #communication #mindset #selfimprovement #التفكير_النقدي #الذكاء_العاطفي #مشاعر #تطوير_الذات #نصائح #understanding #behavior",
+    "search_terms": [
+      "sadness emotional portrait",
+      "frustration close up",
+      "anger cinematic",
+      "thoughtful person face",
+      "inner conflict abstract",
+      "emotional struggle introspection"
+    ],
+    "duration": 15,
+    "title_theme": "cyan",
+    "read_theme": "yellow",
+    "video_filter": "black",
+    "music": "a37.mp3",
+    "created_at": "2026-09-18T15:13:32.180732+00:00"
   }
 ]
