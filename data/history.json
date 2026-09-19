@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 490,
-    "title": "لماذا يميل زوجك لتجاهل حديثك عندما يلعب ألعاب الفيديو؟",
-    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
-    "description": "هل سبق وتساءلتِ لماذا يبدو عالم زوجك المصغّر في ألعاب الفيديو أهم من عالمك الواقعي؟ قد تشعرين بالإهمال، كأن حديثك يتبخر في الهواء دون أن يصل إليه، بينما عقله غارق في مغامرات افتراضية لا تنتهي. هذا التجاهل المتعمد، أو ربما اللاواعي، ليس بالضرورة رفضًا لكِ شخصيًا، بل هو غالبًا هروب من ضغوط الحياة اليومية أو بحث عن إشباع فوري لا يجده في الواقع. الألعاب توفر له بيئة يمكنه السيطرة عليها، حيث يشعر بالإنجاز والتقدير، وهو ما قد يفتقده في جوانب أخرى. هذا الشعور بالهروب يخلق حاجزًا نفسيًّا، يجعله أقل استعدادًا للانخراط في حوارات عميقة أو حتى استيعاب ما تقولين. إنه يبحث عن ملاذ، عن مساحة شخصية لا ترتبط بمسؤوليات العلاقة أو ضغوطها. هل هذه الآلية الدفاعية تمنع تواصلكما حقًا أم أنها مجرد عرض لشيء أعمق؟",
-    "hashtags": "#علم_نفس_العلاقات #تجاهل #ألعاب_الفيديو #علاقات_زوجية #فضول #تحليل_سلوك #تواصل_فعال #مشاكل_زوجية #استراتيجيات_علاقات #Psychology #Relationships #Gaming #Behavior #Communication #Husband",
-    "search_terms": [
-      "man playing video games ignoring partner",
-      "frustrated woman looking at man playing video games",
-      "couple conflict video games",
-      "feeling ignored by partner gaming",
-      "lonely woman while partner plays games",
-      "man engrossed in video games, woman sad"
-    ],
-    "duration": 11,
-    "title_theme": "green",
-    "read_theme": "pink",
-    "video_filter": "dark_blue",
-    "music": "a52.mp3",
-    "created_at": "2026-07-30T11:43:47.416689+00:00"
-  },
-  {
     "excel_number": 491,
     "title": "التفسير المظلم لرغبتك في معرفة أسوأ الاحتمالات دائمًا",
     "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a51.mp3",
     "created_at": "2026-09-19T13:31:28.828374+00:00"
+  },
+  {
+    "excel_number": 990,
+    "title": "السر النفسي وراء خوفك من فتح الرسائل المهمة",
+    "read_text": "👇 التفسير النفسي في الوصف👇",
+    "description": "هل سبق لك أن شعرت بشلل تام عند رؤية إشعار رسالة هامة، وكأن ثقلاً غير مرئي يمنعك من فتحها؟ هذا الرهاب الصامت يكشف عن عمق أسرار عقولنا، فهو ليس مجرد تردد بسيط، بل هو صدى لتجارب دفينة وخوف كامن من مواجهة ما تخبئه الكلمات.  تكمن هذه الظاهرة النفسية في صراعنا الداخلي بين الرغبة في المعرفة والخوف من التغيير أو من النتائج المحتملة.  قد تكون الرسالة تحمل أخبارًا قد تغير مسار حياتك، أو ربما تذكيرًا بشيء كنت تحاول تجاهله.  إن آلية تجنبنا للفتح تعكس محاولة لحماية أنفسنا من قلق قد يفوق قدرتنا على التحمل اللحظي.  لكن هل حقًا نتحكم بهذا الخوف، أم أنه يتحكم بنا؟",
+    "hashtags": "#علم_النفس #الخوف #الرسائل_الهامة #تجنب #العقل_الباطن #تحليل_سلوك #قلق #نفسيات #التغلب_على_الخوف #psychology #fear #avoidance #mindset #self_improvement #emotional_intelligence",
+    "search_terms": [
+      "anxiety opening email cinematic",
+      "fear of bad news portrait",
+      "hesitation opening message emotional",
+      "stress notification delay cinematic",
+      "overwhelmed reading letter emotional",
+      "contemplative person waiting for message"
+    ],
+    "duration": 12,
+    "title_theme": "red",
+    "read_theme": "purple",
+    "video_filter": "black",
+    "music": "a52.mp3",
+    "created_at": "2026-09-19T14:51:33.977154+00:00"
   }
 ]
