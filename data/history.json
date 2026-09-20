@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 506,
-    "title": "الحقيقة وراء الأشخاص الذين يفضلون الجلوس في الزوايا بالمطاعم",
-    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
-    "description": "هل لاحظت يومًا كيف يختار البعض أماكن جلوس معينة في المطاعم؟ ما الذي يدفع شخصًا ما للبحث عن زاوية هادئة بعيدًا عن صخب المكان؟ هل هو مجرد تفضيل عشوائي أم أن هناك دوافع نفسية أعمق تحكم هذا الاختيار؟ اكتشف معنا السر الخفي وراء هذه الظاهرة السلوكية المثيرة للاهتمام. غالبًا ما تعكس اختياراتنا البسيطة جوانب مكبوتة من شخصياتنا، ورغبات خفية لم ندركها. قد يشير تفضيل الزوايا إلى حاجة للشعور بالأمان، أو رغبة في مراقبة محيطك دون أن تكون مركزًا للانتباه، أو حتى محاولة للسيطرة على مساحتك الشخصية في بيئة اجتماعية. إن الطريقة التي يتفاعل بها الإنسان مع الفراغ المحيط به تكشف الكثير عن حالته النفسية الداخلية. قد تكون هذه الزوايا ملاذًا لشخص يبحث عن الهدوء، أو استراتيجية للتعامل مع القلق الاجتماعي. فماذا يقول اختيارك لمكان جلوسك عنك؟",
-    "hashtags": "#علم_نفس #تحليل_سلوك #علاقات_اجتماعية #شخصية #فهم_الناس #علم_النفس_الاجتماعي #مطاعم #سلوك_المستهلك #psychology #behavioral_analysis #social_dynamics #personality_types #mind_hacks #human_behavior #understanding_people",
-    "search_terms": [
-      "person sitting alone cafe corner cinematic",
-      "thoughtful person window seat restaurant emotional",
-      "introvert sitting quiet booth cinematic portrait",
-      "person looking out window contemplative calm",
-      "solitary figure restaurant corner peaceful",
-      "woman contemplating cafe interior cinematic"
-    ],
-    "duration": 11,
-    "title_theme": "green",
-    "read_theme": "red",
-    "video_filter": "red",
-    "music": "a3.mp3",
-    "created_at": "2026-07-31T20:52:56.514276+00:00"
-  },
-  {
     "excel_number": 507,
     "title": "لماذا تشعر أن صديقك يتنافس معك في من يعاني أكثر؟",
     "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a2.mp3",
     "created_at": "2026-09-20T22:01:35.385654+00:00"
+  },
+  {
+    "excel_number": 1006,
+    "title": "ماذا يعني أن زوجتك تكرر نفس السؤال بصيغ مختلفة؟",
+    "read_text": "👇 التفسير النفسي في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تعيد زوجتك طرح نفس السؤال مرارًا وتكرارًا، لكن بكلمات مختلفة؟ هذا النمط السلوكي قد لا يكون مجرد تكرار عشوائي، بل قد يخفي رسائل أعمق بكثير من مجرد طلب معلومة. غالبًا ما تكون هذه طريقة غير مباشرة للتعبير عن احتياجات غير ملباة، أو قلق خفي، أو حتى اختبار لمستوى اهتمامك وتركيزك. قد تشير التكرارات المتزايدة إلى شعور بعدم الأمان أو رغبة في التأكيد على أهمية أمر ما في ذهنها. أحيانًا، يكون الأمر مجرد وسيلة للتأكد من أنك تستمع حقًا، وليس مجرد سماع. إن فهم هذه الدوافع الخفية يفتح الباب أمام تواصل أعمق وأكثر صدقًا. فهل تفهم حقًا لغة الأسئلة المتكررة؟ 🤔",
+    "hashtags": "#علم_نفس #علاقات_زوجية #لغة_الجسد #تحليل_سلوك #ذكاء_عاطفي #التواصل_الفعال #اسرار_النجاح #تطوير_الذات #نصائح_زوجية #psycho #relationships #communication #behavior #psychologyfacts #love",
+    "search_terms": [
+      "woman looking thoughtful, concerned, pensive, cinematic",
+      "woman expressing worry, anxiety, emotional distress, portrait",
+      "couple discussing relationship, subtle tension, empathy",
+      "woman seeking reassurance, connection, understanding, soft lighting",
+      "intimate conversation, close-up on faces, emotional depth",
+      "woman contemplating, reflecting, inner thoughts, bokeh background"
+    ],
+    "duration": 15,
+    "title_theme": "cyan",
+    "read_theme": "orange",
+    "video_filter": "dark_blue",
+    "music": "a3.mp3",
+    "created_at": "2026-09-20T22:46:21.730026+00:00"
   }
 ]
