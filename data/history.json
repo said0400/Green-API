@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 499,
-    "title": "لماذا نشعر بالهدوء الغريب عندما نستسلم تمامًا للفشل؟",
-    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
-    "description": "هل سبق لك أن شعرت بسكينة مفاجئة في لحظة استسلامك التام للفشل؟ هذا الشعور الغريب يكمن وراءه سر نفسي عميق، حيث يبدأ العقل رحلة استكشاف للذات حين تتوقف المقاومة. عندما نتخلى عن محاولة السيطرة، نفتح الباب أمام فهم أعمق لطبيعة الواقع وقدرتنا على التكيف. إن الاستسلام ليس نهاية المطاف، بل قد يكون بداية مرحلة جديدة من الوضوح الداخلي والهدوء الذي يصعب وصفه. تخيل أن تتوقف المعركة الداخلية، ويحل محلها قبول هادئ لما هو كائن. هذا الهدوء ليس ضعفًا، بل هو قوة كامنة في الاعتراف بالحدود البشرية. هو دعوة لإعادة تقييم الأولويات، والتخلي عن المثالية المرهقة، والبحث عن معنى في رحلة الحياة نفسها، حتى في خضم التحديات. هل يمكن أن يكون الفشل في الواقع مجرد بوابة نحو نوع أعمق من السلام الداخلي؟",
-    "hashtags": "#علم_النفس #فشل #استسلام #هدوء_داخلي #تطوير_الذات #فضول #غموض #تحفيز #تفكير_عميق #Peace #Psychology #Mindfulness #SelfDiscovery #Motivation #FailForward",
-    "search_terms": [
-      "cinematic emotional portrait calm acceptance",
-      "surrender to failure peaceful resignation thoughtful",
-      "inner peace reflection vulnerability quiet contemplation",
-      "letting go mental strength resilience slow motion",
-      "vulnerability portrait quiet mind acceptance scene",
-      "emotional depth self-discovery calm expression"
-    ],
-    "duration": 12,
-    "title_theme": "cyan",
-    "read_theme": "red",
-    "video_filter": "dark_blue",
-    "music": "a66.mp3",
-    "created_at": "2026-07-31T01:20:26.263129+00:00"
-  },
-  {
     "excel_number": 500,
     "title": "الحقيقة النفسية للأشخاص الذين يمشون ورؤوسهم موجهة للأرض دائمًا",
     "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a65.mp3",
     "created_at": "2026-09-20T01:45:02.475083+00:00"
+  },
+  {
+    "excel_number": 999,
+    "title": "ماذا يعني أن تتفقد ردك قبل أن ترسله لصديق؟",
+    "read_text": "👇 التفسير الكامل في الوصف👇",
+    "description": "هل فكرت يومًا في السر الكامن وراء تفقدك لردك قبل إرساله لصديق؟ هذا السلوك البسيط قد يكشف عمقًا نفسيًا لم تتخيله قط. إنها ليست مجرد عادة، بل إشارة واضحة إلى طبيعة علاقاتك وكيف تقيّمها. كل حرف تعيد قراءته يخفي طبقات من المشاعر والتوقعات. هل هو خوف من الرفض؟ أم حرص على تقديم أفضل نسخة منك؟ ربما هي رغبة دفينة في تجنب سوء الفهم أو إيذاء مشاعر شخص عزيز. هذا التدقيق المستمر يعكس صراعًا داخليًا بين الرغبة في التواصل الأصيل والحاجة للحماية الذاتية. ما الذي يدفعنا حقًا لهذا التردد؟ وماذا يكشف ذلك عن ثقتنا بأنفسنا وبالآخرين؟",
+    "hashtags": "#علم_نفس #علم_نفس_اجتماعي #علاقات #صداقة #تواصل #تحليل_سلوك #فضول #غامض #تفكير #نفسي #Psychology #Relationships #Communication #BehaviorAnalysis #Curiosity",
+    "search_terms": [
+      "thoughtful person looking away cinematic",
+      "person reflecting deeply portrait",
+      "emotions and feelings close up",
+      "internal struggle person cinematic",
+      "pondering over message thoughtful",
+      "anxiety and contemplation portrait"
+    ],
+    "duration": 11,
+    "title_theme": "cyan",
+    "read_theme": "black",
+    "video_filter": "gray",
+    "music": "a66.mp3",
+    "created_at": "2026-09-20T13:46:11.862144+00:00"
   }
 ]
