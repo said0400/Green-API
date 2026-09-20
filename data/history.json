@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 498,
-    "title": "التفسير النفسي لرفضك طلب المساعدة حتى لو كنت في أمس الحاجة إليها",
-    "read_text": "👇 السر وراء ذلك في الوصف👇",
-    "description": "لماذا نرفض المساعدة التي نحتاجها بشدة، حتى عندما نكون على وشك الانهيار؟ هل هو ضعف أم قوة خفية تتجلى؟ هذا الفيديو يكشف الستار عن أعمق الأسباب النفسية التي تدفعنا للتمسك بصورتنا المستقلة، حتى لو كان الثمن باهظاً. اكتشف كيف يمكن لقصص الطفولة، الخوف من فقدان السيطرة، وحتى العادات المترسخة، أن تشكل جداراً غير مرئي يحول دون تلقي الدعم. سنتعمق في طبيعة الكبرياء البناء والهدام، وكيف أن إظهار الحاجة ليس عيباً بل شجاعة حقيقية. إن فهم هذه الآليات الداخلية هو الخطوة الأولى نحو التحرر من دائرة العزلة الذاتية. هل أنت مستعد لكسر هذه القيود وتغيير نظرتك للمساعدة؟ 🤔",
-    "hashtags": "#علم_النفس #علم_نفس_عميق #رفض_المساعدة #الاستقلال_الذاتي #قوة_الإرادة #الحاجة_للدعم #العلاقات_الإنسانية #تحليل_السلوك #التنمية_الشخصية #الصحة_النفسية #psychologyfacts #selfhelp #mindsetmatters #behavioranalysis #innerstrength",
-    "search_terms": [
-      "man looking stressed, cinematic, emotional, portrait",
-      "woman crying alone, cinematic, emotional, close up",
-      "person looking defeated, dramatic lighting, intimate",
-      "thoughtful expression, introspection, shallow depth of field",
-      "feeling overwhelmed, subtle distress, natural light",
-      "isolated individual, inner struggle, cinematic portrait"
-    ],
-    "duration": 12,
-    "title_theme": "black",
-    "read_theme": "yellow",
-    "video_filter": "purple",
-    "music": "a65.mp3",
-    "created_at": "2026-07-30T22:58:54.946305+00:00"
-  },
-  {
     "excel_number": 499,
     "title": "لماذا نشعر بالهدوء الغريب عندما نستسلم تمامًا للفشل؟",
     "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a64.mp3",
     "created_at": "2026-09-19T23:50:02.396924+00:00"
+  },
+  {
+    "excel_number": 998,
+    "title": "الحقيقة النفسية خلف انزعاجك من الطلبات اللطيفة جدًا",
+    "read_text": "👇 السبب الحقيقي في الوصف👇",
+    "description": "لماذا يزعجك اللطف المفرط أحيانًا، حتى لو كان من شخص تحبه؟ هل تساءلت يومًا عن الشعور الغريب الذي يتسلل إليك عندما يقدم لك أحدهم طلبًا بكلمات شديدة الرقة والحنان؟ يبدو الأمر متناقضًا، أليس كذلك؟ هذا الشعور العميق قد يخفي وراءه آليات نفسية معقدة تتجاوز مجرد تقدير الموقف. قد يكشف انزعاجك هذا عن صراعات داخلية عميقة حول الاستقلالية، أو ربما خوف دفين من الاعتمادية غير المرغوب فيها. قد يشير أيضًا إلى قلق من استغلال هذا اللطف، أو عدم الثقة في دوافع الآخرين خلف ابتساماتهم. إنها ليست قلة أدب، بل استجابة دفاعية تكشف عن حواجز بنيتها حول نفسك لحماية مساحتك الشخصية. فهل هذا الانزعاج دليل على قوة أم ضعف نفسي؟",
+    "hashtags": "#علم_نفس #علم_النفس_الإيجابي #علم_نفس_التعامل #علم_النفس_الاجتماعي #علم_نفس_الأطفال #علم_نفس_التحليل #العلاقات #العلاقات_الزوجية #تطوير_الذات #تحليل_الشخصية #الحياة_الزوجية #lifehacks #psychology #relationships #selfcare",
+    "search_terms": [
+      "emotional portrait looking away",
+      "thoughtful person close up",
+      "sadness introspection cinematic",
+      "conflicted expression subtle",
+      "overwhelmed by kindness",
+      "inner turmoil portrait"
+    ],
+    "duration": 14,
+    "title_theme": "purple",
+    "read_theme": "yellow",
+    "video_filter": "black",
+    "music": "a65.mp3",
+    "created_at": "2026-09-20T01:45:02.475083+00:00"
   }
 ]
