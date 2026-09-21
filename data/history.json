@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 508,
-    "title": "السر النفسي الذي يجعلك تتجنب فتح الرسائل المزعجة وتتركها معلقة",
-    "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
-    "description": "لماذا نترك رسائل معينة معلقة بلا رد، بينما نقفز فورًا للرد على أخرى؟ هل هو مجرد تسويف أم أن هناك شيئًا أعمق يحدث في دواخلنا؟  الحقيقة الصادمة تكمن في آلية نفسية لا واعية تدفعنا لهذا السلوك الغريب، وكأن هناك جدارًا خفيًا يمنعنا من التواصل.  هذا السلوك ليس عشوائيًا، بل يعكس صراعاتنا الداخلية ومخاوفنا الدفينة المتعلقة بالقبول أو الرفض.  إنها لغة صامتة تتحدث بها عقولنا، تخبرنا ما هو آمن وما هو مهدد.  نفكر في الرسالة كفخ محتمل، فنتجنب فتحه لندرة ما فيه من طاقة سلبية محتملة.  ما هي الأسباب الحقيقية وراء هذا التردد الغامض؟ وهل يمكننا كسر هذه الحلقة المفرغة؟",
-    "hashtags": "#علم_نفس #علم_نفس_سلوكي #العلاقات #رسائل #تطبيقات #تواصل #تجنب #تأجيل #psychology #behavioral_science #relationships #communication #avoidance #procrastination #digital_behavior",
-    "search_terms": [
-      "emotional portrait thoughtful person looking away",
-      "cinematic close-up of anxious face",
-      "person hesitating to open phone message",
-      "woman staring blankly at screen",
-      "man lost in thought, subtle anxiety",
-      "overwhelmed person contemplating digital communication"
-    ],
-    "duration": 14,
-    "title_theme": "orange",
-    "read_theme": "purple",
-    "video_filter": "gray",
-    "music": "a5.mp3",
-    "created_at": "2026-07-31T22:54:32.655577+00:00"
-  },
-  {
     "excel_number": 509,
     "title": "ماذا يحدث لعقلك عندما تكتشف أنك كنت تفهم كلمة خاطئة طوال حياتك؟",
     "read_text": "👇 التفسير في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a4.mp3",
     "created_at": "2026-09-20T23:45:45.677204+00:00"
+  },
+  {
+    "excel_number": 1008,
+    "title": "الحقيقة وراء غضب أمك من استقلالك المفاجئ",
+    "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تشعر الأم بقلق شديد يصل إلى الغضب عندما يختار أبناؤها طريق الاستقلال فجأة؟ هل هو حب خالص أم خوف من فقدان السيطرة؟  ستكشف هذه الدقائق القليلة الجانب النفسي العميق وراء هذه الظاهرة التي تبدو غريبة للوهلة الأولى.  إنها رحلة إلى أعماق المشاعر المختلطة، بين الرغبة في حماية الأبناء وعدم قدرتهم على تقبل فكرة الابتعاد.  ما الذي يحدث في عقل الأم عندما ترى فلذة كبدها يبني حياته بعيدًا عنها؟  هل هو انسحاب لدورها كأم أم تقدير لإنجازاتها؟  تخيل حجم القلق والخوف من المجهول الذي يسيطر عليها، مما يترجم إلى رد فعل غاضب.  هل يمكن للوعي بهذه المشاعر أن يغير طبيعة العلاقة؟",
+    "hashtags": "#علم_نفس #علاقات_أسرية #استقلال #أمومة #نصائح #تحليل_شخصية #مشاعر #تربية #قلق_الأم #دعم_نفسي #socialdynamics #psychology #parenting #familyties #emotionalintelligence",
+    "search_terms": [
+      "mother and adult child emotional conflict",
+      "parental worry about child independence",
+      "woman feeling stressed about son leaving home",
+      "sad mother watching adult daughter move out",
+      "anxious parent dealing with child's freedom",
+      "woman's emotional struggle with child's independence"
+    ],
+    "duration": 15,
+    "title_theme": "green",
+    "read_theme": "orange",
+    "video_filter": "purple",
+    "music": "a5.mp3",
+    "created_at": "2026-09-21T01:46:25.526616+00:00"
   }
 ]
