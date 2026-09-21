@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 516,
-    "title": "لماذا نشعر بالوحدة أكثر عندما نكون محاطين بأشخاص لا يفهموننا؟",
-    "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يصبح الصمت أعمق داخل زحام صاخب؟  الغريب أن الشعور بالعزلة يتجذر حين نجد أنفسنا بين بشر يشاركوننا المكان لكنهم يختلفون عن تفكيرنا بعمق؟  هذا الشعور ليس وهمًا، بل هو صدى لحاجتنا النفسية للإشباع والتواصل الحقيقي، حاجة تتشكل عبر مراحل تطورنا العميق.  تخيل أنك في قارب لا يبحر في اتجاه الريح، هكذا تبدو روحك عندما تكون محاطًا بفهم قاصر.  هذه الهوة بينك وبين الآخرين تزرع بذور الاغتراب، فتجد لسانك يعجز عن وصف ما يدور في أعماقك.  يصبح العالم من حولك لوحة باهتة، والصخب مجرد ضجيج لا معنى له، وتشتد وطأة الوحشة الداخلية.  أين يكمن سر هذا التناقض المؤلم بين الوجود الجسدي والغياب النفسي؟",
-    "hashtags": "#علم_نفس #وحدة #علاقات #تواصل #فهم #مشاعر #إنسانيات #اكتئاب #نصيحة #تحليل_سلوك #loneliness #psychology #understanding #connection #emotions",
-    "search_terms": [
-      "sad person alone in crowd cinematic",
-      "loneliness in a busy city emotional portrait",
-      "feeling misunderstood in a group cinematic",
-      "isolated individual amidst people thoughtful",
-      "melancholy mood in urban environment portrait",
-      "unseen person in a social setting cinematic"
-    ],
-    "duration": 15,
-    "title_theme": "green",
-    "read_theme": "pink",
-    "video_filter": "gray",
-    "music": "a19.mp3",
-    "created_at": "2026-08-01T20:40:17.483673+00:00"
-  },
-  {
     "excel_number": 517,
     "title": "ماذا يحدث في دماغك عندما تقرر أخيرًا أن تقول \"لا\" بثقة؟",
     "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a18.mp3",
     "created_at": "2026-09-21T22:56:09.079253+00:00"
+  },
+  {
+    "excel_number": 1016,
+    "title": "السر وراء شعور أخيك بالاستفزاز من نجاحك الهادئ",
+    "read_text": "👇 المعنى الحقيقي في الوصف👇",
+    "description": "هل سبق لك أن شعرت بأن نجاحك الهادئ يثير غضب شخص قريب منك، وكأنك ارتكبت جريمة؟ هذا الشعور الغامض ليس مجرد تخيل، بل هو صدى لتفاعلات نفسية عميقة تتجاوز الظاهر. كيف يمكن للسكينة أن تصبح مصدرًا للاستفزاز، ولماذا يتحول الإنجاز الصامت إلى محفز للشعور بالدونية لدى الآخرين، خاصة المقربين؟ السر يكمن في زوايا مظلمة من الوعي الجماعي، حيث تتشابك مشاعر الغيرة والمقارنة والتوقعات غير المعلنة. هذه الديناميكية المعقدة قد تخلق شعورًا بالتهديد لدى البعض، فتتحول الإيجابية إلى رد فعل سلبي. فهم هذه الآليات النفسية يمنحك القدرة على التعامل مع هذه المواقف بحكمة، وإدراك أن قوتك الداخلية لا تعتمد على ردود أفعال الآخرين. هل يمكنك حقًا فهم دوافع هذا الاستفزاز دون أن تنجرف في دوامته؟",
+    "hashtags": "#علم_نفس #تطوير_الذات #تحليل_سلوك #علاقات_أسرية #غيرة_الأشقاء #نجاح_هادئ #استفزاز_نفسي #مشاعر_خفية #فضول #غموض #psychology #selfimprovement #behavioranalysis #familydynamics #envy",
+    "search_terms": [
+      "cinematic portrait thoughtful man",
+      "emotional close-up woman looking away",
+      "man looking out window pensive",
+      "woman in quiet contemplation",
+      "subtle emotional struggle indoors",
+      "frustration behind calm expression"
+    ],
+    "duration": 11,
+    "title_theme": "pink",
+    "read_theme": "green",
+    "video_filter": "gray",
+    "music": "a19.mp3",
+    "created_at": "2026-09-21T23:42:31.343204+00:00"
   }
 ]
