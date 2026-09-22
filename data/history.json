@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 521,
-    "title": "الإشارة الخفية التي تفضح الشخص الذي يعاني من عقدة النقص",
-    "read_text": "👇 الجزء الأهم موجود في الوصف👇",
-    "description": "هل لاحظت يوماً تلك النظرة الخاطفة التي يختبئ خلفها عالم كامل من الشك؟ ما الذي يدفع البعض للبحث عن الإعجاب الدائم وكأن أرواحهم معلقة برأي الآخرين؟ إنها ليست مجرد رغبة في الاهتمام، بل هي صدى عميق لصراع داخلي يخفيه الشخص ببراعة. في هذا الفيديو، سنكشف لكم عن تلك الإشارة الخفية، تلك الرقصة الدقيقة بين الظاهر والباطن، التي تفضح بوضوح الشخص الذي يعاني من عقدة النقص. سنغوص في أعماق السلوك البشري لنفهم لماذا يسعى البعض للسيطرة والتفاخر، وكيف أن هذا السعي هو في جوهره اعتراف بالهشاشة. هل أنت مستعد لرؤية ما وراء الأقنعة؟",
-    "hashtags": "#علم_النفس #عقدة_النقص #تحليل_الشخصية #الوعي_بالذات #تطوير_الذات #علم_النفس_الاجتماعي #سلوك_بشري #نصائح #حقيقة #غموض #Psychology #Insecurity #Personality #BehaviorAnalysis #SelfAwareness",
-    "search_terms": [
-      "man looking thoughtful close up cinematic",
-      "woman pensive looking away portrait",
-      "person deep in thought emotional",
-      "sad expression close up cinematic",
-      "anxious person looking around subtly",
-      "lonely person staring into distance"
-    ],
-    "duration": 15,
-    "title_theme": "cyan",
-    "read_theme": "purple",
-    "video_filter": "dark_blue",
-    "music": "a28.mp3",
-    "created_at": "2026-08-02T12:44:38.171133+00:00"
-  },
-  {
     "excel_number": 522,
     "title": "ماذا يعني أن صديقك يتجاهل نجاحك ويركز فقط على إخفاقاتك؟",
     "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a23.mp3",
     "created_at": "2026-09-22T15:46:46.423642+00:00"
+  },
+  {
+    "excel_number": 1021,
+    "title": "لماذا تهاجمك أمك بالنصيحة وقت ضعفك؟",
+    "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
+    "description": "هل سبق لك أن شعرت بأن نصيحة أمك القاسية لم تكن في وقتها المناسب، بل في أشد لحظات ضعفك؟ قد يبدو الأمر قاسياً، لكن ما يخفيه هذا السلوك يتجاوز مجرد الظلم الظاهر. إنها طريقة معقدة جداً لمعالجة مشاعرها هي الأخرى، وقد تكون غريزتها تسعى لحمايتك بطريقة لم تفهمها بعد. هل تعرف أن هذه النصائح اللاذعة قد تكون قناعاً يخفي خوفاً عميقاً من فقدانك أو رؤيتك تتألم؟ إنها محاولة لا واعية للتغلب على عجزها عن حمايتك بشكل مباشر، فتحاول جاهدة إعطائك أدوات قد تراها ضرورية للبقاء. ورغم أن الأثر قد يكون مدمراً نفسياً، إلا أن الدافع وراءه قد يكون مليئاً بالحب غير المشروط. ما هو رد فعلك عندما تتلقى مثل هذه النصيحة في وقت الأزمة؟",
+    "hashtags": "#علم_نفس #علاقات_أسرية #علم_النفس_الاجتماعي #سلوك_البشر #التواصل_الفعال #الدعم_العاطفي #علم_النفس_التربوي #مشاعر_الأم #فهم_الآخرين #familydynamics #psychology #emotionalintelligence #parenting #selfhelp #mentalhealth",
+    "search_terms": [
+      "emotional mother daughter conflict cinematic",
+      "stressed woman receiving unsolicited advice close up",
+      "mother comforting distressed adult daughter portrait",
+      "woman crying seeking support from mother cinematic",
+      "parental pressure on adult child emotional portrait",
+      "mother's tough love expression cinematic"
+    ],
+    "duration": 15,
+    "title_theme": "green",
+    "read_theme": "orange",
+    "video_filter": "dark_blue",
+    "music": "a28.mp3",
+    "created_at": "2026-09-22T17:47:46.752243+00:00"
   }
 ]
