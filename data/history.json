@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 529,
-    "title": "السر الذي يجعلك تتذكر مواقف محرجة أثناء محاولتك التركيز في دراستك",
-    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
-    "description": "هل سبق وشعرت بأن عقلك يرفض التعاون تمامًا عندما تحتاج إليه بشدة، ويغرقك في ذكريات مؤلمة؟ ما الذي يجعل عقولنا تختار أشد اللحظات إحراجًا لتطفو على السطح بالضبط عندما نحاول التركيز على أهدافنا، خاصة في الدراسة؟ يبدو الأمر وكأن هناك قوة خفية تستمتع بتعطيلنا. سنغوص في أعماق النفس البشرية لنكشف هذا السر المحير. يتعلق الأمر بآليات دفاعية قديمة وكيف تؤثر على تركيزنا بشكل مباشر. دماغك ليس عدوك، بل هناك تفسيرات نفسية منطقية لهذه الظاهرة. اكتشف كيف تعمل هذه الظاهرة وكيف يمكنك استغلال فهمها لصالحك. هل ما يحدث مجرد عشوائية أم له معنى أعمق؟",
-    "hashtags": "#علم_نفس_التركيز #ذكاء_اصطناعي_صوتي #دراسة #تحفيز #ذاكرة #تذكر #مواقف_محرجة #نصائح_للنجاح #قوة_العقل #تطوير_الذات #psychologyfacts #focus #studytips #mindpower #selfimprovement",
-    "search_terms": [
-      "cinematic emotional portrait",
-      "thoughtful person studying alone",
-      "person struggling to focus",
-      "anxious student portrait",
-      "overwhelmed mind cinematic",
-      "internal struggle emotional close-up"
-    ],
-    "duration": 14,
-    "title_theme": "green",
-    "read_theme": "red",
-    "video_filter": "red",
-    "music": "a36.mp3",
-    "created_at": "2026-08-03T01:19:55.191709+00:00"
-  },
-  {
     "excel_number": 530,
     "title": "ماذا يعني لو كان زوجك ينتقد دائماً أصدقاءك المقربين؟",
     "read_text": "👇 السر وراء ذلك في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a35.mp3",
     "created_at": "2026-09-23T01:53:02.420813+00:00"
+  },
+  {
+    "excel_number": 1029,
+    "title": "الحقيقة النفسية خلف استفزاز الأخت لك أمام الغرباء",
+    "read_text": "👇 التفسير في الوصف👇",
+    "description": "لماذا تستفزك أختك تحديدًا أمام الآخرين؟ هل هو نقص في الحب، أم سلوك معقد يخفي وراءه رسالة عميقة؟ قد لا يكون الأمر بتلك البساطة التي تبدو عليها. هناك دوافع نفسية خفية قد تدفعها لهذا الفعل، ربما رغبة في لفت انتباهك، أو ربما صراع على دور معين في العائلة. هذه التصرفات غالبًا ما تنبع من احتياجات غير ملباة أو محاولات يائسة للتواصل. ربما تشعر أن أفعالها هي الطريقة الوحيدة لتذكيرك بوجودها، أو للتأكيد على قوتها. فكر في الأمر، هل استفزازها هو صرخة صامتة لا تسمعها؟",
+    "hashtags": "#علم_نفس #تحليل_سلوك #علاقات_أسرية #نصائح_نفسية #فضول #غموض #مشاعر #سلوك_الأخت #عائلة #تواصل #psychology #behavioranalysis #familydynamics #siblingrivalry #emotional",
+    "search_terms": [
+      "woman looking thoughtful",
+      "emotional portrait of a woman",
+      "woman with concerned expression",
+      "woman looking out window",
+      "woman feeling isolated",
+      "woman in deep thought"
+    ],
+    "duration": 15,
+    "title_theme": "red",
+    "read_theme": "cyan",
+    "video_filter": "dark_blue",
+    "music": "a36.mp3",
+    "created_at": "2026-09-23T14:29:29.210212+00:00"
   }
 ]
