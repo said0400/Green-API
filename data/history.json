@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 542,
-    "title": "لماذا نشعر بالضيق عندما نرى شخصاً يرتدي نفس ملابسنا في مكان عام؟",
-    "read_text": "👇 السبب الحقيقي في الوصف👇",
-    "description": "هل سبق لك أن شعرت بانقباض مفاجئ في صدرك لمجرد رؤية شخص آخر يرتدي نفس ملابسك في مكان مزدحم؟ هذا الشعور الغريب يثير تساؤلات عميقة حول طبيعة هويتنا وتفاعلنا مع العالم من حولنا. ما الذي يجعل هذا التشابه الظاهري يزعجنا إلى هذا الحد؟ إنها ليست مجرد مصادفة، بل هي مرآة تعكس قلقًا دفينًا لدينا بشأن التفرد والتعبير عن الذات. غالبًا ما نستخدم ملابسنا كشكل من أشكال التواصل غير اللفظي، ونعتبرها امتدادًا لشخصياتنا، فكيف يكون رد فعلنا عندما يشاركنا آخر هذا الامتداد؟ هذا الانزعاج قد يشير إلى خوفنا من فقدان تميزنا أو القلق من حكم الآخرين علينا. هل هذه الظاهرة تكشف عن رغبتنا اللاواعية في أن نكون فريدين في كل لحظة، أم أنها مجرد رد فعل اجتماعي تعلمناه؟",
-    "hashtags": "#علم_نفس #سلوك_بشري #تطوير_الذات #فهم_المشاعر #ثقافة #شخصية #تحليل_سلوك #psychology #self_awareness #human_behavior #mindset #social_psychology #fashion_psychology #viral #reels",
-    "search_terms": [
-      "woman feeling self-conscious public",
-      "man feeling uncomfortable crowd",
-      "anxiety in social situations cinematic",
-      "personal identity crisis visual",
-      "fear of conformity portrait",
-      "loneliness in a crowd emotional"
-    ],
-    "duration": 12,
-    "title_theme": "pink",
-    "read_theme": "yellow",
-    "video_filter": "dark_blue",
-    "music": "a54.mp3",
-    "created_at": "2026-08-04T16:03:49.367897+00:00"
-  },
-  {
     "excel_number": 543,
     "title": "ماذا يحدث في دماغك عندما تقرر فجأة تغيير ديكور غرفتك بالكامل؟",
     "read_text": "👇 التفسير الكامل في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a53.mp3",
     "created_at": "2026-09-24T18:00:54.719987+00:00"
+  },
+  {
+    "excel_number": 1042,
+    "title": "السر وراء برودة أخيك معك أمام الناجحين",
+    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
+    "description": "هل لاحظت كيف يتغير سلوك شخص عزيز عليك فجأة أمام الآخرين، خاصة الناجحين منهم؟ لماذا تتحول دفء العلاقات الأسرية إلى جفاء غامض في تلك اللحظات؟ قد يكمن السبب في صراع داخلي لا تراه، شعور بالغيرة أو عدم الأمان يتجسد في تصرفات تبدو باردة وغير مبررة. ربما يخفي بروده خلف واجهة واهية، يحاول فيها إخفاء إعجابه أو ربما خوفه من المقارنة. هذا التناقض السلوكي يكشف عن أبعاد نفسية معقدة، عن مساحات مظلمة في النفس البشرية تتأثر بالمحيط والنجاح. ما الذي يشعر به حقًا خلف تلك القشرة المتصلبة؟ هل هو تقدير أم حقد دفين؟",
+    "hashtags": "#علم_النفس #برود_المشاعر #علاقات_أسرية #تحليل_السلوك #نصائح_اجتماعية #مشاعر_متناقضة #تطوير_الذات #فضول #صراع_داخلي #فهم_الآخرين #علاقات_معقدة #psychology #behavior #familydynamics #socialanxiety",
+    "search_terms": [
+      "man feeling insecure in a crowd cinematic",
+      "sibling rivalry subtle tension emotional portrait",
+      "person struggling with envy close up cinematic",
+      "anxiety in social settings worried expression cinematic",
+      "feeling left out in a group emotional portrait",
+      "internal conflict visible on face cinematic portrait"
+    ],
+    "duration": 11,
+    "title_theme": "orange",
+    "read_theme": "green",
+    "video_filter": "black",
+    "music": "a54.mp3",
+    "created_at": "2026-09-24T19:37:36.858948+00:00"
   }
 ]
