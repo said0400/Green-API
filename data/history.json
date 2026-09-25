@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 555,
-    "title": "الإشارة التي تدل على أن أخاك يقلدك سراً لأنه يعتبرك قدوة",
-    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
-    "description": "هل لاحظت يومًا أن تصرفات شقيق الأصغر تبدو مألوفة جدًا، وكأنها انعكاس لبعض تصرفاتك؟ قد لا يكون الأمر مجرد صدفة، بل ربما يختبئ وراءه سر أعمق يتعلق بمدى تأثيرك عليه. كيف يمكنك أن تعرف أن أخاك يقلدك ليس من باب العبث، بل لأنه يراك قدوة حقيقية في عالمه الصغير؟ هناك إشارات دقيقة غالبًا ما نغفل عنها، تلك الهمسات الخفية في لغة الجسد، أو طريقة اختيار الكلمات، أو حتى محاكاة أسلوب تفكيرك في المواقف المختلفة. هذا التقليد ليس دليلاً على ضعف، بل هو اعتراف صريح بإعجاب وتقدير غير معلن. عندما يتبنى أخوك أفكارك أو يسعى لتقليد نجاحاتك، فهو في الواقع يبني مستقبله على أسس تدركها أنت جيدًا. إنه يرى فيك بوصلة توجهه نحو ما يعتبره صوابًا وتميزًا. فكيف تلتقط هذه الإشارات وتفهم معناها الحقيقي؟ هل هذه الظاهرة تثير لديك شعورًا بالفخر أم القلق؟",
-    "hashtags": "#تقليد_الأخوة #قدوة_العائلة #علم_نفس_الأطفال #تأثير_الأخ_الكبير #علاقات_عائلية #دوافع_خفية #تحليل_سلوك #إشارات_نفسية #علاقات_صحية #نمو_شخصي #brotherlylove #familydynamics #psychology #behavioranalysis #rolemodel",
-    "search_terms": [
-      "young boy looking up to older brother, emotional, cinematic portrait",
-      "sibling admiration, subtle imitation, thoughtful expression, close-up",
-      "child mirroring parent's actions, inspiration, quiet moment, cinematic",
-      "boy watching older sibling, learning by example, tender gaze, soft focus",
-      "older sibling as role model, younger brother's imitation, heartfelt look, shallow depth of field",
-      "childhood imitation, sibling bond, emotional connection, natural light portrait"
-    ],
-    "duration": 11,
-    "title_theme": "pink",
-    "read_theme": "cyan",
-    "video_filter": "red",
-    "music": "a2.mp3",
-    "created_at": "2026-08-05T20:19:27.517787+00:00"
-  },
-  {
     "excel_number": 556,
     "title": "السر الذي يجعلك تتجنب الرد على رسالة شخص رغم أنك متصل",
     "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a1.mp3",
     "created_at": "2026-09-25T21:52:46.450799+00:00"
+  },
+  {
+    "excel_number": 1055,
+    "title": "السر وراء شعورك أنك لا تشبه صورك القديمة",
+    "read_text": "👇 الحقيقة كاملة في الوصف👇",
+    "description": "لماذا يبدو وجهك في الصور القديمة غريبًا وكأنك شخص آخر؟ هل هي مجرد أوهام بصرية أم أن هناك تفسيرًا نفسيًا أعمق يكمن وراء هذا الشعور؟ في عالم يتغير فيه كل شيء، قد يتغير مفهومنا لأنفسنا بشكل لا ندركه. هذه الظاهرة ليست نادرة، بل هي علامة على تطور عميق داخلك. غالبًا ما نربط ذكرياتنا بمشاعر وأحاسيس لا تترجم بالضرورة إلى ملامح وجه ثابتة. الأسباب تتجاوز مجرد التقدم في العمر، فهي تتعلق بتجاربنا، اكتشافاتنا، وتراكم خبرات الحياة التي تعيد تشكيل وعينا بذاتنا. ربما صورك القديمة تعكس مرحلة عابرة، بينما أنت اليوم كيان أكثر نضجًا وتعقيدًا. هل الصورة هي الهوية أم أن الهوية أعمق من مجرد مظهر؟",
+    "hashtags": "#علم_النفس #الذاكرة #الهوية #تطوير_الذات #تحليل_السلوك #علم_النفس_الاجتماعي #تغيير_الشخصية #التطور_الشخصي #SelfDiscovery #PsychologyFacts #Identity #Memory #OldPhotos #PersonalGrowth #Mindset",
+    "search_terms": [
+      "cinematic portrait emotional introspection",
+      "person looking thoughtful alone outdoor",
+      "face transformation subtle aging process",
+      "memory reflection sad thoughtful expression",
+      "identity crisis self doubt close up",
+      "inner change emotional journey thoughtful gaze"
+    ],
+    "duration": 12,
+    "title_theme": "pink",
+    "read_theme": "red",
+    "video_filter": "dark_green",
+    "music": "a2.mp3",
+    "created_at": "2026-09-25T22:56:29.037686+00:00"
   }
 ]
