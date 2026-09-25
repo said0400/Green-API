@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 550,
-    "title": "التفسير المظلم لرغبتك في أن يتم رفضك حتى لا تتحمل مسؤولية النجاح",
-    "read_text": "👇 التفسير النفسي في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا تبدو وكأنك تدفع الفرصة بعيدًا عندما تكون على وشك تحقيق شيء كبير؟  يبدو الأمر وكأن هناك قوة خفية تدفعك نحو الفشل، لكن السر الحقيقي أعمق من ذلك بكثير.  هذا الفيديو سيكشف الستار عن الدافع النفسي المظلم الذي يجعلك ترغب في الرفض، وكيف يخدمك ذلك كدرع واقٍ.  قد يكون الخوف من المسؤولية أشد وطأة من الخوف من الفشل نفسه.  عندما تفشل، فأنت لست مسؤولاً عن عدم الوصول للنجاح، بل الظروف كانت ضدك.  هذه آلية دفاعية قديمة تعود بنا إلى زمن البحث عن الأمان.  إنها طريقة لتجنب الضغط الهائل الذي يأتي مع القمة.  هل أنت مستعد لمواجهة الظلال التي تشكل قراراتك؟",
-    "hashtags": "#علم_نفس #سلوك #رفض #نجاح #فشل #تطوير_الذات #تحفيز #الخوف #مسؤولية #تفكير #عقلية #psychology #selfsabotage #motivation #mindset",
-    "search_terms": [
-      "cinematic emotional person looking away thoughtful",
-      "pensive portrait contemplation stress",
-      "person struggling internal conflict doubt",
-      "dramatic expression sadness isolation",
-      "overcoming obstacle mental challenge",
-      "vulnerability fear of success"
-    ],
-    "duration": 11,
-    "title_theme": "green",
-    "read_theme": "cyan",
-    "video_filter": "dark_green",
-    "music": "a67.mp3",
-    "created_at": "2026-08-05T11:48:49.388287+00:00"
-  },
-  {
     "excel_number": 551,
     "title": "ماذا يعني لو كان زوجك يتجنب الخلافات بالصمت والانسحاب التام؟",
     "read_text": "👇 الحقيقة كاملة في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a66.mp3",
     "created_at": "2026-09-25T14:48:07.865725+00:00"
+  },
+  {
+    "excel_number": 1050,
+    "title": "لماذا تخفي أمك خوفها في صورة أوامر؟",
+    "read_text": "👇 السر وراء ذلك في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تبدو أوامر والدتك وكأنها حمل ثقيل، تحمل بين طياتها خوفًا عميقًا لم تفصح عنه؟ قد لا يكون ما تراه هو الحقيقة الكاملة، بل مجرد قناع تخفي به ضعفًا قديمًا يتجدد مع كل كلمة. إن قسوة الكلمات قد تخفي بداخلها عطاءً لا ينتهي، وأوامرها المتكررة قد تكون محاولة يائسة لحمايتك من عالم تراه أكثر قسوة مما تتخيل. هذا السلوك ليس ضعفًا بقدر ما هو درع واقٍ، درع شكّلته تجارب الماضي ولحظات الفقد. فما هي الحقيقة التي تحاول أمك أن تحميك منها، ولماذا يبدو هذا الخوف هو لغتها الوحيدة للتعبير؟ هل تدرك أن هذه الأوامر قد تؤلمك بقدر ما تحاول حمايتك؟",
+    "hashtags": "#علم_نفس #علاقات_أسرية #الأمومة #علم_نفس_الأم #تربية #تحديات_العلاقات #فهم_الأهل #الدعم_النفسي #تطوير_الذات #التواصل_الفعال #FamilyPsychology #Parenting #Motherhood #EmotionalSupport #BehaviorAnalysis",
+    "search_terms": [
+      "mother protecting child cinematic",
+      "woman showing concern for family portrait",
+      "parental anxiety emotional close up",
+      "fearful mother subtle expression",
+      "overprotective parent cinematic shot",
+      "woman's worried gaze portrait"
+    ],
+    "duration": 13,
+    "title_theme": "cyan",
+    "read_theme": "red",
+    "video_filter": "purple",
+    "music": "a67.mp3",
+    "created_at": "2026-09-25T15:57:27.496895+00:00"
   }
 ]
