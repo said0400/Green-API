@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 563,
-    "title": "لماذا نشعر ببرودة في المعدة عندما ننتظر نتيجة مهمة؟",
-    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
-    "description": "هل سبق لك أن شعرت ببرودة مفاجئة في معدتك قبل لحظة حاسمة؟ هذا الشعور ليس مجرد إحساس عابر، بل هو صدى لتفاعلات عميقة داخلية تنتظر إشارتها. ما الذي يحدث بالضبط في أجسامنا ليتحول قلق الانتظار إلى إحساس جسدي ملموس؟ إنها رحلة معقدة بين العقل والجسد، حيث يرسل دماغنا إشارات استجابة للضغط النفسي. هذه الإشارات تؤثر على تدفق الدم، مما يسبب إحساس البرودة والتوتر في المعدة، وهي طريقة جسدك لإعلامك بمدى أهمية الموقف. يبدأ الأمر في اللوزة الدماغية، مركز الخوف لدينا، والتي تطلق هرمونات التوتر، ثم ينتقل التأثير إلى الجهاز الهضمي. تتشكل ردود الفعل هذه عبر التاريخ التطوري للحفاظ على حياتنا. هل تعتقد أن هذه الاستجابة الجسدية دائمًا مفيدة أم أنها قد تعيق أداءنا في بعض الأحيان؟",
-    "hashtags": "#علم_النفس #تحليل_سلوك #مشاعر #قلق_الانتظار #استجابة_جسدية #علاقات #تفكير #فضول #psychology #behavioranalysis #mindbodyconnection #stressresponse #anxiety #emotions #selfawareness",
-    "search_terms": [
-      "anxious person looking out window cinematic",
-      "woman with worried expression close up emotional",
-      "man pacing in dimly lit room cinematic",
-      "feeling cold in stomach abstract slow motion",
-      "headache stress relief meditation cinematic",
-      "person waiting with anticipation close up portrait"
-    ],
-    "duration": 11,
-    "title_theme": "green",
-    "read_theme": "orange",
-    "video_filter": "black",
-    "music": "a16.mp3",
-    "created_at": "2026-08-07T00:35:49.009884+00:00"
-  },
-  {
     "excel_number": 564,
     "title": "ماذا يحدث في دماغك عندما تقرر أخيرًا أن تسامح من آذاك بشدة؟",
     "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a15.mp3",
     "created_at": "2026-09-26T18:51:52.229836+00:00"
+  },
+  {
+    "excel_number": 1063,
+    "title": "لماذا تنجذب لفكرة الاختفاء وإعادة الظهور؟",
+    "read_text": "👇 التفسير الكامل في الوصف👇",
+    "description": "هل تساءلت يومًا عن سر جاذبيتك لفكرة التلاشي المؤقت والعودة بقوة؟ لماذا يشعر جزء منك بالراحة في هذا النمط السلوكي الغامض؟ إنها ليست مجرد نزوة عابرة، بل قد تكون استراتيجية نفسية عميقة تعمل في اللاوعي لديك. غالبًا ما يرتبط هذا الانجذاب بالحاجة إلى إعادة تقييم الذات أو الشعور بالسيطرة في مواقف معينة. قد يكون الاختفاء أحيانًا طريقة للتغلب على الضغوط أو استعادة المساحة الشخصية. ثم تأتي لحظة الظهور من جديد، محمّلة بتجارب جديدة وربما منظور مختلف. هذه الدورة المتكررة قد تكون انعكاسًا لرغبة أعمق في النمو والتطور، حتى لو بدا الأمر غير منطقي. هل يمكن أن يكون هذا التكتيك هو مفتاحك السري لإعادة اكتشاف شغفك؟",
+    "hashtags": "#علم_نفس #اختفاء #ظهور #سلوك #تحليل_نفسي #غموض #فضول #تطوير_الذات #علاقات #تفكير_عميق #psychology #behavior #mystery #selfimprovement #innerpeace",
+    "search_terms": [
+      "cinematic emotional portrait solitude",
+      "thoughtful person contemplating alone",
+      "woman introspective quiet moment",
+      "man pensive looking away",
+      "dramatic emotional close up face",
+      "person finding strength inner peace"
+    ],
+    "duration": 11,
+    "title_theme": "green",
+    "read_theme": "orange",
+    "video_filter": "black",
+    "music": "a16.mp3",
+    "created_at": "2026-09-26T20:12:36.756895+00:00"
   }
 ]
