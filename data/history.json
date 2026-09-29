@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 589,
-    "title": "السر النفسي خلف استمتاعك بقراءة الكتب الحزينة والكئيبة",
-    "read_text": "👇 التفسير في الوصف👇",
-    "description": "لماذا تجد نفسك منجذبًا بشكل غريب للقصص التي تثير الألم والحزن؟ هل تساءلت يومًا عن ذلك الشعور الخفي الذي يغمرك عند الانتهاء من رواية تبعث على الكآبة؟ هناك عالم كامل من الدوافع النفسية يكمن خلف هذه الظاهرة، سر عميق يجعلنا نستمتع بما يبدو مؤلمًا. إنه ليس مجرد حب للدراما، بل رحلة استكشاف للذات بطرق غير متوقعة. عبر صفحات الكتب الحزينة، نلامس جوانب من واقعنا ربما نتجاهلها، أو نستشعر تعاطفًا عميقًا مع شخصيات تعكس صراعات داخلية. هذه القراءات قد تقدم نوعًا من التطهير العاطفي، أو نافذة لفهم الطبيعة البشرية بكل تعقيداتها. ربما تجعلنا نقدر لحظاتنا السعيدة بشكل أكبر. هل تفهم لماذا تفضل أحيانًا اللون الرمادي على الألوان الزاهية في قراءاتك؟",
-    "hashtags": "#علم_نفس #علم_نفس_اجتماعي #كتب #قراءة #روايات #حزن #كآبة #فضول #تحليل_سلوك #تنمية_بشرية #مشاعر #صحة_نفسية #dark_academia #booklover #psychologyfacts",
-    "search_terms": [
-      "cinematic portrait thoughtful person reading book sad mood",
-      "emotional close-up reading melancholic story cinematic",
-      "contemplative person holding book emotional cinematic portrait",
-      "moody reading book cinematic visual emotional portrait",
-      "solitary person deep in thought reading sad book cinematic",
-      "introspective reading emotional portrait cinematic"
-    ],
-    "duration": 14,
-    "title_theme": "orange",
-    "read_theme": "yellow",
-    "video_filter": "dark_green",
-    "music": "a51.mp3",
-    "created_at": "2026-08-09T12:18:43.798907+00:00"
-  },
-  {
     "excel_number": 590,
     "title": "ماذا يخبرك عقلك عندما تشعر برغبة في ترك وظيفتك دون خطة بديلة؟",
     "read_text": "👇 السبب الحقيقي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a50.mp3",
     "created_at": "2026-09-29T02:49:04.760337+00:00"
+  },
+  {
+    "excel_number": 1089,
+    "title": "السر وراء عدم تصديقك لمديح مستحق",
+    "read_text": "👇 الجزء الأهم موجود في الوصف👇",
+    "description": "هل سبق وشعرت بأنك لا تستحق المديح رغم أنه حقيقي؟ ما هو الحاجز الخفي الذي يمنعك من تقبل كلمات الإعجاب؟ غالبًا ما نخفي أسبابًا نفسية عميقة وراء جدار من الشك الذاتي، معتقدين أننا لسنا جيدين بما يكفي، وهذا ليس غريبًا على الإطلاق. قد تكون تجارب سابقة قد زرعت بذور عدم الثقة فينا، وجعلتنا نرى أي تقدير خارجي على أنه مجرد مجاملة زائفة أو توقعات غير واقعية. إن الدماغ البشري يميل إلى البحث عن الأنماط، وإذا كانت أنماطنا السابقة مرتبطة بالانتقاد أو التجاهل، فإن تلقي المديح سيصدم هذه الأنماط. إنه كصراع داخلي مستمر بين ما يقوله الآخرون وما يخبرنا به صوتنا الداخلي المريب. هل يمكن حقًا كسر هذه الحلقة المفرغة وتغيير نظرتنا لأنفسنا، أم أن هذا جزء لا يتجزأ من شخصيتنا؟",
+    "hashtags": "#علم_نفس #ثقة_بالنفس #تقدير_الذات #تطوير_الذات #تحفيز #تنمية_بشرية #علاقات #صحة_نفسية #تحليل_سلوك #psychology #selfesteem #motivation #mindset #personaldevelopment #confidence",
+    "search_terms": [
+      "woman looking thoughtful",
+      "man looking pensive outdoors",
+      "close-up portrait pensive",
+      "person in self-doubt",
+      "emotional reflection cinematic",
+      "struggling with self-worth portrait"
+    ],
+    "duration": 13,
+    "title_theme": "purple",
+    "read_theme": "pink",
+    "video_filter": "dark_green",
+    "music": "a51.mp3",
+    "created_at": "2026-09-29T16:10:53.975923+00:00"
   }
 ]
