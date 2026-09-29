@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 590,
-    "title": "ماذا يخبرك عقلك عندما تشعر برغبة في ترك وظيفتك دون خطة بديلة؟",
-    "read_text": "👇 السبب الحقيقي في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يهمس لك عقلك فجأة بضرورة الرحيل عن وظيفتك الحالية، حتى لو لم يكن لديك خطة واضحة للمستقبل؟ هذا الشعور المفاجئ بالضيق وعدم الرضا قد يكون أكثر من مجرد لحظة عابرة؛ إنه نداء خفي من أعماق نفسك يحاول لفت انتباهك لشيء أعمق. قد يشير هذا الإلحاح الداخلي إلى أن بيئة عملك الحالية تستهلك طاقتك النفسية بشكل لا يمكن تعويضه، أو ربما تفقد شغفك تدريجيًا بسبب قلة التحدي أو عدم التوافق مع قيمك الأساسية. إن تجاهل هذه الإشارات قد يؤدي إلى استنزاف عاطفي يصعب التعافي منه لاحقًا. كيف يمكن لعقلك أن يحميك من البقاء في مكان يضر بك، حتى لو بدا القرار غير منطقي؟ هل هذه مجرد رغبة مؤقتة أم بوصلتك الداخلية ترشدك نحو مسار جديد؟",
-    "hashtags": "#علم_النفس #علم_النفس_المهني #تطوير_الذات #تحفيز #إلهام #وظائف #مسار_مهني #ترك_العمل #حياة_جديدة #الراحة_النفسية #التفكير_السلبي #اتخاذ_القرارات #mindset #careerchange #selfimprovement",
-    "search_terms": [
-      "sad person looking out window cinematic",
-      "thoughtful woman portrait",
-      "man staring into distance pensive",
-      "woman feeling overwhelmed stressed",
-      "person walking away from city skyline",
-      "empty office chair emotional"
-    ],
-    "duration": 12,
-    "title_theme": "purple",
-    "read_theme": "pink",
-    "video_filter": "dark_green",
-    "music": "a52.mp3",
-    "created_at": "2026-08-09T14:22:21.588941+00:00"
-  },
-  {
     "excel_number": 591,
     "title": "الحقيقة وراء الأشخاص الذين يفضلون النوم على الأرض بدلاً من السرير",
     "read_text": "👇 التفسير الكامل في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a51.mp3",
     "created_at": "2026-09-29T16:10:53.975923+00:00"
+  },
+  {
+    "excel_number": 1090,
+    "title": "لماذا تبدو أهدأ كلما زادت الفوضى داخلك؟",
+    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
+    "description": "هل لاحظت يومًا كيف يزداد هدوؤك الظاهري مع اتساع دائرة الفوضى بداخلك؟ يبدو الأمر متناقضًا، أليس كذلك؟ ولكن وراء هذا الهدوء، يكمن سر عميق تتعامل به النفس البشرية مع الضغوط المتزايدة. تتكشف لنا حقيقة مدهشة عن آلية دفاع العقل التي تعمل في صمت، تحاول جاهدةً إعادة التوازن رغم العاصفة. هذا الثبات الظاهري ليس ضعفًا، بل هو قمة القوة الداخلية التي تتجسد عندما نصل إلى نقطة اللاعودة. إنها استراتيجية بقاء لا واعية، ترسم لنا مسارًا نحو الثبات وسط الاضطراب. كيف يصبح هذا الهدوء الداخلي درعنا الأقوى ضد التحديات؟",
+    "hashtags": "#علم_النفس #هدوء_داخلي #تحليل_سلوك #صحة_نفسية #تنمية_ذاتية #tiktokreels #psychologyfacts #selfcare #mindfulness #mentalhealth #youtubeshorts #innerpeace #stressmanagement #emotionalintelligence #copingmechanisms",
+    "search_terms": [
+      "calm amidst chaos cinematic",
+      "serene face in storm portrait",
+      "inner peace overwhelming stress",
+      "stoic expression growing anxiety",
+      "resilience in turmoil close up",
+      "finding stillness in overwhelming situations"
+    ],
+    "duration": 13,
+    "title_theme": "yellow",
+    "read_theme": "cyan",
+    "video_filter": "red",
+    "music": "a52.mp3",
+    "created_at": "2026-09-29T17:04:59.598682+00:00"
   }
 ]
