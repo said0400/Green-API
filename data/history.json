@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 603,
-    "title": "لماذا نشعر بالضيق عندما نرى شخصاً يجلس في مقعدنا المعتاد؟",
-    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يثير جلوس شخص ما في مقعدك المفضل هذا الشعور الغامض بالضيق؟ إنه ليس مجرد تفضيل بسيط، بل هو انعكاس لأعماق نفسية معقدة غالبًا ما نتجاهلها. هذا الإزعاج الخفيف يحمل بداخله أسرارًا تتعلق بمفهومنا للملكية، والراحة النفسية، وحتى الهوية الذاتية. عندما نختار مكانًا معينًا، فإننا نمنحه طاقة خاصة، يصبح جزءًا منا، وعندما يحتله آخر، نشعر وكأن جزءًا صغيرًا من مساحتنا الآمنة قد تم انتهاكه. هذه الظاهرة تكشف عن ارتباطنا بالمحيط وكيف يشكل الأماكن تجاربنا العاطفية. هل هو تعلق بالمكان أم شعور بالتهديد لطمأنينتنا؟ لماذا يمتد هذا الشعور لأبعد من مجرد تفضيل بسيط؟",
-    "hashtags": "#علم_نفس #علم_نفس_سلوكي #علم_نفس_اجتماعي #علاقات_إنسانية #فهم_النفس #تحليل_سلوك #نصائح_نفسية #مشاعر #راحة_نفسية #مكان_مفضل #Psychology #BehavioralPsychology #SocialPsychology #Mindset #SelfAwareness",
-    "search_terms": [
-      "woman looking out window thoughtful",
-      "man sitting alone park bench sad",
-      "person staring at empty chair",
-      "interior apartment quiet contemplation",
-      "close up worried eyes looking away",
-      "person feeling uncomfortable in public space"
-    ],
-    "duration": 14,
-    "title_theme": "cyan",
-    "read_theme": "yellow",
-    "video_filter": "gray",
-    "music": "a70.mp3",
-    "created_at": "2026-08-10T19:45:36.423109+00:00"
-  },
-  {
     "excel_number": 604,
     "title": "ماذا يحدث في دماغك عندما تستمع لقصة مرعبة قبل النوم مباشرة؟",
     "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a69.mp3",
     "created_at": "2026-09-30T20:26:22.940685+00:00"
+  },
+  {
+    "excel_number": 1103,
+    "title": "ماذا يحدث لعقلك عندما تمشي بلا هدف؟",
+    "read_text": "👇 الحقيقة كاملة في الوصف👇",
+    "description": "هل تخيلت يومًا أن خطواتك العشوائية قد تكشف عن كنوز مدفونة في أعماق عقلك؟ ما هو الخيط الرفيع الذي يربط بين الضياع الجسدي واليقظة الذهنية؟ إن المشي بلا هدف ليس مجرد حركة لا معنى لها، بل هو رحلة استكشاف ذاتية مدهشة. عندما يتوقف العقل عن ملاحقة وجهة محددة، تبدأ الأفكار المكبوتة بالظهور على السطح، وتتجلّى الحلول للمشاكل المستعصية. هذه الحالة تسمح لموجات الدماغ بالانتقال إلى نمط ألفا، المرتبط بالإبداع والاسترخاء العميق، مما يفتح الباب أمام تدفق الأفكار الملهمة. إنها دعوة لترك زمام الأمور للطريق، والثقة بأن اللاوعي لديه خططه الخاصة. ألا يبدو أن الفوضى الظاهرة قد تكون بداية للنظام الداخلي؟",
+    "hashtags": "#علم_نفس #تطوير_الذات #تفكير_عميق #فضول #الوعي #تحفيز #سلوك_بشري #رحلة_عقلية #استكشاف #اللاوعي #الهدوء #Inspiration #Mindfulness #PsychologyFacts #SelfDiscovery",
+    "search_terms": [
+      "man walking thoughtful street cinematic",
+      "woman wandering city alone emotional",
+      "person lost in thought outdoors",
+      "mind wandering abstract visuals",
+      "contemplative walk park cinematic portrait",
+      "urban exploration solitary cinematic"
+    ],
+    "duration": 14,
+    "title_theme": "purple",
+    "read_theme": "black",
+    "video_filter": "red",
+    "music": "a70.mp3",
+    "created_at": "2026-09-30T21:34:25.722319+00:00"
   }
 ]
