@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 634,
-    "title": "ماذا يعني لو كانت أختك ترفض تقديمك لأصدقائها الجدد أبداً؟",
-    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا تفضل أختك إخفاء بعض الأشخاص في حياتها عنك؟ قد تبدو هذه الأفعال بسيطة، لكنها تحمل أحيانًا رسائل عميقة تخترق جدار الثقة والتقارب. هناك خيط رفيع يربط بين سلوكها هذا ومشاعرها الحقيقية تجاهك وتجاه دائرة معارفها. هل يتعلق الأمر بالغيرة، أم بحماية مشاعرها، أم ربما بخوف أعمق من فقدان السيطرة؟ هذا السلوك يكشف الكثير عن ديناميكيات العلاقة بينكما. ما الذي تحاول أختك إخفاءه عنك، ولماذا هذا الإخفاء قد يكون مؤلمًا أكثر مما تتصور؟ ربما هي تضع حدودًا غير مرئية، أو ربما تخشى أن يؤثر أصدقاؤها الجدد على صورتها أمام عائلتها. إنها دعوة لفهم أعمق للنفس البشرية وعلاقاتنا المعقدة. هل هذه الأفعال تعكس قلة ثقة أم هي محاولة للحفاظ على مساحة شخصية؟",
-    "hashtags": "#علم_نفس #علاقات #علم_نفس_اجتماعي #تحليل_سلوك #علاقات_أسرية #الأخت_الصغرى #الأخت_الكبرى #مشاعر #فضول #غموض #family_dynamics #psychology #behavioral_analysis #relationship_advice #sisterhood",
-    "search_terms": [
-      "emotional portrait woman looking away thoughtful",
-      "cinematic woman looking out window pensive",
-      "close up sad woman face tearful",
-      "woman confused looking down thoughtful",
-      "woman conflicted expression subtle doubt",
-      "lonely woman looking distant pensive"
-    ],
-    "duration": 11,
-    "title_theme": "purple",
-    "read_theme": "green",
-    "video_filter": "red",
-    "music": "a46.mp3",
-    "created_at": "2026-08-13T20:30:03.233289+00:00"
-  },
-  {
     "excel_number": 635,
     "title": "السر الذي يجعلك تحب الجلوس في المقعد المجاور للنافذة دائمًا",
     "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a45.mp3",
     "created_at": "2026-10-03T20:14:59.445751+00:00"
+  },
+  {
+    "excel_number": 1134,
+    "title": "السر وراء فرك يديك في لحظات الترقب",
+    "read_text": "👇 التفسير النفسي في الوصف👇",
+    "description": "هل تعلم أن مجرد فرك يديك في لحظات الترقب يكشف عن صراعات داخلية عميقة؟ هذا السلوك البسيط قد يخفي أسراراً كثيرة حول ما يدور في عقلك دون أن تدرك. إنها ليست مجرد عادة، بل هي لغة صامتة يفهمها العقل الباطن ويعبر بها عن حالة التوتر الداخلي أو التفكير العميق. في هذا الفيديو، سنغوص في أعماق النفس البشرية لنكشف لماذا نفعل ذلك تحديدًا عندما نكون في حالة ترقب أو انتظار لشيء مهم. سنحلل الدوافع النفسية الكامنة خلف هذه الحركة اللاإرادية، وكيف ترتبط بمشاعر القلق، عدم اليقين، أو حتى التخطيط المستقبلي. اكتشف كيف يمكن لهذا التصرف أن يعكس مستويات تركيزك، قدرتك على التأقلم مع الضغوط، أو حتى مدى إيمانك بنتيجة معينة. هل لاحظت هذا السلوك على نفسك أو على الآخرين؟",
+    "hashtags": "#علم_النفس #تحليل_السلوك #الترقب #لغة_الجسد #العقل_الباطن #نصائح_نفسية #فهم_النفس #علم_النفس_الاجتماعي #تطوير_الذات #psychology #bodylanguage #behavioranalysis #mindfulness #selfawareness #curiosity",
+    "search_terms": [
+      "anxious person rubbing hands cinematic",
+      "person deep in thought portrait emotional",
+      "nervous hands close up subtle movement",
+      "waiting anxiously cinematic portrait",
+      "internal struggle emotional close up hands",
+      "contemplative person subtle gesture natural light"
+    ],
+    "duration": 15,
+    "title_theme": "cyan",
+    "read_theme": "orange",
+    "video_filter": "gray",
+    "music": "a46.mp3",
+    "created_at": "2026-10-03T21:51:23.240289+00:00"
   }
 ]
