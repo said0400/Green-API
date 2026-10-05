@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 649,
-    "title": "السر الذي يجعلك تتجنب المرور بجانب المقابر ليلاً رغم عدم إيمانك بالخرافات",
-    "read_text": "👇 الجزء الأهم موجود في الوصف👇",
-    "description": "لماذا يرتعش جسدك وتتغير أنفاسك عند الاقتراب من أماكن معينة ليلاً، حتى لو كنت مؤمناً بمنطق العلم؟ هل لهذه المشاعر أساس بيولوجي بحت أم أنها أعمق من ذلك بكثير؟ هناك سر دفين يتحكم في استجابتنا اللاواعية للمجهول، شعور غامض يهمس لنا بالابتعاد. هذا الفيديو يكشف الحقيقة المدهشة وراء تجنبنا للمقابر ليلاً، ظاهرة تتجاوز مجرد الخوف من الموت. سنتعمق في فهم كيف يعالج دماغنا المعلومات الحسية غير المكتملة وكيف تخلق البيئات المظلمة والموحشة أنماطاً سلوكية قديمة. اكتشف كيف يفسر علم النفس السلوكي هذا التجنب، فهو ليس مجرد وهم بل استجابة متجذرة في تكويننا. هل هي مجرد غرائز بقاء أم أن هناك ما هو أبعد؟",
-    "hashtags": "#علم_النفس #تجنب_المقابر #الخوف_اللاشعوري #تحليل_سلوك #الغرائز #المجهول #العقل_الباطن #psychology #mystery #behavior #nightfear #unconsciousmind #survivalinstinct #darkplaces #psychological",
-    "search_terms": [
-      "cinematic portrait fear unknown",
-      "emotional close-up anxiety night",
-      "person alone dark atmosphere",
-      "subconscious mind feeling unease",
-      "mystery intrigue contemplation indoors",
-      "psychological tension quiet moment"
-    ],
-    "duration": 14,
-    "title_theme": "green",
-    "read_theme": "pink",
-    "video_filter": "dark_blue",
-    "music": "a66.mp3",
-    "created_at": "2026-08-15T12:01:37.018317+00:00"
-  },
-  {
     "excel_number": 650,
     "title": "ماذا يخبرك عقلك عندما تشعر برغبة في ترك كل شيء والرحيل بعيداً",
     "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a65.mp3",
     "created_at": "2026-10-05T02:27:57.020761+00:00"
+  },
+  {
+    "excel_number": 1149,
+    "title": "لماذا تتوتر من العطور القوية أكثر من الروائح السيئة؟",
+    "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
+    "description": "هل شعرت يومًا أن العطور الفاخرة القوية قد تسبب لك قلقًا يفوق مجرد روائح كريهة؟  لماذا تبدو بعض الروائح القوية مثيرة للتوتر أكثر من الروائح المنفّرة بشكل واضح؟  يكمن السر في تفاعل معقد بين حاسة الشم لدينا والذاكرة العاطفية، وكيف يفسر الدماغ هذه المحفزات.  إن الروائح لا تثير مجرد رد فعل حسي، بل قد تستدعي ذكريات مكبوتة أو مواقف سلبية لم ندركها.  القوة المفرطة للعطر قد ترتبط بطبقات نفسية عميقة، مثل محاولة السيطرة المبالغ فيها أو الإشارة إلى حضور قوي جدًا وغير مريح.  إنها ليست مجرد رائحة، بل هي إشارة صامتة تحمل وراءها آلاف القصص غير المرئية.  هل سبق لك أن ربطت بين رائحة معينة وشعور غامض بالضيق دون معرفة السبب؟",
+    "hashtags": "#علم_النفس #تحليل_السلوك #العطور #الروائح #التوتر #القلق #الذاكرة_العاطفية #علم_نفس_الروائح #psycho #fragrance #stress #psychology #behavior #emotions #mind",
+    "search_terms": [
+      "close-up emotional face smelling fragrance",
+      "person reacting to strong perfume cinematic",
+      "woman's thoughtful expression senses",
+      "man in deep thought perfume influence",
+      "abstract representation of scent and memory",
+      "intense emotion perfume reaction portrait"
+    ],
+    "duration": 14,
+    "title_theme": "purple",
+    "read_theme": "black",
+    "video_filter": "purple",
+    "music": "a66.mp3",
+    "created_at": "2026-10-05T18:54:17.612762+00:00"
   }
 ]
