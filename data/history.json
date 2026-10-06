@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 658,
-    "title": "لماذا يصر والدك على سرد نفس القصص القديمة مراراً وتكراراً؟",
-    "read_text": "👇 السر وراء ذلك في الوصف👇",
-    "description": "هل لاحظت أن والدك يعيد سرد نفس القصص القديمة بلهفة متجددة؟ هذا السلوك ليس مجرد عادة عابرة، بل يحمل في طياته أسراراً نفسية عميقة قد تفاجئك. ربما يبحث عن شيء فقده، أو يحاول إحياء ذكرى عزيزة، أو حتى يبحث عن تأكيد لمكانته في حياتك. تتجلى في هذه القصص رغبة دفينة في التواصل، وكأن كل كلمة تعاد هي محاولة أخيرة لترسيخ أثر يبقى. قد تكون القصص نفسها مجرد قناع يخفي وراءه مشاعر أخرى. ما الذي يحاول والدك إخبارك به حقاً من خلال تكرار هذه الحكايات؟ هل هناك رسالة لم تصلك بعد؟",
-    "hashtags": "#علم_نفس #علاقات_أسرية #سلوك_بشري #فهم_الآباء #حكايات_قديمة #ذكريات #تواصل_فعال #تحليل_نفسي #فضول #مشاعر_خفية #parenting #psychology #family #behavior #storytelling",
-    "search_terms": [
-      "elderly man telling story emotional cinematic",
-      "father reminiscing cinematic portrait",
-      "old man thoughtful close up cinematic",
-      "nostalgic senior man looking out window cinematic",
-      "family history storytelling emotional close up",
-      "man reflecting on past cinematic portrait"
-    ],
-    "duration": 11,
-    "title_theme": "orange",
-    "read_theme": "green",
-    "video_filter": "red",
-    "music": "a5.mp3",
-    "created_at": "2026-08-16T10:09:38.825686+00:00"
-  },
-  {
     "excel_number": 659,
     "title": "الإشارة التي تدل على أن صديقك يعتبرك منافساً وليس رفيقاً",
     "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a4.mp3",
     "created_at": "2026-10-06T02:00:55.600226+00:00"
+  },
+  {
+    "excel_number": 1158,
+    "title": "لماذا تخاف من خسارة بسيطة أكثر من رغبتك بالمكسب؟",
+    "read_text": "👇 السبب الحقيقي في الوصف👇",
+    "description": "هل سبق لك أن شعرت بقلق شديد تجاه خسارة شيء تافه، بينما لا تشعر بنفس الحماس عند تحقيق مكسب كبير؟ هذا الشعور الغريب يكشف عن جانب عميق في دوافعنا اللاواعية، ويلمح إلى سر دفين حول طريقة دماغنا في تقدير الأشياء. ما الذي يجعلنا نتجنب الألم البسيط أكثر من سعينا للسعادة المعتادة؟ يكشف هذا الفيديو عن الآلية النفسية الكامنة وراء هذا التناقض السلوكي المدهش. غالبًا ما تتشكل استجاباتنا العاطفية بناءً على تجارب سابقة، حيث يرتبط الخوف من الفقدان بتجارب سلبية أكثر وضوحًا. هذا الانحياز المعرفي يؤثر على قراراتنا اليومية بشكل قد لا ندركه. إن فهم هذه الديناميكية يساعدنا على التحكم في ردود أفعالنا وتوجيهها نحو أهدافنا الحقيقية. لماذا يمتلك الخوف من الفقدان قوة أكبر من جاذبية المكسب؟",
+    "hashtags": "#علم_نفس #تحليل_سلوك #دافعية #قلق_الخسارة #علم_النفس_الاجتماعي #تنمية_ذاتية #تفكير_ايجابي #علاقات_إنسانية #نصائح_مفيدة #تطوير_الذات #psychology #behavioral_economics #loss_aversion #mindset #selfimprovement",
+    "search_terms": [
+      "anxious person looking away",
+      "pensive face close up",
+      "woman looking sad out window",
+      "man thinking deeply portrait",
+      "frustrated expression cinematic",
+      "overwhelmed feeling abstract"
+    ],
+    "duration": 11,
+    "title_theme": "cyan",
+    "read_theme": "green",
+    "video_filter": "black",
+    "music": "a5.mp3",
+    "created_at": "2026-10-06T03:23:30.439392+00:00"
   }
 ]
