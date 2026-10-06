@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 659,
-    "title": "الإشارة التي تدل على أن صديقك يعتبرك منافساً وليس رفيقاً",
-    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
-    "description": "هل شعرت يومًا أن ابتسامة صديقك تخفي وراءها شيئًا آخر غير الدعم؟ قد تكون الإشارات الدقيقة التي تتجاهلها هي المفتاح لفهم حقيقة العلاقة، فمتى يتحول التعاون إلى تنافس مرير؟ يكمن السر في درجات الحرية التي تسمح بها لنفسك وللآخرين، وكيف تقارن إنجازاتك بإنجازاتهم. هذا الفيديو يكشف لك النقاب عن العلامات الخفية التي تدل على أن صديقك لا يراك كرفيق بل كمنافس شرس. ستتعلم كيف تفسر لغة الجسد المربكة، والكلمات المبطنة التي تبدو بريئة، والسلوكيات غير المباشرة التي تشير إلى الغيرة والحسد. إن فهم هذه الديناميكيات النفسية يمنحك القوة لاتخاذ قرارات واعية بشأن علاقاتك. عندما يبدأ شخص قريب منك بمراقبة خطواتك بعين الشك بدلًا من التشجيع، وتصبح نجاحاتك مصدر قلقه بدلًا من فرحه، فهل تدرك أنك تسير على أرض الملعب الخطأ؟",
-    "hashtags": "#علم_نفس #علاقات #منافسة #صداقة #تحليل_سلوك #علامات_خفية #تطوير_الذات #نصائح #فضول #علاقات_سامة #ikigai #psychology #friendship #competition #selfimprovement",
-    "search_terms": [
-      "man looking thoughtful outdoor cinematic",
-      "woman looking conflicted portrait emotional",
-      "tense conversation subtle expression close up",
-      "person feeling isolated outdoors looking away",
-      "subtle rivalry body language cinematic",
-      "doubtful expression close up natural light"
-    ],
-    "duration": 15,
-    "title_theme": "red",
-    "read_theme": "yellow",
-    "video_filter": "black",
-    "music": "a10.mp3",
-    "created_at": "2026-08-16T12:01:39.020324+00:00"
-  },
-  {
     "excel_number": 660,
     "title": "الحقيقة النفسية للأشخاص الذين يكرهون الاستحمام بالماء الساخن جداً",
     "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a5.mp3",
     "created_at": "2026-10-06T03:23:30.439392+00:00"
+  },
+  {
+    "excel_number": 1159,
+    "title": "ما الذي يحدث لعقلك عندما تختار تحت ضغط الوقت؟",
+    "read_text": "👇 التفسير الكامل في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا يبدو عقلك وكأنه يتجمد تمامًا عندما ينفد الوقت؟  غالبًا ما نفترض أن الضغط يعزز الأداء، لكن الحقيقة أعمق بكثير وأكثر إثارة للقلق.  هذا الفيديو سيكشف لك الآلية الدقيقة التي تحدث داخل دماغك، مؤثرًا على قراراتك وقدرتك على التفكير المنطقي.  عندما تشتد الأمور، قد تجد نفسك تتخذ خيارات لا تشبهك على الإطلاق، أو تفقد القدرة على التركيز.  الخوف من الفشل يتسلل، والأدرينالين يغير مسارات تفكيرك.  هل هذه الاستجابة غريزية بحتة، أم أنها تنطوي على شيء آخر؟  تعلّم كيف يمكن للوقت المحدود أن يشكل واقعك ويؤثر على اختياراتك بشكل جذري.  ما هي الثغرات التي يفتحها ضغط الوقت أمام أضعف جوانبك النفسية؟",
+    "hashtags": "#علم_النفس #ضغط_الوقت #اتخاذ_القرارات #العقل_البشري #تنمية_الذات #تحفيز #تطوير_الذات #سلوك_البشر #psychoeducation #decisionmaking #mindhacks #psychologyfacts #stressmanagement #timemanagement #brainexplained",
+    "search_terms": [
+      "man thinking under pressure",
+      "woman stressed deadline",
+      "brainstorming intense",
+      "emotional portrait struggling",
+      "person making difficult decision",
+      "anxiety time running out"
+    ],
+    "duration": 13,
+    "title_theme": "red",
+    "read_theme": "yellow",
+    "video_filter": "red",
+    "music": "a10.mp3",
+    "created_at": "2026-10-06T16:20:43.386580+00:00"
   }
 ]
