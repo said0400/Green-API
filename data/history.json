@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 663,
-    "title": "لماذا نشعر بالتوتر الشديد عندما يطلب منا شخص أن نبتسم للكاميرا؟",
-    "read_text": "👇 الحقيقة كاملة في الوصف👇",
-    "description": "هل سبق لك أن شعرت برغبة ملحة في الهروب عندما يلوح لك أحدهم بكاميرا لالتقاط صورة، مطالباً بابتسامة زائفة؟ ما الذي يدفع هذا الشعور المفاجئ بالتوتر والقلق، وكأننا نواجه محاكمة علنية؟ إنها ليست مجرد رهبة عابرة، بل هي صراع داخلي عميق يكشف عن هواجسنا الخفية حول الذات والمظهر. يكمن السر في الربط اللاواعي بين الابتسامة والقبول الاجتماعي، فكلما شعرنا بعدم الأمان، باتت الابتسامة عبئاً ثقيلاً. إنها اللحظة التي تختبر فيها قوتك الداخلية ومدى تقبلك لذاتك الحقيقية بعيداً عن عدسات الآخرين. فهل أنت مستعد لمواجهة هذا التحدي الداخلي، أم ستظل أسير تلك اللحظة المتوترة؟",
-    "hashtags": "#علم_نفس #التوتر #الابتسامة #علم_نفس_اجتماعي #الثقة_بالنفس #رهاب_الكاميرا #تحليل_السلوك #مشاعر #دوافع_نفسية #selfcare #psychology #anxiety #socialanxiety #camerafear #selflove",
-    "search_terms": [
-      "woman feeling anxious portrait cinematic",
-      "man looking stressed close up emotional",
-      "person feeling judged in public cinematic",
-      "overthinking mind portrait slow motion",
-      "self-conscious person looking away emotional",
-      "internal struggle close up cinematic portrait"
-    ],
-    "duration": 15,
-    "title_theme": "purple",
-    "read_theme": "pink",
-    "video_filter": "black",
-    "music": "a16.mp3",
-    "created_at": "2026-08-16T19:11:30.290372+00:00"
-  },
-  {
     "excel_number": 664,
     "title": "ماذا يحدث في دماغك عندما تقرر أخيرًا أن تبدأ حمية غذائية صارمة؟",
     "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a15.mp3",
     "created_at": "2026-10-06T20:40:13.004163+00:00"
+  },
+  {
+    "excel_number": 1163,
+    "title": "ماذا يعني أن تغيّر القرار بعد سماع رأي واحد؟",
+    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
+    "description": "هل سبق وشعرت بأن قرارك قد اهتزّ لمجرد سماع كلمة من شخص واحد؟ ما الذي يجعلك تتراجع عن قناعات راسخة بسرعة البرق؟ هذا التصرف يكشف عن طبقات عميقة في شخصيتك ربما لم تلاحظها من قبل. إنها ليست مجرد تردد، بل هي بصمة نفسية عميقة تشكل تفاعلاتك مع العالم.  يتعلق الأمر بكيفية معالجتك للمعلومات الجديدة وتأثير الآخرين عليك.  هل هي ثقة مفرطة بالآخرين أم افتقار للثقة بالنفس؟  تفكيك هذا السلوك يكشف عن آليات دفاعية ومرتكزات اجتماعية قد تكون غير واعية.  إنها رحلة استكشافية في أعماق النفس البشرية وكيف تتشكل قراراتنا.  هل تعتقد أن هذا التغيير السريع نقطة ضعف أم قوة خفية؟",
+    "hashtags": "#علم_نفس #تطوير_الذات #تحليل_سلوك #قرارات #تأثير_الآخرين #ثقة_بالنفس #نصائح #مشاهير #علاقات #علم_النفس_الاجتماعي #tiktok_ar #shorts #reels #psychology #behavior",
+    "search_terms": [
+      "thoughtful person portrait",
+      "person changing mind close up",
+      "inner conflict emotional close up",
+      "hesitation doubt contemplation",
+      "vulnerability introspection portrait",
+      "psychological struggle cinematic"
+    ],
+    "duration": 14,
+    "title_theme": "yellow",
+    "read_theme": "black",
+    "video_filter": "gray",
+    "music": "a16.mp3",
+    "created_at": "2026-10-06T21:55:52.274971+00:00"
   }
 ]
