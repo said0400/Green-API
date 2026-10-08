@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 681,
-    "title": "ماذا يعني أن أختك ترفض أن تشاركك غرفتها رغم وجود مساحة كافية؟",
-    "read_text": "👇 الجزء الأهم موجود في الوصف👇",
-    "description": "لماذا ترفض أختك مشاركتك غرفتها رغم سعة المكان؟ هل هو رفض بسيط أم رسالة خفية عميقة؟ قد يكون وراء هذا التصرف دوافع نفسية معقدة لم تخطر ببالك أبداً، وأكثر من مجرد حب للمساحة الشخصية. هل تعلم أن هذا الرفض قد يعكس قلقاً أو حاجة لشعور بالأمان لم تحصل عليه؟ ربما تخشى اختراق حدودها الخاصة أو تشعر بأن وجودك يهدد أسلوب حياتها الحالي. قد يكون الأمر مرتبطاً بذكريات قديمة أو بتجارب سابقة شكلت لديها تصوراً معيناً عن الحدود الشخصية. هذا السلوك الظاهري البسيط قد يحمل في طياته أسراراً عن شخصيتها وعلاقتها بك. كيف يمكن لهذا الرفض أن يكشف جوانب خفية في علاقتكما لم تلاحظاها من قبل؟",
-    "hashtags": "#علم_نفس #علم_نفس_الأسرة #العلاقات_الأسرية #سلوك_الأخوات #الأخوات #قلق #حدود_شخصية #تحليل_سلوك #نصائح_عائلية #مشاكل_غرف #فضول #psychology #familydynamics #sisterhood #behavioranalysis",
-    "search_terms": [
-      "sister conflict emotional portrait",
-      "teenager room private space cinematic",
-      "young woman thoughtful sad expression",
-      "sibling tension anxiety close up",
-      "loneliness feeling indoors looking away",
-      "childhood memories regret pensive"
-    ],
-    "duration": 11,
-    "title_theme": "orange",
-    "read_theme": "yellow",
-    "video_filter": "black",
-    "music": "a39.mp3",
-    "created_at": "2026-08-18T21:17:35.552904+00:00"
-  },
-  {
     "excel_number": 682,
     "title": "السر النفسي خلف رغبتك في شم رائحة طلاء الأظافر فور فتحه",
     "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a37.mp3",
     "created_at": "2026-10-08T18:01:50.071417+00:00"
+  },
+  {
+    "excel_number": 1181,
+    "title": "لماذا ترتاح لوعد مبهم أكثر من حقيقة صعبة؟",
+    "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا يمنحنا الغموض شعورًا بالراحة يفوق الحقيقة أحيانًا؟ قد يبدو الأمر غير منطقي، لكن عقولنا تعمل بطرق معقدة وغير متوقعة. عندما نواجه حقيقة قاسية، فإنها تتطلب منا مواجهة واقع قد لا نكون مستعدين له، وهذا بحد ذاته يولد ضغطًا نفسيًا هائلاً. أما الوعد المبهم، فهو يترك لنا مساحة للخيال والأمل، يسمح لأذهاننا ببناء سيناريوهات مثالية قد لا تتحقق أبدًا، لكنها في الوقت الحالي تبعث فينا شعورًا بالسكينة المؤقتة. هذا الهروب النفسي يمنحنا فرصة لتأجيل مواجهة الألم.  إنه أقرب لطريقة دفاعية تعكس احتياجنا العميق للأمان.  ما الذي يجعل أذهاننا تختار الأمل الزائف على الواقع المؤلم؟",
+    "hashtags": "#علم_نفس #فضول #تحليل_سلوك #مشاعر #غموض #حقيقة_صادمة #أمل #خيال #قوة_عقلية #psychology #curiosity #behavior #mindset #emotions #mystery",
+    "search_terms": [
+      "person staring thoughtfully out window cinematic",
+      "close up sad emotional face portrait",
+      "woman looking hopeful into distance",
+      "man contemplating difficult decision cinematic",
+      "person feeling relief after stress portrait",
+      "abstract feeling of hope and uncertainty"
+    ],
+    "duration": 14,
+    "title_theme": "red",
+    "read_theme": "purple",
+    "video_filter": "black",
+    "music": "a39.mp3",
+    "created_at": "2026-10-08T19:31:57.177325+00:00"
   }
 ]
