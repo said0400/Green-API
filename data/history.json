@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 693,
-    "title": "لماذا نشعر بالتوتر عندما نرى شخصاً يمسك سكيناً بطريقة خاطئة أمامنا؟",
-    "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
-    "description": "هل سبق وتساءلت لماذا يرتعش جسدك لمجرد رؤية شخص يمسك سكينًا بشكل غريب أمامك؟ هذا الارتعاش المفاجئ ليس مجرد رد فعل عشوائي، بل هو إشارة عميقة من عقلك الباطن تخبرك أن هناك شيئًا غير طبيعي. يتجاوز الأمر الخوف المباشر من الأذى، ليشمل إحساسًا لا شعوريًا بالخلل. يعود الأمر إلى آليات بقاء قديمة وكيفية معالجتنا للمعلومات المرئية التي تتعارض مع ما نتوقعه. يفسر دماغك هذا المشهد على أنه تهديد محتمل، حتى لو كان الموقف برمته غير ضار. إنها معركة بين وعينا الظاهري وخبراتنا التطورية اللاواعية. لماذا يصبح أبسط الأشياء مصدر قلق لا مبرر له؟",
-    "hashtags": "#علم_النفس #توتر #قلق #سلوك_بشري #تحليل_نفسي #رد_فعل_عقلي #مخاوف #لا_وعي #فهم_النفس #psychology #stress #anxiety #human_behavior #mind_analysis",
-    "search_terms": [
-      "anxiety reaction nervous person visual trigger",
-      "fear subconscious mind primal instinct reaction",
-      "unease wrong perception threat detection visual",
-      "stressful situation unexpected visual cue",
-      "psychological discomfort unsettling imagery",
-      "emotional tension visual anomaly subconscious response"
-    ],
-    "duration": 11,
-    "title_theme": "orange",
-    "read_theme": "black",
-    "video_filter": "dark_blue",
-    "music": "a57.mp3",
-    "created_at": "2026-08-20T12:16:42.423806+00:00"
-  },
-  {
     "excel_number": 694,
     "title": "ماذا يعني لو كان زوجك يرفض دائماً الخروج في نزهات عائلية؟",
     "read_text": "👇 التفسير النفسي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a54.mp3",
     "created_at": "2026-10-09T20:25:21.585356+00:00"
+  },
+  {
+    "excel_number": 1193,
+    "title": "ما الذي يحدث لعقلك عندما يقيّمك شخص ذو سلطة؟",
+    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
+    "description": "هل تساءلت يومًا كيف يتحول عقلك فجأة عندما تشعر بأن شخصًا ذا نفوذ يراقبك؟ إن مجرد إدراك وجود سلطة مؤثرة يمكن أن يعيد تشكيل طريقة تفكيرك بالكامل، مما يثير استجابات فسيولوجية ونفسية عميقة. يكمن السر في طريقة تفعيل مناطق معينة في الدماغ، التي تزيد من حساسيتك للانتقاد المحتمل وتدفعك للسعي نحو القبول. هذه الحالة، التي تبدو مفاجئة، هي في الواقع استجابة تطورية قديمة تم تصميمها لحمايتك. عندما يتم تقييمك، فإن عقلك يتكيف لتقديم أفضل نسخة من نفسك، حتى لو لم تكن واعيًا بذلك. هذه الديناميكية المعقدة تؤثر على قراراتنا، تفاعلاتنا، وحتى على إحساسنا بالذات. إن فهم هذه الآلية يفتح الباب أمام رؤى أعمق حول السلوك البشري. لكن، إلى أي مدى يمكن لهذا التقييم الخارجي أن يشوه رؤيتنا الحقيقية لأنفسنا؟",
+    "hashtags": "#علم_النفس #السلطة #تقييم_الذات #تأثير_اجتماعي #العقل_البشري #علم_السلوك #تحليل_نفسي #التفكير #السيطرة #علم_اجتماع #psychology #power #social_influence #mind_control #behavioral_psychology",
+    "search_terms": [
+      "man thinking deeply portrait",
+      "woman looking stressed cinematic",
+      "person feeling judged close up",
+      "anxious expression emotional",
+      "fearful eyes looking away",
+      "internal struggle portrait shot"
+    ],
+    "duration": 15,
+    "title_theme": "green",
+    "read_theme": "purple",
+    "video_filter": "purple",
+    "music": "a57.mp3",
+    "created_at": "2026-10-09T21:54:43.482141+00:00"
   }
 ]
