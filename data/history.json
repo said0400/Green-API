@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 686,
-    "title": "الحقيقة المظلمة وراء الشخص الذي يضحك دائماً عندما يتحدث عن مآسيه",
-    "read_text": "👇 السبب الحقيقي في الوصف👇",
-    "description": "لماذا يميل البعض للضحك في عز أحزانهم، هل هو ضعف أم قناع يخبئ ألماً عميقاً؟ هذا السلوك الغريب قد يخفي خلفه صراعات نفسية معقدة تتجاوز مجرد الدعابة الظاهرية. يظن الناس أن الضحك دليل سعادة، لكن أحياناً يكون الضحك هو جدار صلب يبنيه العقل ليحمي هشاشته من الانهيار التام. هذا الشخص الذي يبتسم عند ذكر مصائبه، قد يكون عالقاً في دوامة لا تنتهي من التفكير، يحاول عبثاً السيطرة على مشاعره الجياشة. إنه أسلوب دفاعي معقد، مزيج من الإنكار والشجاعة الزائفة، حيث يتحول الألم الداخلي إلى ضحكات تبدو هستيرية للبعض. هل تتخيل كمية القوة التي يحتاجها المرء ليواجه مأساته بالابتسامة بينما يمزقه الأسى من الداخل؟ هل سبق لك أن رأيت هذا النوع من الأشخاص عن قرب، وكيف فسرت سلوكهم؟",
-    "hashtags": "#علم_النفس #علم_النفس_الاجتماعي #علم_نفس_التحليل #الدفاعات_النفسية #قناع_السعادة #الضحك_القسري #الألم_النفسي #السلوك_البشري #الذكاء_العاطفي #البحث_عن_السعادة #فهم_النفس #psychologyfacts #hiddenemotions #behavioralanalysis #darkpsychology",
-    "search_terms": [
-      "sad man crying quietly cinematic",
-      "woman looking out window pensive cinematic",
-      "overwhelmed person in crowd emotional",
-      "face of deep thought cinematic portrait",
-      "person struggling with inner turmoil close up",
-      "solitary figure in dramatic lighting emotional"
-    ],
-    "duration": 12,
-    "title_theme": "black",
-    "read_theme": "pink",
-    "video_filter": "dark_blue",
-    "music": "a48.mp3",
-    "created_at": "2026-08-19T16:40:53.008248+00:00"
-  },
-  {
     "excel_number": 687,
     "title": "لماذا تكره والدتك أن تغادر المنزل دون أن تخبرها بوجهتك بدقة؟",
     "read_text": "👇 التفسير الكامل في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a47.mp3",
     "created_at": "2026-10-09T00:02:58.387548+00:00"
+  },
+  {
+    "excel_number": 1186,
+    "title": "ما الذي يحدث عندما تخلط بين الثقة والصحة؟",
+    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
+    "description": "هل تعلم أن الثقة المفرطة في الصحة قد تكون بابًا للخطر؟ ماذا يحدث حقًا عندما يتداخل شعورنا بالأمان الصحي مع ثقتنا في قدرة أجسادنا على التحمل؟ غالبًا ما نميل إلى تجاهل العلامات الصغيرة، معتقدين أن قوتنا المناعية لا تُقهر، وأن هذه الأمور تحدث فقط للآخرين. لكن السر يكمن في الطريقة التي نفسر بها صحتنا، وكيف تسمح لنا أفكارنا ببناء حاجز وهمي حول أنفسنا. هذا الحاجز قد يجعلنا أكثر عرضة للمشاكل الصحية دون أن ندرك ذلك. يكمن التحدي في تحقيق التوازن؛ كيف يمكننا أن نثق في أجسادنا مع الحفاظ على اليقظة اللازمة؟ هل الوعي الحقيقي بالصحة يبدأ بالشك الصحي؟",
+    "hashtags": "#علم_النفس #صحة_نفسية #ثقة_بالنفس #صحة_جسدية #علاقات_صحية #تحليل_سلوك #فضول #غموض #معلومات_مهمة #نصائح #تفكير_عميق #psychology #self_confidence #health_awareness #mindset",
+    "search_terms": [
+      "man looking thoughtful outdoors cinematic",
+      "woman with worried expression close up emotional",
+      "person reflecting alone nature portrait",
+      "close up of eyes showing vulnerability",
+      "feeling of unease and contemplation",
+      "overcoming fear and doubt cinematic"
+    ],
+    "duration": 13,
+    "title_theme": "green",
+    "read_theme": "black",
+    "video_filter": "dark_blue",
+    "music": "a48.mp3",
+    "created_at": "2026-10-09T00:43:33.472343+00:00"
   }
 ]
