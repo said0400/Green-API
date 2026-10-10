@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 700,
-    "title": "الحقيقة النفسية للأشخاص الذين يكرهون التحدث في المصاعد المغلقة",
-    "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
-    "description": "هل تساءلت يومًا عن سر الرهبة الغامضة التي يشعر بها البعض في المصاعد المغلقة؟ ما الذي يكمن وراء هذا النفور غير المبرر من الأماكن الضيقة والمحدودة؟ الأمر أعمق بكثير من مجرد خوف بسيط من الأماكن المغلقة؛ إنه يتعلق بكيفية معالجة أدمغتنا للمواقف التي تشعرنا بالعجز. يكشف علم النفس عن طبقات خفية من المعاني وراء هذه الاستجابة، مرتبطة غالبًا بتجارب سابقة أو مخاوف أساسية تتعلق بالتحكم الشخصي وفقدانه. إن تفاعل الدماغ مع البيئة المغلقة يمكن أن يستدعي ذكريات بعيدة أو يثير قلقًا عميقًا حول السلامة والهروب. هذه الظاهرة تفسر لماذا بعض الأفراد يشعرون بضغط شديد وعدم ارتياح، بينما قد لا يتأثر آخرون بنفس الدرجة. هل سبق لك أن شعرت بهذا الضيق؟",
-    "hashtags": "#علم_نفس #علم_النفس #نفسية #مخاوف #رهاب #سلوك #تحليل_سلوك #مصاعد #اماكن_مغلقة #psychology #claustrophobia #behavioral_psychology #mind_hacks #mental_health #viral",
-    "search_terms": [
-      "man looking anxious in elevator",
-      "woman feeling claustrophobic indoors",
-      "person staring out window feeling trapped",
-      "close up anxious face portrait",
-      "man alone in crowded space looking stressed",
-      "woman feeling overwhelmed indoors"
-    ],
-    "duration": 14,
-    "title_theme": "cyan",
-    "read_theme": "black",
-    "video_filter": "red",
-    "music": "a67.mp3",
-    "created_at": "2026-08-20T22:19:18.823169+00:00"
-  },
-  {
     "excel_number": 701,
     "title": "ماذا يعني أن أختك تتعمد إحراجك أمام الضيوف بحجة المزاح؟",
     "read_text": "👇 التفسير في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a66.mp3",
     "created_at": "2026-10-10T15:36:24.069881+00:00"
+  },
+  {
+    "excel_number": 1200,
+    "title": "ما الذي يحدث عندما تعاند فقط لأنك دُفعت؟",
+    "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
+    "description": "لماذا يصر البعض على تحدي الأوامر حتى لو كانت منطقية، فقط لأنهم شعروا بأن هناك قوة تحاول السيطرة عليهم؟ هل هو مجرد عناد أم دفاع نفسي عميق يتجاوز مجرد الرفض؟ هذا الشعور بالدفع القسري يثير في النفس مقاومة لا شعورية، ورغبة في استعادة السيطرة حتى لو كان الثمن باهظاً. في أعماق النفس البشرية، يكمن مبدأ أساسي وهو حب الحرية والاستقلالية. عندما نشعر بأن هذه الحرية مهددة، حتى لو كان التهديد بسيطاً، فإن آليات الدفاع تبدأ بالعمل. هذا التحدي ليس بالضرورة سلبياً، فقد يكون مؤشراً على قوة الشخصية والوعي بالذات. لكن أين يقع الخط الفاصل بين إثبات الذات والحمق الناتج عن العناد؟ متى يتحول هذا التحدي إلى سلوك مدمر؟ هل أنت شخص يفضل القيادة أم ترفض أي محاولة للتوجيه؟",
+    "hashtags": "#علم_النفس #سلوك_بشري #العناد #الشخصية #السيطرة #الاستقلالية #التحفيز #التفكير #تحليل_السلوك #الدافعية #Psychology #HumanBehavior #Defiance #Control #SelfEsteem",
+    "search_terms": [
+      "man resisting external force cinematic",
+      "woman defiant expression close up emotional",
+      "feeling controlled internal struggle cinematic",
+      "inner conflict portrait dramatic lighting",
+      "person pushing back against unseen pressure",
+      "struggle for autonomy emotional portrait"
+    ],
+    "duration": 15,
+    "title_theme": "pink",
+    "read_theme": "yellow",
+    "video_filter": "gray",
+    "music": "a67.mp3",
+    "created_at": "2026-10-10T16:24:54.274237+00:00"
   }
 ]
