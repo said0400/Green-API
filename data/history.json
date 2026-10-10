@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 705,
-    "title": "التفسير النفسي لعدم قدرتك على النوم إذا كان باب الخزانة مفتوحاً قليلاً",
-    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يثير مجرد فتح باب خزانة ملابسك قليلًا شعورًا مقلقًا يمنعك من الغفو؟ هذا الانزعاج الخفي ليس مجرد وهم، بل هو صدى عميق لتاريخنا التطوري المعقد. قد يعكس هذا الخوف اللاواعي احتياجًا فطريًا قديمًا للشعور بالأمان المطلق في عالم لم يكن مأمون الجانب دائمًا. إن رؤية الظلام خلف باب مفتوح بشكل جزئي قد تستدعي قلقًا بشأن المجهول، محرّكًا غريزة الحذر التي تطورت لحمايتنا من الأخطار المخفية. هذا الشعور يعكس ميل الدماغ البشري إلى توقع الأسوأ في البيئات غير المؤكدة، ساعيًا للسيطرة على محيطه. كيف يمكن لتفصيل صغير كهذا أن يكشف الكثير عن آلية دفاعنا النفسي الأساسية؟",
-    "hashtags": "#علم_نفس #نوم #قلق #الخوف_اللاواعي #اسباب_القلق #العقل_الباطن #نصائح_نوم #صحة_نفسية #تفكير_تحليلي #علم_النفس_التطوري #psychology #sleep #anxiety #subconscious #mindhacks",
-    "search_terms": [
-      "anxiety, fear, person scared in dark room, cinematic portrait",
-      "evolutionary psychology, primal fear, instinct, man looking worried",
-      "unconscious mind, subconscious fear, sleeping problems, bedroom anxiety",
-      "feeling unsafe, vulnerable, hidden danger, dark closet fear",
-      "person unable to sleep, restless night, psychological distress, emotional portrait",
-      "ancestral fear, survival instinct, night time anxiety, cinematic close up"
-    ],
-    "duration": 14,
-    "title_theme": "pink",
-    "read_theme": "orange",
-    "video_filter": "gray",
-    "music": "a2.mp3",
-    "created_at": "2026-08-21T16:21:31.485707+00:00"
-  },
-  {
     "excel_number": 706,
     "title": "الحقيقة المظلمة وراء الشخص الذي يعتذر لك وهو يبتسم ببرود",
     "read_text": "👇 السر وراء ذلك في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a1.mp3",
     "created_at": "2026-10-10T22:03:48.977825+00:00"
+  },
+  {
+    "excel_number": 1205,
+    "title": "لماذا يرسل صديقك مزحة وقت شعورك بالاختناق؟",
+    "read_text": "👇 التفسير في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا يبدو أن بعض الأشخاص يختارون اللحظة الأكثر إيلامًا لتوجيه دعابة غير لائقة؟ ما الذي يدفع العقل البشري ليقحم الفكاهة في أعمق لحظات الضعف والألم؟ قد يكون الأمر أعمق بكثير مما تظن، حيث يكشف هذا السلوك عن دوافع خفية ورغبات دفينة. يبدو أن هذه المزحة ليست مجرد عرض عشوائي، بل هي آلية دفاع معقدة، أو ربما محاولة يائسة للتواصل بطريقة غير مباشرة. هل هي علامة على عدم النضج العاطفي، أم أن هناك سرًا أعمق يتعلق بكيفية تعامل الأشخاص مع التوتر لديهم ولدى الآخرين؟ اكتشف الأسباب النفسية الكامنة وراء هذه الظاهرة المحيرة التي قد تغير نظرتك لمن حولك. لماذا يختار أحدهم لحظة اختناقك لتوجيه مزحة، وماذا يعني ذلك حقًا عن العلاقة بينكما؟",
+    "hashtags": "#علم_نفس #علاقات #تحليل_سلوك #علم_النفس_الاجتماعي #دوافع #مشاعر #توتر #آليات_الدفاع #علاقات_سامة #نصائح_نفسية #understanding_people #psychologyfacts #relationshipadvice #behavioranalysis #human_behavior",
+    "search_terms": [
+      "man looking stressed and overwhelmed",
+      "woman crying alone in dimly lit room",
+      "person looking pensive and sad",
+      "close up emotional face looking away",
+      "person experiencing inner turmoil",
+      "feeling of isolation and despair"
+    ],
+    "duration": 12,
+    "title_theme": "red",
+    "read_theme": "cyan",
+    "video_filter": "red",
+    "music": "a2.mp3",
+    "created_at": "2026-10-10T23:03:40.758232+00:00"
   }
 ]
