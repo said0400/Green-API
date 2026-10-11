@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 709,
-    "title": "السر النفسي خلف خوفك من التحدث مع شخص مشهور وجهاً لوجه",
-    "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
-    "description": "هل شعرت يومًا بشلل تام ورغبة عارمة في الهرب عند الوقوف أمام شخصية عامة لامعة؟ هذا الارتعاش الذي يجتاحك ليس مجرد رهبة عادية، بل هو صدى لمشاعر أعمق تتجذر في لا وعيك. ما الذي يخفيه عقلك بالضبط لدرجة أنه يمنعك من أبسط تفاعل بشري مع شخص تراه دائمًا في صورة مثالية؟ هذا الشعور ليس غريبًا، إنه شائع أكثر مما تتخيل، ويحمل مفتاحًا لفهم جوانب أساسية من تقديرك لذاتك وتصورك للعالم الخارجي. سنتعمق في هذه الظاهرة النفسية المثيرة للاهتمام، لنكشف الأسباب الخفية وراء هذا الارتباك. لماذا نرى المشاهير ككائنات خارقة ونفقد قدرتنا على التواصل الطبيعي أمامهم؟ هل الخوف من الحكم هو السبب الوحيد، أم أن هناك أسرارًا أبعد من ذلك تتعلق بكيفية بناء صورنا الذهنية؟",
-    "hashtags": "#علم_نفس #تقدير_الذات #رهاب_الشهرة #تطوير_الذات #تحليل_شخصية #تواصل_فعال #علم_النفس_الاجتماعي #نصائح_نفسية #معلومات_مفيدة #اعرف_نفسك #self_esteem #psychology #social_anxiety #mindset #communication",
-    "search_terms": [
-      "anxious person looking away",
-      "woman feeling overwhelmed indoors",
-      "man looking nervous in crowd",
-      "person feeling self-conscious",
-      "introspective portrait of thoughtful person",
-      "hesitant handshake close up"
-    ],
-    "duration": 11,
-    "title_theme": "cyan",
-    "read_theme": "orange",
-    "video_filter": "dark_blue",
-    "music": "a10.mp3",
-    "created_at": "2026-08-21T21:12:22.711400+00:00"
-  },
-  {
     "excel_number": 710,
     "title": "ماذا يخبرك عقلك عندما تتخيل أنك فقدت بصرك وتحاول المشي في الظلام؟",
     "read_text": "👇 التفسير النفسي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a5.mp3",
     "created_at": "2026-10-11T02:18:18.338824+00:00"
+  },
+  {
+    "excel_number": 1209,
+    "title": "ماذا يعني أن يقلدك أخوك ثم يسخر منك؟",
+    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
+    "description": "هل شعرت يومًا بأن هناك سرًا غريبًا يكمن خلف تقليد أخيك لك ثم سخرية لاذعة؟ إنها ليست مجرد لعبة عابرة، بل قد تكون انعكاسًا أعمق للصراعات الخفية ورغبات لا واعية. هذه الأفعال المتناقضة تخفي رسائل مشفرة حول علاقتكما وديناميكيات القوة بينكما. قد يكشف التقليد عن الإعجاب والرغبة في التقارب، بينما السخرية قد تنبع من الغيرة أو محاولة إثبات التفوق. هذه السلوكيات المتشابكة تحتاج إلى فهم دقيق لتفكيك ألغازها النفسية. ما هي الأسباب الحقيقية وراء هذا التصرف المزدوج الذي يجعلك تتساءل عن معناه الحقيقي؟ هل هو تعبير عن حب معقد أم صراع على الاهتمام؟",
+    "hashtags": "#علم_النفس #علم_النفس_الاجتماعي #العلاقات_الأسرية #ديناميكيات_السلطة #التقليد #السخرية #فهم_السلوك #تحليل_الشخصية #التواصل_غير_اللفظي #الغيرة #الاخوة #psychology #familydynamics #behavioranalysis #siblingrivalry",
+    "search_terms": [
+      "brother sibling rivalry emotional portrait",
+      "childhood imitation subtle conflict cinematic",
+      "family dynamics subtle tension close up",
+      "sibling relationship complex emotions thoughtful",
+      "childhood imitation playful yet serious",
+      "emotional family portrait brother sister"
+    ],
+    "duration": 12,
+    "title_theme": "cyan",
+    "read_theme": "yellow",
+    "video_filter": "gray",
+    "music": "a10.mp3",
+    "created_at": "2026-10-11T16:00:19.531586+00:00"
   }
 ]
