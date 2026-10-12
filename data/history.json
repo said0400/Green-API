@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 716,
-    "title": "ماذا يحدث لعقلك عندما تكتشف أنك كنت تنطق اسماً بطريقة خاطئة لسنوات؟",
-    "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
-    "description": "هل سبق لك أن اكتشفت أنك تنطق اسماً مشهوراً بشكل خاطئ طوال حياتك؟ هذا الشعور بالذهول والارتباك قد يكون أكثر تأثيراً على عقلك مما تتخيل. يتعلق الأمر ليس فقط بتصحيح خطأ بسيط، بل بكيفية إعادة تشكيل خريطة مفاهيمية راسخة. تذكر، كل اسم نستخدمه هو بمثابة كلمة مرور لعالم من المعاني والذكريات. عندما تكتشف خطأً بهذا الحجم، يبدأ عقلك في التساؤل عن دقة معرفته ككل. يتداعى جزء صغير من يقينك، ليحل محله الشك. تبدأ في البحث عن أدلة أخرى، وتقييم كل ما كنت تعرفه. هل هذا يعني أن هناك أشياء أخرى ننطقها أو نفهمها بشكل خاطئ دون أن ندري؟ كيف تؤثر هذه الاكتشافات الصغيرة على نظرتنا للعالم وعلى ثقتنا بأنفسنا؟ إنها رحلة مثيرة في أعماق الإدراك البشري، تدفعنا لإعادة النظر في أبسط الأمور وأكثرها بديهية، لتكتشف أن ما تراه حقيقة قد يكون مجرد وهم صغير. هل تعتقد أن هذا الاكتشاف قد يغير طريقة تفكيرك في المستقبل؟ 🤔",
-    "hashtags": "#علم_النفس #فضول #تفكير_ناقد #علم_نفس_اجتماعي #عقلك_أسرار #إدراك #تنمية_بشرية #معرفة #اكتشاف #تغيير_عادات #perception #psychology #curiosity #mindfulness #selfawareness",
-    "search_terms": [
-      "thoughtful person looking away cinematic",
-      "woman contemplating quiet reflection",
-      "man looking out window pensive",
-      "close up of eyes expressing confusion",
-      "head turning slowly in realization",
-      "person silhouetted against soft light"
-    ],
-    "duration": 12,
-    "title_theme": "cyan",
-    "read_theme": "green",
-    "video_filter": "red",
-    "music": "a19.mp3",
-    "created_at": "2026-08-22T18:01:34.892012+00:00"
-  },
-  {
     "excel_number": 717,
     "title": "التفسير المظلم لرغبتك في أن يتم اختطافك فقط لترى من سيبحث عنك",
     "read_text": "👇 التفسير في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a18.mp3",
     "created_at": "2026-10-11T23:18:24.503630+00:00"
+  },
+  {
+    "excel_number": 1216,
+    "title": "ماذا يعني أن تراقبك أختك أكثر مما تسمعك؟",
+    "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
+    "description": "هل شعرت يومًا بأن هناك عينًا خفية تتبع كل تحركاتك، تفوق حتى صوت النصائح التي تسمعها؟ يبدو الأمر غريبًا، أليس كذلك؟ لكن ما مدى عمق هذا الشعور، وما الذي تخفيه هذه المراقبة الدقيقة؟ غالبًا ما تكون الأخت ليست مجرد شقيقة، بل هي مرآة تعكس جوانب منك ربما لا تراها بنفسك. هي الحارس الصامت الذي يسجل تفاصيلك، يفهم نبرة صوتك قبل أن يدرك لسانك ما يقول. قد تظن أنها تدخل، ولكنها في الواقع تحاول فهم الخلل. هل تفهم لغة الصمت تلك؟ ربما تكتشف من خلالها حقيقة مشاعرك أو دوافعك الحقيقية. فماذا يعني حقًا أن تكون مراقبًا أكثر من كونك مستمعًا، وهل هذا مؤشر على حب أم على قلق دفين؟",
+    "hashtags": "#علم_النفس #العلاقات_الأسرية #التحليل_النفسي #السلوك_البشري #العلاقات_المعقدة #FamilyDynamics #Sisterhood #PsychologyFacts #BehaviorAnalysis #HiddenEmotions #MindGames #Perception #Empathy #Intuition #SelfAwareness",
+    "search_terms": [
+      "introspective woman looking away cinematic",
+      "woman thoughtful portrait soft light",
+      "sister looking at sister emotional connection",
+      "woman's eyes reflecting thoughts",
+      "close up of woman's face pensive",
+      "family bond woman observing sister"
+    ],
+    "duration": 13,
+    "title_theme": "orange",
+    "read_theme": "green",
+    "video_filter": "black",
+    "music": "a19.mp3",
+    "created_at": "2026-10-12T00:03:33.102716+00:00"
   }
 ]
