@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 722,
-    "title": "السر النفسي خلف رغبتك في شم رائحة الورق المحترق في الشتاء",
-    "read_text": "👇 السر وراء ذلك في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا تنجذب فجأة لرائحة الورق المحترق في ليالي الشتاء الباردة، تلك الرائحة التي تحمل معها شعورًا بالدفء والأمان؟ هذا ليس مجرد إحساس عابر، بل هو سر نفسي عميق له جذور تمتد في تجاربنا اللاواعية، مرتبط بذكريات قديمة جدًا لم نعد نتذكرها بوعي كامل. إنها دعوة من الماضي لاستعادة شعور فقده الزمن، استدعاء للطمأنينة التي كانت يومًا ما جزءًا من هويتنا. هذا الانجذاب يحمل في طياته معاني خفية عن احتياجاتنا العاطفية ورغبتنا الفطرية في البحث عن مصادر للراحة والدفء في الأوقات الصعبة. هل هي مجرد رائحة، أم رسالة من أعماقنا تخبرنا بشيء مهم عن أنفسنا؟",
-    "hashtags": "#علم_النفس #علم_النفس_الاجتماعي #تحليل_السلوك #رائحة_الورق_المحترق #شتاء #فضول #غموض #ذكريات #لا_وعي #بحث_عن_الذات #psychology #behavior #curiosity #winter #memories",
-    "search_terms": [
-      "cinematic winter night portrait",
-      "emotional person looking out window winter",
-      "cozy indoor winter scene person",
-      "nostalgic winter memory flashback",
-      "person reflecting on warmth winter",
-      "peaceful winter evening atmosphere"
-    ],
-    "duration": 15,
-    "title_theme": "purple",
-    "read_theme": "green",
-    "video_filter": "dark_blue",
-    "music": "a29.mp3",
-    "created_at": "2026-08-23T10:09:38.836537+00:00"
-  },
-  {
     "excel_number": 723,
     "title": "لماذا نشعر بالتوتر عندما نرى شخصاً يقف على حافة مكان مرتفع جداً؟",
     "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a28.mp3",
     "created_at": "2026-10-12T21:54:33.834138+00:00"
+  },
+  {
+    "excel_number": 1222,
+    "title": "الحقيقة خلف لطف الأخت المفاجئ بعد خلاف",
+    "read_text": "👇 السبب الحقيقي في الوصف👇",
+    "description": "هل لاحظت كيف يمكن أن يتحول لطف الأخت المفاجئ بعد خلاف إلى لغز محير؟ إن السلوك البشري معقد، خاصة عندما يتعلق الأمر بديناميكيات العائلة. يبدو أن الهدوء الذي يلي العاصفة بين الأشقاء يحمل في طياته دلالات أعمق مما نعتقد، ربما يخفي أسرارًا تتعلق بالذنب، أو الحاجة إلى التصالح، أو حتى استراتيجية غير واعية لتحقيق مكاسب مستقبلية. هل هذا اللطف مجرد تعبير عفوي عن الحب، أم هو قناع يخفي شعورًا بعدم الارتياح؟ عندما تظهر الأخت بلطف غير متوقع بعد مشادة، فإنها قد لا تكون مجرد محاولة لطي صفحة الماضي، بل قد تكون مؤشرًا على دوافع خفية تتعلق بتقديرها للوضع أو سعيها لتوازن العلاقة. ما الذي يدفعها لهذا التغيير المفاجئ؟ هل تدرك حقًا حجم التأثير الذي يحدثه سلوكها، أم أن الأمر برمته مجرد رد فعل طبيعي لتجنب المزيد من الصراع؟",
+    "hashtags": "#علم_النفس #علاقات_أسرية #سلوك_بشري #تحليل_شخصية #الأشقاء #ديناميكيات_العائلة #تصالح #مشاعر_خفية #تواصل_فعال #ذكاء_عاطفي #Psychology #FamilyDynamics #SiblingRivalry #BehaviorAnalysis #ConflictResolution",
+    "search_terms": [
+      "sister reconciliation emotional portrait cinematic",
+      "family conflict resolution gentle embrace cinematic",
+      "sibling tension relief tender moment portrait",
+      "understanding hidden emotions family cinematic",
+      "complex human behavior portrait cinematic",
+      "after argument reconciliation sisterly love cinematic"
+    ],
+    "duration": 15,
+    "title_theme": "purple",
+    "read_theme": "red",
+    "video_filter": "purple",
+    "music": "a29.mp3",
+    "created_at": "2026-10-12T22:40:26.137853+00:00"
   }
 ]
