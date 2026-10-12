@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 723,
-    "title": "لماذا نشعر بالتوتر عندما نرى شخصاً يقف على حافة مكان مرتفع جداً؟",
-    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يرتعش جسدك وتنقبض عضلاتك بمجرد رؤية شخص ما يقف على حافة منحدر شاهق، حتى لو كنت بعيدًا عنه؟ هذا الشعور المفاجئ بالقلق ليس مجرد صدفة، بل هو انعكاس لآلية نفسية عميقة تستجيب لخطر كامن. إنه يكشف عن ارتباط فطري بين إدراكنا للارتفاع وبين شعورنا الداخلي بالأمان. يتعلق الأمر بتفعيل غريزة البقاء لدينا، واستشعار الهشاشة المحتملة. يحاول عقلك حينها تحذيرك وتنبيهك لاحتمالية السقوط، حتى لو كان ذلك غير وارد. إنه مؤشر على وعي بيولوجي قديم بالتهديد. تتجلى هذه الظاهرة في إشارات عصبية تنتقل بسرعة، تحاكي ما قد نشعر به لو كنا نحن في هذا الموقف. إنه درس في التعاطف اللاواعي. فهل هذا التوتر الدائم يعكس خوفنا الحقيقي من الموت أم مجرد إشارة لتجنب المخاطر؟",
-    "hashtags": "#علم_النفس #توتر #خوف #قلق #سلوك_بشري #تحفيز #إدراك #فضول #تحليل_نفسي #psychology #anxiety #fear #human_behavior #curiosity #mindset",
-    "search_terms": [
-      "man looking down from height cinematic",
-      "woman on cliff edge thoughtful",
-      "fear of heights anxiety close up",
-      "person contemplating edge emotional portrait",
-      "danger awareness high place cinematic",
-      "vulnerability on precipice contemplation"
-    ],
-    "duration": 12,
-    "title_theme": "orange",
-    "read_theme": "red",
-    "video_filter": "gray",
-    "music": "a30.mp3",
-    "created_at": "2026-08-23T12:02:39.384934+00:00"
-  },
-  {
     "excel_number": 724,
     "title": "ماذا يحدث في دماغك عندما تقرر أخيرًا أن تستقيل من وظيفتك المريحة؟",
     "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a29.mp3",
     "created_at": "2026-10-12T22:40:26.137853+00:00"
+  },
+  {
+    "excel_number": 1223,
+    "title": "ماذا يعني أن ينسحب صديقك عندما تتفوق؟",
+    "read_text": "👇 التفسير الكامل في الوصف👇",
+    "description": "هل شعرت يومًا بأن شخصًا مقربًا منك يبتعد عندما تبدأ في تحقيق نجاحاتك؟ لماذا تثير إنجازاتنا أحيانًا ردود فعل سلبية لدى من نحب؟ هذا التراجع المفاجئ ليس مجرد صدفة، بل هو نافذة تكشف عن أعماق النفس البشرية وديناميكيات العلاقات المعقدة. قد يفسر الأمر شعورًا بالتهديد لدى الآخر، أو ربما ينم عن انعدام الثقة في القدرات الذاتية لديه. العلاقة التي كانت يومًا ما مصدر دعم تبدأ في التحول إلى ساحة صراع نفسي غير مرئي. قد يتجلى هذا الانسحاب في شكل تجنب، أو انتقادات لاذعة، أو حتى صمت مطبق. فهم هذه الظاهرة يتطلب الغوص في دوافع الآخرين، ومعرفة كيف تؤثر نجاحاتنا على تقديرهم لذاتهم. هل يخبرنا انسحابهم عنا أم عنهم؟",
+    "hashtags": "#علم_نفس #علاقات_سامة #تطوير_الذات #تحليل_سلوك #نصائح_علاقات #صداقة #نجاح #تحديات #فضول #غموض #psy_facts #relationship_goals #self_improvement #psychologytips #behavioral_analysis",
+    "search_terms": [
+      "man looking out window pensive",
+      "woman looking sad thoughtful",
+      "person walking alone in nature",
+      "friendship conflict emotional",
+      "supportive relationship tension",
+      "psychological struggle cinematic"
+    ],
+    "duration": 13,
+    "title_theme": "purple",
+    "read_theme": "pink",
+    "video_filter": "dark_blue",
+    "music": "a30.mp3",
+    "created_at": "2026-10-12T23:49:42.569601+00:00"
   }
 ]
