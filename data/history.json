@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 732,
-    "title": "الحقيقة وراء الأشخاص الذين يفضلون مشاهدة الأفلام بدون ترجمة رغم عدم فهمهم للغة",
-    "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
-    "description": "هل سبق لك أن تساءلت لماذا يصر البعض على مشاهدة الأفلام دون ترجمة، حتى لو كانوا لا يفهمون اللغة؟ ما الذي يدفعهم للاستمتاع بتجربة غير مكتملة من الناحية المعرفية؟ يبدو الأمر غريباً، أليس كذلك؟ لكن خلف هذا السلوك الغامض تكمن دوافع نفسية عميقة ومثيرة للاهتمام. ربما يتعلق الأمر برغبة خفية في الانغماس الكامل في عالم الفيلم، أو تحدٍ شخصي لإثبات القدرة على الفهم بطرق غير تقليدية. قد يكون الأمر أيضاً محاولة للهروب من الواقع عبر تجربة حسية مختلفة، حيث يتجاوز التركيز مجرد الكلمات إلى المشاعر والصور. هذه الظاهرة تكشف الكثير عن طريقة تفكيرنا وتأقلمنا مع المعلومات. فما هو السر الحقيقي وراء هذه المفارقة المدهشة في الاستمتاع بما لا نفهمه بالكامل؟",
-    "hashtags": "#علم_نفس #سلوك_بشري #تحليل_شخصية #علم_النفس_الاجتماعي #لغة_الجسد #تطوير_الذات #فضول #فهم_الآخرين #علم_النفس_العميق #relatable #psychologyfacts #behavioralscience #curiosity #mindtricks #filmfans",
-    "search_terms": [
-      "cinematic close up thoughtful person looking away",
-      "emotional portrait alone in thought",
-      "contemplative individual looking out window",
-      "person reflecting in soft natural light",
-      "introspective gaze subtle expression",
-      "solitary figure deep in thought"
-    ],
-    "duration": 13,
-    "title_theme": "pink",
-    "read_theme": "yellow",
-    "video_filter": "red",
-    "music": "a44.mp3",
-    "created_at": "2026-08-24T10:24:50.776730+00:00"
-  },
-  {
     "excel_number": 733,
     "title": "لماذا نشعر بالضيق عندما نرى شخصاً يمضغ العلكة بصوت مزعج ومستمر؟",
     "read_text": "👇 التفسير في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a39.mp3",
     "created_at": "2026-10-13T23:59:59.727501+00:00"
+  },
+  {
+    "excel_number": 1232,
+    "title": "الحقيقة خلف دفاع الأب عنك أمام الغرباء فقط",
+    "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
+    "description": "لماذا يقف الآباء أقوياء كالصخرة أمام غرباء العالم، بينما يتغيرون تمامًا في دوائرهم الخاصة؟ هل هذه حماية حقيقية أم مجرد واجهة نحملها جميعًا؟ يكشف هذا الفيديو عن الطبقات العميقة للدفاع الأبوي، تلك القوة الغامضة التي تتجلى حينما يرى الأب تهديدًا خارجيًا، بينما قد تتلاشى داخل جدران المنزل. سنغوص في سيكولوجية هذه الظاهرة، لنفهم الدافع وراء هذا الانقسام السلوكي. هل هو خوف على صورته أمام المجتمع، أم شعور عميق بالمسؤولية تجاه من يخصه؟ اكتشف الأسباب النفسية والنفسانية التي تشكل هذه الثنائية المربكة في سلوك الآباء. هل تعتقد أن هذا السلوك يخدم الأبناء أم يعيقهم على المدى الطويل؟",
+    "hashtags": "#علم_نفس #سلوك_الآباء #علاقات_أسرية #تحليل_نفسي #علم_النفس_الاجتماعي #حماية_الأسرة #دفاع_الأب #تربية_الأبناء #FamilyPsychology #Parenting #BehaviorAnalysis #PsychologyFacts #Fatherhood #SocialDynamics #ProtectingFamily",
+    "search_terms": [
+      "father protecting family emotional cinematic",
+      "man standing strong against unknown cinematic",
+      "parental defense instinct cinematic portrait",
+      "fatherhood resilience protective cinematic",
+      "emotional male portrait fatherhood cinematic",
+      "man facing external threat cinematic"
+    ],
+    "duration": 14,
+    "title_theme": "green",
+    "read_theme": "cyan",
+    "video_filter": "red",
+    "music": "a44.mp3",
+    "created_at": "2026-10-14T00:48:01.287872+00:00"
   }
 ]
