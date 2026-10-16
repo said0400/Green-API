@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 753,
-    "title": "لماذا نشعر بالتوتر عندما نرى شخصاً يكتب بسرعة جنونية على لوحة المفاتيح أمامنا؟",
-    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يتسلل إليك هذا الشعور بالضيق حين ترى أحدهم ينهال على لوحة المفاتيح بسرعة تفوق الخيال؟ إنه ليس مجرد انزعاج عابر، بل هو استجابة نفسية عميقة تتجاوز السطح.  هذا الإيقاع السريع يخلق ضغطًا خفيًا، وكأن سرعة الكتابة تكشف عن شيء جوهري في شخصية الكاتب أو في نواياه.  ما الذي تحاول هذه السرعة الهائلة إخفاءه أو الإفصاح عنه في آن واحد؟  ربما تعكس ثقة مفرطة، أو ربما رغبة في تجاوز القيود، أو حتى قلق دفين تجاه ما سيتم كتابته.  كل نقرة على المفتاح يمكن أن تكون رمزًا لآلاف الأفكار المتدفقة، وتفاعلك معها يكشف عن مخاوفك أو طموحاتك.  هل تحاول أن تقلد هذه السرعة أم تنفر منها؟  ما الذي تكشفه لك هذه الملاحظة عن نفسك؟",
-    "hashtags": "#علم_نفس_اجتماعي #سلوك_بشري #توتر_وقلق #تحليل_نفسي #علم_نفس_الكمبيوتر #تفاعل_اجتماعي #ضغط_نفسي #فضول #التعامل_مع_الآخرين #psychoanalysis #behavior #anxiety #psychology #socialdynamics #mindgames",
-    "search_terms": [
-      "intense typing stress",
-      "anxiety keyboard close up",
-      "frustrated writer fast typing",
-      "emotional person typing pressure",
-      "nervous fingers keyboard cinematic",
-      "psychological stress typing portrait"
-    ],
-    "duration": 15,
-    "title_theme": "orange",
-    "read_theme": "black",
-    "video_filter": "purple",
-    "music": "a70.mp3",
-    "created_at": "2026-08-26T12:19:51.776794+00:00"
-  },
-  {
     "excel_number": 754,
     "title": "ماذا يعني لو كان زوجك يرفض دائماً تناول الطعام الذي تطبخينه بحجة أنه ليس جائعاً؟",
     "read_text": "👇 السر وراء ذلك في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a69.mp3",
     "created_at": "2026-10-16T00:00:33.434585+00:00"
+  },
+  {
+    "excel_number": 1253,
+    "title": "السر وراء حبك للأفكار المستحيلة لا السهلة",
+    "read_text": "👇 التفسير في الوصف👇",
+    "description": "لماذا تجذبك دائمًا الأحلام الكبيرة والمسارات غير المألوفة، بينما تظل الحلول البسيطة والمباشرة باهتة في عينيك؟ قد يكون الأمر أعمق مما تظن، فهو ليس مجرد تفضيل عابر بل صدى لاحتياجات نفسية عميقة. غالبًا ما تبحث روحك عن تحدٍ يثبت قوتها، وعن مغامرة تثبت بها أنها قادرة على كسر القيود. هذه الرغبة الجامحة في المستحيل هي في الواقع دليل على طموح أصيل وشغف بالاكتشاف يتجاوز حدود المألوف. إنها ليست هروبًا من الواقع، بل سعي للارتقاء بالواقع نفسه، بخلق شيء فريد يترك بصمة. ربما يكمن السر في أن الأفكار المستحيلة تختبر قدرتنا على الإبداع وتدفعنا لتبني منظور أوسع للحياة، ما الذي يجعلك ترفض ببساطة السهل المتاح؟",
+    "hashtags": "#علم_النفس #التفكير_العميق #الاحلام_المستحيلة #تحفيز #تطوير_الذات #سلوك_البشر #فضول #الإبداع #Psychology #Mindset #ImpossibleDreams #Motivation #SelfImprovement #BehaviorAnalysis #Curiosity",
+    "search_terms": [
+      "cinematic emotional portrait determination",
+      "person dreaming big impossible goals",
+      "woman overcoming challenges cinematic",
+      "man thoughtful intense gaze cinematic",
+      "abstract concept breakthrough cinematic",
+      "journey towards unknown cinematic portrait"
+    ],
+    "duration": 13,
+    "title_theme": "yellow",
+    "read_theme": "purple",
+    "video_filter": "gray",
+    "music": "a70.mp3",
+    "created_at": "2026-10-16T01:45:55.680093+00:00"
   }
 ]
