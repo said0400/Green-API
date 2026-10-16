@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 756,
-    "title": "ماذا يحدث لعقلك عندما تكتشف أنك كنت مصاباً بمرض خطير وتم شفاؤك منه دون علمك؟",
-    "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
-    "description": "هل سبق لك أن شعرت بأن جزءًا منك قد تغير للأبد دون أن تعرف السبب؟ ماذا لو اكتشف عقلك فجأة أنه نجا من معركة شرسة لم تشعر بها قط؟ هذه ليست مجرد نظرية، بل هي رحلة عميقة لاستكشاف أغوار الوعي البشري وكيف يتعامل مع حقائق تتجاوز إدراكنا. يمثل هذا السيناريو تحولًا هائلاً في فهم الذات، حيث يعاد تشكيل كل شيء من منظور جديد تمامًا. إن الشفاء دون معرفة يتطلب تكيفًا نفسيًا هائلاً، وفهمًا لقوة العقل الخفية. هل يمكن للعقل أن يحتفظ بآثار صدمة لم يختبرها جسديًا؟ وكيف نعيش حياتنا بعد إدراك أننا كنا نحمل ثقلاً هائلاً دون أن نعلم؟ هذا الاكتشاف يثير تساؤلات وجودية عميقة عن طبيعة الواقع والشفاء. هل نحن حقًا من يتحكم في مصائرنا، أم أن هناك قوى تتجاوز فهمنا تدير الأمور؟",
-    "hashtags": "#علم_النفس #الشفاء_النفسي #الصحة_النفسية #التكيف #الوعي #تطوير_الذات #علوم_الدماغ #psycho_analysis #mental_health #healing #self_awareness #mind_power #psychologyfacts #brain_science #resilience",
-    "search_terms": [
-      "cinematic portrait emotional man thinking",
-      "thoughtful woman close up looking away",
-      "person reflecting deep emotion indoors",
-      "dramatic portrait introspection calm",
-      "intense gaze contemplative face",
-      "solitude thoughtful expression"
-    ],
-    "duration": 15,
-    "title_theme": "cyan",
-    "read_theme": "orange",
-    "video_filter": "black",
-    "music": "a3.mp3",
-    "created_at": "2026-08-26T19:28:02.038581+00:00"
-  },
-  {
     "excel_number": 757,
     "title": "التفسير المظلم لرغبتك في أن يتم طردك من الجامعة فقط لتثبت لهم خطأ نظامهم",
     "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a2.mp3",
     "created_at": "2026-10-16T15:36:35.376065+00:00"
+  },
+  {
+    "excel_number": 1256,
+    "title": "لماذا تنجذب لِما يحتاج إصلاحًا فيك وفي غيرك؟",
+    "read_text": "👇 المعنى الحقيقي في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تجد نفسك منجذبًا بشكل لا يقاوم للأشخاص أو المواقف التي تبدو وكأنها تحتاج إلى 'إصلاح'؟ هذا الانجذاب ليس صدفة، بل هو بصمة نفسية عميقة تحمل في طياتها مفتاح فهم أعمق لذواتنا. إنه انعكاس لرغباتنا الخفية، لمخاوفنا، وربما لمناطق لم تُشفَ بعد في دواخلنا. في كل مرة نرى فيها 'عيبًا' أو 'نقصًا' لدى الآخر، قد نكون في الواقع ننظر إلى مرآة تخبرنا عن شيء نحتاج لمعالجته داخلنا. هذا السلوك، وإن بدا مؤذيًا أحيانًا، هو فرصة ذهبية للنمو. إنه دعوة لاستكشاف تلك الأجزاء التي نخشى مواجهتها. ولكن، هل هذا الانجذاب هو طريق للشفاء أم مجرد فخ يديم دائرة الألم؟",
+    "hashtags": "#علم_النفس #تحليل_الشخصية #علاقات_معقدة #الجاذبية_النفسية #إصلاح_الذات #التفكير_العميق #فضول #ما_وراء_المظاهر #psychology #self_awareness #relationships #attraction #healing #behavioral_analysis #mindset",
+    "search_terms": [
+      "emotional portrait introspection",
+      "sadness empathy deep thinking",
+      "vulnerability human connection",
+      "healing inner conflict reflection",
+      "contemplative mood thoughtful gaze",
+      "complex emotions person looking away"
+    ],
+    "duration": 11,
+    "title_theme": "purple",
+    "read_theme": "orange",
+    "video_filter": "red",
+    "music": "a3.mp3",
+    "created_at": "2026-10-16T17:43:39.312998+00:00"
   }
 ]
