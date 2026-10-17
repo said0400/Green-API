@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 772,
-    "title": "الحقيقة وراء الأشخاص الذين يفضلون القراءة في الكتب الورقية القديمة ويرفضون الكتب الإلكترونية تماماً",
-    "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
-    "description": "هل شعرت يومًا بأن رائحة الورق القديم تحمل أسرارًا لا تفهمها العقول؟ ما الذي يدفع البعض للتعلق بالكتب الورقية البالية، رافضين لمس شاشة زجاجية لا تشبه عالمهم؟ إنها ليست مجرد تفضيلات عابرة، بل قد تكون نافذة على عمق نفسي معقد ومخاوف دفينة. هذا الانجذاب للكتب الورقية القديمة قد يكشف عن تعلق عميق بالحواس، ورغبة في استعادة زمن مضى، أو حتى آلية دفاعية ضد التغيير السريع الذي يمثله العالم الرقمي. هل هم باحثون عن الأمان في القديم، أم أنهم يخافون من فقدان شيء ثمين في العصر الحديث؟ ربما يمثل الكتاب الورقي لهم أثرًا ملموسًا ورفيقًا حميمًا، بينما الكتاب الإلكتروني يظل مجرد أداة باردة. هل هذا التمسك بالجذور يخبرنا عن طبيعة الشخصية الإنسانية بحد ذاتها؟",
-    "hashtags": "#علم_النفس #علم_النفس_الاجتماعي #تحليل_سلوك #العلاقات_الإنسانية #فضول #كتب_ورقية #كتب_إلكترونية #ادمان_القراءة #التفضيلات_الشخصية #psychology #behavioranalysis #oldbooks #booklover #readinghabits #mindset",
-    "search_terms": [
-      "man reading old book",
-      "woman lost in thought antique library",
-      "close up hands holding worn book pages",
-      "nostalgic person reading vintage novel",
-      "contemplative individual in dimly lit room with books",
-      "cozy atmosphere person reading paperback"
-    ],
-    "duration": 14,
-    "title_theme": "purple",
-    "read_theme": "pink",
-    "video_filter": "gray",
-    "music": "a29.mp3",
-    "created_at": "2026-08-28T21:01:20.016643+00:00"
-  },
-  {
     "excel_number": 773,
     "title": "لماذا نشعر بالارتباك عندما نرى شخصاً يبتسم بشكل مبالغ فيه طوال الوقت دون سبب منطقي؟",
     "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a28.mp3",
     "created_at": "2026-10-17T22:44:04.253934+00:00"
+  },
+  {
+    "excel_number": 1272,
+    "title": "السر وراء دفاعك عن من يجرحك",
+    "read_text": "👇 المعنى الحقيقي في الوصف👇",
+    "description": "لماذا نستمر في الدفاع عن الأشخاص الذين يؤذوننا باستمرار؟ هل هناك آلية نفسية خفية تقودنا لهذه السلوكيات المؤلمة؟ غالبًا ما نجد أنفسنا في دوامة لا نهائية من التبرير والمسامحة، حتى عندما تكون الأدلة واضحة أمام أعيننا. ما الذي يجعلنا نتمسك بعلاقات سامة رغم الألم الذي تسببه؟ السر يكمن في عمق احتياجاتنا النفسية غير الملباة. قد يكون الشعور بالذنب، أو الخوف من الوحدة، أو حتى الرغبة المكبوتة في القبول، كلها عوامل تلعب دورًا خفيًا. هذه الآليات تدفعنا للدفاع عن مؤذينا كأننا نحمي جزءًا منا. إنها محاولة يائسة للحفاظ على استقرار هش. هل يعقل أن يكون دفاعنا عنهم هو في الحقيقة دفاع عن أنفسنا؟",
+    "hashtags": "#علم_نفس #علاقات_سامة #تحليل_سلوك #نصائح_نفسية #علاقات_معقدة #اللا_وعي #التعلق_المرضي #حب_الذات #تقدير_الذات #مشاكل_نفسية #selfhelp #psychology #toxicrelationships #emotionalintelligence #behavioranalysis",
+    "search_terms": [
+      "emotional portrait vulnerability",
+      "sadness introspection close-up",
+      "contemplation human connection struggle",
+      "inner conflict thoughtful expression",
+      "resilience empathy cinematic",
+      "loneliness reflection intimate portrait"
+    ],
+    "duration": 11,
+    "title_theme": "cyan",
+    "read_theme": "purple",
+    "video_filter": "black",
+    "music": "a29.mp3",
+    "created_at": "2026-10-17T23:41:40.357707+00:00"
   }
 ]
