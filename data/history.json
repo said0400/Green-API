@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 763,
-    "title": "لماذا نشعر بالضيق عندما نرى شخصاً يتحدث بصوت عالٍ جداً في الهاتف داخل المواصلات؟",
-    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
-    "description": "هل سبق وتساءلت لماذا يشعرك صوت شخص عالٍ على الهاتف في مكان عام بضيق شديد؟ هذا الشعور المزعج ليس مجرد حساسية زائدة، بل هو صدى لشيء أعمق في دواخلنا. عندما يتعمد أحدهم كسر الحاجز النفسي للخصوصية الجماعية، فإنه يستفز غرائز قديمة لدينا. هذا السلوك اللاواعي يثير فينا إحساسًا بالتهديد، وكأن حدود عالمنا الخاص قد تم اختراقها. إنها ظاهرة تكشف عن أهمية المساحة الشخصية وقوانينها غير المكتوبة. كلما زاد علو الصوت، زادت حدة الانتهاك المتصور. هذا الارتداد العاطفي المفاجئ هو بمثابة جرس إنذار لعقولنا. كيف تفسر هذه الاستجابة الفورية في أوقات كهذه؟",
-    "hashtags": "#علم_نفس #سلوك_بشري #ضيق_المشاعر #المواصلات_العامة #فضول #تحليل_نفسي #psychologyfacts #peoplebehaviors #annoyance #socialnorms #publicspaces #innerthoughts #mindtricks #whyisitso #understanding",
-    "search_terms": [
-      "woman looking stressed on public transport",
-      "man frustrated in crowded space",
-      "close up of anxious face in city",
-      "thoughtful person in urban setting",
-      "overwhelmed individual on bus",
-      "sadness in public transit portrait"
-    ],
-    "duration": 15,
-    "title_theme": "orange",
-    "read_theme": "black",
-    "video_filter": "dark_green",
-    "music": "a16.mp3",
-    "created_at": "2026-08-27T21:20:44.292356+00:00"
-  },
-  {
     "excel_number": 764,
     "title": "ماذا يحدث في دماغك عندما تقرر أخيرًا أن تقطع علاقتك بأقاربك السامين للأبد وبلا رجعة؟",
     "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a15.mp3",
     "created_at": "2026-10-17T00:05:34.802414+00:00"
+  },
+  {
+    "excel_number": 1263,
+    "title": "لماذا يصعب عليك تصديق من يختارك بسهولة؟",
+    "read_text": "👇 الحقيقة كاملة في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تراودك الشكوك عندما يعبر أحدهم عن اهتمامه بك ببساطة ودون تعقيد؟ ما الذي يجعلنا نقف حذرين أمام الوضوح، ونبحث عن خفايا غير موجودة؟ إن اللاوعي ينسج خيوطًا معقدة تربط بين تجاربنا الماضية وتصوراتنا الحالية، مما يشكل حاجزًا غير مرئي أمام قبول الحب والتقدير المباشر. يبدو أن عقولنا مدربة على توقع الصعوبات، فتبحث عن دليل مادي على القيمة، وكأن الأسهل هو الأقل استحقاقًا. هذا الشعور بالتردد العميق قد يكون انعكاسًا لمخاوف دفينة، كخوف الرفض أو عدم الكفاءة. في أعماق النفس، تتجذر قناعات قديمة بأن ما نحصل عليه بسهولة لا يحمل قيمة حقيقية. هل يمكن أن نكون نحن السبب في تعقيد مساراتنا العاطفية، باحثين عن الدراما بدلًا من الراحة؟",
+    "hashtags": "#علم_نفس #علاقات #تطوير_الذات #تحليل_شخصية #ثقة_بالنفس #تفكير_إيجابي #مشاعر #سلوك_بشري #استشارات_نفسية #نصائح #psychology #relationships #selflove #mindset #behavior",
+    "search_terms": [
+      "woman thoughtful pensive looking away cinematic",
+      "man introspective alone quiet moment emotional",
+      "close up face doubt suspicion subtle expression",
+      "person hesitant uncertain avoiding eye contact",
+      "slow motion tears sadness vulnerability",
+      "silhouette walking away contemplating past memories"
+    ],
+    "duration": 15,
+    "title_theme": "red",
+    "read_theme": "black",
+    "video_filter": "purple",
+    "music": "a16.mp3",
+    "created_at": "2026-10-17T01:40:14.644687+00:00"
   }
 ]
