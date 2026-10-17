@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 764,
-    "title": "ماذا يحدث في دماغك عندما تقرر أخيرًا أن تقطع علاقتك بأقاربك السامين للأبد وبلا رجعة؟",
-    "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا تبدو معركة قطع العلاقات السامة مع الأهل وكأنها معركة ضد نفسك؟  إنها رحلة شاقة تكشف لنا طبقات عميقة من النفس البشرية لطالما أردنا تجاهلها.  يُحدث الدماغ البشري تحولًا دراميًا، أشبه بانفجار صغير، عندما يتخذ قرارًا صارمًا كهذا.  تتغير خريطة المخ العاطفية، وتُعاد هيكلة المسارات العصبية المتعلقة بالانتماء والولاء.  ستشعر بمزيج من الراحة الممزوجة بالذنب، والانفصال مصحوبًا بالوحدة.  هذه العملية ليست مجرد اختيار، بل هي إعادة تعريف للحدود الشخصية وبناء درع نفسي لحماية الروح.  المخ يبدأ بإعادة تقييم مفهوم الأمان، محاولًا إيجاد استقرار جديد بعيدًا عن مصادر الألم المزمن.  قد تواجه ضغوطًا داخلية وخارجية، لكن تذكر أنك تستثمر في سلامك الداخلي.  ما هي الآليات النفسية التي تمنعنا أحيانًا من اتخاذ مثل هذه القرارات المصيرية رغم إدراكنا لضررها؟",
-    "hashtags": "#علم_النفس #علاقات_سامة #صحة_نفسية #انفصال #حدود_شخصية #تنمية_بشرية #قوة_داخلية #سلام_داخلي #تحليل_سلوك #مشاعر_مختلطة #FamilyToxicity #NarcissisticAbuse #MentalHealth #SelfCare #BreakingFree",
-    "search_terms": [
-      "emotional portrait of person deep in thought",
-      "cinematic shot of someone looking out a window",
-      "close up of a person's face showing contemplation",
-      "solitude and inner conflict visualized",
-      "person overcoming emotional struggle",
-      "abstract representation of brain activity and change"
-    ],
-    "duration": 13,
-    "title_theme": "orange",
-    "read_theme": "black",
-    "video_filter": "dark_blue",
-    "music": "a17.mp3",
-    "created_at": "2026-08-27T23:15:49.204218+00:00"
-  },
-  {
     "excel_number": 765,
     "title": "التفسير النفسي لعدم قدرتك على رمي الأجهزة الكهربائية المعطلة وتخزينها في المنزل لسنوات",
     "read_text": "👇 التفسير في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a16.mp3",
     "created_at": "2026-10-17T01:40:14.644687+00:00"
+  },
+  {
+    "excel_number": 1264,
+    "title": "ما الذي يحدث عندما تتعود على الفوضى العاطفية؟",
+    "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
+    "description": "هل تعتقد أنك أصبحت أقوى بمقاومتك للفوضى العاطفية أم أنك أصبحت مجرد شخص لا يشعر؟ هل اعتيادك على الاضطراب العاطفي يجعلك أكثر قدرة على التعامل مع صعوبات الحياة أم أنه يطفئ داخلك شرارة الحياة؟ قد يبدو لك أن هذه القدرة على التحمل هي انتصار، لكن في الحقيقة، إنها قد تكون خديعة نفسية خطيرة. عندما تتعود الأذهان على فترات الغضب والخصام ثم تعود الأمور لطبيعتها، يصبح العقل مبرمجًا لتوقع هذا النمط. هذا الروتين المتقلب يخلق حالة من الترقب المستمر، مما يجعلك أقل حساسية للمشكلات الحقيقية وأكثر استعدادًا لقبول أي مستوى من عدم الاستقرار. هل فقدت القدرة على الشعور بالسلام الداخلي الحقيقي؟",
+    "hashtags": "#علم_النفس #فوضى_عاطفية #علاقات_سامة #تحليل_سلوك #صحة_نفسية #تطوير_الذات #إدمان_الدراما #نفسبسولوجيا #EmotionalChaos #PsychologyFacts #ToxicRelationships #SelfImprovement #Mindset #BehavioralAnalysis #InnerPeace",
+    "search_terms": [
+      "emotional turmoil cinematic",
+      "person struggling with inner conflict portrait",
+      "woman feeling overwhelmed by emotions close up",
+      "man lost in thought dramatic lighting",
+      "sadness and resilience cinematic portrait",
+      "anxiety and emotional distress close up"
+    ],
+    "duration": 12,
+    "title_theme": "yellow",
+    "read_theme": "purple",
+    "video_filter": "dark_green",
+    "music": "a17.mp3",
+    "created_at": "2026-10-17T13:18:01.225023+00:00"
   }
 ]
