@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 777,
-    "title": "التفسير المظلم لرغبتك في أن تفقد ذاكرتك تماماً لتبدأ حياة جديدة بشخصية مختلفة كلياً",
-    "read_text": "👇 الجزء الأهم موجود في الوصف👇",
-    "description": "هل تساءلت يومًا عن عمق هذا الهروب من الذات الذي يغريك؟ إنها ليست مجرد فكرة عابرة، بل قد تكون صرخة عميقة من الروح تبحث عن مخرج.  ما الذي يدفعك حقًا للتخلي عن كل ما أنت عليه، عن كل ذكرياتك، لتولد من جديد كشخص آخر تمامًا؟  يكشف هذا التحليل النفسي المظلم عن الأسباب الخفية لهذه الرغبة الملحة، تلك الظلال التي تتراقص في أعماق اللاوعي، متجسدة في حلم الانبعاث.  ربما تختبئ خلف تلك الأوهام البراقة عن حياة مثالية، أسرار لم تُحَل، أو آلام لم تُشفَ.  هل هذه الرغبة في التغيير جذري هي فعل شجاعة للتحرر، أم علامة على يأس أعمق؟  إنها دعوة للغوص في أغوار النفس، لاستكشاف ما يدفعنا للتخلي عن هويتنا الحالية بحثًا عن هوية أخرى.  لماذا نخشى حقًا مواجهة ماضينا لدرجة أننا نرغب في محوه بالكامل؟",
-    "hashtags": "#علم_النفس #الذاكرة #الهوية #بداية_جديدة #تغيير_الذات #الهروب_من_الواقع #تحليل_نفسي #اللاوعي #psychology #memoryloss #identitycrisis #newbeginning #selfhelp #darkpsychology #mindset",
-    "search_terms": [
-      "cinematic emotional portrait man thinking",
-      "cinematic emotional portrait woman reflecting",
-      "person lost in thought close up",
-      "melancholy solitude portrait",
-      "dreamy atmosphere reflection close up",
-      "introspective gaze cinematic portrait"
-    ],
-    "duration": 12,
-    "title_theme": "green",
-    "read_theme": "yellow",
-    "video_filter": "dark_blue",
-    "music": "a34.mp3",
-    "created_at": "2026-08-29T01:56:50.368593+00:00"
-  },
-  {
     "excel_number": 778,
     "title": "لماذا يصر والدك على أن تعيش معه في نفس المنزل حتى بعد زواجك وإنجابك للأطفال؟",
     "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a33.mp3",
     "created_at": "2026-10-18T16:58:56.551521+00:00"
+  },
+  {
+    "excel_number": 1277,
+    "title": "لماذا تشتاق لمن كان يتعبك أحيانًا؟",
+    "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تنجذب بقوة إلى الأشخاص الذين جلبوا لك الألم سابقًا؟ قد يبدو الأمر غير منطقي، لكن أعماق النفس البشرية تخفي أسرارًا أغرب مما نتخيل. هذا الارتباط الغريب ليس مجرد ضعف، بل قد يكون انعكاسًا لاحتياجات عاطفية عميقة وغير ملباة، أو ربما استجابة لأنماط سلوكية اعتدنا عليها لدرجة أصبحت جزءًا من هويتنا. قد نشعر بالأمان الغريب في مألوفية الألم، فهو أشبه بمسرحية نعرف نهايتها. ربما نبحث لا شعوريًا عن فرصة لتغيير الماضي أو لإثبات أنفسنا. هل هذه الرغبة في الشوق هي دعوة للتغيير أم مجرد فخ تستدرجنا إليه تجاربنا القديمة؟",
+    "hashtags": "#علم_نفس #علاقات #حب_مؤلم #جاذبية #سلوك_بشري #نصائح #تحفيز #فهم_الذات #مشاعر #العلاقات_المعقدة #psychology #relationships #toxicrelationships #selfawareness #emotionalintelligence",
+    "search_terms": [
+      "sad woman looking out window cinematic",
+      "pensive man portrait emotional",
+      "lonely person reflection thoughtful",
+      "woman crying softly close up",
+      "man staring into distance contemplative",
+      "overwhelmed person emotional struggle"
+    ],
+    "duration": 13,
+    "title_theme": "red",
+    "read_theme": "cyan",
+    "video_filter": "dark_green",
+    "music": "a34.mp3",
+    "created_at": "2026-10-18T18:23:03.127030+00:00"
   }
 ]
