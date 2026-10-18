@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 780,
-    "title": "الحقيقة النفسية للأشخاص الذين يكرهون ارتداء الملابس ذات الألوان الزاهية ويفضلون الألوان الداكنة دائماً",
-    "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا ينجذب البعض بشكل غريب إلى الظلام ويفرون من وهج الألوان الزاهية؟ ما هو السر الدفين وراء تفضيل الألوان الداكنة التي تبدو وكأنها تخفي خلفها عالمًا آخر؟ هذا الفيديو سيكشف لك لأول مرة الحقيقة النفسية العميقة التي تفسر هذا الاختيار اللوني المريب، فماذا تخفي تلك الألوان السوداء والرمادية والزرقاء القاتمة عن الشخص الذي يرتديها؟ هل هي مجرد أزياء أم انعكاس لرحلة داخلية معقدة؟ قد تجد أن اللون الداكن ليس مجرد اختيار، بل هو قصة تحكى بصمت عن الشخصية، عن المشاعر المكبوتة، وعن التجارب التي شكلت هذا الوجود. هل أنت مستعد لترى العالم من خلال عدسة الألوان التي اختارها الآخرون؟",
-    "hashtags": "#علم_نفس #شخصية #تحليل_سلوك #ألوان_داكنة #ملابس #فضول #غموض #نفسي #موضة #اختيارات #معاني_الألوان #Psychology #DarkColors #Personality #Behavior",
-    "search_terms": [
-      "moody portrait dark clothing cinematic",
-      "melancholy person dark colors emotional close up",
-      "introverted man dark fashion thoughtful gaze",
-      "woman choosing dark outfit introspection",
-      "contemplative face deep shadows subtle emotion",
-      "person in black thoughtful environment"
-    ],
-    "duration": 13,
-    "title_theme": "cyan",
-    "read_theme": "red",
-    "video_filter": "red",
-    "music": "a37.mp3",
-    "created_at": "2026-08-29T03:27:04.122752+00:00"
-  },
-  {
     "excel_number": 781,
     "title": "ماذا يعني أن أختك ترفض دائماً مساعدتك في الأعمال المنزلية بحجة أنها متعبة باستمرار؟",
     "read_text": "👇 التفسير في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a36.mp3",
     "created_at": "2026-10-18T21:07:19.426225+00:00"
+  },
+  {
+    "excel_number": 1280,
+    "title": "لماذا تنهار بعد انتهاء الموقف لا أثناءه؟",
+    "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تشعر بالانهيار بعد زوال الخطر بدلًا من الشعور به أثناء مروره؟ هناك سر دفين خلف هذا النمط السلوكي الذي يحير الكثيرين، ويعكس آليات نفسية عميقة معقدة. إنه ليس ضعفًا، بل هو طريقة دماغك في معالجة الأحداث بطريقة فريدة. غالبًا ما نحبس مشاعرنا وردود أفعالنا البيولوجية الشديدة في وقت الأزمة، مما يسمح لنا بالتركيز والبقاء على قيد الحياة. بمجرد أن يتلاشى التهديد، يتحرر كل هذا الضغط المكبوت دفعة واحدة، فيظهر الانهيار. هذا الاستجابة المتأخرة هي دليل على قوتك الداخلية، وليست ضعفًا. إنها ببساطة طريقة جسدك وعقلك في التعامل مع ما مررت به. ولكن، هل فهمك لهذه الآلية سيغير طريقتك في مواجهة التحديات المستقبلية؟",
+    "hashtags": "#علم_النفس #تحليل_سلوك #علم_النفس_الاجتماعي #تطوير_الذات #الصحة_النفسية #علاقات #تحفيز #mindset #psychology #selfimprovement #behavioranalysis #stressmanagement #resilience #mentalhealth #lifelessons",
+    "search_terms": [
+      "woman looking thoughtful cinematic",
+      "man looking stressed close up",
+      "overwhelmed emotion portrait",
+      "sadness relief transition",
+      "anxiety after event cinematic",
+      "deep contemplation woman portrait"
+    ],
+    "duration": 11,
+    "title_theme": "purple",
+    "read_theme": "black",
+    "video_filter": "black",
+    "music": "a37.mp3",
+    "created_at": "2026-10-18T22:01:30.864016+00:00"
   }
 ]
