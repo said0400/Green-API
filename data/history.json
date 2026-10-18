@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 773,
-    "title": "لماذا نشعر بالارتباك عندما نرى شخصاً يبتسم بشكل مبالغ فيه طوال الوقت دون سبب منطقي؟",
-    "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
-    "description": "هل لاحظت يومًا كيف أن الابتسامة المبالغ فيها دون سبب مقنع تثير في نفسك شعورًا غريبًا بالريبة؟ ما الذي يجعلنا نتوقف عن تصديق شخص دائم الابتسام، حتى لو بدا سعيدًا؟ غالبًا ما يخفي وراء هذا القناع الكثير مما لا نراه. إنها ليست مجرد ابتسامة، بل قد تكون جدارًا صامتًا يعكس صراعًا داخليًا عميقًا. تساؤلات تدور في أذهاننا: هل هي سعادة حقيقية أم مجرد تزييف للمشاعر؟ هل هذا الشخص يحاول إقناع نفسه قبل إقناع الآخرين؟ الابتسامة المستمرة قد تكون علامة على القلق الخفي أو محاولة للتكيف مع ضغوط هائلة. إنها طريقة للهروب من مشاعر أخرى قد تكون مؤلمة. ما السر وراء هذا التصرف الذي يبدو غريبًا لكنه شائع؟ متى تبدأ الابتسامة المفرطة في أن تعني العكس تمامًا؟",
-    "hashtags": "#علم_النفس #سلوك_بشري #تحليل_الشخصية #علاقات #الابتسامة #مشاعر #تطوير_الذات #فضول #غموض #إيجابية_زائفة #psychology #behavior #social_dynamics #human_behavior #emotions",
-    "search_terms": [
-      "cinematic portrait of a thoughtful person looking away",
-      "emotional close-up of a person with a subtle, ambiguous expression",
-      "person looking out a window with pensive mood",
-      "intimate portrait of someone experiencing inner conflict",
-      "man or woman contemplating deeply, cinematic lighting",
-      "subtle facial expressions, emotional connection, shallow depth of field"
-    ],
-    "duration": 12,
-    "title_theme": "green",
-    "read_theme": "cyan",
-    "video_filter": "dark_blue",
-    "music": "a30.mp3",
-    "created_at": "2026-08-28T21:32:57.968652+00:00"
-  },
-  {
     "excel_number": 774,
     "title": "ماذا يعني لو كان زوجك يرفض دائماً مشاركتك في اتخاذ القرارات المصيرية المتعلقة بمستقبل أبنائكما؟",
     "read_text": "👇 التفسير النفسي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a29.mp3",
     "created_at": "2026-10-17T23:41:40.357707+00:00"
+  },
+  {
+    "excel_number": 1273,
+    "title": "لماذا تخاف أن يراك أحد وأنت بحاجة؟",
+    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
+    "description": "هل سبق لك أن شعرت بقبضة الخوف تلتف حولك حين تفكر في طلب المساعدة، كأن وجود حاجتك سيُفقدك قيمتك؟ هذا الشعور ليس وليد الصدفة، بل هو صدى عميق لاحتياجاتنا النفسية المكبوتة. يكمن السر في الطريقة التي برمجنا بها أنفسنا لتفسير الضعف، فنربطه بالرفض أو بالانتقاص من الذات. إنها معركة خفية تدور في أروقة اللاوعي، حيث يتصارع خوفنا من أن نُرى بحاجتنا مع رغبتنا الدفينة في الانتماء والقبول. هذا الفيديو سيفتح لك نافذة على هذا العالم الداخلي المعقد، ويكشف الستار عن الأسباب الجذرية لهذه المخاوف التي تمنعنا من طلب الدعم. ستفهم لماذا قد يكون تقديم يد العون هو أقوى تعبير عن الثقة بالنفس، وكيف أن إظهار الحاجة لا يعني الضعف بل هو خطوة شجاعة نحو النمو. ألم يحن الوقت لتغيير نظرتك لهذا الشعور؟ 🤔",
+    "hashtags": "#علم_النفس #التطوير_الذاتي #الخوف_من_الحاجة #طلب_المساعدة #الثقة_بالنفس #نصائح_نفسية #تحليل_سلوك #القبول #العلاقات_الإنسانية #النمو_الشخصي #SelfEsteem #PsychologyFacts #Vulnerability #MentalHealth #AskingForHelp",
+    "search_terms": [
+      "vulnerable person looking away",
+      "sad person looking out window",
+      "lonely person sitting alone",
+      "thoughtful person in natural light",
+      "person feeling anxious",
+      "person hiding face"
+    ],
+    "duration": 14,
+    "title_theme": "green",
+    "read_theme": "pink",
+    "video_filter": "dark_green",
+    "music": "a30.mp3",
+    "created_at": "2026-10-18T01:36:34.096968+00:00"
   }
 ]
