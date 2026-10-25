@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 849,
-    "title": "السر الذي يجعلك تتجنب المشي في الشوارع المظلمة رغم أنك تعيش في حي آمن جداً ومحروس",
-    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
-    "description": "هل سبق وتساءلت لماذا تتجنب أحيانًا الشوارع المظلمة حتى في أكثر الأحياء أمانًا؟ يبدو الأمر غير منطقي، أليس كذلك؟ هناك سر خفي دفين في أعماق عقلك الباطن يوجه قراراتك دون وعي منك، شعور خافت يهمس بتحذير مبهم. هذا الشعور ليس وليد الخيال، بل هو استجابة نفسية معقدة تتشكل عبر تجارب قديمة أو معلومات متوارثة. يتعلق الأمر بكيفية معالجة دماغك للإشارات البيئية، محاولاً توقع المخاطر حتى في غيابها الواضح. إنه صدى لتاريخ البشرية الطويل مع الخوف من المجهول والظلام. هل أنت حقًا متحكم في مخاوفك، أم أنها تتحكم فيك؟",
-    "hashtags": "#علم_نفس #خوف #سلوك_بشري #عقل_باطن #تحليل_نفسي #قلق #تصرفات_غير_واعية #مخاوف #psychology #human_behavior #subconscious #fear #anxiety #darkness #instinct",
-    "search_terms": [
-      "cinematic emotional portrait dark street",
-      "psychological fear subtle anxiety cinematic",
-      "person walking alone quiet street night",
-      "subconscious mind inner thoughts cinematic",
-      "woman walking cautiously evening city",
-      "man looking thoughtful street light"
-    ],
-    "duration": 13,
-    "title_theme": "red",
-    "read_theme": "pink",
-    "video_filter": "gray",
-    "music": "a66.mp3",
-    "created_at": "2026-09-05T13:04:49.727436+00:00"
-  },
-  {
     "excel_number": 850,
     "title": "ماذا يخبرك عقلك عندما تشعر برغبة في القفز من شرفة منزلك العالية لترى كيف ستسقط",
     "read_text": "👇 السر وراء ذلك في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a65.mp3",
     "created_at": "2026-10-25T22:51:23.621328+00:00"
+  },
+  {
+    "excel_number": 1349,
+    "title": "لماذا يفضح صوتك ما تخفيه كلماتك؟",
+    "read_text": "👇 التفسير في الوصف👇",
+    "description": "هل تساءلت يومًا كيف يمكن لصوتك أن يكشف أسرارًا لا تريد البوح بها؟ قد تبدو الكلمات مجرد وسيلة للتواصل، لكنها تحمل في طياتها طبقات عميقة من المشاعر والدوافع الخفية. الصوت ليس مجرد نبرة أو تردد، بل هو مرآة صادقة لما يجول في النفس البشرية.  هذا الفيديو سيكشف لك كيف تتحول نبرة صوتك إلى بصمة نفسية فريدة.  ستدرك كيف أن التغييرات الطفيفة في طبقة صوتك أو سرعة كلامك يمكن أن تكشف عن قلقك، ثقتك، أو حتى خوفك.  الأمر يتجاوز ما تقوله ليصل إلى كيف تقوله.  تخيل أن كل كلمة تنطق بها هي رسالة مشفرة تفضح ما تحاول إخفاءه.  هل أنت مستعد لفهم لغة جسدك الصوتية؟",
+    "hashtags": "#علم_النفس #لغة_الجسد #تطوير_الذات #تحليل_السلوك #التواصل #علم_النفس_السلوكي #الثقة_بالنفس #الكلمات_والصوت #فهم_الناس #psychology #body_language #self_improvement #communication #behavioral_analysis #voice_analysis",
+    "search_terms": [
+      "cinematic portrait emotion introspection",
+      "thoughtful expression subtle feeling pensive",
+      "vulnerable moment emotional connection deep thought",
+      "human face introspection internal struggle",
+      "subtle expression emotional depth quiet contemplation",
+      "close up human emotion thoughtful gaze"
+    ],
+    "duration": 11,
+    "title_theme": "yellow",
+    "read_theme": "cyan",
+    "video_filter": "black",
+    "music": "a66.mp3",
+    "created_at": "2026-10-25T23:42:39.918081+00:00"
   }
 ]
