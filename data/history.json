@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 840,
-    "title": "الحقيقة النفسية للأشخاص الذين يكرهون السفر بالطائرة ويفضلون السفر بالقطار رغم طول المسافة والوقت الضائع",
-    "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
-    "description": "هل تعلم أن خوفك من الطائرات قد يخفي حقائق أعمق عن شخصيتك؟  الكثيرون يفضلون القطار رغم مسافاته الطويلة، فما السر وراء هذا الاختيار اللاواعي؟  يكشف هذا الفيديو عن الأبعاد النفسية المخفية التي تدفع البعض نحو الأرض بينما ترتفع أخرى للسماء.  قد يكون الأمر يتعلق بالشعور بالأمان، أو الحاجة للتحكم، أو حتى ذكريات طفولة دفينة.  البشر كائنات معقدة، و تفضيلاتنا ليست عشوائية بل غالبًا ما تعكس مخاوفنا العميقة ورغباتنا المكبوتة.  إن إدراك هذه الدوافع النفسية يساعدنا على فهم أنفسنا والآخرين بشكل أفضل.  هل تفضل الأمان الثابت أم المغامرة المجهولة؟",
-    "hashtags": "#علم_نفس #سفر #خوف_الطيران #قطار #تحليل_شخصية #عقلية_المسافر #psychologyfacts #travel #fearofflying #trains #personality #mindset #tiktoktravel #shorts #reels",
-    "search_terms": [
-      "person looking out train window thoughtful cinematic",
-      "anxious person contemplating travel cinematic portrait",
-      "woman feeling safe on train journey emotional",
-      "man experiencing fear of flying abstract cinematic",
-      "traveler choosing train over plane reflective portrait",
-      "journey of self-discovery train travel emotional cinematic"
-    ],
-    "duration": 11,
-    "title_theme": "cyan",
-    "read_theme": "purple",
-    "video_filter": "purple",
-    "music": "a52.mp3",
-    "created_at": "2026-09-04T13:49:56.556007+00:00"
-  },
-  {
     "excel_number": 841,
     "title": "ماذا يعني أن أختك ترفض دائماً ارتداء الفساتين وتفضل الملابس الرجالية الفضفاضة في كل المناسبات العائلية؟",
     "read_text": "👇 الجزء الأهم موجود في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a51.mp3",
     "created_at": "2026-10-24T23:54:24.295865+00:00"
+  },
+  {
+    "excel_number": 1340,
+    "title": "الحقيقة خلف الشخص الذي يضحك قبل كل جملة",
+    "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
+    "description": "هل لاحظت يومًا كيف يبدأ البعض جملهم بضحكة متكلفة؟ ما السر الذي تخفيه هذه الظاهرة النفسية الغريبة؟  تبدو كبادرة ودية، لكنها قد تخفي تحت سطحها طبقات معقدة من المشاعر والدوافع الخفية.  هل هي مجرد عادة اكتسبوها، أم وسيلة للتأقلم مع قلق داخلي عميق؟  ربما يستخدمونها للتخفيف من وطأة التوتر قبل مواجهة موقف يتطلب ثقة، أو حتى كقناع لإخفاء شعور بعدم الأمان.  قد تكون محاولة للسيطرة على الموقف أو لترك انطباع معين لدى الآخرين.  إنها طريقة غير لفظية للتعبير عن حالة نفسية معقدة، تتجاوز مجرد الفرح الظاهري.  ماذا يمكن أن تكشف لنا هذه الضحكة المسبقة عن الشخص حقًا؟",
+    "hashtags": "#علم_نفس #تحليل_سلوك #سلوك_بشري #لغة_الجسد #علاقات #تطوير_الذات #فضول #صحة_نفسية #نصائح #حياة #psychology #behavior #selfhelp #curiosity #lifetips",
+    "search_terms": [
+      "man laughing nervously portrait cinematic",
+      "woman forced smile close up emotional",
+      "person hiding sadness behind smile cinematic",
+      "anxiety behind happy face portrait",
+      "internal struggle facade cinematic",
+      "vulnerability behind laughter close up"
+    ],
+    "duration": 13,
+    "title_theme": "red",
+    "read_theme": "green",
+    "video_filter": "red",
+    "music": "a52.mp3",
+    "created_at": "2026-10-25T01:49:14.852406+00:00"
   }
 ]
