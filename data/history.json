@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 863,
-    "title": "لماذا نشعر بالارتباك عندما نرى شخصاً يرتدي ملابس غير متناسقة الألوان بشكل مبالغ فيه ومضحك جداً؟",
-    "read_text": "👇 التفسير الكامل في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يسبب لك منظر شخص بملابس مبالغ في تناقض ألوانها شعورًا غريبًا بالارتباك؟ إنها ليست مجرد عين ترى ما لا تألف، بل هي إشارة أعمق يرسلها عقلك الباطن. هذا الارتباك المفاجئ يكشف عن صراع داخلي بين ما نتوقعه من العالم الخارجي وما تقدمه لنا التجربة الحسية. غالبًا ما تكون الألوان المتنافرة، حتى لو كانت بشكل مضحك، بمثابة جرس إنذار لمستقبل غير معروف أو سلوك غير متوقع، مما يثير قلقًا لا واعيًا. هل نحن فقط نرفض ما هو خارج عن المألوف، أم أن هناك تفسيرًا نفسيًا أعمق لطريقة تفاعلنا مع التنافر البصري؟ إنها دعوة للتفكير في كيفية بناء أدمغتنا للواقع وإدراكنا للجمال والانسجام.",
-    "hashtags": "#علم_نفس #علم_نفس_اجتماعي #سلوك_بشري #إدراك #تنافر_لوني #حواس #عقل_باطن #تحليل_سلوك #فضول #فهم_النفس #psychology #perception #behavior #curiosity #colors",
-    "search_terms": [
-      "confused person cinematic",
-      "emotional portrait anxiety",
-      "internal conflict visual metaphor",
-      "unexpected encounter street",
-      "sensory overload abstract",
-      "psychological distress close up"
-    ],
-    "duration": 14,
-    "title_theme": "black",
-    "read_theme": "purple",
-    "video_filter": "red",
-    "music": "a16.mp3",
-    "created_at": "2026-09-06T19:37:35.909171+00:00"
-  },
-  {
     "excel_number": 864,
     "title": "ماذا يحدث في دماغك عندما تقرر أخيرًا أن تتبرع بكل ثروتك للفقراء وتعيش حياة الزهد والبساطة؟",
     "read_text": "👇 المعنى الحقيقي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a15.mp3",
     "created_at": "2026-10-27T19:01:14.389355+00:00"
+  },
+  {
+    "excel_number": 1363,
+    "title": "لماذا تشتاق لأماكن لم تكن تخصك؟",
+    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
+    "description": "هل سبق وشعرت بحنين عميق لأماكن لم تطأها قدماك من قبل؟  هذا الشعور الغريب يراود الكثيرين، حيث ترتبط أرواحنا بذكريات خفية قد لا ندرك مصدرها.  لماذا ننجذب إلى طقوس غريبة أو أماكن لم نختبرها، وكأن جزءًا منا كان يعيش هناك؟  هذه الظواهر النفسية تشير إلى طبقات أعمق من وعينا، مستوحاة ربما من تجارب سابقة لأجدادنا أو من الطاقة الكونية.  إنها ليست مجرد خيالات، بل استجابات روحية لأماكن تحمل بصمة وجودية.  قد يكون هذا الشوق دعوة لاكتشاف هويات متعددة تختبئ في أعماقنا.  فكيف تفسر رغبتك الجامحة لزيارة مدينة لم تعرفها يومًا؟",
+    "hashtags": "#علم_نفس #حنين #ذكريات_خفية #طاقة_روحية #فضول #تأمل #اكتشاف_الذات #تجارب_سابقة #الوعي_الجمعي #تحليل_نفسي #psychoanalysis #memories #spirituality #curiosity #selfdiscovery",
+    "search_terms": [
+      "cinematic emotional portrait longing",
+      "nostalgic longing for unknown places",
+      "person gazing at distant landscape cinematic",
+      "dreamy contemplative mood portrait",
+      "abstract feeling of connection to place",
+      "soulful gaze looking into distance"
+    ],
+    "duration": 11,
+    "title_theme": "cyan",
+    "read_theme": "orange",
+    "video_filter": "dark_blue",
+    "music": "a16.mp3",
+    "created_at": "2026-10-27T20:19:30.268754+00:00"
   }
 ]
