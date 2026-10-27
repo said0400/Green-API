@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 858,
-    "title": "لماذا يصر والدك على أن تشاركه في إصلاح الأجهزة الكهربائية المعطلة رغم خطورتها وعدم خبرتك بها",
-    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
-    "description": "هل شعرت يومًا بالضغط النفسي الشديد لمجرد الاقتراب من قطعة كهربائية معطلة؟ لماذا يجد والدك إصرارًا غريبًا على إدخالك في عالم إصلاح الأجهزة الخطرة، بالرغم من غياب خبرتك الواضحة؟ قد يكون الأمر أعمق مما تظن، فهو ليس مجرد حب للعبث بالأدوات، بل ربما هو صدى لرغبة دفينة في التواصل أو نقل إرث غير واعٍ. هل يبحث عن طريقة للتأثير فيك أو لشعورك بالمسؤولية تجاهه؟ ربما يرى فيك امتدادًا لقدراته التي يخشى فقدانها، أو محاولة يائسة لتعليمك دروسًا عن الحياة لا يمكن إيجادها في الكتب. هذا الإصرار قد يكشف الكثير عن علاقته بك، وعن مخاوفه الشخصية، وعن أسلوبه الفريد في التعبير عن الحب والقلق. إنها ليست مجرد مشكلة تقنية، بل قصة أعمق عن الروابط الأسرية. كيف يمكن تفسير هذا السلوك الغامض حقًا؟",
-    "hashtags": "#علم_نفس #علاقات_أسرية #سلوك_بشري #فضول #تحليل_الشخصية #Parenting #FamilyDynamics #PsychologyFacts #BehaviorAnalysis #HiddenMeaning #Communication #LifeLessons #EmotionalConnection #ParentalLove #Mystery",
-    "search_terms": [
-      "father teaching son diy repair",
-      "man struggling with broken appliance",
-      "emotional portrait adult child helping parent",
-      "anxiety over dangerous task",
-      "intergenerational connection repair workshop",
-      "parental pressure responsibility diy"
-    ],
-    "duration": 12,
-    "title_theme": "purple",
-    "read_theme": "pink",
-    "video_filter": "red",
-    "music": "a5.mp3",
-    "created_at": "2026-09-06T01:23:12.767221+00:00"
-  },
-  {
     "excel_number": 859,
     "title": "الإشارة التي تدل على أن صديقك يتمنى أن تفشل في دراستك ليكون هو الأنجح في الشلة",
     "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a4.mp3",
     "created_at": "2026-10-27T00:08:08.291946+00:00"
+  },
+  {
+    "excel_number": 1358,
+    "title": "ما الذي يحدث لعقلك عندما يخذلك حدسك؟",
+    "read_text": "👇 التفسير النفسي في الوصف👇",
+    "description": "هل سبق وشعرت بأن شيئًا ما خاطئ، لكن عقلك أخبرك بالعكس ثم تأكد لك أن حدسك كان على حق؟ لماذا يتجاهل أحيانًا أعمق مشاعرنا وأكثرها بديهية؟ هذا التناقض الداخلي يخفي أسرارًا مدهشة حول آلية اتخاذ القرار لدينا. عندما يخوننا حدسنا، فإننا ندخل في منطقة رمادية بين ما نشعر به وما نفكر فيه. يبدأ العقل الواعي بتبرير القرارات أو المواقف التي تتناقض مع إحساسنا الداخلي بالخطر أو الصواب. قد يكون ذلك نتيجة للخوف، أو الرغبة في إرضاء الآخرين، أو حتى محاولة منطقنة المواقف المعقدة. كلما تجاهلنا هذه الرسائل الخفية، كلما أضعنا جزءًا من قدرتنا على فهم أنفسنا والعالم من حولنا. لكن هل يمكننا استعادة الثقة بحدسنا مرة أخرى؟",
+    "hashtags": "#علم_النفس #الحدس #اتخاذ_القرار #العقل_الباطن #تحليل_سلوك #فضول #تطوير_الذات #تفكير_عميق #علم_نفس_اجتماعي #نصائح #حياة #مشاعر #Intuition #Psychology #Mindset",
+    "search_terms": [
+      "mindful reflection cinematic",
+      "internal conflict emotional portrait",
+      "intuition doubt thoughtful gaze",
+      "woman thinking deeply close up",
+      "man lost in thought serene",
+      "contemplative mood soft lighting"
+    ],
+    "duration": 13,
+    "title_theme": "cyan",
+    "read_theme": "black",
+    "video_filter": "dark_blue",
+    "music": "a5.mp3",
+    "created_at": "2026-10-27T01:02:19.501444+00:00"
   }
 ]
