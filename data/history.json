@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 859,
-    "title": "الإشارة التي تدل على أن صديقك يتمنى أن تفشل في دراستك ليكون هو الأنجح في الشلة",
-    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
-    "description": "هل سبق لك أن شعرت بأن أقرب أصدقائك يتمنى لك الفشل لسبب خفي؟ قد تبدو هذه الفكرة صادمة، لكن أحيانًا تكون المنافسة المستترة بين الأصدقاء أقوى مما نظن، خاصة عندما يتعلق الأمر بالنجاح الأكاديمي. لماذا قد يرغب شخص قريب منك في أن تتعثر في مسيرتك الدراسية ليبرز هو؟ السر يكمن في طبيعة العلاقات الاجتماعية المعقدة، حيث تلعب الغيرة الخفية دورًا لا يُستهان به أبدًا. يمتزج الشعور بالإعجاب بالإحساس بالتهديد، مما قد يدفع البعض إلى سلوكيات غير واعية. إن فهم هذه الإشارات الدقيقة يمكن أن يحميك ويساعدك على تقييم علاقاتك بشكل أفضل. متى أدركت هذه الإشارة لأول مرة؟ 🤔",
-    "hashtags": "#علم_النفس #العلاقات_الاجتماعية #الصداقة #النجاح #الفشل #علم_نفس_اجتماعي #تحليل_شخصيات #الغيرة #المنافسة #تطوير_الذات #نصائح_دراسة #psychology #friendship #toxicrelationships #socialdynamics",
-    "search_terms": [
-      "sad young man studying alone cinematic",
-      "frustrated student feeling pressure cinematic",
-      "doubtful glance person cinematic portrait",
-      "lonely student feeling isolated cinematic",
-      "anxious student worried about grades cinematic",
-      "person looking worried in classroom cinematic"
-    ],
-    "duration": 15,
-    "title_theme": "pink",
-    "read_theme": "yellow",
-    "video_filter": "black",
-    "music": "a10.mp3",
-    "created_at": "2026-09-06T13:12:58.529717+00:00"
-  },
-  {
     "excel_number": 860,
     "title": "الحقيقة النفسية للأشخاص الذين يكرهون تناول اللحوم ويفضلون الأكل النباتي فقط بسبب شفقتهم على الحيوانات",
     "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a5.mp3",
     "created_at": "2026-10-27T01:02:19.501444+00:00"
+  },
+  {
+    "excel_number": 1359,
+    "title": "الحقيقة النفسية خلف شعورك أن هناك شيئًا ناقصًا دائمًا",
+    "read_text": "👇 الحقيقة كاملة في الوصف👇",
+    "description": "هل تشعر أحيانًا بأن هناك فراغًا لا يمكن ملؤه، كأن شيئًا جوهريًا ينقصك رغم كل ما تملك؟  هذا الإحساس المتسلل يراود الكثيرين، ويتركهم في حيرة دائمة حول مصدر هذا النقص الروحي أو النفسي.  ما سر هذه الظاهرة التي تجعل السعادة تبدو هشّة ومؤقتة؟  سنغوص اليوم في أعماق النفس البشرية لنكشف اللثام عن السبب الحقيقي لهذا الشعور بالخواء المستمر.  قد يتعلق الأمر بتوقعاتنا المبالغ فيها، أو بالتركيز على ما لا نملكه بدلًا من تقدير ما هو بين أيدينا.  ربما تكون مخاوفنا الداخلية هي التي ترسم لنا هذه الصورة القاتمة، أو ربما هي رحلة بحث لا تنتهي عن معنى أعمق للحياة.  إنه صراع داخلي يتطلب فهمًا عميقًا ودقيقًا لآليات العقل الباطن.  هل ما تشعر به هو مجرد وهم، أم هو نداء فطري لاكتشاف ذواتنا بشكل أصدق؟",
+    "hashtags": "#علم_نفس #فراغ_روحي #نقص_داخلي #بحث_عن_الذات #تحليل_نفسي #الشعور_بالنقص #علم_النفس_العميق #life_coaching #self_improvement #inner_peace #psychology #emotional_intelligence #mindfulness #personal_growth #meaning_of_life",
+    "search_terms": [
+      "melancholy person looking out window",
+      "thoughtful woman in nature",
+      "man contemplating in dim light",
+      "woman feeling lost and searching",
+      "introspective gaze outdoor",
+      "lonely person in urban setting cinematic"
+    ],
+    "duration": 13,
+    "title_theme": "green",
+    "read_theme": "pink",
+    "video_filter": "purple",
+    "music": "a10.mp3",
+    "created_at": "2026-10-27T02:30:17.177313+00:00"
   }
 ]
