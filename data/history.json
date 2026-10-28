@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 875,
-    "title": "السر الذي يجعلك تستمتع بجمع الأكواب الزجاجية الملونة رغم أنك لا تستخدمها في الشرب على الإطلاق",
-    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
-    "description": "لماذا يمتلك البعض شغفًا بجمع الأكواب الزجاجية الملونة التي لا تُستخدم يوميًا؟ هل هو مجرد هوس بالمقتنيات أم أن هناك سرًا أعمق في دواخلنا؟ اكتشف لماذا هذا الفعل يبدو غير منطقي للبعض ولكنه يمثل سعادة غامرة لآخرين. قد يكون الأمر مرتبطًا ببحث فطري عن الجمال البصري، حيث تلعب الألوان والإضاءة دورًا نفسيًا هامًا في حياتنا. ربما يعكس هذا الاهتمام رغبة لا واعية في إضافة لمسة من البهجة والفن إلى بيئتنا، حتى لو كانت هذه الأكواب مجرد قطع ديكور. إنه إشباع لحاسة البصر وإيجاد للراحة في جمال الأشياء. فهل أنت ممن يجدون السعادة في الأشياء التي لا منطق ظاهر لها؟",
-    "hashtags": "#علم_النفس #علم_النفس_الاجتماعي #الشغف #الهوايات #علم_السلوك #تحفيز #تطوير_الذات #جماليات #الألوان #Psychology #BehavioralEconomics #Mindset #SelfImprovement #Collection #ArtTherapy",
-    "search_terms": [
-      "emotional portrait glass collection",
-      "cinematic close-up colorful glass",
-      "person admiring glass art",
-      "aesthetic glass display",
-      "mindful appreciation of objects",
-      "vibrant glass colors light"
-    ],
-    "duration": 14,
-    "title_theme": "purple",
-    "read_theme": "orange",
-    "video_filter": "red",
-    "music": "a32.mp3",
-    "created_at": "2026-09-07T22:22:32.613608+00:00"
-  },
-  {
     "excel_number": 876,
     "title": "ماذا يحدث لعقلك عندما تكتشف أنك كنت تتحدث مع شبح في منزلك لسنوات وظننته أحد أفراد عائلتك",
     "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a31.mp3",
     "created_at": "2026-10-28T21:55:55.558077+00:00"
+  },
+  {
+    "excel_number": 1375,
+    "title": "ماذا يعني أن تكره المفاجآت السعيدة أيضًا؟",
+    "read_text": "👇 الحقيقة كاملة في الوصف👇",
+    "description": "هل سبق لك أن شعرت بانقباض غريب حتى عندما تأتيك أخبار سارة؟ قد يبدو الأمر غير منطقي، لكن هذا الشعور يخفي وراءه شيئًا أعمق مما تظن. يكمن السر في آليات نفسية معقدة تربط توقعاتنا بالواقع، فماذا يحدث حين لا تتطابق؟  إن كره المفاجآت السعيدة ليس مجرد سلوك غريب، بل هو علامة على وجود صراعات داخلية ربما لم تدركها بعد.  قد يتعلق الأمر بخوف دفين من التغيير، أو ربما بعدم استحقاق غير واعٍ للفرح.  أو لعلها محاولة للسيطرة على عالم يبدو فوضويًا.  في هذا الفيديو، نغوص في أعماق هذه الظاهرة النفسية لنكشف الأسباب الحقيقية وراء هذا التناقض السلوكي.  هل يمكن أن يكون خوفنا من الفرح بقدر خوفنا من الحزن؟",
+    "hashtags": "#علم_النفس #نفسية #تحليل_سلوك #فضول #غامض #مشاعر #تساؤلات #حقيقة #فهم_النفس #mindset #psychologyfacts #curiosity #selfawareness #deepermeaning #unveiling",
+    "search_terms": [
+      "woman looking thoughtful cinematic",
+      "man with pensive expression close up",
+      "overwhelmed by good news emotional",
+      "internal conflict abstract visuals",
+      "hesitation in joy cinematic portrait",
+      "fear of change contemplative look"
+    ],
+    "duration": 14,
+    "title_theme": "green",
+    "read_theme": "black",
+    "video_filter": "black",
+    "music": "a32.mp3",
+    "created_at": "2026-10-28T22:55:16.053721+00:00"
   }
 ]
