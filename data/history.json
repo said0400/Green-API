@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 885,
-    "title": "التفسير النفسي لعدم قدرتك على التخلص من الأقراص المدمجة القديمة رغم عدم وجود مشغل لها لديك",
-    "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا لا تستطيع التخلي عن تلك الأقراص المدمجة القديمة، حتى عندما لا تملك مشغلًا لها؟ هذا السؤال يحمل في طياته سرًا نفسيًا عميقًا يتعلق بماضينا وذكرياتنا. ما يجعلك تحتفظ بهذه الأقراص ليس مجرد قطعة بلاستيكية، بل هو شريط ذكريات ثمين يرفض عقلك نسيانه. غالبًا ما ترتبط هذه الأشياء بمشاعر قوية أو لحظات فارقة في حياتك، حيث تعمل كمرساة تعيدك إلى تلك الأوقات. إنها ليست مجرد أغراض، بل هي رموز لمرحلة انقضت، تحمل جزءًا من هويتك القديمة. الخوف من فقدان هذه الذكريات هو ما يبقيها بجوارك، حتى لو بدت بلا فائدة عملية. هل الاحتفاظ بهذه الأشياء يمنعك من التقدم، أم أنه ضروري لفهم من أنت الآن؟",
-    "hashtags": "#علم_النفس #تعلق_بالماضي #ذكريات #تخزين_الأشياء #النفايات_العاطفية #التحليل_النفسي #الاحتفاظ_بالأشياء #ما_وراء_الأشياء #فهم_الذات #علم_النفس_الاجتماعي #psychologyfacts #nostalgia #declutter #memorylane #emotionalattachment",
-    "search_terms": [
-      "nostalgia emotional man looking back",
-      "sadness holding old memories",
-      "thoughtful woman remembering past",
-      "person reflecting on life",
-      "cinematic close-up longing",
-      "sentimental portrait elderly person"
-    ],
-    "duration": 11,
-    "title_theme": "orange",
-    "read_theme": "green",
-    "video_filter": "gray",
-    "music": "a47.mp3",
-    "created_at": "2026-09-08T22:08:34.814292+00:00"
-  },
-  {
     "excel_number": 886,
     "title": "الحقيقة المظلمة وراء الشخص الذي يرفض دائماً إظهار فرحته ويبتسم ببرود عند تلقيه أخباراً سعيدة جداً",
     "read_text": "👇 التفسير النفسي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a46.mp3",
     "created_at": "2026-10-29T22:03:32.624217+00:00"
+  },
+  {
+    "excel_number": 1385,
+    "title": "لماذا يربكك أن يسير كل شيء كما خططت؟",
+    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
+    "description": "هل تشعر بالاضطراب عندما تسير الأمور بسلاسة تامة كما رسمتها خططك؟ يبدو الأمر غريبًا، أليس كذلك؟ فكل ما نتمناه هو النجاح والتنظيم، لكن هذه السيطرة الكاملة تثير فينا قلقًا دفينًا. ما السر وراء هذا التناقض البشري الغريب؟ هل نخشى الملل أم أن هناك شيئًا أعمق يخفيه عقلنا الباطن؟ ربما نتعلق بالفوضى أكثر مما نظن، أو نستخدم الضغوط لتحفيز ذواتنا. هذا الفيديو سيكشف لك الخيوط النفسية المعقدة التي تجعل التخطيط المثالي يبدو مهددًا. اكتشف لماذا يثير الهدوء التام في مسارك شيئًا من الارتباك الداخلي. هل تدرك كيف يمكن للانتظام أن يقلب مزاجك رأسًا على عقب؟",
+    "hashtags": "#علم_النفس #تفكير #تحليل_سلوك #تطوير_الذات #فضول #ألغاز #مشاعر #وعي #self_awareness #psychology_facts #mindset #curiosity #behavioral_economics #inner_conflict #what_if",
+    "search_terms": [
+      "man looking thoughtful cinematic",
+      "woman contemplating window emotional",
+      "person feeling anxious indoors natural light",
+      "close up face pensive mood",
+      "overwhelmed person in subtle chaos",
+      "human struggle with control portrait"
+    ],
+    "duration": 12,
+    "title_theme": "orange",
+    "read_theme": "black",
+    "video_filter": "red",
+    "music": "a47.mp3",
+    "created_at": "2026-10-29T23:03:07.784184+00:00"
   }
 ]
