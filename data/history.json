@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 883,
-    "title": "لماذا نشعر بالضيق عندما نرى شخصاً يقطع طابور الانتظار الطويل بوقاحة شديدة ودون استئذان من أحد؟",
-    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يثير انزعاجك بشدة رؤية أحدهم يتخطى طابورًا طويلاً بوقاحة؟ هذا الشعور ليس مجرد غضب عابر، بل هو صدى عميق لبوصلتك الأخلاقية الداخلية التي تنبهك لخرق صارخ. ما الذي يحدث في دواخلنا بالضبط عندما نشهد مثل هذا السلوك الأناني؟ يتعلق الأمر بتوقع اجتماعي فطري، نظام عادل وغير مكتوب يحكم تفاعلاتنا اليومية. عندما يتم كسر هذا النظام، يشعر عقلنا بتنافر داخلي، كأن موسيقى جميلة انقطع لحنها فجأة. يتفاعل دماغنا مع هذا الإحساس بالظلم، معتبرًا إياه تهديدًا محتملاً لاستقرار العلاقات والتعاون الذي يعتمد عليه مجتمعنا. إنها آلية نفسية معقدة تكشف لنا الكثير عن الحاجة الإنسانية للنظام والاحترام المتبادل. ألا يدل هذا الشعور على قوة اللاوعي في تشكيل رؤيتنا للعالم؟",
-    "hashtags": "#علم_نفس #سلوك_اجتماعي #فضول #تحليل #مشاعر #ظلم #احترام #قواعد_المجتمع #علم_نفس_اجتماعي #نفسية #perception #psychology #behavior #social #ethics",
-    "search_terms": [
-      "frustrated person looking at queue jumper",
-      "disappointed face watching unfairness",
-      "people waiting in line with subtle tension",
-      "close-up of annoyed expression",
-      "social injustice feeling",
-      "violation of social norm"
-    ],
-    "duration": 14,
-    "title_theme": "black",
-    "read_theme": "orange",
-    "video_filter": "dark_green",
-    "music": "a45.mp3",
-    "created_at": "2026-09-08T20:22:11.670665+00:00"
-  },
-  {
     "excel_number": 884,
     "title": "ماذا يحدث في دماغك عندما تقرر أخيرًا أن تترك دراستك الجامعية وتفتح مشروعك الخاص رغم المخاطرة؟",
     "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a44.mp3",
     "created_at": "2026-10-29T19:17:53.655175+00:00"
+  },
+  {
+    "excel_number": 1383,
+    "title": "ماذا يعني أن ترتاح للفكرة المخيفة إذا فهمتها؟",
+    "read_text": "👇 التفسير الكامل في الوصف👇",
+    "description": "هل تشعر أحيانًا براحة غريبة تجاه أفكارك الأكثر رعبًا؟ ما الذي يجعلنا نتقبل ما نخاف منه بمجرد فهمه؟ هذا الشعور يختبئ خلف واجهة منطقنا، ويكشف عن أعماق لا نجرؤ على استكشافها. إنها ليست مجرد قناعة، بل هي انكسار للحاجز النفسي الذي بنيناه. عندما تتسرب المعرفة إلى عقولنا، تتغير خريطتنا الداخلية، وتتبدل مواقع الخوف والأمان. كلما تعمقت في تفسير هذا المفهوم، وجدت أن الارتياح لا يأتي من زوال الخوف، بل من إدراك مكانه الحقيقي. إنه كأنك تقابل شبحًا وتدرك أنه مجرد ظلال. هل هذا الارتياح دليل على قوة عقلنا، أم ضعف لقدرتنا على المواجهة؟",
+    "hashtags": "#علم_النفس #تفكير_عميق #فهم_الخوف #علم_نفس_الظلام #قوة_العقل #تحليل_السلوك #المنطقة_المظلمة #psychology #deep_thoughts #fear_understanding #mindfulness #inner_peace #self_awareness #behavioral_analysis #psychological_facts",
+    "search_terms": [
+      "cinematic emotional portrait thinking",
+      "person overcoming fear introspection",
+      "mindfulness deep thought abstract",
+      "psychological breakthrough understanding",
+      "anxiety relief contemplation calm",
+      "inner peace facing difficult thoughts"
+    ],
+    "duration": 13,
+    "title_theme": "yellow",
+    "read_theme": "pink",
+    "video_filter": "black",
+    "music": "a45.mp3",
+    "created_at": "2026-10-29T20:45:47.301965+00:00"
   }
 ]
