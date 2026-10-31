@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 907,
-    "title": "لماذا تشعر بالتعب بعد جلسة اجتماعية قصيرة؟",
-    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
-    "description": "هل سبق لك أن تساءلت لماذا تشعر بالإرهاق الشديد بعد مجرد محادثة قصيرة مع شخص ما؟ يبدو الأمر غريباً، أليس كذلك؟ طاقة تكفي ليوم كامل قد تتبدد في لحظات دون سبب واضح. هناك سر عميق يكمن خلف هذا الشعور المفاجئ بالاستنزاف، سر لا يتعلق بك وحدك بل بكيفية تفاعل طاقتك مع الآخرين. هل تعلم أن بعض التفاعلات البسيطة يمكن أن تستنزف جوهر طاقتك دون أن تدري؟ هذا ليس مجرد إرهاق عادي، بل هو إشارة أعمق من عقلك الباطن. في هذا الفيديو، سنكشف الغطاء عن الآليات النفسية الدقيقة التي تفسر هذا التعب السريع. سنغوص في فهم كيف تؤثر طريقة تواصلنا ولغة جسدنا على مستويات طاقتنا الداخلية. هل نحن ببساطة بحاجة إلى المزيد من الراحة، أم أن هناك ما هو أعمق بكثير يحدث في أعماقنا؟",
-    "hashtags": "#علم_نفس #طاقة_إيجابية #تعب_اجتماعي #العلاقات_الإنسانية #تحليل_شخصية #فضول #صحة_نفسية #استنزاف_الطاقة #تفاعل_اجتماعي #arabsychology #socialanxiety #energydrain #selfawareness #relations #mindset",
-    "search_terms": [
-      "person feeling drained after social interaction cinematic",
-      "exhausted individual alone after conversation emotional portrait",
-      "overwhelmed by social energy subtle stress cinematic",
-      "introspective person deep in thought after connection emotional",
-      "loneliness after brief encounter subtle sadness cinematic",
-      "energy depletion from social interaction feeling tired portrait"
-    ],
-    "duration": 11,
-    "title_theme": "black",
-    "read_theme": "red",
-    "video_filter": "red",
-    "music": "a4.mp3",
-    "created_at": "2026-09-10T23:35:59.498620+00:00"
-  },
-  {
     "excel_number": 908,
     "title": "الإشارة النفسية خلف نظرك للهاتف دون إشعار",
     "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a3.mp3",
     "created_at": "2026-10-31T22:54:53.235538+00:00"
+  },
+  {
+    "excel_number": 1407,
+    "title": "ماذا يعني أن تفتح المحادثة وتغلقها بلا رد؟",
+    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
+    "description": "هل تساءلت يومًا عن الصمت المطبق بعد بدء محادثة، وكأن الكلمات اختفت فجأة؟ هذا التجاهل المتعمد ليس مجرد موقف عابر، بل هو لغة صامتة تحمل معاني أعمق بكثير مما تتصور. إنه يعكس صراعات داخلية، ورسائل غير منطوقة، وديناميكيات علاقات معقدة تتكشف في لحظات غامضة. يكشف هذا السلوك عن جوانب نفسية قد لا ندركها، فهو ليس مجرد انقطاع، بل استراتيجية تحمل في طياتها الكثير من الإشارات. قد يكون تعبيرًا عن عدم الاهتمام، أو ربما وسيلة للتحكم، أو حتى اعترافًا بعدم القدرة على المواصلة. كل توقف وكل صمت له بصمته الخاصة التي تعبر عن حال المتحدث. فلماذا يختار البعض هذا الطريق، وما هي الدوافع الحقيقية وراء هذا الانسحاب المفاجئ من الحوار؟",
+    "hashtags": "#علم_نفس #تجاهل #علاقات #لغة_الجسد #تحليل_سلوك #صمت #فضول #دوافع #تواصل #نفسية #psychology #behavior #communication #relationships #silence",
+    "search_terms": [
+      "emotional portrait looking away",
+      "pensive person thoughtful",
+      "sadness solitude contemplation",
+      "disappointment silent treatment",
+      "unresponsive communication breakdown",
+      "overwhelmed person internal struggle"
+    ],
+    "duration": 13,
+    "title_theme": "pink",
+    "read_theme": "purple",
+    "video_filter": "gray",
+    "music": "a4.mp3",
+    "created_at": "2026-10-31T23:49:53.536707+00:00"
   }
 ]
