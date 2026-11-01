@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 910,
-    "title": "ما الذي يجعلك تحفظ كلمات جارحة أكثر من المدح؟",
-    "read_text": "👇 التفسير النفسي في الوصف👇",
-    "description": "لماذا تبقى الكلمات القاسية محفورة في الذاكرة بينما يتبدد المدح بسرعة؟ هل عقلك مبرمج بشكل خفي لتفضيل الألم على الرضا؟ تكمن الحقيقة في طريقة معالجة أدمغتنا للمعلومات، حيث تستجيب الأجزاء البدائية بشكل أقوى للمحفزات السلبية كآلية بقاء. هذا الاستعداد الفطري للتنبؤ بالخطر يجعلنا أكثر انتباهاً لأي تهديد محتمل، حتى لو كان مجرد كلمة جارحة. بينما يعتبر المدح علامة على الأمان، فهو لا يستدعي نفس مستوى اليقظة. إنه تفاعل معقد بين اللاوعي والإدراك، يخلق حاجزاً نفسياً يجعلنا نتذكر الإساءة بوضوح يفوق تذكر كلمة طيبة. هل يمكن تغيير هذا النمط المتجذر فينا؟",
-    "hashtags": "#علم_نفس #تحفيز #سلوك_بشري #تطوير_الذات #علاقات #فضول #تفكير_إيجابي #ذكاء_عاطفي #علم_النفس_الاجتماعي #تنمية_بشرية #psychology #mindset #selfimprovement #behavior #emotion",
-    "search_terms": [
-      "sad emotional person looking away cinematic",
-      "thoughtful man close up cinematic",
-      "woman deep in thought portrait cinematic",
-      "person reflecting outdoors cinematic",
-      "overwhelmed by emotions cinematic",
-      "contemplative gaze cinematic portrait"
-    ],
-    "duration": 13,
-    "title_theme": "cyan",
-    "read_theme": "green",
-    "video_filter": "purple",
-    "music": "a13.mp3",
-    "created_at": "2026-09-11T15:16:54.179117+00:00"
-  },
-  {
     "excel_number": 911,
     "title": "الحقيقة المربكة وراء شعورك بأنك منزعج بلا سبب",
     "read_text": "👇 الحقيقة كاملة في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a10.mp3",
     "created_at": "2026-11-01T02:41:18.735593+00:00"
+  },
+  {
+    "excel_number": 1410,
+    "title": "الحقيقة خلف قلقك من التعليق الأول على منشورك",
+    "read_text": "👇 التفسير النفسي في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تجمد أعصابك قبل الضغط على زر النشر، وتشعر وكأن العالم كله سيحكم عليك؟ هذا الشعور الذي يجعلك تعيد قراءة كل كلمة ألف مرة، وكأنها قصيدة مصيرية، ليس مجرد خوف عابر، بل هو بصمة عميقة في عقلك الباطن. إنه صدى لآلاف السنين من الحاجة للانتماء والقبول الاجتماعي. يعود أصله إلى أقدم مخاوفنا، الخوف من النبذ، من أن نصبح غرباء في قبيلتنا. ما تراه مجرد تعليق، هو في جوهره تقييم اجتماعي مباشر. هذا القلق هو أداة تطورت لحمايتنا، لكنها أصبحت الآن قيدًا يعيق تقدمنا الرقمي. هل هذا الخوف يمنعك حقًا من مشاركة أفكارك الفريدة؟",
+    "hashtags": "#علم_نفس #قلق #ثقة_بالنفس #تطوير_الذات #تحليل_سلوك #وسائل_التواصل_الاجتماعي #نصائح #دافعية #صحة_نفسية #رهاب_اجتماعي #psychology #anxiety #socialmedia #selfimprovement #mindset",
+    "search_terms": [
+      "anxiety internal struggle cinematic",
+      "social judgment fear portrait",
+      "vulnerability emotional close-up",
+      "self-doubt contemplation thoughtful look",
+      "internal conflict pensive mood",
+      "fear of rejection worried expression"
+    ],
+    "duration": 13,
+    "title_theme": "red",
+    "read_theme": "purple",
+    "video_filter": "dark_green",
+    "music": "a13.mp3",
+    "created_at": "2026-11-01T16:29:12.907368+00:00"
   }
 ]
