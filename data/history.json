@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 912,
-    "title": "لماذا تتحول المزحة البسيطة إلى تهديد داخلي أحيانًا؟",
-    "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
-    "description": "هل تساءلت يومًا كيف يمكن لكلمة عابرة أن تحفر عميقًا في النفس فتتحول إلى هاجس لا يفارقك؟ غالبًا ما تبدأ الأمور ببساطة، بمزحة أو تعليق يبدو غير ضار، لكن شيئًا ما يتغير في الداخل، فينبعث الخوف والقلق ليغيرا منظورك تمامًا. هذا التحول الغامض ليس محض صدفة، بل هو نتيجة تفاعلات نفسية معقدة تحدث خلف الكواليس، تشكل ردود أفعالنا وتجعلنا نرى الخطر حيث لا يوجد. الأمر يتعلق بكيفية تفسيرنا للمواقف، وكيف تتفاعل تجاربنا الماضية مع اللحظة الحالية، لتصنع حاجزًا من الريبة. إنها رحلة مثيرة لفهم كيف يمكن لأصغر الشرارات أن تشعل أكبر الحرائق الداخلية. فما هي الشرارة التي بدأت تهديدك الداخلي؟",
-    "hashtags": "#علم_نفس #تحليل_سلوك #علاقات #فضول #تفكير_عميق #نصائح #تنمية_بشرية #مشاعر #قلق #خوف #الجانب_المظلم #psychology #behavioranalysis #mindset #innerpeace",
-    "search_terms": [
-      "cinematic emotional portrait fear anxiety",
-      "thoughtful person looking away internal struggle",
-      "woman contemplating deep thought sadness",
-      "man with worried expression pensive",
-      "dramatic close-up eyes introspection",
-      "overwhelmed person emotional turmoil abstract"
-    ],
-    "duration": 11,
-    "title_theme": "purple",
-    "read_theme": "orange",
-    "video_filter": "black",
-    "music": "a15.mp3",
-    "created_at": "2026-09-11T18:52:59.862716+00:00"
-  },
-  {
     "excel_number": 913,
     "title": "ماذا يحدث لعقلك عندما يؤجل أحد الرد عليك؟",
     "read_text": "👇 الجزء الأهم موجود في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a14.mp3",
     "created_at": "2026-11-01T17:16:41.988855+00:00"
+  },
+  {
+    "excel_number": 1412,
+    "title": "السر وراء مراقبتك لنبرة الرسائل لا كلماتها",
+    "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
+    "description": "لماذا تشعر أحيانًا أن نبرة الرسالة تخبرك بالحقيقة أكثر من كلماتها؟ هل تساءلت يومًا لماذا تتوقف عند حرف معين أو علامة ترقيم غريبة، متجاهلاً المعنى الظاهري؟ هناك عالم خفي خلف كل حرف ترسله وتتلقاه، عالم يكشف عن مشاعر وأفكار لم يُنطق بها صراحة. هذا الفيديو سيأخذك في رحلة عميقة لاستكشاف هذه الظاهرة النفسية المثيرة. سنتعمق في كيفية تفسير العقل الباطن للإشارات غير اللفظية، ونفهم لماذا تصبح نبرة الصوت الافتراضية أقوى من أي نص مكتوب. اكتشف الأسرار التي تخفيها أجهزتنا العصبية في فهم الرسائل. هل نحن حقًا نفهم ما يقال، أم أننا نفهم ما يُشعر به؟",
+    "hashtags": "#علم_النفس #تحليل_سلوك #التواصل #العقل_الباطن #نبرة_الصوت #علم_النفس_التواصلي #قراءة_ما_بين_السطور #رسائل_نصية #علم_المشاعر #SelfImprovement #Psychology #CommunicationSkills #SubconsciousMind #BehaviorAnalysis #EmotionalIntelligence",
+    "search_terms": [
+      "emotional portrait subtle expression pensive",
+      "person thinking deep reflection close up",
+      "contemplative mood quiet introspection cinematic",
+      "human emotion subtle communication thoughtful gaze",
+      "psychological depth inner world solitary moment",
+      "interpreting signals non verbal cues pensive face"
+    ],
+    "duration": 15,
+    "title_theme": "pink",
+    "read_theme": "black",
+    "video_filter": "purple",
+    "music": "a15.mp3",
+    "created_at": "2026-11-01T18:38:01.318568+00:00"
   }
 ]
