@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 909,
-    "title": "لماذا تراجع ملامحك قبل مكالمة لا تظهر فيها؟",
-    "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
-    "description": "هل لاحظت يومًا أن ملامح وجهك تتغير بصمت قبل مكالمة هاتفية لا يتطلب فيها الظهور؟ هذا السلوك الغريب يكشف سرًا عميقًا عن اللاوعي البشري وكيف يتفاعل مع التواصل غير المرئي. إنها ليست مجرد مصادفة، بل هي استجابة بيولوجية معقدة تفسرها جوانب نفسية لم ننتبه إليها من قبل. تتأثر نظرتنا لأنفسنا بالصوت والصوت فقط، مما يخلق اضطرابًا دقيقًا في رؤيتنا الذاتية. حتى لو لم نرَ أنفسنا، فإننا نمتلك صورًا ذهنية تتأثر باستمرار. يعتقد علماء النفس أن هذا الانعكاس غير المرئي هو محاولة للدماغ لضبط توقعاتنا الحسية. هل أنت مستعد لاكتشاف كيف يؤثر مجرد الاستماع إلى صوتك على إدراكك لمظهرك؟",
-    "hashtags": "#علم_النفس #تطوير_الذات #السلوك_البشري #تحليل_الشخصية #علم_النفس_الاجتماعي #فضول #اكتشاف_الذات #psychology #selfimprovement #humanbehavior #mindset #selfawareness #curiosity #psychologyfacts #TikTokPsychology",
-    "search_terms": [
-      "emotional portrait thoughtful face",
-      "person thinking deeply close up",
-      "woman introspection subtle expression",
-      "man pensive quiet moment",
-      "face subtle change emotion",
-      "psychological subtle expression face"
-    ],
-    "duration": 12,
-    "title_theme": "green",
-    "read_theme": "black",
-    "video_filter": "dark_blue",
-    "music": "a10.mp3",
-    "created_at": "2026-09-11T14:01:23.044050+00:00"
-  },
-  {
     "excel_number": 910,
     "title": "ما الذي يجعلك تحفظ كلمات جارحة أكثر من المدح؟",
     "read_text": "👇 التفسير النفسي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a5.mp3",
     "created_at": "2026-11-01T00:37:43.825873+00:00"
+  },
+  {
+    "excel_number": 1409,
+    "title": "لماذا تفسر تغيير الصورة الشخصية كرسالة خفية؟",
+    "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
+    "description": "هل لاحظت كيف أن مجرد تغيير بسيط في صورتك الشخصية يمكن أن يرسل موجات خفية لا تُفهم؟ إنها ليست مجرد صورة، بل هي لغة صامتة تتحدث بها دواخلك لمن حولك، تعكس أمورًا تتجاوز ما تراه العين. في عالم تتسارع فيه وتيرة التواصل غير المباشر، تصبح هذه التغييرات الصغيرة مفاتيح تكشف عن أسرار النفس البشرية العميقة. هل هو تعبير عن مرحلة جديدة، أم ربما إشارة لحدث ما يجري خلف الكواليس؟ قد يبدو الأمر تافهًا، لكن التحليل النفسي يثبت أن كل اختيار، حتى في عالم افتراضي، يحمل بصمة عميقة من حالاتنا الداخلية. إنها تعكس ما نشعر به، وما نتمنى، وما نحاول إخفاءه. هل تفكر في تغيير صورتك قريبًا، وما الذي تعتقد أن هذه الخطوة قد تعنيه حقًا؟ 💡",
+    "hashtags": "#علم_نفس #تغيير_الصورة_الشخصية #رسائل_خفية #تحليل_سلوك #التواصل_غير_اللفظي #لغة_الصمت #علم_النفس_الاجتماعي #التعبير_الذاتي #الدوافع_النفسية #Psychology #SocialMedia #HiddenMessages #BehaviorAnalysis #SelfExpression #SubtleSignals",
+    "search_terms": [
+      "thoughtful person portrait",
+      "woman looking out window pensive",
+      "man contemplating nature",
+      "close up emotional face",
+      "person reflecting on life",
+      "subtle expression change"
+    ],
+    "duration": 12,
+    "title_theme": "red",
+    "read_theme": "pink",
+    "video_filter": "dark_green",
+    "music": "a10.mp3",
+    "created_at": "2026-11-01T02:41:18.735593+00:00"
   }
 ]
