@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 933,
-    "title": "الحقيقة النفسية خلف ارتياحك للممرات الفارغة",
-    "read_text": "👇 التفسير في الوصف👇",
-    "description": "لماذا تشعر براحة غريبة وهدوء استثنائي عندما تتجول في أماكن خالية وممرات مهجورة؟ هل هو مجرد صدفة، أم أن هناك سرًا أعمق يكمن وراء هذا الشعور؟ اكتشف الجانب النفسي المدهش الذي يفسر لماذا تجذبك المساحات الفارغة أكثر من الزحام. يبدو أن عقلك يبحث عن ملاذ آمن، بعيدًا عن الضغوط والتحفيزات الزائدة التي يفرضها العالم الخارجي. هذه الراحة ليست مجرد وهم، بل هي استجابة فطرية لحاجتك للهدوء والتركيز. في الممرات الفارغة، يتحرر عقلك من عبء التفاعلات الاجتماعية وتقييمات الآخرين، مما يسمح له باستعادة توازنه. ربما تكون هذه المساحات الفارغة هي المكان الذي تجد فيه نفسك حقًا، بعيدًا عن ضجيج الحياة اليومية. هل يمكن أن يكون هذا الانجذاب دليلًا على عمق تفكيرك وحاجتك للتأمل؟",
-    "hashtags": "#علم_نفس #راحة_نفسية #أماكن_فارغة #هدوء #فضول #تحليل_سلوك #مصحات_نفسية #تأمل #سكينة #psychology #emptyspaces #innerpeace #mindfulness #alonetime #mystery",
-    "search_terms": [
-      "empty corridor cinematic",
-      "lonely person walking empty street",
-      "serene indoor space",
-      "calm quiet environment",
-      "peaceful reflection outdoors",
-      "solitude contemplation emotional"
-    ],
-    "duration": 11,
-    "title_theme": "cyan",
-    "read_theme": "orange",
-    "video_filter": "dark_blue",
-    "music": "a45.mp3",
-    "created_at": "2026-09-13T19:54:24.567931+00:00"
-  },
-  {
     "excel_number": 934,
     "title": "ما الذي يجعلك تحفظ وجهًا واحدًا في الزحام؟",
     "read_text": "👇 السبب الحقيقي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a44.mp3",
     "created_at": "2026-11-03T20:19:59.103698+00:00"
+  },
+  {
+    "excel_number": 1433,
+    "title": "لماذا تراقب التفاعل لا المحتوى الذي صنعته؟",
+    "read_text": "👇 التفسير في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تتجه أنظارك دائمًا نحو عدد الإعجابات والتعليقات، حتى قبل أن تتفحص قيمة المحتوى الذي بذلت فيه جهدك؟ هذا الانجذاب الغريب نحو التفاعل الخارجي يكشف عن سر دفين في أعماق نفسيتنا البشرية. هناك آلية نفسية قوية تدفعنا للبحث عن التحقق الخارجي، مدفوعين بخوف دفين من عدم الكفاية. إن التركيز على المقاييس بدلًا من الرسالة يجعلك أسيرًا لرغبة ملحة في القبول، وهو ما يشوه رؤيتك للحقيقة. كيف يمكن للتغييرات الصغيرة في استراتيجيتك أن تحوّل هذا التركيز من الخارج إلى الداخل؟ اكتشف كيف تستعيد السيطرة على تقييمك الذاتي بعيدًا عن ضجيج الأرقام. هل أنت مستعد لتغيير منظورك بالكامل؟ 🤔",
+    "hashtags": "#علم_نفس #تحليل_سلوك #تفاعل_اجتماعي #صناعة_محتوى #TikTok #YouTubeShorts #FacebookReels #التفكير_النقدي #التحفيز #التأثير_النفسي #التقييم_الذاتي #Psychology #BehaviorAnalysis #ContentCreation #DigitalMarketing",
+    "search_terms": [
+      "emotional portrait lonely person looking away",
+      "thoughtful person looking out window cinematic",
+      "contemplative woman deep in thought close up",
+      "man feeling insecure self doubt cinematic",
+      "person overwhelmed by external validation",
+      "psychological struggle internal conflict cinematic"
+    ],
+    "duration": 11,
+    "title_theme": "purple",
+    "read_theme": "cyan",
+    "video_filter": "dark_green",
+    "music": "a45.mp3",
+    "created_at": "2026-11-03T21:22:29.174146+00:00"
   }
 ]
