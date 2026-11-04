@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 937,
-    "title": "السر وراء رغبتك في شرح نفسك كثيرًا",
-    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
-    "description": "هل سبق لك أن تساءلت لماذا تشعر بحاجة ماسة لتبرير كل تصرفاتك، وكأنك تخوض معركة دائمة لإثبات نفسك؟ هذا الشعور المتكرر ليس مجرد عادة، بل هو بصمة نفسية عميقة تكشف عن شيء جوهري في داخلك. إنها رغبة مكبوتة في الحصول على الاعتراف، أو ربما خوف دفين من الرفض. هذه الحاجة المُلحة للشرح غالبًا ما تنبع من قناعات سلبية حول الذات، حيث نشعر أن قيمتنا مرتبطة بما يقبله الآخرون. هل تسعى دائمًا لرضا الآخرين، حتى لو كان ذلك على حساب راحتك؟ هذه الآلية الدفاعية، وإن بدت منطقية، قد تعيق نموك الشخصي. يتعلق الأمر بفهم أن قيمتك الذاتية لا تعتمد على موافقة خارجية. هل ستستمر في البحث عن التقدير في عيون الآخرين، أم ستجد القوة الكامنة في داخلك؟",
-    "hashtags": "#علم_نفس #تطوير_الذات #علاقات #تحليل_سلوك #ثقة_بالنفس #تفكير_إيجابي #علم_نفس_اجتماعي #دوافع #فهم_الذات #نصائح #psychology #selflove #behavioranalysis #relationships #motivation",
-    "search_terms": [
-      "emotional portrait of a person looking thoughtful",
-      "cinematic close-up of someone reflecting",
-      "person feeling insecure and seeking validation",
-      "vulnerable expression, inner struggle",
-      "man or woman contemplating life, deep thought",
-      "anxiety, self-doubt, seeking acceptance"
-    ],
-    "duration": 11,
-    "title_theme": "purple",
-    "read_theme": "black",
-    "video_filter": "dark_blue",
-    "music": "a49.mp3",
-    "created_at": "2026-09-13T23:50:05.158704+00:00"
-  },
-  {
     "excel_number": 938,
     "title": "لماذا تشعر بالتوتر من الأشخاص الهادئين جدًا؟",
     "read_text": "👇 السر وراء ذلك في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a48.mp3",
     "created_at": "2026-11-04T00:16:06.086785+00:00"
+  },
+  {
+    "excel_number": 1437,
+    "title": "لماذا تشعر أن الصمت الرقمي نوع من العقاب؟",
+    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
+    "description": "هل شعرت يومًا أن التجاهل الرقمي يترك في نفسك أثرًا يشبه العقاب؟ ما الذي يجعل صمت أحدهم على رسائلك أو منشوراتك يثير في داخلك هذا الشعور بالرفض أو حتى الأذى؟ إنها ليست مجرد لعبة، بل هي حرب نفسية خفية تدور رحاها في عالمنا الرقمي. عندما يتوقف التواصل فجأة، تبدأ العقول في نسج تفسيرات متعددة، غالبًا ما تكون مدمرة. قد يكون الأمر بسيطًا، لكن اللاوعي يصور لك سيناريوهات أعمق، تتعلق بقيمتك الذاتية وعلاقاتك. هذا الصمت يفتح بابًا واسعًا للأفكار السلبية، ويجعلك تتساءل عن سبب هذا التجاهل، هل هو متعمد؟ هل يعكس شيئًا عنك؟ كيف يمكننا فهم هذه الظاهرة والتغلب على تأثيرها السلبي؟",
+    "hashtags": "#علم_النفس #العلاقات #الصمت_الرقمي #التجاهل #سلوك_بشري #تنمية_بشرية #الصحة_النفسية #تحفيز #حكم #علاقات_صحية #tiktokpsychology #digitalwellbeing #communication #relationshipadvice #psychologyfacts",
+    "search_terms": [
+      "cinematic emotional portrait of lonely person looking away",
+      "sad thoughtful person looking out window",
+      "anxiety, emotional distress, close-up face",
+      "feeling rejected, isolation, looking down",
+      "contemplative, pensive, silhouetted figure",
+      "mental health struggle, emotional pain, subtle expression"
+    ],
+    "duration": 12,
+    "title_theme": "cyan",
+    "read_theme": "purple",
+    "video_filter": "purple",
+    "music": "a49.mp3",
+    "created_at": "2026-11-04T00:57:37.154778+00:00"
   }
 ]
