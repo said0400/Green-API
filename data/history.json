@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 948,
-    "title": "ما الذي يحدث عندما تخاف من إحراج لم يقع بعد؟",
-    "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
-    "description": "هل سبق لك أن شعرت بالتوتر الشديد والقلق من موقف محرج لم يحدث قط؟ كيف يؤثر الخوف من المستقبل على حاضرك ويشكل قراراتك اليومية بطرق خفية؟ إن هذا القلق المتوقع يمكن أن يصبح سجنًا نفسيًا، يمنعك من عيش اللحظة الحالية ويستنزف طاقتك الذهنية. عندما نسمح لخوفنا من الإحراج بالسيطرة، فإننا غالبًا ما نتصرف بطرق تجنبية، نفقد معها فرصًا قيمة للتواصل والتعبير عن ذواتنا الحقيقية. هذه الأحلام المخيفة التي نبنيها في أذهاننا أشد إيلامًا من أي واقع محتمل. إن فهم هذه الآلية النفسية هو الخطوة الأولى للتحرر من قيودها. هل نحن حقًا في خطر، أم أننا نخلق الخطر بأنفسنا بأوهامنا؟",
-    "hashtags": "#علم_نفس #قلق_المستقبل #خوف_الإحراج #التفكير_الزائد #تحليل_سلوك #صحة_نفسية #تطوير_الذات #تحفيز #ذهن_الطفل #nlp #psychologyfacts #mindset #selfimprovement #behavioranalysis #mentalhealth",
-    "search_terms": [
-      "anxious person looking out window cinematic",
-      "thoughtful woman portrait close up",
-      "person overwhelmed by thoughts emotional",
-      "woman stressed by future worries cinematic",
-      "man alone in thought cinematic portrait",
-      "fear of embarrassment contemplation"
-    ],
-    "duration": 15,
-    "title_theme": "cyan",
-    "read_theme": "black",
-    "video_filter": "black",
-    "music": "a65.mp3",
-    "created_at": "2026-09-15T01:57:39.567808+00:00"
-  },
-  {
     "excel_number": 949,
     "title": "الحقيقة النفسية وراء ربطك بعض الأصوات بالأمان",
     "read_text": "👇 التفسير في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a64.mp3",
     "created_at": "2026-11-05T01:07:26.423346+00:00"
+  },
+  {
+    "excel_number": 1448,
+    "title": "السر وراء انزعاجك من علامة الإعجاب الباردة",
+    "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
+    "description": "هل شعرت يومًا بالضيق من مجرد إعجاب عابر دون تعليق؟ ماذا لو كان هذا الانزعاج يحمل مفتاحًا لفهم أعمق لذاتك؟ هذه 'الإعجابات الباردة' ليست مجرد ضغطة زر، بل قد تكون انعكاسًا لشعور داخلي بالتقدير الناقص أو البحث عن صدى أعمق في العلاقات الرقمية. هناك تفاصيل نفسية دقيقة تفسر لماذا تثير هذه التفاعلات البسيطة ردود فعل عاطفية قوية، وكيف أنها تكشف عن احتياجاتنا العاطفية غير الملباة. في عالم يتسارع فيه التواصل السطحي، يصبح البحث عن معنى حقيقي في كل تفاعل أمرًا ضروريًا. إن فهم هذا الانزعاج هو خطوة نحو بناء تواصل أكثر أصالة وقيمة. كيف تؤثر تفاعلاتنا الرقمية على شعورنا بالقيمة الذاتية؟",
+    "hashtags": "#علم_نفس #مشاعر #علاقات #تواصل #تطوير_الذات #فضول #غموض #تحليل_سلوك #منصات_التواصل #تيك_توك #يوتيوب_شورتس #فيسبوك_ريلز #psychology #self_awareness #digital_relationships",
+    "search_terms": [
+      "emotional portrait lonely person",
+      "sadness introspection close up",
+      "person looking out window thoughtful",
+      "anxiety stress hands clasped",
+      "disappointment facial expression close up",
+      "feeling unseen emotional portrait"
+    ],
+    "duration": 13,
+    "title_theme": "cyan",
+    "read_theme": "black",
+    "video_filter": "gray",
+    "music": "a65.mp3",
+    "created_at": "2026-11-05T01:57:07.058981+00:00"
   }
 ]
