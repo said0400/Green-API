@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 946,
-    "title": "ماذا يعني أن يزعجك لطف شخص لا تعرفه؟",
-    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
-    "description": "هل شعرت يومًا بانزعاج غامض من لطف شخص غريب لم تقابله من قبل؟ لماذا يثير اهتمامك شخص لا تربطك به أي معرفة عميقة، وعندما يقدم لك تصرفًا لطيفًا، تجد نفسك متأملًا أكثر مما ينبغي؟ إنها ظاهرة نفسية معقدة تكشف عن جوانب خفية في دواخلنا. أحيانًا، ردود فعلنا تجاه الغرباء تكشف عن مخاوفنا الداخلية، توقعاتنا العالية، أو حتى عن صدمات ماضية لم نتعافَ منها بعد. هذا اللطف المفاجئ قد يذكرنا بشيء مفقود، أو يوقظ فينا شعورًا بالشك. هل هذا اللطف حقيقي، أم أنه مجرد قناع؟ تأمل معي في هذه الإشارات الدقيقة، فقد تجد إجابات عميقة عن طبيعة علاقاتك بنفسك وبالآخرين. ماذا تكشف ردة فعلك هذه حقًا عن داخلك؟ 🤔",
-    "hashtags": "#علم_نفس #تحليل_سلوك #علاقات_إنسانية #مشاعر #فضول #تفكير_عميق #صدمات_نفسية #توعية_نفسية #تنمية_بشرية #psychoanalyze #psychologyfacts #humanbehavior #selfawareness #emotionalintelligence #mindfulness",
-    "search_terms": [
-      "emotional portrait stranger kindness",
-      "cinematic contemplative person looking away",
-      "thoughtful close-up face introspection",
-      "pensive mood isolated individual outdoor",
-      "subtle emotion human connection abstract",
-      "vulnerable expression contemplating unknown"
-    ],
-    "duration": 12,
-    "title_theme": "orange",
-    "read_theme": "red",
-    "video_filter": "red",
-    "music": "a62.mp3",
-    "created_at": "2026-09-14T23:33:41.207187+00:00"
-  },
-  {
     "excel_number": 947,
     "title": "لماذا تعود لصفحات قديمة لا تريدها فعلًا؟",
     "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a61.mp3",
     "created_at": "2026-11-04T23:58:46.996184+00:00"
+  },
+  {
+    "excel_number": 1446,
+    "title": "الحقيقة النفسية خلف انسحابك من النقاشات العامة فجأة",
+    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
+    "description": "لماذا تتجنب أحيانًا النقاشات التي تبدأ فيها بجرأة، ثم تختفي كالدخان؟ هل هو خوف أم قوة داخلية؟ تكمن في أعماق نفسيتك آلية دفاعية لا واعية تفسر هذا الانسحاب المفاجئ، وهي ليست علامة ضعف كما يعتقد البعض. أحيانًا، يكون الصمت حكمة، والانسحاب المبكر استراتيجية للسلام الداخلي. إنها رغبة عميقة في الحفاظ على طاقتك الذهنية وعدم إهدارها في جدل لا طائل منه، أو قد يكون دليلاً على إدراكك المتقدم بأن بعض المعارك ليست جديرة بالخوض. هذا التصرف يكشف عن نضج نفسي ورغبة في تجنب الاستنزاف العاطفي، فهل أنت ممن ينسحبون أم يواصلون؟ 🤔",
+    "hashtags": "#علم_النفس #تحليل_سلوك #علاقات #تطوير_الذات #صحة_نفسية #فضول #تساؤلات #الانسحاب #نقاشات #القوة_الداخلية #السلام_الداخلي #psychologyfacts #selfimprovement #behavioranalysis #mindset",
+    "search_terms": [
+      "person walking away thoughtful cinematic",
+      "woman looking out window pensive",
+      "man sitting alone in thought",
+      "overwhelmed person in crowd cinematic",
+      "close up face emotional pensive",
+      "person choosing silence thoughtful"
+    ],
+    "duration": 13,
+    "title_theme": "green",
+    "read_theme": "pink",
+    "video_filter": "dark_blue",
+    "music": "a62.mp3",
+    "created_at": "2026-11-05T00:36:19.197446+00:00"
   }
 ]
