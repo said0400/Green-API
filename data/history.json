@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 963,
-    "title": "ماذا يحدث عندما ترى شخصًا يشبه ماضيك؟",
-    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
-    "description": "هل سبق لك أن شعرت بأن قطعة من ماضيك عادت لتطاردك في الحاضر؟ إنها تلك النظرة المفاجئة، تلك الابتسامة المألوفة، التي تعيدك بالزمن إلى الوراء وكأن شيئًا لم يتغير. يثير هذا اللقاء الغامض مشاعر متضاربة، مزيج من الحنين والألم، وأحيانًا ندم دفين. لكن ما وراء هذا التشابه الظاهري؟ ما الذي يربط هذا الغريب بملامح من طواهم النسيان؟ غالبًا ما تكون إشارات غير واعية، بقايا ذكريات لا تزال تحتفظ بقوتها، تسقط على وجوه جديدة لتستدعي ما كان. إنه انعكاس لما نريد أو نخاف رؤيته مرة أخرى. هذا التوافق قد يكشف عن جوانب خفية في نفسيتك لم تكن مدركًا لها. كيف يؤثر هذا على رؤيتك للعلاقات الحالية؟",
-    "hashtags": "#علم_نفس #علم_النفس_الاجتماعي #تطوير_الذات #العلاقات_الإنسانية #الماضي_والحاضر #الذكريات #علم_المشاعر #تحليل_السلوك #التفكير_الإيجابي #الاستبصار #Psychology #BehavioralAnalysis #PastMemories #HumanConnection #SelfDiscovery",
-    "search_terms": [
-      "emotional portrait looking back",
-      "nostalgic memory flashback cinematic",
-      "sadness longing thoughtful gaze",
-      "person remembering past moment",
-      "stranger with familiar features close up",
-      "melancholy reflection cinematic portrait"
-    ],
-    "duration": 11,
-    "title_theme": "pink",
-    "read_theme": "cyan",
-    "video_filter": "dark_green",
-    "music": "a16.mp3",
-    "created_at": "2026-09-16T20:28:57.212835+00:00"
-  },
-  {
     "excel_number": 964,
     "title": "السر وراء تعلقك بجملة قالها أحدهم مرة واحدة",
     "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a15.mp3",
     "created_at": "2026-11-06T20:07:56.744771+00:00"
+  },
+  {
+    "excel_number": 1463,
+    "title": "لماذا يفضح التنفس السريع نوايا الشخص المتوتر؟",
+    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
+    "description": "هل تعلم أن طريقة تنفسك تكشف أسرارًا لا تريد إظهارها؟ قد يبدو الأمر غير منطقي، لكن هناك ارتباطًا خفيًا بين توترك وما تكشفه أنفاسك المتسارعة. كيف يمكن لهذه الإشارة البيولوجية البسيطة أن تخون مشاعرك الداخلية وتفضح ما تحاول إخفاؤه؟ سنغوص في أعماق علم النفس لنكشف السر الكامن وراء هذا السلوك اللاإرادي. إن فهم هذه الآلية سيمنحك نظرة أعمق على دوافع الآخرين، وربما حتى على دوافعك الخاصة. هل أنت مستعد لمعرفة الحقيقة التي تخفيها أنفاسك؟ اكتشف كيف يمكن للتنفس السريع أن يكون مرآة صادقة لنفسيتك المضطربة، وكيف يستغل البعض هذا الأمر لاستقراء نوايا الآخرين. إنها ليست مجرد أنفاس، بل رسائل مشفرة تحمل بين طياتها صدق المشاعر. ما هي العلامات الأخرى التي يمكن أن تكشف حقيقة التوتر لديك؟",
+    "hashtags": "#علم_النفس #تحليل_الشخصية #التنفس #التوتر #لغة_الجسد #علم_السلوك #النوايا #المشاعر #Psychology #BodyLanguage #Stress #Breathing #BehaviorAnalysis #MindGames #SelfAwareness",
+    "search_terms": [
+      "stressed person breathing fast cinematic",
+      "anxious individual close up emotional",
+      "overwhelmed person portrait cinematic",
+      "panic attack breathing slow motion",
+      "emotional stress relief breathing",
+      "person struggling with anxiety portrait"
+    ],
+    "duration": 14,
+    "title_theme": "black",
+    "read_theme": "purple",
+    "video_filter": "dark_green",
+    "music": "a16.mp3",
+    "created_at": "2026-11-06T21:10:37.753057+00:00"
   }
 ]
