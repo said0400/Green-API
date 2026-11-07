@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 969,
-    "title": "لماذا تشعر أن بعض الناس يستهلكون وعيك؟",
-    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
-    "description": "هل شعرت يومًا أن طاقتك الذهنية تُستنزف دون سبب واضح؟ قد يكون بعض الأشخاص قادرين على امتصاص وعيك حرفيًا، تاركين إياك مرهقًا ومشتتًا. هذا الاستنزاف ليس مجرد شعور عابر، بل هو تفاعل نفسي خفي يجري خلف الكواليس. يبدأ الأمر غالبًا بكلمة أو نظرة، تتسلل عبر حواسك دون أن تنتبه. ثم تتكشف آليات معقدة، حيث يعتمد الآخر على إثارة قلقك أو توليد مشاعر سلبية لتحقيق غاية ما. إنها لعبة نفسية قد تكون ضارتنا الأكبر. يستغلون حاجتك للإثبات أو خوفك من الرفض. يتلاعبون بخيوط عواطفك لتحويل انتباهك بالكامل. هم ببساطة يأخذون ما يحتاجونه من تفكيرك وقراراتك. فكيف يمكنك حماية مساحتك الذهنية من هؤلاء المستنزفين؟",
-    "hashtags": "#علم_النفس #الوعي #الطاقة_السلبية #العلاقات_السامة #التنمية_البشرية #تطوير_الذات #الاستنزاف_العاطفي #psychology #mindfulness #energy_vampires #toxic_relationships #self_improvement #mental_health #behavioral_analysis #emotional_intelligence",
-    "search_terms": [
-      "person looking stressed cinematic",
-      "woman feeling drained portrait",
-      "man overwhelmed by thoughts close up",
-      "anxious expression emotional close up",
-      "mental exhaustion abstract visual",
-      "feeling drained and tired cinematic"
-    ],
-    "duration": 11,
-    "title_theme": "green",
-    "read_theme": "cyan",
-    "video_filter": "red",
-    "music": "a22.mp3",
-    "created_at": "2026-09-17T14:29:43.795629+00:00"
-  },
-  {
     "excel_number": 970,
     "title": "ما الذي يحدث عندما تخجل من اهتمام أحد بك؟",
     "read_text": "👇 السر وراء ذلك في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a21.mp3",
     "created_at": "2026-11-07T01:29:48.476740+00:00"
+  },
+  {
+    "excel_number": 1469,
+    "title": "ماذا يحدث عندما تتسع العينان ثم تختفي الابتسامة؟",
+    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
+    "description": "هل تساءلت يومًا عن الإشارة الخفية التي تخبرك بأن هناك ما هو أبعد من مجرد تعابير الوجه؟ ما الذي يعنيه بالضبط ذلك الاتساع المفاجئ في حدقة العين، يتبعه اختفاء فوري لعلامات السعادة؟ إنه ليس مجرد رد فعل عابر، بل هو كشف عميق لما يدور في الخفاء. هذه التفاصيل الدقيقة، التي غالبًا ما نتجاهلها، تحمل مفاتيح فهم النوايا الحقيقية والدوافع المخفية. إنها لغة الجسد في أصدق صورها، تروي قصصًا لا تتفوه بها الكلمات. عندما تتسع العينان، تفتح بوابة نحو أعماق النفس، وحين تختفي الابتسامة، تغلق الستارة عن عالم خفي. هل نحن حقًا نفهم ما تقوله لنا أعين الآخرين قبل أن تنطق شفاههم؟",
+    "hashtags": "#علم_النفس #لغة_الجسد #تحليل_الشخصية #علم_النفس_الاجتماعي #سلوك_الإنسان #التواصل_غير_اللفظي #فهم_الناس #العلاقات_الإنسانية #تطوير_الذات #الذكاء_العاطفي #psychologyfacts #bodylanguage #humanbehavior #nonverbalcommunication #psychology",
+    "search_terms": [
+      "intense eye contact close up",
+      "subtle facial expression change",
+      "woman's eyes widening then neutral expression",
+      "man's gaze shifting suddenly",
+      "emotions hidden behind eyes",
+      "psychological reaction portrait"
+    ],
+    "duration": 12,
+    "title_theme": "cyan",
+    "read_theme": "green",
+    "video_filter": "black",
+    "music": "a22.mp3",
+    "created_at": "2026-11-07T03:17:51.558984+00:00"
   }
 ]
