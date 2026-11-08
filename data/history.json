@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 985,
-    "title": "لماذا يصبح الماضي أجمل كلما ابتعد؟",
-    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
-    "description": "هل شعرت يومًا بأن أيام الماضي تتلألأ ببريق لا تملكه الحاضر؟ لماذا تبدو الأماكن والأشخاص والأحداث أكثر سحرًا كلما ابتعدنا عنها زمنيًا؟ قد يعتقد البعض أن الحنين هو السبب الوحيد، لكن الحقيقة أعمق من ذلك بكثير. يتعلق الأمر بآلية نفسية معقدة تعمل لصالحنا، تشكل ذاكرتنا بطرق خفية. يبدأ الأمر بتصفية الذكريات، حيث يميل العقل البشري إلى الاحتفاظ باللحظات الإيجابية وتخفيف وطأة التجارب السلبية. هذه العملية ليست مجرد نسيان، بل هي بناء واعٍ لنسخة مثالية من الماضي. ثم تأتي قوة التخيل، التي تسمح لنا بملء الفجوات وتزيين التفاصيل. هل يمكن أن يكون ماضينا أجمل حقًا، أم أننا فقط نختار رؤيته كذلك؟",
-    "hashtags": "#الماضي #الحنين #علم_النفس #الذاكرة #الخيال #تطوير_الذات #تحليل_سلوك #تساؤلات #الجمال_الخفي #Mindset #Nostalgia #PsychologyFacts #Memory #Past #SelfImprovement",
-    "search_terms": [
-      "nostalgia emotional cinematic portrait",
-      "memory past reflection cinematic close up",
-      "longing for the past pensive mood",
-      "bittersweet memories cinematic bokeh",
-      "woman looking out window pensive",
-      "man walking alone cinematic sunset"
-    ],
-    "duration": 12,
-    "title_theme": "red",
-    "read_theme": "green",
-    "video_filter": "black",
-    "music": "a47.mp3",
-    "created_at": "2026-09-18T22:02:13.132281+00:00"
-  },
-  {
     "excel_number": 986,
     "title": "ما الذي يحدث عندما تنجح ولا تشعر بشيء؟",
     "read_text": "👇 السر وراء ذلك في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a46.mp3",
     "created_at": "2026-11-08T21:23:46.452468+00:00"
+  },
+  {
+    "excel_number": 1485,
+    "title": "ماذا يحدث عندما يتراجع الجسد نصف خطوة؟",
+    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا يتخذ البعض خطوة إلى الوراء في لحظات الحقيقة؟ قد لا يكون تراجع الجسد مجرد فعل جسدي، بل هو لغة صامتة تعكس دواخل أعقد من المتوقع. هذا الرد الفطري يكشف عن صراعات داخلية وحسابات دقيقة قد لا ندركها بوعينا الكامل. يبدو الأمر بسيطًا، لكنه يحمل مفاتيح لفهم ردود أفعال غامضة. كل حركة صغيرة تخبئ وراءها قصة، وكل تراجع جزئي يحكي عن قرار لم يُتخذ بعد. يتعلق الأمر بالآليات النفسية التي تحكم قراراتنا اللاواعية، وكيف يمكن لحركة جسدية بسيطة أن تلخص حالة معقدة. إنه صراع بين ما تريد وبين ما تخشاه، بين الحقيقة والوهم، بين المواجهة والانسحاب. فما هي الرسالة الحقيقية التي يحاول جسدك إيصالها عندما يتقهقر قليلًا؟",
+    "hashtags": "#علم_النفس #لغة_الجسد #تحليل_السلوك #علم_النفس_الاجتماعي #تنمية_بشرية #سلوك_إنسان #علاقات_إنسانية #نصائح_نفسية #تحفيز #الوعي_الذاتي #psychology #bodylanguage #behavioranalysis #mindfulness #selfimprovement",
+    "search_terms": [
+      "person stepping back thoughtful cinematic",
+      "woman looking away pensive portrait",
+      "man hesitating close up emotional",
+      "body language subtle retreat",
+      "internal struggle contemplation visual",
+      "moment of truth pause cinematic"
+    ],
+    "duration": 15,
+    "title_theme": "black",
+    "read_theme": "green",
+    "video_filter": "purple",
+    "music": "a47.mp3",
+    "created_at": "2026-11-08T22:33:04.047106+00:00"
   }
 ]
