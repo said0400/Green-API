@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 997,
-    "title": "لماذا تتجنب بعض الأغاني رغم حبك لها؟",
-    "read_text": "👇 التفسير في الوصف👇",
-    "description": "هل شعرت يومًا بأن أغنية ما تلاحقك في ذهنك رغم أنك تحاول تجنبها؟ قد لا يكون الأمر مجرد صدفة، فهناك أسباب نفسية عميقة تتجاوز مجرد الذوق الموسيقي. هذا التجنب اللاواعي يكشف عن طبقات خفية في شخصيتك واستجاباتك العاطفية. قد ترتبط الأغنية بذكرى معينة، غالبًا ما تكون مؤلمة أو غير مكتملة، فتتجنبها كآلية دفاعية لتجنب استعادة الشعور الأصلي. أحيانًا، قد تثير الأغنية مشاعر سلبية مكبوتة، كالحزن أو الندم، مما يدفع عقلك الباطن للابتعاد عنها. فما هي الأسرار التي تخفيها ألحاننا المفضلة التي نتجاهلها عمدًا؟ هل أنت مستعد لمواجهة الظلال التي تسكن خلف نغماتك؟",
-    "hashtags": "#علم_النفس #علم_النفس_الاجتماعي #علم_النفس_التحليلي #تحليل_الشخصية #علم_المشاعر #الذكريات #علم_السلوك #تجنب_المشاعر #صحة_نفسية #فضول #غموض #psychology #behavioranalysis #memory #emotions",
-    "search_terms": [
-      "emotional woman thinking",
-      "person lost in thought",
-      "sad face portrait",
-      "man contemplating",
-      "nostalgic memories",
-      "overwhelmed person"
-    ],
-    "duration": 13,
-    "title_theme": "red",
-    "read_theme": "green",
-    "video_filter": "purple",
-    "music": "a64.mp3",
-    "created_at": "2026-09-19T23:50:02.396924+00:00"
-  },
-  {
     "excel_number": 998,
     "title": "الحقيقة النفسية خلف انزعاجك من الطلبات اللطيفة جدًا",
     "read_text": "👇 السبب الحقيقي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a62.mp3",
     "created_at": "2026-11-10T02:27:40.500663+00:00"
+  },
+  {
+    "excel_number": 1497,
+    "title": "ماذا يعني أن يبتسم الشخص ثم يشد فكه؟",
+    "read_text": "👇 التفسير في الوصف👇",
+    "description": "هل تعلم أن ابتسامة قد تخفي وراءها عالمًا من التوتر لا تدركه؟ ماذا يحدث حقًا عندما يشد شخص فكه بينما يبدو وجهه مبتسمًا؟ إنها ليست مجرد حركة عابرة، بل لغة صامتة تكشف عن دواخل لم تُنطق. هذا التناقض الظاهري بين الابتسامة والتوتر العضلي يحمل في طياته سرًا عميقًا يتعلق بردود فعلنا اللاواعية.  يشير علماء النفس إلى أن هذه الإشارة الجسدية قد تكون آلية دفاعية أو تعبيرًا عن صراع داخلي.  فكيف يمكن تفسير هذه الظاهرة التي تتكرر أمام أعيننا دون أن نفهم مغزاها الحقيقي؟  إنها دعوة للنظر بعمق خلف الأقنعة التي يرتديها الناس.  هل سبق لك أن لاحظت هذا السلوك وفكرت في معناه؟",
+    "hashtags": "#علم_نفس #لغة_الجسد #تحليل_شخصية #توتر #ابتسامة #مشاعر #سلوك_بشري #علم_النفس_السلوكي #التواصل_غير_اللفظي #صحة_نفسية #bodylanguage #psychology #behavioranalysis #emotions #mindreading",
+    "search_terms": [
+      "man smiling tense jaw cinematic",
+      "woman sad expression subtle smile cinematic",
+      "overwhelmed person forced smile close up emotional",
+      "inner conflict facial expression cinematic portrait",
+      "stress relief subtle tension face emotional cinematic",
+      "psychological distress hidden smile dramatic lighting"
+    ],
+    "duration": 11,
+    "title_theme": "green",
+    "read_theme": "red",
+    "video_filter": "gray",
+    "music": "a64.mp3",
+    "created_at": "2026-11-10T03:00:33.665201+00:00"
   }
 ]
