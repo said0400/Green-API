@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1001,
-    "title": "لماذا تبتسم أمك وهي منزعجة منك جدًا؟",
-    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
-    "description": "هل لاحظت يومًا كيف يمكن للابتسامة أن تخفي عمق انزعاج خفي؟ في بعض الأحيان، تبدو هذه الابتسامة كدرع واقٍ، لا يعكس سوى قشرة هادئة تخفي وراءها عاصفة من المشاعر المكبوتة. ولكن ما السر الذي يجعل الأم، بالذات، تلجأ لهذا القناع اللطيف في لحظات غضبها أو خيبة أملها؟ هل هو أسلوب لتهدئة الموقف، أم تعبير عن صراع داخلي بين حبها ولحظة غضبها؟ هذا الفيديو يكشف لك الطبقات الخفية وراء هذه الظاهرة النفسية المعقدة. سنغوص في الأبعاد الدقيقة للتواصل غير اللفظي، ونستكشف كيف يمكن لأقرب الناس إلينا أن يخفوا حقيقتهم خلف أقنعة تبدو بسيطة. تعلم كيف تقرأ ما بين السطور، وتفهم الرسائل التي تحملها الابتسامة في أصعب الظروف. هل سبق لك أن شعرت بنفس الشعور؟",
-    "hashtags": "#علم_نفس #علم_نفس_سلوكي #تحليل_شخصيات #علاقات_أسرية #فهم_الأم #تواصل_غير_لفظي #لغة_الجسد #مشاعر_مكبوتة #علم_نفس_اجتماعي #التعامل_مع_الغضب #psychology #behavioral_psychology #understanding_mothers #emotional_intelligence #mind_tricks",
-    "search_terms": [
-      "mother child emotional connection cinematic",
-      "woman subtle expression subtle sadness cinematic",
-      "parent child quiet moment cinematic portrait",
-      "woman internal conflict emotional portrait",
-      "parental love mixed emotions cinematic",
-      "motherly concern gentle expression cinematic"
-    ],
-    "duration": 11,
-    "title_theme": "black",
-    "read_theme": "green",
-    "video_filter": "purple",
-    "music": "a68.mp3",
-    "created_at": "2026-09-20T17:03:33.670388+00:00"
-  },
-  {
     "excel_number": 1002,
     "title": "الحقيقة خلف صمت الأب عندما لا يريد المواجهة",
     "read_text": "👇 السر وراء ذلك في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a67.mp3",
     "created_at": "2026-11-10T17:20:50.014569+00:00"
+  },
+  {
+    "excel_number": 1501,
+    "title": "لماذا تتذكر الإحراج بوضوح وتنسى اليوم الجميل؟",
+    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تلتصق لحظات الإحراج بذكرياتك كأنها حدثت بالأمس، بينما تتلاشى الأيام السعيدة كأنها لم تكن؟ إنها ليست مجرد صدفة، بل هي آلية نفسية عميقة تلعب دورًا حاسمًا في تشكيل تصوراتنا عن أنفسنا وعن العالم. يمتلك دماغنا قدرة خارقة على الاحتفاظ بالتجارب السلبية، وذلك لأسباب تطورية معقدة تتعلق بالبقاء. إن هذه القدرة، وإن كانت تبدو مزعجة، قد تكون في جوهرها أداة للبقاء على قيد الحياة.  فالخطر الماضي الذي يسبب الإحراج يدفعنا لتجنبه في المستقبل.  لكن ماذا عن الأوقات الجميلة؟ ولماذا تفتقر إلى نفس القدرة على الثبات؟ هل يعكس ذلك تفضيل أدمغتنا المتأصل في التعلم من الأخطاء أكثر من الاحتفاء بالنجاحات؟  فكّر فيها، كيف تؤثر هذه الظاهرة على سعادتك الحالية؟",
+    "hashtags": "#علم_نفس #علم_النفس #الذاكرة #النسيان #علم_النفس_الإيجابي #الإحراج #السعادة #التعلم #تطوير_الذات #تحليل_السلوك #psychology #memory #emotions #selfhelp #mindset",
+    "search_terms": [
+      "sadness portrait emotional cinematic",
+      "regretful person close up dramatic lighting",
+      "anxiety face thoughtful cinematic",
+      "loneliness silhouette thoughtful cinematic",
+      "reflection person pensive cinematic",
+      "melancholy mood emotional close up"
+    ],
+    "duration": 15,
+    "title_theme": "orange",
+    "read_theme": "yellow",
+    "video_filter": "gray",
+    "music": "a68.mp3",
+    "created_at": "2026-11-10T18:54:47.409777+00:00"
   }
 ]
