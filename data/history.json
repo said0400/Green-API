@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1003,
-    "title": "ماذا يحدث عندما يختبرك أخوك بالمزاح الثقيل؟",
-    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
-    "description": "هل سبق لك أن تساءلت لماذا يختبرنا أحباؤنا أحيانًا بمزاح ثقيل، وما الرسالة الخفية وراء هذه الأفعال؟ قد تبدو مجرد دعابة، لكنها غالبًا ما تكشف عن جوانب عميقة في علاقاتنا وتفكيرنا. هل هو مجرد سلوك عابر أم محاولة لا شعورية لتقييم ردود أفعالنا وحدودنا؟ ربما تكون هذه المزحات اختبارًا لطبيعة الثقة المتبادلة وقوة الارتباط بينكما. قد يكشف هذا النوع من الاختبارات عن مدى قدرة الطرف الآخر على فهم أعمق لمشاعرك وقدرته على التنبؤ بتفاعلاتك في مواقف قد تبدو بسيطة. من خلال هذه التجارب، قد يتعلم كل منكما المزيد عن الآخر بطريقة غير مباشرة، مما يعزز أو يضعف العلاقة تدريجيًا. هل فكرت يومًا فيما يعنيه أن يكون لديك شخص يختبرك باستمرار، وما الذي يبحث عنه حقًا في هذه الاختبارات؟",
-    "hashtags": "#علم_نفس #العلاقات_الأسرية #الاختبارات_النفسية #السلوك_البشري #الدعابة_الثقيلة #تطوير_الذات #فهم_الآخرين #العلاقات_المعقدة #قوة_الكلمات #علم_المشاعر #familydynamics #psychologyfacts #humanbehavior #relationshipgoals #mindgames",
-    "search_terms": [
-      "emotional connection candid moment",
-      "brother sister playful argument",
-      "testing boundaries relationship",
-      "understanding emotions interpersonal dynamics",
-      "trust in relationships close up",
-      "family bonding playful teasing"
-    ],
-    "duration": 12,
-    "title_theme": "cyan",
-    "read_theme": "yellow",
-    "video_filter": "dark_blue",
-    "music": "a70.mp3",
-    "created_at": "2026-09-20T19:51:35.303149+00:00"
-  },
-  {
     "excel_number": 1004,
     "title": "لماذا تراقب أختك مزاجك قبل أن تطلب شيئًا؟",
     "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a69.mp3",
     "created_at": "2026-11-10T20:39:03.600358+00:00"
+  },
+  {
+    "excel_number": 1503,
+    "title": "ماذا يحدث لعقلك عندما يملأ الفراغ بقصة؟",
+    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
+    "description": "هل سبق لك أن شعرت بأن الفراغ بداخلك يمتلك وعيًا خاصًا، وأن رواية معينة أصبحت ملاذك الوحيد؟ إن مجرد امتلاء العقل بقصة ما يغير آلية عمله بشكل جذري، مؤثرًا على إدراكك للواقع وموازينك الداخلية. يبدأ العقل في استهلاك كل معلومة تتعلق بتلك القصة، ليصبح جزءًا لا يتجزأ من تفكيرك اليومي. تتشكل قناعات جديدة، وتتبدل وجهات النظر، ويصبح تحليل الأحداث متأثرًا بخيوط تلك الرواية. هذه الظاهرة تكشف عمق قدرة القصص على إعادة تشكيل كياننا وهويتنا. إنها ليست مجرد ترف ذهني، بل هي عملية تحول نفسي قد لا ندرك أبعادها كاملة. هل نتحكم بالقصص التي نختارها، أم أنها هي من يتحكم بنا في نهاية المطاف؟ 🤔",
+    "hashtags": "#علم_النفس #تطوير_الذات #قصص #العقل_الباطن #التحفيز #تغيير_الواقع #فراغ_داخلي #قوة_القصص #تفكير_إيجابي #psychology #mindset #storytelling #selfhelp #innerpeace #inspiration",
+    "search_terms": [
+      "thoughtful person looking out window cinematic",
+      "woman deep in thought close up emotional",
+      "man staring into distance pensive",
+      "interior lonely room dramatic lighting",
+      "person reading book absorbing story",
+      "brain activity abstract visualization emotional"
+    ],
+    "duration": 12,
+    "title_theme": "cyan",
+    "read_theme": "red",
+    "video_filter": "black",
+    "music": "a70.mp3",
+    "created_at": "2026-11-10T21:34:48.590890+00:00"
   }
 ]
