@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1007,
-    "title": "لماذا يمدحك والدك أمام الناس ويصمت وحدكما؟",
-    "read_text": "👇 الحقيقة كاملة في الوصف👇",
-    "description": "هل لاحظت يومًا كيف يتغير الأب أمام الملأ؟ سؤال يطرح نفسه بقوة، أليس كذلك؟ يظهر المدح والإشادة، لكن ما الذي يختبئ خلف هذا السلوك الظاهري؟ إنه ليس مجرد تفاعل عابر، بل هو طيف من المشاعر المعقدة التي تدور في الكواليس. ربما يكون هناك خوف دفين من فقدانك، أو ربما رغبة قوية في رؤيتك تحقق ما لم يستطع هو تحقيقه. قد يكون الأمر متعلقًا بتوقعات لم تتحقق، أو ربما ببساطة طريقة تعبيره عن الفخر ولكن بشكل مختلف تمامًا. الحقيقة قد تكون أعمق مما تتخيل، مختبئة في صمت لحظاتكما الخاصة. هل هذه التصرفات نابعة من حب عميق أم من حذر مبالغ فيه؟",
-    "hashtags": "#علم_نفس_الأباء #العلاقات_الأسرية #سلوك_البشر #فهم_الآخرين #الأسرار_الخفية #تطوير_الذات #تواصل_فعال #علم_المشاعر #الدعم_النفسي #قصص_واقعية #علاقات_قوية #self_improvement #psychologyfacts #familylove #behavioranalysis",
-    "search_terms": [
-      "father son emotional conversation cinematic",
-      "parent proud moment subtle expression",
-      "family unspoken emotions close up",
-      "man reflecting inner thoughts cinematic portrait",
-      "generational bond quiet understanding",
-      "father daughter tender moment cinematic"
-    ],
-    "duration": 14,
-    "title_theme": "pink",
-    "read_theme": "yellow",
-    "video_filter": "dark_blue",
-    "music": "a4.mp3",
-    "created_at": "2026-09-20T23:45:45.677204+00:00"
-  },
-  {
     "excel_number": 1008,
     "title": "الحقيقة وراء غضب أمك من استقلالك المفاجئ",
     "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a3.mp3",
     "created_at": "2026-11-11T00:18:25.855000+00:00"
+  },
+  {
+    "excel_number": 1507,
+    "title": "ماذا يعني أن تتذكر الشعور لا الحدث؟",
+    "read_text": "👇 الحقيقة كاملة في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تستحضر بعض المشاعر بقوة أكبر من تفاصيل الأحداث نفسها؟ هل يمتلك الماضي ذاكرة خاصة بنا لا تفارقنا أبداً؟ قد يبدو الأمر غريباً، لكن الطريقة التي نتذكر بها العالم من حولنا تكشف أسرارًا عميقة عن عقولنا. إنها ليست مجرد ذكريات عابرة، بل هي بصمات روحانية تتشكل بفعل تجاربنا العميقة. هذا الفيديو يغوص في أعماق النفس البشرية ليكشف كيف أن الشعور قد يطغى على الحدث، وكيف أن الأحاسيس وحدها تصبح سجلاً لحياتنا. سنتعرف على الأسباب النفسية الكامنة وراء هذه الظاهرة وكيف تؤثر على إدراكنا للزمن. اكتشف لماذا تبقى المشاعر حية فينا حتى بعد أن تتلاشى تفاصيل الموقف. هل يمكن أن يكون ما نشعر به أصدق من أي شيء نراه؟",
+    "hashtags": "#علم_النفس #الذكريات #المشاعر #الوعي #التذكر #العقل_البشري #علم_النفس_الاجتماعي #تحليل_السلوك #self_awareness #memory #emotions #psychology_facts #mind_power #neurology #human_behavior",
+    "search_terms": [
+      "emotional portrait close-up",
+      "thoughtful expression cinematic",
+      "nostalgic memory looking away",
+      "pensive mood soft lighting",
+      "inner reflection close-up",
+      "vulnerable emotion face"
+    ],
+    "duration": 13,
+    "title_theme": "yellow",
+    "read_theme": "red",
+    "video_filter": "red",
+    "music": "a4.mp3",
+    "created_at": "2026-11-11T00:56:59.320216+00:00"
   }
 ]
