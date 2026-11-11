@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1006,
-    "title": "ماذا يعني أن زوجتك تكرر نفس السؤال بصيغ مختلفة؟",
-    "read_text": "👇 التفسير النفسي في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا تعيد زوجتك طرح نفس السؤال مرارًا وتكرارًا، لكن بكلمات مختلفة؟ هذا النمط السلوكي قد لا يكون مجرد تكرار عشوائي، بل قد يخفي رسائل أعمق بكثير من مجرد طلب معلومة. غالبًا ما تكون هذه طريقة غير مباشرة للتعبير عن احتياجات غير ملباة، أو قلق خفي، أو حتى اختبار لمستوى اهتمامك وتركيزك. قد تشير التكرارات المتزايدة إلى شعور بعدم الأمان أو رغبة في التأكيد على أهمية أمر ما في ذهنها. أحيانًا، يكون الأمر مجرد وسيلة للتأكد من أنك تستمع حقًا، وليس مجرد سماع. إن فهم هذه الدوافع الخفية يفتح الباب أمام تواصل أعمق وأكثر صدقًا. فهل تفهم حقًا لغة الأسئلة المتكررة؟ 🤔",
-    "hashtags": "#علم_نفس #علاقات_زوجية #لغة_الجسد #تحليل_سلوك #ذكاء_عاطفي #التواصل_الفعال #اسرار_النجاح #تطوير_الذات #نصائح_زوجية #psycho #relationships #communication #behavior #psychologyfacts #love",
-    "search_terms": [
-      "woman looking thoughtful, concerned, pensive, cinematic",
-      "woman expressing worry, anxiety, emotional distress, portrait",
-      "couple discussing relationship, subtle tension, empathy",
-      "woman seeking reassurance, connection, understanding, soft lighting",
-      "intimate conversation, close-up on faces, emotional depth",
-      "woman contemplating, reflecting, inner thoughts, bokeh background"
-    ],
-    "duration": 15,
-    "title_theme": "cyan",
-    "read_theme": "orange",
-    "video_filter": "dark_blue",
-    "music": "a3.mp3",
-    "created_at": "2026-09-20T22:46:21.730026+00:00"
-  },
-  {
     "excel_number": 1007,
     "title": "لماذا يمدحك والدك أمام الناس ويصمت وحدكما؟",
     "read_text": "👇 الحقيقة كاملة في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a2.mp3",
     "created_at": "2026-11-10T23:47:54.974021+00:00"
+  },
+  {
+    "excel_number": 1506,
+    "title": "الحقيقة النفسية خلف نسيانك أسماء من لا يلمسونك",
+    "read_text": "👇 التفسير النفسي في الوصف👇",
+    "description": "هل تتساءل لماذا تختفي أسماء أشخاص لا تعرفهم جيدًا من ذاكرتك فورًا؟ ما هو هذا الحاجز النفسي الخفي الذي يفصل بين الأشخاص المهمين في حياتك والآخرين الذين يبدون عابرين؟ يبدو الأمر غريبًا، أليس كذلك؟ الحقيقة أن أدمغتنا تمتلك آليات معقدة لتصفية المعلومات وحفظ ما يهمنا حقًا، وما لا يهم يندثر بسرعة. هذا الفيديو سيكشف لك عن الآلية النفسية الدقيقة التي تجعل أسماء معينة تتلاشى بسهولة، بينما تبقى أخرى محفورة بعمق. سنغوص في علم الذاكرة وكيف يؤثر الانتباه العاطفي على تثبيت المعلومات، ولماذا قد يكون نسيانك لأسماء هؤلاء الأشخاص انعكاسًا لأهميتهم الفعلية في عالمك الداخلي. هل نسيانك لهم هو اختيار أم مجرد وظيفة دماغية؟",
+    "hashtags": "#علم_النفس #الذاكرة #النسيان #العقل_الباطن #التركيز #الاهتمام #السلوك_البشري #العلاقات_الإنسانية #التطوير_الذاتي #علم_النفس_الاجتماعي #psychology #memory #forgetting #mindfulness #human_behavior",
+    "search_terms": [
+      "cinematic emotional portrait memory loss",
+      "person thinking deep sad bokeh background",
+      "face thoughtful looking away atmospheric lighting",
+      "woman contemplative close up soft focus",
+      "man pensive subtle expression natural light",
+      "psychological reflection cinematic mood"
+    ],
+    "duration": 15,
+    "title_theme": "yellow",
+    "read_theme": "orange",
+    "video_filter": "dark_green",
+    "music": "a3.mp3",
+    "created_at": "2026-11-11T00:18:25.855000+00:00"
   }
 ]
