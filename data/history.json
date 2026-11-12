@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1021,
-    "title": "لماذا تهاجمك أمك بالنصيحة وقت ضعفك؟",
-    "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
-    "description": "هل سبق لك أن شعرت بأن نصيحة أمك القاسية لم تكن في وقتها المناسب، بل في أشد لحظات ضعفك؟ قد يبدو الأمر قاسياً، لكن ما يخفيه هذا السلوك يتجاوز مجرد الظلم الظاهر. إنها طريقة معقدة جداً لمعالجة مشاعرها هي الأخرى، وقد تكون غريزتها تسعى لحمايتك بطريقة لم تفهمها بعد. هل تعرف أن هذه النصائح اللاذعة قد تكون قناعاً يخفي خوفاً عميقاً من فقدانك أو رؤيتك تتألم؟ إنها محاولة لا واعية للتغلب على عجزها عن حمايتك بشكل مباشر، فتحاول جاهدة إعطائك أدوات قد تراها ضرورية للبقاء. ورغم أن الأثر قد يكون مدمراً نفسياً، إلا أن الدافع وراءه قد يكون مليئاً بالحب غير المشروط. ما هو رد فعلك عندما تتلقى مثل هذه النصيحة في وقت الأزمة؟",
-    "hashtags": "#علم_نفس #علاقات_أسرية #علم_النفس_الاجتماعي #سلوك_البشر #التواصل_الفعال #الدعم_العاطفي #علم_النفس_التربوي #مشاعر_الأم #فهم_الآخرين #familydynamics #psychology #emotionalintelligence #parenting #selfhelp #mentalhealth",
-    "search_terms": [
-      "emotional mother daughter conflict cinematic",
-      "stressed woman receiving unsolicited advice close up",
-      "mother comforting distressed adult daughter portrait",
-      "woman crying seeking support from mother cinematic",
-      "parental pressure on adult child emotional portrait",
-      "mother's tough love expression cinematic"
-    ],
-    "duration": 15,
-    "title_theme": "green",
-    "read_theme": "orange",
-    "video_filter": "dark_blue",
-    "music": "a28.mp3",
-    "created_at": "2026-09-22T17:47:46.752243+00:00"
-  },
-  {
     "excel_number": 1022,
     "title": "ماذا يحدث لعقلك عندما يقلل صديقك من تعبك؟",
     "read_text": "👇 التفسير النفسي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a23.mp3",
     "created_at": "2026-11-12T19:12:17.750251+00:00"
+  },
+  {
+    "excel_number": 1521,
+    "title": "لماذا تعود ذكرى معينة مع نفس الطقس؟",
+    "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
+    "description": "هل سبق وتساءلت لماذا تعود ذكرى معينة إليك بقوة حين يتغير الطقس؟ إنها ليست مجرد صدفة، بل هي آلية نفسية عميقة تتجاوز إدراكنا السطحي. هناك سيمفونية خفية بين حواسنا وبيئتنا، تربط المشاعر بالأحوال الجوية بطرق لم نكن نتوقعها. ما هو السر الكامن وراء هذه الظاهرة؟ كيف يمكن لرائحة المطر أو دفء الشمس أن تستحضر صورًا وأصواتًا من الماضي كأنها حدثت بالأمس؟ هذه الروابط العصبية الدقيقة هي مفتاح فهمنا لذواتنا ولذكرياتنا. إنها دليل على أن ماضينا ليس بعيدًا كما نظن، بل هو قريب جدًا، ينتظر فقط الإشارة الصحيحة لينبض بالحياة. هل نحن حقًا من يتحكم في ذكرياتنا، أم أن البيئة تلعب دورًا أكبر؟",
+    "hashtags": "#علم_نفس #ذكريات #الطقس #علاقات #تحليل_سلوك #مشاعر #تفكير #فضول #غموض #نفساني #memory #psychology #weather #emotions #behavior",
+    "search_terms": [
+      "emotional portrait looking out window rain",
+      "nostalgic memory weather change",
+      "person reflecting on past rainy day",
+      "cinematic close up sad memory",
+      "woman feeling emotion connection to weather",
+      "man looking thoughtful at sunset"
+    ],
+    "duration": 13,
+    "title_theme": "orange",
+    "read_theme": "red",
+    "video_filter": "purple",
+    "music": "a28.mp3",
+    "created_at": "2026-11-12T21:09:59.454850+00:00"
   }
 ]
