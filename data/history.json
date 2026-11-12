@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1015,
-    "title": "ماذا يحدث عندما تقارنك أمك بشخص لا تحبه؟",
-    "read_text": "👇 التفسير الكامل في الوصف👇",
-    "description": "هل شعرت يومًا بأن مقارنة والدتك لك بآخر تثير داخلك عاصفة من المشاعر المكبوتة؟ إنها لحظة قد تبدو عابرة، لكنها تخفي تحت سطحها طبقات عميقة من التأثير النفسي الذي ينسج خيوط شخصيتنا. ماذا لو كانت هذه المقارنات ليست مجرد كلمات عابرة، بل بصمات تحدد هويتنا وقيمتنا في أعين من نحب؟ سنغوص اليوم في أعماق النفس البشرية لنكشف الأثر الخفي لهذه المواقف، وكيف يمكنها أن تشكل نظرتنا لأنفسنا وللعالم من حولنا. اكتشف لماذا تشعر بهذا القدر من الألم وكيف يؤثر ذلك على علاقاتك. هل هي محاولة من الأم لغرس الطموح، أم مجرد إسقاط لرغبات لم تتحقق؟ وكيف يمكن لهذا الشعور بأن تكون أقل من المطلوب أن يشعل شرارة التمرد الداخلي أو الاستسلام المقنع؟",
-    "hashtags": "#علم_نفس #تربية #علاقات_أسرية #تنمية_الذات #مشاعر #تحليل_سلوك #الأم_والابن #الضغوط_الأسرية #الثقة_بالنفس #نصائح_نفسية #علم_النفس_الاجتماعي #parenting #familydynamics #psychology #selfesteem",
-    "search_terms": [
-      "woman looking thoughtful cinematic portrait",
-      "mother and daughter emotional connection",
-      "sadness portrait female",
-      "young woman reflecting indoors natural light",
-      "family conflict emotional scene",
-      "woman feeling inadequate portrait"
-    ],
-    "duration": 11,
-    "title_theme": "red",
-    "read_theme": "yellow",
-    "video_filter": "dark_green",
-    "music": "a18.mp3",
-    "created_at": "2026-09-21T22:56:09.079253+00:00"
-  },
-  {
     "excel_number": 1016,
     "title": "السر وراء شعور أخيك بالاستفزاز من نجاحك الهادئ",
     "read_text": "👇 المعنى الحقيقي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a17.mp3",
     "created_at": "2026-11-12T01:05:37.107227+00:00"
+  },
+  {
+    "excel_number": 1515,
+    "title": "ماذا يعني أن تتذكر اللون وتنسى الوجوه؟",
+    "read_text": "👇 التفسير الكامل في الوصف👇",
+    "description": "هل يمكن لعقلنا أن يخزن جمال الألوان بينما يتلاشى وجه من نحب؟ سؤال يلامس عمق الذاكرة البشرية ويفتح بابًا لتساؤلات حول ما نختار الاحتفاظ به وما نفقده. إن نسيان الوجوه بينما نتذكر ألوانها يعكس آلية دفاعية غامضة، أو ربما هو اعتراف بأن المشاعر العميقة أحيانًا تتجاوز ملامح الوجه. قد يكون اللون رمزًا للحالة الشعورية، أما الوجه فيتغير مع الزمن. ماذا يقول هذا عن الطريقة التي نربط بها ذكرياتنا؟ هل نتمسك بالإحساس أم بالتفاصيل؟ في أعماقنا، تتشكل صور غير مرئية، حقيقة تتكشف ببطء. كيف يمكن لمفهوم بسيط كهذا أن يكشف الكثير عن تركيبتنا النفسية وإدراكنا للعالم من حولنا؟",
+    "hashtags": "#علم_النفس #الذاكرة #علم_النفس_السلوكي #ادراك #عقل_البشر #psychology #memory #faceblindness #colorperception #humanbehavior #cognitivepsychology #mindtricks #psychologicalfacts #shortsvideo #reels",
+    "search_terms": [
+      "cinematic emotional portrait of person remembering color",
+      "close up human face feeling nostalgia",
+      "abstract visual representation of memory and color",
+      "person looking thoughtful with colorful background",
+      "emotional close up of eyes remembering past",
+      "symbolic representation of losing face but remembering feelings"
+    ],
+    "duration": 15,
+    "title_theme": "pink",
+    "read_theme": "green",
+    "video_filter": "purple",
+    "music": "a18.mp3",
+    "created_at": "2026-11-12T01:44:17.699435+00:00"
   }
 ]
