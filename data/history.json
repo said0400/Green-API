@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1040,
-    "title": "لماذا يختفي صديقك عند أول خلاف حقيقي؟",
-    "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا تتلاشى بعض الصداقات تمامًا بمجرد ظهور أول شرارة خلاف حقيقي؟ هذا الاختفاء المفاجئ قد يكون مؤلمًا، لكنه غالبًا ما يكشف عن حقائق عميقة حول طبيعة العلاقات الإنسانية. يظن البعض أن الاختفاء هو هروب، ولكنه قد يكون في جوهره طريقة لإعادة تقييم المشاعر والولاءات. لماذا يختار البعض الانسحاب بدلًا من المواجهة؟ هل هي قلة نضج أم إدراك مبكر لعدم جدوى الاستمرار؟ قد يخفي هذا السلوك آليات دفاع نفسية معقدة، تجعل البعض يفضلون الابتعاد بدلًا من مواجهة الواقع المر. ما الذي تخبرنا به هذه الانسحابات المفاجئة عن دوافعنا وعن قيمة الصداقات التي نعتقد أنها قوية؟ هل يمكن لتصرف كهذا أن يكون رسالة واضحة لا لبس فيها؟",
-    "hashtags": "#علم_نفس #علاقات #صداقة #تحليل_سلوك #فضول #أسرار_النفس #علم_اجتماع #مشاعر #نصائح #تطوير_الذات #psychology #friendship #behavior #relationships #self_awareness",
-    "search_terms": [
-      "sad person looking away cinematic",
-      "lonely person in crowd emotional",
-      "friendship conflict disappointment slow motion",
-      "person walking away alone thoughtful",
-      "portrait of person reflecting sadness",
-      "couple arguing distant shot emotional"
-    ],
-    "duration": 11,
-    "title_theme": "orange",
-    "read_theme": "purple",
-    "video_filter": "dark_blue",
-    "music": "a52.mp3",
-    "created_at": "2026-09-24T15:59:35.015410+00:00"
-  },
-  {
     "excel_number": 1041,
     "title": "ماذا يحدث لعقلك عندما تلاحظ غيرة الأخت منك؟",
     "read_text": "👇 الجزء الأهم موجود في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a51.mp3",
     "created_at": "2026-11-14T16:10:28.437433+00:00"
+  },
+  {
+    "excel_number": 1540,
+    "title": "السر وراء تغير الذاكرة مع كل رواية جديدة",
+    "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
+    "description": "هل تعلم أن ذاكرتك ليست سجلاً ثابتاً بل كيان متغير يتشكل مع كل مرة تتذكره؟ هذه الحقيقة البسيطة قد تقلب فهمك لنفسك ولتاريخك الشخصي رأساً على عقب. ما يحدث داخل عقلك بالضبط عندما تستدعي ذكرى قديمة، وكيف يمكن لمعلومة جديدة أن تعيد صياغة الماضي دون أن تشعر؟ إنها ليست خيالاً، بل آلية نفسية عميقة تتحكم في كيفية بناء هويتنا وتفسيرنا لتجاربنا. كل استدعاء للمعلومات يعزز مسارات معينة في الدماغ ويضعف أخرى، مما يجعل الذكريات أشبه بتمثال يتم نحته مراراً وتكراراً. إنها عملية مستمرة تتكيف مع واقعنا الحالي ورغباتنا اللاواعية. هذه الطبيعة المرنة للذاكرة هي السبب في اختلاف رواياتنا للأحداث نفسها. كيف يؤثر هذا التغيير المستمر على قراراتنا المستقبلية؟",
+    "hashtags": "#علم_النفس #الذاكرة #سلوك_بشري #تحليل_نفسي #تطوير_الذات #العقل_الباطن #معلومات_نفسية #علم_النفس_الاجتماعي #Memory #Psychology #Brain #HumanBehavior #CognitivePsychology #SelfImprovement #Mind",
+    "search_terms": [
+      "cinematic memory reconstruction close up",
+      "emotional woman reflecting past portrait",
+      "man thinking deep connection to past",
+      "abstract representation of memory recall",
+      "person lost in thought looking out window cinematic",
+      "nostalgic moments cinematic portrait"
+    ],
+    "duration": 15,
+    "title_theme": "black",
+    "read_theme": "yellow",
+    "video_filter": "red",
+    "music": "a52.mp3",
+    "created_at": "2026-11-14T17:20:48.728346+00:00"
   }
 ]
