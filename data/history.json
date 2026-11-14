@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1042,
-    "title": "السر وراء برودة أخيك معك أمام الناجحين",
-    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
-    "description": "هل لاحظت كيف يتغير سلوك شخص عزيز عليك فجأة أمام الآخرين، خاصة الناجحين منهم؟ لماذا تتحول دفء العلاقات الأسرية إلى جفاء غامض في تلك اللحظات؟ قد يكمن السبب في صراع داخلي لا تراه، شعور بالغيرة أو عدم الأمان يتجسد في تصرفات تبدو باردة وغير مبررة. ربما يخفي بروده خلف واجهة واهية، يحاول فيها إخفاء إعجابه أو ربما خوفه من المقارنة. هذا التناقض السلوكي يكشف عن أبعاد نفسية معقدة، عن مساحات مظلمة في النفس البشرية تتأثر بالمحيط والنجاح. ما الذي يشعر به حقًا خلف تلك القشرة المتصلبة؟ هل هو تقدير أم حقد دفين؟",
-    "hashtags": "#علم_النفس #برود_المشاعر #علاقات_أسرية #تحليل_السلوك #نصائح_اجتماعية #مشاعر_متناقضة #تطوير_الذات #فضول #صراع_داخلي #فهم_الآخرين #علاقات_معقدة #psychology #behavior #familydynamics #socialanxiety",
-    "search_terms": [
-      "man feeling insecure in a crowd cinematic",
-      "sibling rivalry subtle tension emotional portrait",
-      "person struggling with envy close up cinematic",
-      "anxiety in social settings worried expression cinematic",
-      "feeling left out in a group emotional portrait",
-      "internal conflict visible on face cinematic portrait"
-    ],
-    "duration": 11,
-    "title_theme": "orange",
-    "read_theme": "green",
-    "video_filter": "black",
-    "music": "a54.mp3",
-    "created_at": "2026-09-24T19:37:36.858948+00:00"
-  },
-  {
     "excel_number": 1043,
     "title": "لماذا تعاند زوجتك حين تشعر أنها غير مسموعة؟",
     "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a53.mp3",
     "created_at": "2026-11-14T18:53:10.084257+00:00"
+  },
+  {
+    "excel_number": 1542,
+    "title": "الحقيقة خلف حفظك للأماكن عبر الأصوات",
+    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تحتفظ ببعض الأماكن في ذاكرتك بناءً على الأصوات فقط؟ إنها ليست مجرد صدفة، بل هي ظاهرة نفسية عميقة تربط بين حواسنا وكيف نبني خريطتنا الذهنية للعالم. الصوت الذي تسمعه، الأغنية التي تتكرر، أو حتى ضوضاء معينة، يمكن أن تصبح مفتاحًا سحريًا لإعادة إحياء ذكرى مكان بكامله. هذا الارتباط يعكس قدرة الدماغ المدهشة على تشفير المعلومات بطرق غير متوقعة، حيث يبرع في ربط المشاعر والتجارب الحسية بالأصوات لخلق ارتباطات قوية ودائمة. فكيف يمكن لذبذبة بسيطة أن تعيد لك صورة واضحة لمكان نسخته؟ إنها رحلة في أعماق اللاوعي، حيث تشكل الأصوات جسورًا بين الماضي والحاضر، لتكشف عن مدى تعقيد وتأثير الذكريات الصوتية على إدراكنا للمكان. هل صوت معين يجعلك تشعر وكأنك عدت بالزمن للوراء؟",
+    "hashtags": "#علم_النفس #الذاكرة_الصوتية #الارتباط_الحسي #ادراك_المكان #السلوك_البشري #العقل_الباطن #الذاكرة #تحليل_السلوك #علم_النفس_الاجتماعي #psy_facts #memory #sound_perception #brain_function #neuroscience #psychologyhacks",
+    "search_terms": [
+      "cinematic emotional portrait memory soundscape",
+      "close up human face reflecting on sounds",
+      "nostalgic memory trigger sound visualization",
+      "emotional connection to place through audio cinematic",
+      "brain mapping sound memory abstract",
+      "sensory experience of place remembering through sound"
+    ],
+    "duration": 14,
+    "title_theme": "green",
+    "read_theme": "pink",
+    "video_filter": "dark_blue",
+    "music": "a54.mp3",
+    "created_at": "2026-11-14T20:15:41.828383+00:00"
   }
 ]
