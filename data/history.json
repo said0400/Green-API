@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1043,
-    "title": "لماذا تعاند زوجتك حين تشعر أنها غير مسموعة؟",
-    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا تتحول العناد إلى سلاح الصمت لدى زوجتك رغم حبها لك؟ غالبًا ما تخفي هذه العناد رغبة أعمق في أن يُفهم ما تشعر به حقًا، فتصبح المقاومة هي لغتها الوحيدة عندما تشعر أن صوتها يضيع في زحام الحياة. عندما لا تشعر بالاستماع، يبدأ العناد في النمو كدرع يحمي هشاشتها الداخلية، فهو ليس رفضًا لشخصك، بل صرخة مكتومة تبحث عن تقدير لحضورها وكلماتها. إنها طريقة لا واعية للتعبير عن الإحباط وخيبة الأمل، محاولة لإجبار الطرف الآخر على رؤية ما هو مخفي خلف القناع. كيف يمكن لبعض الكلمات البسيطة أن تعيد جسر التواصل وتذيب جدار العناد؟ وهل يمكن فهم لغة الصمت العنيف هذه لتتحول إلى لغة حب وتفاهم؟",
-    "hashtags": "#علم_نفس #علاقات_زوجية #سلوك_المرأة #الاستماع_الفعال #الذكاء_العاطفي #التواصل_الفعال #فهم_الآخر #نصائح_زوجية #حلول_للعلاقات #psyhologyfacts #relationshipgoals #communicationtips #marriagetips #behavioralanalysis #loveandunderstanding",
-    "search_terms": [
-      "woman feeling unheard portrait",
-      "frustrated woman close up cinematic",
-      "sadness emotional portrait female",
-      "woman ignored lonely cinematic",
-      "silent struggle woman close up",
-      "woman's inner conflict emotional"
-    ],
-    "duration": 14,
-    "title_theme": "pink",
-    "read_theme": "green",
-    "video_filter": "dark_green",
-    "music": "a57.mp3",
-    "created_at": "2026-09-24T20:49:21.047005+00:00"
-  },
-  {
     "excel_number": 1044,
     "title": "الحقيقة خلف خوف الأم من تغيير روتين البيت",
     "read_text": "👇 ما الذي يحدث فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a54.mp3",
     "created_at": "2026-11-14T20:15:41.828383+00:00"
+  },
+  {
+    "excel_number": 1543,
+    "title": "ماذا يحدث لعقلك عندما يحذف ما لا يحتمله؟",
+    "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
+    "description": "هل تعلم أن عقلك يمتلك آلية دفاعية لا واعية لحذف الذكريات المؤلمة التي تتجاوز قدرتك على التحمل؟  إنها عملية أشبه بضباب خفيف يكتنف التفاصيل، تاركًا وراءه شعورًا غامضًا بالفقدان أو الفراغ.  لكن ماذا لو كانت هذه العملية تخفي أسرارًا أعمق مما نتخيل؟  قد لا تختفي تلك الذكريات تمامًا، بل تتجذر في أعماق اللاوعي، مؤثرة على سلوكياتك وقراراتك دون أن تدري.  هل شعرت يومًا برابط غريب لأحداث لم تعشها؟  ربما يكون عقلك يحتفظ بتلك الآثار.  تتجسد هذه الآثار أحيانًا في مخاوف غير مبررة أو ردود فعل عاطفية مفاجئة.  إنها بصمات لما كان، لكنه لم يعد مرئيًا.  فهل تعتقد أن هذا الحذف يخدم مصلحتك حقًا، أم أنه يخلق لك واقعًا وهميًا؟",
+    "hashtags": "#علم_النفس #الذاكرة #العقل_الباطن #الصدمة_النفسية #تحليل_السلوك #صحة_نفسية #الوعي #علم_المشاعر #الذاكرة_المحذوفة #psychology #memory #subconscious #trauma #behavioral_analysis #mental_health",
+    "search_terms": [
+      "cinematic emotional portrait memory loss",
+      "abstract mind fog feeling lost",
+      "unconscious mind processing trauma",
+      "subtle emotional distress subconscious",
+      "evocative portrait introspection solitude",
+      "visual metaphor mental defense mechanism"
+    ],
+    "duration": 13,
+    "title_theme": "orange",
+    "read_theme": "yellow",
+    "video_filter": "gray",
+    "music": "a57.mp3",
+    "created_at": "2026-11-14T21:42:26.502944+00:00"
   }
 ]
