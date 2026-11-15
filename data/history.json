@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1047,
-    "title": "لماذا تتعامل أختك معك بلطف بعد مشكلتها؟",
-    "read_text": "👇 التفسير الكامل في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا تتغير معاملة أختك فجأة لتصبح أكثر لطفًا بعد خلاف بينكما؟ يبدو الأمر غريبًا، أليس كذلك؟ هناك سر دفين خلف هذا التحول المفاجئ في سلوكها، شيء لا تراه الأعين بسهولة. هذا الفيديو سيكشف لك الغموض الذي يحيط بتصرفات أختك، ويوضح لك الأسباب النفسية العميقة التي تقف وراء هذا اللطف المفاجئ. اكتشف كيف تتجاوز أختك الخلافات بطرق قد لا تتوقعها، وكيف تسعى للحفاظ على الرابط الأسري بقوة. إنها ليست مجرد معاملة حسنة، بل هي لغة حب وتسامح تتجاوز الكلمات. هل فهمت حقًا ما يدور في عقل أختك؟ 🤔",
-    "hashtags": "#علم_نفس_الأسرة #العلاقات_الأسرية #سلوك_الأخت #فهم_العلاقات #التحليل_النفسي #تفسير_السلوك #مشاكل_أسرية #اللطف_المفاجئ #التعامل_مع_الأخوة #FamilyDynamics #SisterLove #Psychology #BehaviorAnalysis #RelationshipTips #UnderstandingPeople",
-    "search_terms": [
-      "woman looking thoughtful",
-      "sister hug",
-      "emotional family moment",
-      "woman comforting",
-      "introspective portrait",
-      "healing relationship"
-    ],
-    "duration": 14,
-    "title_theme": "yellow",
-    "read_theme": "black",
-    "video_filter": "dark_green",
-    "music": "a64.mp3",
-    "created_at": "2026-09-25T00:12:20.083633+00:00"
-  },
-  {
     "excel_number": 1048,
     "title": "ماذا يحدث عندما يطلب أخوك رأيك ثم يستهين به؟",
     "read_text": "👇 المعنى الحقيقي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "red",
     "music": "a62.mp3",
     "created_at": "2026-11-15T00:27:35.395506+00:00"
+  },
+  {
+    "excel_number": 1547,
+    "title": "ماذا يعني أن تكون الذاكرة أقسى من الحقيقة؟",
+    "read_text": "👇 التفسير الكامل في الوصف👇",
+    "description": "هل سبق لك أن شعرت بأن ذكرياتك تحكي قصة مختلفة تمامًا عن الواقع الذي عشته؟ قد تكون الذاكرة أحيانًا سجنًا أقسى من أي حقيقة، تحبسنا في دوائر من الماضي لا نستطيع الإفلات منها. إنها تبني عوالم خاصة بنا، أحيانًا أكثر إقناعًا من أي شيء حدث بالفعل. لكن ما السر وراء هذه القوة الهائلة للذاكرة؟ كيف تشكل تصوراتنا وتؤثر على قراراتنا الحالية؟ هذه ليست مجرد أوهام، بل هي جزء عميق من آلية عمل عقولنا. استكشف معنا كيف تتلاعب الذاكرة بالحقائق، وكيف تبني ذواتنا، وتضع حدودًا لما ندركه. هل أنت حقًا سيد ذكرياتك، أم أنها هي التي تقودك؟",
+    "hashtags": "#علم_نفس #الذاكرة #الحقيقة #التفكير #سلوك_بشري #Psychology #Memory #Reality #Mindset #HumanBehavior #تحليل_نفسي #عقل_البشر #ادراك #SelfAwareness #قصص_الذاكرة",
+    "search_terms": [
+      "emotional portrait memory abstract",
+      "cinematic mind introspection lonely",
+      "thoughtful person looking away thoughtful",
+      "memory flashback abstract emotional",
+      "person lost in thought cinematic",
+      "nostalgia feeling abstract cinematic"
+    ],
+    "duration": 13,
+    "title_theme": "black",
+    "read_theme": "orange",
+    "video_filter": "gray",
+    "music": "a64.mp3",
+    "created_at": "2026-11-15T01:27:35.551158+00:00"
   }
 ]
