@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1051,
-    "title": "ما الذي يجعلك تتقمص شخصية مختلفة مع كل مجموعة؟",
-    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
-    "description": "هل سبق لك أن لاحظت أنك تتصرف بشكل مختلف تمامًا مع أشخاص مختلفين؟ هذا التغيير المفاجئ في شخصيتك ليس عشوائيًا على الإطلاق، بل يحمل في طياته سرًا عميقًا حول طبيعتنا البشرية. هناك دافع نفسي خفي يوجه سلوكك، ورغبة فطرية تتوق إلى التكيف والبقاء. اكتشف لماذا يظهر جانبك المتنوع، وكيف يشكل عقلك هذه الأقنعة الاجتماعية المختلفة. هل هذا دليل على مرونة أم مجرد خداع؟ قد تكون الحقيقة أكثر تعقيدًا مما تتخيل، فهي تتعلق بطريقة إدراكنا لأنفسنا وللآخرين، وبكيفية بناء جدران غير مرئية للفصل بين جوانب هويتنا. هذا الفيديو سيكشف لك الأسباب الحقيقية وراء تبديل أدوارك. ما هو الجانب الحقيقي منك الذي تخفيه؟",
-    "hashtags": "#علم_النفس #تحليل_الشخصية #السلوك_البشري #التكيف_الاجتماعي #الهوية_المتعددة #العلاقات_الإنسانية #الدوافع_النفسية #التفكير_النقدي #فضول #ألغاز_النفس #psychology #behavior #self_awareness #social_dynamics #human_nature",
-    "search_terms": [
-      "cinematic emotional portrait human connection",
-      "thoughtful person looking away contemplative mood",
-      "subtle social interaction diverse group subtle expression",
-      "person reflecting inner turmoil soft lighting",
-      "vulnerability and strength emotional close-up",
-      "identity shifting personality facets introspection"
-    ],
-    "duration": 12,
-    "title_theme": "orange",
-    "read_theme": "cyan",
-    "video_filter": "gray",
-    "music": "a68.mp3",
-    "created_at": "2026-09-25T18:08:07.801783+00:00"
-  },
-  {
     "excel_number": 1052,
     "title": "الحقيقة خلف شعورك أنك ممثل داخل يومك العادي",
     "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "purple",
     "music": "a67.mp3",
     "created_at": "2026-11-15T18:01:57.427020+00:00"
+  },
+  {
+    "excel_number": 1551,
+    "title": "لماذا تبدأ يومك بعادة تكرهها ثم تكررها؟",
+    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
+    "description": "هل سبق لك أن تساءلت لماذا تجبر نفسك على فعل شيء بغيض في الصباح كل يوم؟ هذا السلوك يبدو غير منطقي، أليس كذلك؟ في أعماق عقولنا، هناك دوافع خفية تقود هذه العادات الغريبة، وهي ليست مجرد تصرفات عشوائية بل بصمات عميقة لشخصيتنا. ما الذي يخفيه هذا الإصرار على تكرار ما لا نحبه؟ قد يكون الأمر مرتبطًا بالخوف من المجهول، أو ربما رغبة لاواعية في السيطرة على ما يمكننا التحكم به في بداية اليوم. إن فهم هذه الآلية النفسية يكشف الكثير عن صراعاتنا الداخلية وكيف نتعامل مع التحديات. هل هي علامة ضعف أم قوة كامنة؟ وكيف يمكن لهذا النمط المتكرر أن يشكل مسار يومك بأكمله؟",
+    "hashtags": "#علم_النفس #سلوك_بشري #تطوير_الذات #عادات_صحية #تحفيز #تفكير_إيجابي #التغلب_على_الملل #الوعي_الذاتي #تحليل_الشخصية #psychoogy #selfimprovement #habits #motivation #mindset #dailyroutine",
+    "search_terms": [
+      "introspective person morning",
+      "woman contemplating window",
+      "man waking up thoughtful",
+      "lonely person sunrise",
+      "person struggling with routine",
+      "emotional portrait morning light"
+    ],
+    "duration": 13,
+    "title_theme": "orange",
+    "read_theme": "black",
+    "video_filter": "purple",
+    "music": "a68.mp3",
+    "created_at": "2026-11-15T19:29:42.046542+00:00"
   }
 ]
