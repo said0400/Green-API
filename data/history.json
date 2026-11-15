@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1055,
-    "title": "السر وراء شعورك أنك لا تشبه صورك القديمة",
-    "read_text": "👇 الحقيقة كاملة في الوصف👇",
-    "description": "لماذا يبدو وجهك في الصور القديمة غريبًا وكأنك شخص آخر؟ هل هي مجرد أوهام بصرية أم أن هناك تفسيرًا نفسيًا أعمق يكمن وراء هذا الشعور؟ في عالم يتغير فيه كل شيء، قد يتغير مفهومنا لأنفسنا بشكل لا ندركه. هذه الظاهرة ليست نادرة، بل هي علامة على تطور عميق داخلك. غالبًا ما نربط ذكرياتنا بمشاعر وأحاسيس لا تترجم بالضرورة إلى ملامح وجه ثابتة. الأسباب تتجاوز مجرد التقدم في العمر، فهي تتعلق بتجاربنا، اكتشافاتنا، وتراكم خبرات الحياة التي تعيد تشكيل وعينا بذاتنا. ربما صورك القديمة تعكس مرحلة عابرة، بينما أنت اليوم كيان أكثر نضجًا وتعقيدًا. هل الصورة هي الهوية أم أن الهوية أعمق من مجرد مظهر؟",
-    "hashtags": "#علم_النفس #الذاكرة #الهوية #تطوير_الذات #تحليل_السلوك #علم_النفس_الاجتماعي #تغيير_الشخصية #التطور_الشخصي #SelfDiscovery #PsychologyFacts #Identity #Memory #OldPhotos #PersonalGrowth #Mindset",
-    "search_terms": [
-      "cinematic portrait emotional introspection",
-      "person looking thoughtful alone outdoor",
-      "face transformation subtle aging process",
-      "memory reflection sad thoughtful expression",
-      "identity crisis self doubt close up",
-      "inner change emotional journey thoughtful gaze"
-    ],
-    "duration": 12,
-    "title_theme": "pink",
-    "read_theme": "red",
-    "video_filter": "dark_green",
-    "music": "a2.mp3",
-    "created_at": "2026-09-25T22:56:29.037686+00:00"
-  },
-  {
     "excel_number": 1056,
     "title": "لماذا تخاف أن يراك الناس كما أنت فعلًا؟",
     "read_text": "👇 التفاصيل التي تغير كل شيء في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a1.mp3",
     "created_at": "2026-11-15T23:13:39.083419+00:00"
+  },
+  {
+    "excel_number": 1555,
+    "title": "لماذا تربط الراحة بعادات تؤذيك؟",
+    "read_text": "👇 الحقيقة كاملة في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تجذبك السعادة اللحظية لدرجة تضر مستقبلك؟  الحقيقة قد تكون أكثر تعقيدًا مما تبدو، وتشير إلى دوافع عميقة تتجاوز مجرد ضعف الإرادة.  في هذا الفيديو، نغوص في أعماق النفس البشرية لنكشف السر وراء هذا التناقض السلوكي المحيّر.  قد تكون هذه العادات الضارة بمثابة ملجأ مؤقت من ضغوط الحياة، أو ربما تعكس احتياجات غير ملباة في أعماقنا.  إنها أشبه بدواء مسكن لا يعالج الألم الأصلي، بل يخدر الشعور به لفترة وجيزة.  غالباً ما تكون هذه الارتباطات السلبية متجذرة في تجارب سابقة أو معتقدات خاطئة ترسخت مع الزمن.  نحن نبحث عن الراحة في الأماكن الخطأ، مخدوعين بوهم السعادة الزائفة.  ولكن، هل يمكن كسر هذه الدائرة المفرغة؟  هل أنت مستعد لمواجهة الحقيقة التي تختبئ خلف كل عادة مؤذية؟",
+    "hashtags": "#علم_نفس #علم_النفس_السلوكي #تطوير_الذات #تحفيز #نصائح #علاقات #صحة_نفسية #تفكير_إيجابي #تحليل_سلوك #psychology #selfhelp #motivation #behavior #mindset #wellbeing",
+    "search_terms": [
+      "woman looking out window thoughtful",
+      "man staring into distance contemplating",
+      "close up sad eyes tearful",
+      "person walking alone in nature cinematic",
+      "overwhelmed stressed person at home",
+      "silhouette against dramatic sky emotional"
+    ],
+    "duration": 15,
+    "title_theme": "pink",
+    "read_theme": "cyan",
+    "video_filter": "black",
+    "music": "a2.mp3",
+    "created_at": "2026-11-15T23:38:54.334267+00:00"
   }
 ]
