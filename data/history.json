@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1083,
-    "title": "لماذا تحن لفترة كنت تشتكي منها؟",
-    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا تشتاق لأيام كنت تتمنى لو تنتهي؟ هذا الشعور المعقد يختبئ خلف ظلال الذاكرة، حيث تكتسب الأيام الصعبة بريقًا زائفًا بعد مرور الزمن. يبدو أن العقل يخترع سيناريوهات مثالية لما كان، متناسيًا ضغوطاته ومعاناته الحقيقية. لكن ما السر وراء هذا التحريف الذاكري الذي يجعل الماضي يبدو أفضل من الحاضر؟ ربما هي آلية دفاعية لحماية النفس، أو ربما تقدير جديد للتجارب التي شكلتنا.  في أعماقنا، نحن لا نحن إلى الماضي نفسه، بل إلى نسخته المثالية التي نحتاجها الآن. هل تبحث عن الراحة في ذكريات مزيفة أم تواجه واقعك بقوة؟ 🤔",
-    "hashtags": "#علم_نفس #ذكريات #تحليل_سلوك #مشاعر #tiktok_secrets #psychologyfacts #relatability #nostalgia #selfimprovement #lifehacks #mentalhealth #humanbehavior #ytshorts #facebookreels #explorepage",
-    "search_terms": [
-      "nostalgia, cinematic, emotional, portrait, memory",
-      "looking back, pensive, thoughtful, bokeh, soft light",
-      "past memories, emotional reflection, human connection, close up",
-      "melancholy, longing, introspective, shallow depth of field",
-      "childhood memories, bittersweet, gentle focus, serene",
-      "time passing, reflection, emotional portrait, golden hour"
-    ],
-    "duration": 15,
-    "title_theme": "cyan",
-    "read_theme": "green",
-    "video_filter": "gray",
-    "music": "a45.mp3",
-    "created_at": "2026-09-28T22:40:08.979435+00:00"
-  },
-  {
     "excel_number": 1084,
     "title": "السر وراء ميلك للمبالغة في الاعتذار الذهني",
     "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a44.mp3",
     "created_at": "2026-11-18T22:47:17.054865+00:00"
+  },
+  {
+    "excel_number": 1583,
+    "title": "لماذا يصبح السهر تمردًا صامتًا أحيانًا؟",
+    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا يختار البعض السهر في الظلام بينما يغفو العالم؟ هذا الفعل قد يخفي وراءه صراعًا داخليًا لا تدركه العيون، فهو غالبًا ما يكون تمردًا صامتًا ضد ضغوط النهار ورتابته. هناك سر دفين في سكون الليل، شعور بالتحرر ربما، أو بحث عن مساحة خاصة لا يقتحمها أحد. هذه اللحظات وحدها قد تحمل إجابات لأسئلة لم تجرؤ على طرحها، إنها فرصة لمواجهة الذات بعيدًا عن أعين الآخرين. هل يصبح الليل هو الملجأ الوحيد لاستعادة السيطرة؟ أم أن السهر هو صرخة خافتة لمن يبحث عن معنى أعمق في حياة تبدو بلا نهاية؟ إنه استكشاف للروح في أعمق لحظاتها. لماذا تبدو العزلة الليلية هي الحل الأمثل أحيانًا؟",
+    "hashtags": "#علم_نفس #السهر #التمرد_الصامت #فضول #غموض #صراعات_داخلية #ليلة #تفكير_عميق #PsychologicalFacts #SelfDiscovery #InnerPeace #Mindfulness #NightOwl #BehaviorAnalysis #CopingMechanisms",
+    "search_terms": [
+      "person alone in dim light contemplative",
+      "sadness thoughtful expression night",
+      "lonely person looking out window dark",
+      "emotional portrait late night",
+      "quiet reflection indoors dimly lit",
+      "introspective mood cinematic"
+    ],
+    "duration": 15,
+    "title_theme": "black",
+    "read_theme": "red",
+    "video_filter": "dark_green",
+    "music": "a45.mp3",
+    "created_at": "2026-11-18T23:57:12.810683+00:00"
   }
 ]
