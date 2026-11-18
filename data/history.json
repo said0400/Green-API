@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1074,
-    "title": "ماذا يحدث عندما ترى نفسك كما يراك الآخرون؟",
-    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
-    "description": "هل فكرت يومًا أن مظهرك الخارجي قد يكشف عن أسرار لا تعرفها عن نفسك؟ إن النظرة التي يسقطها الآخرون عليك ليست مجرد انعكاس، بل قد تكون مرآة تكشف عن عيوبك وقدراتك الخفية التي تغفل عنها. غالبًا ما نتجاهل كيف تشكل هذه الانطباعات الخارجية عالمنا الداخلي، وكيف تؤثر على قراراتنا وسلوكياتنا دون وعي منا. إن فهم هذه الديناميكية يفتح لنا بابًا لفهم أعمق لأنفسنا، ويمنحنا القدرة على التمييز بين الذات الحقيقية والصورة التي يرغب الآخرون في رؤيتها. عندما ندرك كيف يرانا العالم، نبدأ رحلة اكتشاف حقيقية. فهل أنت مستعد لمواجهة ما تكشفه عيون الآخرين؟",
-    "hashtags": "#علم_نفس #ادراك_الذات #تطوير_الذات #تحليل_سلوك #علم_اجتماع #نظرة_المجتمع #الانا_الخفية #psychology #selfawareness #perception #socialpsychology #behavioranalysis #selfdiscovery #mindset #innerwork",
-    "search_terms": [
-      "woman looking in mirror emotional",
-      "pensive person thoughtful gaze",
-      "self-reflection close-up cinematic",
-      "inner thoughts contemplation portrait",
-      "vulnerability expressive eyes",
-      "seeing oneself through others eyes abstract"
-    ],
-    "duration": 13,
-    "title_theme": "cyan",
-    "read_theme": "purple",
-    "video_filter": "red",
-    "music": "a31.mp3",
-    "created_at": "2026-09-27T21:40:51.695953+00:00"
-  },
-  {
     "excel_number": 1075,
     "title": "السر وراء تمسكك بعادة تكرهها أنت",
     "read_text": "👇 لماذا تعتبر هذه علامة مهمة؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a30.mp3",
     "created_at": "2026-11-18T00:01:18.295832+00:00"
+  },
+  {
+    "excel_number": 1574,
+    "title": "السر وراء تعلقك بوجبة محددة وقت الضغط",
+    "read_text": "👇 ما وراء هذه الكلمات في الوصف👇",
+    "description": "لماذا تجد نفسك فجأة تبحث عن طعام معين عند الشعور بالتوتر؟ هل هو مجرد جوع أم أن الأمر أعمق من ذلك بكثير؟ هذا الفيديو يكشف الستار عن الرابط النفسي الخفي بين مشاعر الضغط واشتهاء أطعمة بعينها، وكيف تتحول أطباقك المفضلة إلى آلية للهروب والتكيف. نتعمق في جذور هذه الظاهرة، مستكشفين دور الذكريات والتجارب السابقة في تشكيل عادات الأكل العاطفي، وكيف يمكن لهذه الوجبات أن تكون بمثابة مهربة مؤقتة من قسوة الواقع. إن فهم هذه الآلية هو مفتاح استعادة السيطرة على علاقتك بالطعام. هل تساءلت يومًا ما إذا كان طعامك المريح يعبر عن جوع حقيقي أم عن حاجة أعمق للشعور بالأمان؟",
+    "hashtags": "#علم_نفس #اكل_عاطفي #توتر #ضغوط_الحياة #عادات_صحية #تحليل_سلوك #صحة_نفسية #علاقة_بالطعام #تغذية_عاطفية #الهروب_من_الواقع #comfortfood #emotionaleating #psychologyhacks #stressrelief #mindfuleating",
+    "search_terms": [
+      "emotional portrait stress eating",
+      "cinematic comfort food anxiety",
+      "person eating alone stressed",
+      "nostalgic food memory close up",
+      "sadness eating indoors cinematic",
+      "psychological food craving portrait"
+    ],
+    "duration": 11,
+    "title_theme": "yellow",
+    "read_theme": "black",
+    "video_filter": "dark_blue",
+    "music": "a31.mp3",
+    "created_at": "2026-11-18T01:22:04.835805+00:00"
   }
 ]
