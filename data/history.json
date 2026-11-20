@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1095,
-    "title": "ماذا يعني أن تبحث عن نفسك في الآخرين؟",
-    "read_text": "👇 التفسير الكامل في الوصف👇",
-    "description": "هل سبق لك أن شعرت بأن جزءًا منك مفقود، وأنك تبحث عنه في عيون الآخرين؟ هذه الظاهرة النفسية العميقة قد تكشف أسرارًا مدفونة عن هويتك الحقيقية. عندما ترى في شخص آخر صفات تتمنى امتلاكها، أو تشعر بالانجذاب الشديد نحو شخص معين، فقد لا يكون الأمر مجرد إعجاب عابر. إنه انعكاس لرغباتك الداخلية، لمخاوفك، وللأجزاء منك التي ربما أهملتها أو أنكرتها. فهم هذا البحث المستمر يساعدك على إعادة بناء صورتك الذاتية من الداخل. الأمر يتعلق باكتشاف الذات، ليس في مرآة خارجية، بل في الفضاء الداخلي الذي تشكله علاقاتك. هل أنت مستعد لتتعرف على حقيقتك المخفية؟",
-    "hashtags": "#علم_نفس #البحث_عن_الذات #الهوية #العلاقات_الإنسانية #تحليل_الشخصية #علم_النفس_الاجتماعي #تطوير_الذات #inner_self #self_discovery #psychology #relationships #identity #behavioral_analysis #self_reflection #emotions",
-    "search_terms": [
-      "searching for self reflection cinematic",
-      "inner journey emotional portrait",
-      "identity crisis thoughtful gaze",
-      "longing for connection cinematic closeup",
-      "finding oneself contemplative mood",
-      "self discovery soulful portrait"
-    ],
-    "duration": 11,
-    "title_theme": "orange",
-    "read_theme": "cyan",
-    "video_filter": "dark_blue",
-    "music": "a61.mp3",
-    "created_at": "2026-09-29T23:16:23.573926+00:00"
-  },
-  {
     "excel_number": 1096,
     "title": "الحقيقة خلف استنزافك من القرارات الصغيرة",
     "read_text": "👇 المعنى الحقيقي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a60.mp3",
     "created_at": "2026-11-20T00:57:53.500022+00:00"
+  },
+  {
+    "excel_number": 1595,
+    "title": "لماذا يربكك اليوم الفارغ أكثر من المزدحم؟",
+    "read_text": "👇 التفسير الكامل في الوصف👇",
+    "description": "هل شعرت يومًا بأن الفراغ الداخلي أقوى صدمة من الانغماس في الزحام؟ هذا الشعور الغريب يترك أثره النفسي العميق، وكأن سكون الوقت يكشف عن فوضى أشد. ما السر وراء هذا الارتباك الذي يغمرنا في لحظات الهدوء؟ يكمن الجواب في عمق احتياجاتنا النفسية وكيف تتعامل عقولنا مع غياب المحفزات. يبدأ العقل في البحث عن معنى، وفي غيابه، تتضخم الأفكار والمخاوف. هذا الفراغ ليس مجرد غياب، بل هو حضور طاغٍ يتطلب مواجهة. إنه يكشف عن قلق كامن، عن رغبة في الإنجاز، وعن خوف من ضياع الفرص. عندما تكون الأيام مزدحمة، تكون المهمات هي درعنا الواقي، لكن في أيام الفراغ، تتجلى حقيقتنا. كيف يمكننا تحويل هذا الفراغ إلى فرصة للنمو بدلًا من أن يكون مصدرًا للإزعاج؟",
+    "hashtags": "#علم_النفس #اليوم_الفارغ #التفكير_الزائد #التحفيز #الرضا_الداخلي #الفراغ_الداخلي #التعامل_مع_الملل #الصحة_النفسية #النمو_الشخصي #تطوير_الذات #psycho_analysis #mental_health #self_improvement #emptiness #time_management",
+    "search_terms": [
+      "emotional portrait",
+      "person alone thoughtful",
+      "contemplative mood cinematic",
+      "solitude introspection cinematic",
+      "woman looking out window pensive",
+      "man in quiet room thinking"
+    ],
+    "duration": 13,
+    "title_theme": "black",
+    "read_theme": "green",
+    "video_filter": "dark_green",
+    "music": "a61.mp3",
+    "created_at": "2026-11-20T01:30:16.924247+00:00"
   }
 ]
