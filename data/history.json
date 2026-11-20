@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1098,
-    "title": "ما الذي يحدث عندما تربط قيمتك بإنجاز واحد؟",
-    "read_text": "👇 السر وراء ذلك في الوصف👇",
-    "description": "هل ربطت مصير سعادتك بإنجاز واحد؟ هذا الاعتماد المتطرف على نجاح فردي قد يكون أخطر مما تتخيل، إنه سجن نفسي خفي يحد من إمكانياتك الحقيقية. عندما تصبح قيمة ذاتك مرتبطة بشدة بتحقيق هدف معين، فإن أي فشل أو تأخير يصبح كارثة وجودية تهدد كيانك بالكامل. هذه الحلقة المفرغة تدفعك للاعتقاد بأن قيمتك الحقيقية تتوقف عند حدود ذلك الإنجاز. إنها تجعلك تخشى المخاطرة وتتجنب تحدي نفسك خوفًا من عدم تحقيق تلك النتيجة المحددة. تبدأ في تجاهل جوانب أخرى مهمة في حياتك، وتنسى أن لديك قدرات متنوعة ومساهمات أخرى تستحق الاحتفاء. هل أصبحت ترى العالم من خلال عدسة محدودة، حيث النجاح في هذا الأمر فقط هو ما يمنحك الحق في الشعور بالرضا؟",
-    "hashtags": "#علم_النفس #تطوير_الذات #تحفيز #علاقات_صحية #قيمة_الذات #نجاح #إنجاز #تفكير_ايجابي #صحة_نفسية #تحليل_سلوك #دوافع #تحديات #تقدير_الذات #selfhelp #mindset",
-    "search_terms": [
-      "woman contemplative thoughtful looking away cinematic",
-      "man pensive thoughtful cinematic portrait",
-      "person stressed worried cinematic close-up",
-      "sadness emotional portrait cinematic",
-      "despair emotional cinematic close-up",
-      "hopeful looking up cinematic portrait"
-    ],
-    "duration": 12,
-    "title_theme": "black",
-    "read_theme": "pink",
-    "video_filter": "dark_blue",
-    "music": "a65.mp3",
-    "created_at": "2026-09-30T02:30:39.650898+00:00"
-  },
-  {
     "excel_number": 1099,
     "title": "السر وراء مقاومة عقلك لكل بداية منظمة",
     "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a64.mp3",
     "created_at": "2026-11-20T02:50:39.263009+00:00"
+  },
+  {
+    "excel_number": 1598,
+    "title": "السر وراء مقاومة عقلك للنظام المستمر",
+    "read_text": "👇 السر وراء ذلك في الوصف👇",
+    "description": "هل سبق لك أن تساءلت لماذا يبدو أن عقلك يرفض التغيير حتى عندما تريده بشدة؟  في أعماقنا، تتشكل قوى خفية تقاوم أي محاولة لكسر الروتين.  لكن ماذا لو كان هناك سر دفين يفسر هذه المقاومة المستمرة؟  هذا الفيديو سيكشف الستار عن الآليات النفسية العميقة التي تجعلنا نتمسك بأنماط سلوكنا، حتى لو كانت تضرنا.  غالباً ما تكون جذور هذه المقاومة أقدم مما نتخيل، مرتبطة بذكريات غائرة وتجارب سابقة شكلت دفاعاتنا العقلية.  إن فهم هذه الدوافع الخفية هو الخطوة الأولى نحو التحرر منها، فهو ليس مجرد عناد، بل هو استراتيجية بقاء طورتها النفس لحمايتك.  تخيل أن كل عادة سيئة هي محاولة سابقة من عقلك لحمايتك من خطر ما.  هل هذه الحماية ما زالت ضرورية أم أنها أصبحت سجنًا؟",
+    "hashtags": "#علم_نفس #سلوك_البشر #تطوير_الذات #تحدي_الروتين #قوة_العقل #مقومة_التغيير #psychology #mindset #behavioral_science #habit_breaking #self_improvement #mental_blocks #break_the_cycle #understanding_the_mind #staying_motivated",
+    "search_terms": [
+      "cinematic emotional portrait thinking",
+      "thoughtful man looking away",
+      "woman deep in thought close up",
+      "overcoming inner struggle cinematic",
+      "psychological resistance close up emotional",
+      "memory recall cinematic portrait"
+    ],
+    "duration": 11,
+    "title_theme": "yellow",
+    "read_theme": "cyan",
+    "video_filter": "gray",
+    "music": "a65.mp3",
+    "created_at": "2026-11-20T04:26:34.357769+00:00"
   }
 ]
