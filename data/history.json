@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1102,
-    "title": "لماذا تشتهي الأكل وأنت لست جائعًا؟",
-    "read_text": "👇 التفسير النفسي في الوصف👇",
-    "description": "هل سبق وتساءلت عن سر تلك الرغبة المفاجئة في تناول الطعام رغم خلو معدتك؟  يبدو الأمر مجرد نزوة عابرة، لكن العقل يخفي حقائق أعمق بكثير.  في هذا الفيديو، سنغوص في أعماق النفس البشرية لنكشف الغموض المحيط بهذه الظاهرة.  غالبًا ما تكون هذه الشهية ليست جسدية، بل نفسية بحتة، استجابة لمشاعر مكبوتة أو ضغوط يومية.  قد يكون الأمر مرتبطًا بالبحث عن الراحة العاطفية أو مجرد هروب من مواقف لا نرغب في مواجهتها.  تتلاعب هرمونات التوتر بأنماط الأكل لدينا، مما يخلق وهم الجوع.  ماذا يحدث بالضبط في دماغك عندما تبدأ هذه الدوافع؟  هل أنت حقًا جائع، أم أن عقلك يحاول إخبارك شيئًا آخر؟",
-    "hashtags": "#علم_النفس #شهية #أكل #جوع_نفسي #عادات_صحية #صحة_نفسية #تحليل_سلوك #تطوير_الذات #حياة_صحية #صحة_جسدية #emotional_eating #psychology #mindfulness #healthtips #nutrition",
-    "search_terms": [
-      "sad person looking out window cinematic",
-      "woman stressed at desk emotional portrait",
-      "man deep in thought outdoors cinematic",
-      "lonely person contemplating life",
-      "boredom boredom person indoors",
-      "emotional conflict internal struggle visual"
-    ],
-    "duration": 14,
-    "title_theme": "red",
-    "read_theme": "green",
-    "video_filter": "black",
-    "music": "a69.mp3",
-    "created_at": "2026-09-30T20:26:22.940685+00:00"
-  },
-  {
     "excel_number": 1103,
     "title": "ماذا يحدث لعقلك عندما تمشي بلا هدف؟",
     "read_text": "👇 الحقيقة كاملة في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_green",
     "music": "a68.mp3",
     "created_at": "2026-11-20T21:34:36.510347+00:00"
+  },
+  {
+    "excel_number": 1602,
+    "title": "الحقيقة خلف شعورك بالأمان مع شخص يربكك",
+    "read_text": "👇 التفسير النفسي في الوصف👇",
+    "description": "هل سبق وشعرت بالأمان المطلق مع شخص يجعلك تشعر بالارتباك أحيانًا؟ هذا التناقض الظاهري يطرح تساؤلات عميقة حول طبيعة علاقاتنا البشرية وكيف يبني عقلنا مفهوم الأمان. كيف يمكن للشخص الذي يثير قلقنا أحيانًا أن يكون مصدرًا لراحتنا؟ هل هو توازن دقيق بين المألوف والمجهول، أم أن هناك استراتيجية نفسية أعمق تلعب دورًا؟ يكمن السر في فهم آليات الدماغ التي تربط بين التحدي النفسي والشعور بالاستقرار العاطفي. عندما نواجه شخصًا يكسر روتيننا ويدفعنا خارج منطقة راحتنا، فإنه قد يحفز فينا شعورًا بالأصالة والصدق. هذا التفاعل المعقد قد يعلمنا الكثير عن أنفسنا وعن قدرتنا على التكيف. هل فعلاً نجد الأمان في منطقة عدم اليقين؟",
+    "hashtags": "#علم_نفس #العلاقات_الإنسانية #الشعور_بالأمان #الارتباك_العاطفي #تحليل_السلوك #العقل_الباطن #علم_النفس_الاجتماعي #الغموض_العاطفي #الاستقرار_النفسي #فهم_الآخرين #Psychology #Relationships #EmotionalSafety #BehaviorAnalysis #Mindfulness",
+    "search_terms": [
+      "emotional connection cinematic portrait",
+      "vulnerability trust cinematic",
+      "complex relationship portrait cinematic",
+      "inner peace struggle cinematic",
+      "ambiguous feelings portrait",
+      "human connection cinematic close-up"
+    ],
+    "duration": 13,
+    "title_theme": "orange",
+    "read_theme": "black",
+    "video_filter": "dark_green",
+    "music": "a69.mp3",
+    "created_at": "2026-11-20T22:27:00.081505+00:00"
   }
 ]
