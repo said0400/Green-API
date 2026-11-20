@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1100,
-    "title": "لماذا تشعر أنك مزيف كلما صرت أفضل؟",
-    "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
-    "description": "هل تشعر أحيانًا بأن نجاحك مجرد وهم وأنك لست كفؤًا لما حققته؟ هذا الشعور بالوهم يطارد الكثيرين، حتى الأكثر تفوقًا بينهم.  ما السر وراء هذه الظاهرة النفسية الغريبة التي تجعل التطور الشخصي سببًا للقلق بدلًا من الفرح؟  هل يعني أنك تسير في الطريق الخاطئ أم أن هناك تفسيرًا أعمق لمعنى النجاح الحقيقي؟  يعتقد البعض أن هذا الشعور هو علامة على التواضع، بينما يراه آخرون كنوع من متلازمة المحتال التي تصيب الناجحين.  نستكشف معًا الأبعاد النفسية الدقيقة لهذا التناقض، وكيف يمكن للنجاح أن يصبح مصدرًا للشعور بعدم الأمان.  إن فهم هذه الآلية يمكن أن يحررك من قيود الوهم ويساعدك على احتضان إنجازاتك بثقة.  متى أدركت لأول مرة أن تحسنك يثير قلقك أكثر من سعادتك؟",
-    "hashtags": "#علم_نفس #تطوير_الذات #ثقة_بالنفس #متلازمة_المحتال #نجاح #تفكير_إيجابي #تحفيز #قلق #توتر #مصداقية #self_improvement #psychology #impostor_syndrome #self_doubt #personal_growth",
-    "search_terms": [
-      "emotional portrait man thoughtful",
-      "cinematic woman looking away pensive",
-      "person overcoming doubt internal struggle",
-      "anxiety reflection self-doubt cinematic",
-      "face subtle expression introspection",
-      "success illusion imposter syndrome"
-    ],
-    "duration": 14,
-    "title_theme": "yellow",
-    "read_theme": "red",
-    "video_filter": "dark_green",
-    "music": "a67.mp3",
-    "created_at": "2026-09-30T17:02:15.759314+00:00"
-  },
-  {
     "excel_number": 1101,
     "title": "الحقيقة النفسية خلف حبك للمذاق المر في التوتر",
     "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a66.mp3",
     "created_at": "2026-11-20T18:04:17.745006+00:00"
+  },
+  {
+    "excel_number": 1600,
+    "title": "الحقيقة النفسية خلف عاداتك الصغيرة التي تقود يومك",
+    "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا تتكرر بعض التصرفات الصغيرة في يومك دون وعي منك؟ قد تبدو عاداتك اليومية بريئة، لكنها تحمل في طياتها أسرارًا نفسية عميقة تحكم مسار حياتك بالكامل. اكتشف كيف أن هذه اللمسات الخفية تشكل قراراتك وتوجه أفعالك نحو مسارات محددة سلفًا. إنها ليست مجرد عادات، بل هي بصمات لا شعورية تنقش تفاصيل واقعك. كل حركة تقوم بها، كل اختيار تتخذه، حتى تلك التي تبدو بلا معنى، تخبر قصة عن دوافعك ورغباتك الدفينة. فهم هذه الروابط يسمح لك بإعادة برمجة مسارك نحو الأهداف التي تطمح إليها حقًا. هل أنت مستعد لكشف المستور وإعادة تشكيل يومك؟",
+    "hashtags": "#علم_النفس #عادات_صغيرة #تحليل_سلوك #تطوير_الذات #نصائح_نفسية #اللا_وعي #تفكير_عميق #حقيقة_نفسية #التحفيز_الداخلي #psychologyfacts #habits #selfimprovement #mindset #behavioralpsychology #dailyroutines",
+    "search_terms": [
+      "woman thinking deeply cinematic",
+      "man lost in thought portrait",
+      "person reflecting emotionally close up",
+      "subtle daily routine candid",
+      "unconscious actions cinematic",
+      "hidden motivations portrait emotional"
+    ],
+    "duration": 14,
+    "title_theme": "cyan",
+    "read_theme": "black",
+    "video_filter": "dark_green",
+    "music": "a67.mp3",
+    "created_at": "2026-11-20T19:17:35.574301+00:00"
   }
 ]
