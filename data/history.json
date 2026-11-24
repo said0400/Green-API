@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1132,
-    "title": "الحقيقة النفسية خلف حبك لرائحة الورق المبلل",
-    "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يثير الورق المبلل شعورًا بالارتياح العميق في نفسك؟ ما السر الخفي الذي يجعل هذه الرائحة البسيطة تتربع على عرش الذكريات العالقة في اللاوعي؟ إنها ليست مجرد رائحة، بل بوابة زمنية تفتح أبوابًا لمشاعر طالما ظننت أنها مدفونة. تكمن الحقيقة في تفاعلات كيميائية غريبة تستدعي استجابات عصبية عميقة، مرتبطة بتجارب مبكرة جدًا، ربما حتى قبل الوعي الكامل. هذه الروائح، التي تُعرف بالـ 'petrichor' عندما ترتبط بالمطر، لها تأثير مهدئ وقوي. إنها تحفز فينا إحساسًا بالألفة والسكينة، تعكس ارتباطًا فطريًا بالطبيعة والأمان. اكتشف كيف أن هذه الظاهرة البسيطة قد تكون مفتاحًا لفهم جزء غامض من شخصيتك. هل هذه الرائحة تعيدك إلى طفولتك أم تكشف عن احتياج دفين للهدوء؟",
-    "hashtags": "#علم_نفس #رائحة_الورق_المبلل #فضول #ذكريات #مشاعر #تحليل_سلوك #لا_وعي #كيمياء_نفسية #البحث_عن_الذات #اكتشف_نفسك #psychology #mindfulness #nostalgia #scent #petrichor",
-    "search_terms": [
-      "emotional portrait of person smelling rain on paper",
-      "cinematic close-up of thoughtful person",
-      "nostalgic memory rain drops",
-      "contemplative woman thinking about past",
-      "man looking out window rain",
-      "introspective moment person outdoors"
-    ],
-    "duration": 15,
-    "title_theme": "yellow",
-    "read_theme": "orange",
-    "video_filter": "dark_green",
-    "music": "a44.mp3",
-    "created_at": "2026-10-03T18:54:49.752483+00:00"
-  },
-  {
     "excel_number": 1133,
     "title": "ماذا يحدث لعقلك عندما تشرب الماء بسرعة؟",
     "read_text": "👇 ما لا يخبرك به أحد في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a39.mp3",
     "created_at": "2026-11-24T01:17:24.867399+00:00"
+  },
+  {
+    "excel_number": 1632,
+    "title": "السر وراء تمسكك بمن يعطيك لحظات لا حضورًا",
+    "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
+    "description": "لماذا نستمر في التمسك بمن يقدم لنا لحظات عابرة بدلاً من حضور دائم؟ هل هو الخوف من الوحدة أم وهم الأمل الكاذب؟ إننا غالبًا نجد أنفسنا نركض خلف سراب، متعلقين بشخص يمنحنا ومضات سعادة ثم يختفي، تاركًا فراغًا هائلاً. هذا السلوك ليس عشوائيًا، بل يحمل في طياته دوافع نفسية عميقة تتلاعب بعقولنا. يكشف هذا الفيديو الأسرار الخفية وراء هذه الظاهرة، موضحًا كيف يمكن لعقلنا أن يخلق قصة وهمية حول علاقة هشة، وكيف نجبر أنفسنا على تصديقها رغم كل شيء. سنحلل أسباب إدمان هذه العلاقة المتقطعة، ولماذا نميل إلى تبرير سلوكيات من يحببوننا، وكيف يؤثر ذلك على صحتنا النفسية على المدى الطويل. في نهاية المطاف، هل يستحق هذا التمسك الوهمي كل هذا العناء؟",
+    "hashtags": "#علم_النفس #علاقات #تحليل_شخصيات #توكيد_الذات #حب_نفسك #علاقات_سامة #تطوير_الذات #مشاعر #نف_سانيات #Psychoanalysis #RelationshipGoals #SelfCare #EmotionalIntelligence #HumanBehavior #MindGames",
+    "search_terms": [
+      "emotional portrait connection longing",
+      "cinematic thoughtful contemplative gaze",
+      "hopeful anticipation looking away wistful",
+      "vulnerability empathy silent understanding",
+      "solitude introspection inner peace searching",
+      "fleeting moments shared glance memory"
+    ],
+    "duration": 12,
+    "title_theme": "orange",
+    "read_theme": "red",
+    "video_filter": "gray",
+    "music": "a44.mp3",
+    "created_at": "2026-11-24T02:41:26.269036+00:00"
   }
 ]
