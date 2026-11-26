@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1161,
-    "title": "لماذا تصدق الرأي الذي يشبه خوفك؟",
-    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
-    "description": "هل سمعت يومًا صوتًا داخليًا يؤكد أسوأ مخاوفك، لتجده يتردد صداه في الآخرين؟ لماذا ننجذب بشكل غريب نحو الأفكار التي تغذي قلقنا وتمنحها الشرعية؟ هذا الفيديو يكشف السر المذهل وراء هذا الانجذاب اللاواعي. يتعلق الأمر بآلية دفاعية قديمة، تبني جدارًا واهيًا أمام الحقيقة. هل هو بحث عن تصديق أم آلية تلاعب خفية؟ نتعمق في كيفية تأثير الهشاشة النفسية على استقبالنا للمعلومات، وكيف يشكل الخوف بوصلتنا في فهم العالم. نرى كيف تتسلل هذه المعتقدات إلى عقولنا، تجعلنا نتمسك بها كأنها حقائق مطلقة. الأمر ليس محض صدفة، بل هو تفاعل نفسي معقد. عندما يتوافق رأي خارجي مع مخاوفنا الدفينة، نشعر براحة زائفة، وكأننا لسنا وحدنا في صراعنا. ما الذي يجعلك أكثر استعدادًا لتصديق ما يخيفك؟",
-    "hashtags": "#علم_النفس #الخوف #العقل_الباطن #التحفيز #علم_نفس_اجتماعي #تنمية_الذات #التفكير_النقدي #سلوك_بشري #العلاقات #تطوير_الذات #psychology #fear #mindset #behavioral_economics #social_psychology",
-    "search_terms": [
-      "cinematic portrait emotional introspection",
-      "thoughtful person looking away cinematic",
-      "anxiety internal struggle close up",
-      "sadness contemplation cinematic portrait",
-      "vulnerable expression empathy seeking",
-      "fearful thought process close up emotional"
-    ],
-    "duration": 15,
-    "title_theme": "cyan",
-    "read_theme": "yellow",
-    "video_filter": "red",
-    "music": "a14.mp3",
-    "created_at": "2026-10-06T19:17:50.528836+00:00"
-  },
-  {
     "excel_number": 1162,
     "title": "السر وراء تعلقك بأول خيار رأيته",
     "read_text": "👇 السر وراء ذلك في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "dark_blue",
     "music": "a13.mp3",
     "created_at": "2026-11-26T20:35:08.420821+00:00"
+  },
+  {
+    "excel_number": 1661,
+    "title": "ماذا يحدث عندما يشعر الأخ أنك لم تعد تحتاجه؟",
+    "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
+    "description": "هل فكرت يومًا في الفراغ الذي يخلفه شعور الأخ بأن دوره قد انتهى في حياتك؟ هذا الإحساس العميق بالنسيان قد يكون أقوى من أي جرح. ينسج الشقيق الصامت خيوطًا من الوحدة المؤلمة حين يدرك أنك لم تعد تعتمد عليه كما كنت، وأن وجوده لم يعد ضروريًا في محيطك. هل يتبدد ماضٍ مشترك من أجل حاضرٍ مختلف؟ هذا التحول الدقيق في الديناميكية الأخوية يولد تساؤلات حول الولاء، والتغير، وكيف نتعامل مع إحساس فقدان القيمة. اكتشف معنا كيف يتشكل هذا الألم الخفي، وكيف يمكن أن يؤثر صمت الأخ على النسيج العائلي بأكمله. هل هناك دائمًا مساحة للتفهم، أم أن المسافات تتسع بلا رجعة؟",
+    "hashtags": "#علم_نفس #علاقات_أخوية #تخلي #وحدة #مشاعر #علم_النفس_الاجتماعي #فضول #تحليل_سلوك #علاقات_أسرية #صدمة_نفسية #brotherhood #psychology #familydynamics #emotionalpain #behavioranalysis",
+    "search_terms": [
+      "man looking out window sad",
+      "person feeling lonely dramatic lighting",
+      "elderly man thoughtful portrait",
+      "man sitting alone in room",
+      "middle aged man looking concerned",
+      "person reflecting outdoors emotional"
+    ],
+    "duration": 11,
+    "title_theme": "red",
+    "read_theme": "green",
+    "video_filter": "dark_green",
+    "music": "a14.mp3",
+    "created_at": "2026-11-26T22:39:30.649055+00:00"
   }
 ]
