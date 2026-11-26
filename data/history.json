@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1159,
-    "title": "ما الذي يحدث لعقلك عندما تختار تحت ضغط الوقت؟",
-    "read_text": "👇 التفسير الكامل في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا يبدو عقلك وكأنه يتجمد تمامًا عندما ينفد الوقت؟  غالبًا ما نفترض أن الضغط يعزز الأداء، لكن الحقيقة أعمق بكثير وأكثر إثارة للقلق.  هذا الفيديو سيكشف لك الآلية الدقيقة التي تحدث داخل دماغك، مؤثرًا على قراراتك وقدرتك على التفكير المنطقي.  عندما تشتد الأمور، قد تجد نفسك تتخذ خيارات لا تشبهك على الإطلاق، أو تفقد القدرة على التركيز.  الخوف من الفشل يتسلل، والأدرينالين يغير مسارات تفكيرك.  هل هذه الاستجابة غريزية بحتة، أم أنها تنطوي على شيء آخر؟  تعلّم كيف يمكن للوقت المحدود أن يشكل واقعك ويؤثر على اختياراتك بشكل جذري.  ما هي الثغرات التي يفتحها ضغط الوقت أمام أضعف جوانبك النفسية؟",
-    "hashtags": "#علم_النفس #ضغط_الوقت #اتخاذ_القرارات #العقل_البشري #تنمية_الذات #تحفيز #تطوير_الذات #سلوك_البشر #psychoeducation #decisionmaking #mindhacks #psychologyfacts #stressmanagement #timemanagement #brainexplained",
-    "search_terms": [
-      "man thinking under pressure",
-      "woman stressed deadline",
-      "brainstorming intense",
-      "emotional portrait struggling",
-      "person making difficult decision",
-      "anxiety time running out"
-    ],
-    "duration": 13,
-    "title_theme": "red",
-    "read_theme": "yellow",
-    "video_filter": "red",
-    "music": "a10.mp3",
-    "created_at": "2026-10-06T16:20:43.386580+00:00"
-  },
-  {
     "excel_number": 1160,
     "title": "الحقيقة خلف ارتياحك لما تعرفه حتى لو كان سيئًا",
     "read_text": "👇 المعنى الحقيقي في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a5.mp3",
     "created_at": "2026-11-26T05:32:36.515553+00:00"
+  },
+  {
+    "excel_number": 1659,
+    "title": "لماذا ترفض الأم الاعتراف بتعبها بوضوح؟",
+    "read_text": "👇 التفسير الكامل في الوصف👇",
+    "description": "هل شعرت يومًا أن أعظم قوة تمتلكها أمك هي قدرتها على إنكار إرهاقها؟ إن الصمت الذي يحيط بتعب الأمهات يخفي عالمًا معقدًا من المشاعر والتضحيات. يكمن في هذا الرفض سر عميق يكشف عن دوافع نفسية مؤثرة جدًا. هل هو خوف من الظهور بمظهر الضعيف، أم إيمان راسخ بدورها الذي لا يقبل المساومة؟ سنغوص في أعماق النفس البشرية لنكشف الغموض المحيط بهذا السلوك. غالبًا ما تكون الأسباب متجذرة في تربيتها، في توقعات المجتمع، أو حتى في حب مطلق وغير مشروط يتجاوز حدود طاقتها. إنها معركة داخلية بين الحاجة للراحة والرغبة في العطاء بلا حدود. هل يمكن أن يكون هذا الإنكار قمة القوة، أم إشارة لاحتياج خفي؟",
+    "hashtags": "#علم_النفس #الأمومة #العلاقات_الأسرية #صحة_نفسية #تعب_الأم #التضحية #الحب_غير_المشروط #قوة_الأم #تحليل_سلوك #مشاعر #دوافع_نفسية #familydynamics #motherhood #psychology #emotional",
+    "search_terms": [
+      "mother emotional portrait looking away cinematic",
+      "woman tired but strong cinematic",
+      "parental sacrifice quiet strength",
+      "overwhelmed mother calm expression",
+      "female resilience introspection cinematic",
+      "woman deep thought pensive mood"
+    ],
+    "duration": 11,
+    "title_theme": "yellow",
+    "read_theme": "black",
+    "video_filter": "black",
+    "music": "a10.mp3",
+    "created_at": "2026-11-26T19:18:53.733300+00:00"
   }
 ]
