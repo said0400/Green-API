@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1160,
-    "title": "الحقيقة خلف ارتياحك لما تعرفه حتى لو كان سيئًا",
-    "read_text": "👇 المعنى الحقيقي في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا نميل بشدة إلى استيعاب الأخبار السيئة حتى لو كانت مؤلمة؟ إنه شعور غريب أن تشعر بالارتياح لمعرفة ما يزعجك، أليس كذلك؟ السر يكمن في عمق دوافعنا النفسية وفي طريقة معالجتنا للمعلومات. هذا الفيديو يكشف الستار عن الحقيقة المدهشة وراء انجذابنا لما نعرفه، حتى وإن كان مؤلمًا. سنغوص في أعماق العقل البشري لنفهم لماذا يتفوق اليقين، حتى المؤلم، على المجهول. ستكتشف لماذا الاستيعاب، حتى للأسوأ، يمنحك شعورًا بالتحكم ويقلل القلق. إن فهم هذه الآلية النفسية يمنحك قوة لا تصدق في اتخاذ قراراتك. إنها لعبة العقل التي نلعبها جميعًا دون أن ندرك. هل أنت مستعد لمواجهة هذه الحقيقة الصادمة عن نفسك؟",
-    "hashtags": "#علم_النفس #علم_نفس #تطوير_الذات #التحفيز #العقل_البشري #سلوك_بشري #نصائح #حكم #تحفيز_الذات #Psycho_Analysis #Mindset #Self_Improvement #PsychologyFacts #HumanBehavior #Motivation",
-    "search_terms": [
-      "cinematic emotional portrait introspection",
-      "thoughtful person looking away contemplation",
-      "person reflecting inner turmoil close up",
-      "sadness understanding realization cinematic",
-      "anxiety relief knowing truth portrait",
-      "psychological distress overcoming fear close up"
-    ],
-    "duration": 12,
-    "title_theme": "orange",
-    "read_theme": "black",
-    "video_filter": "dark_blue",
-    "music": "a13.mp3",
-    "created_at": "2026-10-06T17:27:10.783107+00:00"
-  },
-  {
     "excel_number": 1161,
     "title": "لماذا تصدق الرأي الذي يشبه خوفك؟",
     "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a10.mp3",
     "created_at": "2026-11-26T19:18:53.733300+00:00"
+  },
+  {
+    "excel_number": 1660,
+    "title": "الحقيقة خلف غضب الأب من القرارات المستقلة",
+    "read_text": "👇 المعنى الحقيقي في الوصف👇",
+    "description": "هل تساءلت يومًا لماذا يبالغ بعض الآباء في ردود أفعالهم تجاه قرارات أبنائهم المستقلة؟ يبدو الأمر وكأنه رفض لمسار الحياة الذي اختاره الأبناء، لكن الحقيقة أعمق وأكثر تعقيدًا من مجرد خلاف حول المستقبل. غالبًا ما يخفي هذا الغضب شعورًا بالخوف والقلق من المجهول، خوفًا من فقدان السيطرة أو الابتعاد عن المسار الذي يعتبره الأب ضمانًا للأمان. قد ينبع أيضًا من تجارب شخصية سابقة لم تسر كما هو مخطط لها، فيحاول الأب تحذير أبنائه بطريقته الخاصة، وإن كانت خاطئة. أحيانًا، يكون الأمر مجرد صراع بين رغبة الأب في حماية أبنائه ورغبتهم في استكشاف ذواتهم. هل يمكن للآباء أن يتجاوزوا خوفهم ليدعموا استقلالية أبنائهم حقًا؟",
+    "hashtags": "#علم_النفس #العلاقات_الأسرية #التربية #التحديات_الأبوية #الاستقلال #اتخاذ_القرارات #الخوف #القلق #السلوك_البشري #التواصل_الأسري #parenting #psychology #familydynamics #decisionmaking #independence",
+    "search_terms": [
+      "man looking thoughtful outdoors",
+      "father child conflict emotional",
+      "parental concern worried gaze",
+      "man reflecting on past cinematic",
+      "father disappointment portrait",
+      "parental fear abstract emotion"
+    ],
+    "duration": 12,
+    "title_theme": "orange",
+    "read_theme": "red",
+    "video_filter": "dark_blue",
+    "music": "a13.mp3",
+    "created_at": "2026-11-26T20:35:08.420821+00:00"
   }
 ]
