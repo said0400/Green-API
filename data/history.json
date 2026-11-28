@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1176,
-    "title": "ماذا يعني أن ترفض الاعتراف بأنك تأثرت؟",
-    "read_text": "👇 المعنى الحقيقي في الوصف👇",
-    "description": "هل سبق لك أن رفضت بصرامة الاعتراف بتأثير شخص ما عليك، حتى في قرارة نفسك؟ هذا الرفض ليس مجرد عناد، بل قد يكون سجنًا نفسيًا تخشى مغادرته. تكمن خفايا هذا السلوك في خوف أعمق من فقدان السيطرة أو الانكشاف. لكن ما هو الثمن الذي تدفعه عندما تبقى حبيس هذا الإنكار؟ عندما تقاوم فكرة أن هناك من لامس وترًا حساسًا في روحك، فإنك تخلق حاجزًا بينك وبين فهم أعمق لنفسك. إنها معركة داخلية لا تعترف بها، لكنها تشكّل قراراتك وعلاقاتك. قد تبدو قويًا من الخارج، لكن الانكار المستمر يستهلك طاقتك ويضعف حقيقيتك. فهل ستظل تهرب من هذا التأثير، أم ستفتح الباب لنمو لم تتخيله؟",
-    "hashtags": "#علم_نفس #رفض_الاعتراف #تأثير_نفسي #تحليل_سلوك #علاقات_إنسانية #فهم_الذات #قوة_الإرادة #الإنكار #الخوف_من_التأثير #التنمية_الشخصية #psychology #self_awareness #emotional_intelligence #behavioral_analysis #mindfulness",
-    "search_terms": [
-      "cinematic emotional portrait introspection",
-      "person reflecting deep thought",
-      "vulnerability emotional struggle",
-      "inner conflict solitude",
-      "psychological distress close-up",
-      "overcoming denial thoughtful gaze"
-    ],
-    "duration": 11,
-    "title_theme": "pink",
-    "read_theme": "yellow",
-    "video_filter": "black",
-    "music": "a33.mp3",
-    "created_at": "2026-10-08T00:29:54.974699+00:00"
-  },
-  {
     "excel_number": 1177,
     "title": "السر وراء ثقتك في المعلومة المكتوبة بثقة",
     "read_text": "👇 ما الذي يقصده فعلاً؟ في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "gray",
     "music": "a32.mp3",
     "created_at": "2026-11-28T03:00:00.136235+00:00"
+  },
+  {
+    "excel_number": 1676,
+    "title": "الحقيقة خلف دفاع الأب عن رأيه حتى بعد اقتناعه",
+    "read_text": "👇 المعنى الحقيقي في الوصف👇",
+    "description": "لماذا يتمسك البعض بآرائهم حتى عندما يعرفون خطأهم؟ هل هو عناد أم آلية دفاع نفسية معقدة؟ يكمن السر وراء هذا السلوك المتجذر في خوف أعمق من إظهار الضعف أو الاعتراف بالخطأ. يكشف هذا الفيديو النقاب عن الكواليس النفسية المعقدة التي تدفع الأب، أو أي شخص، إلى الدفاع المستميت عن موقف يدرك داخلياً أنه قد لا يكون صحيحاً. قد يتعلق الأمر بحماية الصورة الذاتية، أو الخوف من فقدان السيطرة، أو حتى التربية التي زرعت قيمة الثبات على الرأي مهما كانت العواقب. نتعمق في الدوافع الخفية وراء هذا التشبث، ونوضح كيف يمكن أن يكون هذا الدفاع استراتيجية وقائية لحماية الذات من مشاعر معينة. هل سبق لك أن رأيت هذا يحدث، أو شعرت به؟",
+    "hashtags": "#علم_النفس #تحليل_سلوك #دفاعات_نفسية #علاقات_أسرية #psychology #behavioral_analysis #ego_protection #mindset #self_awareness #inner_conflict #parenting #communication #family_dynamics #truth_seeker #psychological_facts",
+    "search_terms": [
+      "man thinking deeply cinematic",
+      "person defending belief emotional portrait",
+      "inner conflict introspection close up",
+      "stubbornness psychological defense portrait",
+      "father figure protecting stance cinematic",
+      "vulnerability fear of admitting mistake emotional"
+    ],
+    "duration": 15,
+    "title_theme": "cyan",
+    "read_theme": "orange",
+    "video_filter": "dark_green",
+    "music": "a33.mp3",
+    "created_at": "2026-11-28T03:40:10.687386+00:00"
   }
 ]
