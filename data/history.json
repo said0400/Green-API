@@ -1,26 +1,5 @@
 [
   {
-    "excel_number": 1179,
-    "title": "ماذا يحدث لعقلك عندما تدافع عن خطأك علنًا؟",
-    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
-    "description": "هل تساءلت يومًا لماذا نتمسك برأينا حتى لو كان خاطئًا بشكل واضح؟ إن العقل البشري يخوض صراعًا داخليًا عجيبًا عندما يُجبر على الاعتراف بالخطأ، لا سيما أمام الآخرين. هذا الفيديو يكشف الستار عن آليات الدفاع النفسي الخفية التي تنشط في هذه اللحظات الحاسمة. ستكتشف لماذا تبدو فكرة الاعتراف بالخطأ كأنها هزيمة ساحقة، وكيف يبتكر دماغك قصصًا وحججًا لدعم موقفك حتى لو كان واهيًا. إنه صراع بين الهوية الذاتية والحقيقة الموضوعية. هل تساءلت يومًا عن ثمن الدفاع عن الوهم؟",
-    "hashtags": "#علم_النفس #الدفاع_النفسي #العقل_البشري #الإقناع #الحقيقة #السلوك_البشري #تحليل_الشخصية #العلاقات #تطوير_الذات #psychology #mindset #behavioral_economics #cognitive_bias #selfawareness #truth",
-    "search_terms": [
-      "man thinking deeply",
-      "woman looking stressed",
-      "person looking conflicted",
-      "close-up sad face",
-      "dramatic emotional portrait",
-      "person looking thoughtful outdoors"
-    ],
-    "duration": 11,
-    "title_theme": "green",
-    "read_theme": "black",
-    "video_filter": "dark_blue",
-    "music": "a36.mp3",
-    "created_at": "2026-10-08T17:01:03.930994+00:00"
-  },
-  {
     "excel_number": 1180,
     "title": "الحقيقة خلف انجذابك للكلمات المطلقة والحاسمة",
     "read_text": "👇 الإشارة التي لم تنتبه لها في الوصف👇",
@@ -10498,5 +10477,26 @@
     "video_filter": "black",
     "music": "a35.mp3",
     "created_at": "2026-11-28T17:50:54.519776+00:00"
+  },
+  {
+    "excel_number": 1679,
+    "title": "لماذا تبدو الأم مزعجة حين تكون خائفة جدًا؟",
+    "read_text": "👇 لماذا يحدث هذا؟ في الوصف👇",
+    "description": "هل سبق لك أن لاحظت كيف يتحول سلوك والدتك إلى مصدر إزعاج شديد عندما تشعر بالخوف؟ قد تبدو أفعالها غير منطقية أو مبالغ فيها، مما يثير لديك شعورًا بالضيق. لكن ماذا لو كان وراء هذا الإزعاج ظاهريًا، منطق نفسي عميق لا تدركه؟ السر يكمن في آليات الدفاع النفسي التي تتجلى عندما يشعر الإنسان، وبالأخص الأم، بتهديد يمس سلامتها أو سلامة من تحب. فالخوف الشديد يدفعها إلى سلوكيات قد تبدو مرهقة، لكنها في جوهرها محاولة يائسة للسيطرة على الموقف أو الحماية. هذه السلوكيات هي صرخة مكتومة تعكس حجم القلق الداخلي. هل تعتقد أن هذه الأساليب تنبع من ضعف أم من قوة مكبوتة؟",
+    "hashtags": "#علم_نفس #العلاقات_الأسرية #سلوك_الأم #الخوف_والقلق #تحليل_نفسي #مشاعر #الدفاعات_النفسية #فهم_الأم #علاقات_صحية #family_dynamics #psychologyfacts #motherhood #understanding_emotions #behavioral_analysis #inner_strength",
+    "search_terms": [
+      "mother fear emotional portrait cinematic",
+      "parent anxiety stressed close-up",
+      "woman worried thoughtful cinematic",
+      "family concern quiet moment",
+      "mother's love protection fear",
+      "overwhelmed parent empathy cinematic"
+    ],
+    "duration": 11,
+    "title_theme": "black",
+    "read_theme": "cyan",
+    "video_filter": "dark_green",
+    "music": "a36.mp3",
+    "created_at": "2026-11-28T19:09:56.069656+00:00"
   }
 ]
